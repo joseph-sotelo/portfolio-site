@@ -1,15 +1,18 @@
 import Image from 'next/image';
 
-export default function Hero({title, tagline}: {title: string, tagline: string}){
+export default function Hero({title, tagline, occasion, image}: {title: string, tagline: string, occasion: string, image: string}){
     return(
         <div id='hero'>
             <h1>
                 {title}
             </h1>
-            <h2>
+            <h5>
+                {occasion}
+            </h5>
+            <h3>
                 {tagline}
-            </h2>
-            <Image src='' alt={`High fidelity mockups from the ${title} project`} width='300' height='300' />
+            </h3>
+            <Image src={image} alt={`High fidelity mockups from the ${title} project`} width='300' height='300' />
         </div>
     )
 }
