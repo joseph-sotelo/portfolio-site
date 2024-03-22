@@ -1,6 +1,6 @@
 'use client'
 
-export default function Overview({props}: {props: object}){
+export default function CasStudyOverview({props}: {props: object}){
 
     return(
         <div>

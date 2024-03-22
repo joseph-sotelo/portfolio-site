@@ -1,8 +1,8 @@
 'use client'
 
-import Hero from '@/app/ui/case-study/hero';
-import Overview from '@/app/ui/case-study/overview';
-import ParagraphAndImage from '@/app/ui/case-study/paragraph-and-image';
+import CaseStudyHero from '@/app/ui/case-study/case-study-hero';
+import Overview from '@/app/ui/case-study/case-study-overview';
+import CaseStudySection from '@/app/ui/case-study/case-study-section';
 
 const discoverOlveraData = {
     hero: {
@@ -24,7 +24,16 @@ const discoverOlveraData = {
             'There were many transient individuals within Olvera Street, and we witnessed an attempted theft - perhaps they feel emboldened to steal because of the low foot traffic.',
             'Olvera Street is part of a slightly larger area known as Placita Olvera, which houses five small museums. These Museums are under-promoted, gaining most visitors through outdoor signs, scheduled visits from guided tours, and seasonal events. ',
         ],
-        image: '',
+        images: [
+            [
+                '/../../work/discover-olvera/firehouse-museum.png',
+                'Exterior view of the Firehouse Museum. It is an old-fashioned brick building in a cobblestone plaza',
+            ],
+            [
+                '/../../work/discover-olvera/discover-olvera-cover.png',
+                'placeholder alt text',
+            ]
+        ],
     },
     interviews: {
         sectionHeader: 'Ethnography: Interviews',
@@ -36,9 +45,9 @@ const discoverOlveraData = {
 export default function Page() {
     return(
         <div>
-            <Hero {...discoverOlveraData.hero}/>
+            <CaseStudyHero {...discoverOlveraData.hero}/>
             <Overview props={discoverOlveraData.overview}/>
-            <ParagraphAndImage {...discoverOlveraData.observations}/>
+            <CaseStudySection {...discoverOlveraData.observations}/>
         </div>
     )
 }

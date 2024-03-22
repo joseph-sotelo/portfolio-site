@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function Hero({title, tagline, occasion, image}: {title: string, tagline: string, occasion: string, image: string}){
+export default function CaseStudyHero({title, tagline, occasion, image}: {title: string, tagline: string, occasion: string, image: string}){
     return(
         <div id='hero'>
             <h1>

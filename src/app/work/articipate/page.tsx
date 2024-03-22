@@ -1,8 +1,8 @@
 'use client'
 
-import Hero from '@/app/ui/case-study/hero';
-import Overview from '@/app/ui/case-study/overview';
-import ParagraphAndImage from '@/app/ui/case-study/paragraph-and-image';
+import CaseStudyHero from '@/app/ui/case-study/case-study-hero';
+import CaseStudyOverview from '@/app/ui/case-study/case-study-overview';
+import CaseStudySection from '@/app/ui/case-study/case-study-section';
 
 const articipateData = {
     hero: {
@@ -26,9 +26,9 @@ const articipateData = {
 export default function Page() {
     return(
         <div>
-            <Hero {...articipateData.hero}/>
-            <Overview props={articipateData.overview}/>
-            <ParagraphAndImage {...articipateData.interviews}/>
+            <CaseStudyHero {...articipateData.hero}/>
+            <CaseStudyOverview props={articipateData.overview}/>
+            {/* <CaseStudySection {...articipateData.interviews}/> */}
         </div>
     )
 }
