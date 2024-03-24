@@ -2,6 +2,8 @@
 
 import PieceCard from './piece-card';
 
+//TODO
+//Merge this data with other piece specific data into one object
   export default function PieceCardGrid(){
     const PortfolioPieces = [
         {name: 'Articipate', image: '/../../../work/articipate/articipate-cover.png', page: '/work/articipate', labels: ['UX/UI', 'Mobile Design', 'User Interviews']},
