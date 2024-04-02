@@ -3,12 +3,17 @@
 export default function CasStudyOverview({props}: {props: object}){
 
     return(
-        <div>
+        <div className='w-[70vw] ml-auto mr-auto mt-12 mb-12'>
+            <h2>
+                Overview
+            </h2>
             <dl>
                 {Object.entries(props).map(([key, value]) =>
                     <>
                         <dt>
-                            {key}
+                            <strong>
+                                {key}
+                            </strong>
                         </dt>
                         <dd>
                             {value}

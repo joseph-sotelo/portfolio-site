@@ -3,6 +3,7 @@
 import CaseStudyHero from '@/app/ui/case-study/case-study-hero';
 import Overview from '@/app/ui/case-study/case-study-overview';
 import CaseStudySection from '@/app/ui/case-study/case-study-section';
+import { Grid, GridRow } from 'semantic-ui-react';
 
 const discoverOlveraData = {
     hero: {
@@ -44,10 +45,18 @@ const discoverOlveraData = {
 
 export default function Page() {
     return(
-        <div>
-            <CaseStudyHero {...discoverOlveraData.hero}/>
-            <Overview props={discoverOlveraData.overview}/>
-            <CaseStudySection {...discoverOlveraData.observations}/>
+        <div className='p-[10vw]'>
+            <Grid divided='vertically'  className='w-[80vw]'>
+                <GridRow>
+                    <CaseStudyHero {...discoverOlveraData.hero}/>
+                </GridRow>
+                <GridRow>
+                    <Overview props={discoverOlveraData.overview}/>
+                </GridRow>
+                <GridRow>
+                    <CaseStudySection {...discoverOlveraData.observations}/>
+                </GridRow>
+            </Grid>
         </div>
     )
 }
