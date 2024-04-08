@@ -17,9 +17,9 @@ export default function CaseStudySection({sectionHeader, mainText, bullets, imag
                 <span>
                     {mainText}
                     {bullets && (
-                        <ul>
+                        <ul className='mt-6 pl-[14px]'>
                             {bullets.map((bullet) => (
-                                <li>
+                                <li className='list-disc mb-6'>
                                     {bullet}
                                 </li>
                             ))}
@@ -27,18 +27,19 @@ export default function CaseStudySection({sectionHeader, mainText, bullets, imag
                     )}
                 </span>
             </div>
-            <div id='right' className='w-[35vw] h-300'>
+            <div id='right' className='w-[35vw]'>
                 <Swiper 
                     modules={[Navigation, Pagination]}
                     spaceBetween={50}
                     slidesPerView={1}
-                    className='w-500px h-500px'
+                    className='w-[35vw] h-[35vw] bg-black'
                     navigation
                     pagination={{clickable: true}}
                 >
                     {images.map((image) =>(
                         <SwiperSlide >
-                            <Image src={image[0]} alt={image[1]} width='500' height='500' className='w-[35vw]'/>
+                            <Image src={image[0]} alt={image[1]} width='500' height='500' className='w-[100%] h-[100%] object-cover'/>
+                            <p>{image[2]}</p>
                         </SwiperSlide>
                     ))}
                 </Swiper>
