@@ -1,8 +1,8 @@
 'use client'
 
-import CaseStudyHero from '@/app/ui/case-study/case-study-hero';
-import CaseStudyOverview from '@/app/ui/case-study/case-study-overview';
-import CaseStudySection from '@/app/ui/case-study/case-study-section';
+import CaseStudyHero from '@/components/case-study/case-study-hero';
+import CaseStudyOverview from '@/components/case-study/case-study-overview';
+import CaseStudySection from '@/components/case-study/case-study-section';
 
 const articipateData = {
     hero: {

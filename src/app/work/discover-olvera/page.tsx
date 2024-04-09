@@ -1,8 +1,8 @@
 'use client'
 
-import CaseStudyHero from '@/app/ui/case-study/case-study-hero';
-import Overview from '@/app/ui/case-study/case-study-overview';
-import CaseStudySection from '@/app/ui/case-study/case-study-section';
+import CaseStudyHero from '@/components/case-study/case-study-hero';
+import Overview from '@/components/case-study/case-study-overview';
+import CaseStudySection from '@/components/case-study/case-study-section';
 import { Grid, GridRow } from 'semantic-ui-react';
 
 const discoverOlveraData = {
