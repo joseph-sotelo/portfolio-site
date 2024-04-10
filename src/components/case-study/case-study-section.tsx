@@ -1,10 +1,13 @@
 'use client'
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
+
 import Image from 'next/image'
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+  } from "@/components/ui/carousel"
 
 
 export default function CaseStudySection({sectionHeader, mainText, bullets, images}: {sectionHeader: string, mainText: string, bullets?: string[], images: string[][]}){
@@ -28,22 +31,35 @@ export default function CaseStudySection({sectionHeader, mainText, bullets, imag
                 </span>
             </div>
             <div id='right' className='w-[35vw]'>
-                <Swiper 
-                    modules={[Navigation, Pagination]}
-                    spaceBetween={50}
-                    slidesPerView={1}
-                    className='w-[35vw] h-[35vw] bg-black'
-                    navigation
-                    pagination={{clickable: true}}
-                >
-                    {images.map((image) =>(
-                        <SwiperSlide >
-                            <Image src={image[0]} alt={image[1]} width='500' height='500' className='w-[100%] h-[100%] object-cover'/>
-                            <p>{image[2]}</p>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+                <Carousel>
+                    <CarouselContent>
+                        {images.map((image) =>(
+                            <CarouselItem >
+                                <Image src={image[0]} alt={image[1]} width='500' height='500' className='w-[100%] h-[100%] object-cover'/>
+                                <p>{image[2]}</p>
+                            </CarouselItem>
+                        ))}
+                    </CarouselContent>
+                    <CarouselPrevious />
+                    <CarouselNext />
+                </Carousel>
             </div>
         </div>
     )
 }
+
+{/* <Swiper 
+modules={[Navigation, Pagination]}
+spaceBetween={50}
+slidesPerView={1}
+className='w-[35vw] h-[35vw] bg-black'
+navigation
+pagination={{clickable: true}}
+>
+{images.map((image) =>(
+    <SwiperSlide >
+        <Image src={image[0]} alt={image[1]} width='500' height='500' className='w-[100%] h-[100%] object-cover'/>
+        <p>{image[2]}</p>
+    </SwiperSlide>
+))}
+</Swiper> */}

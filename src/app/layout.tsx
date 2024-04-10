@@ -21,9 +21,9 @@ export default function RootLayout({
         <div>
           <MainNav />
         </div>
-        {/* <div>
+        <div>
           {children}
-        </div> */}
+        </div>
       </body>
     </html>
   )
