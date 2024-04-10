@@ -1,6 +1,6 @@
 'use client'
 
-import PieceCardGrid from './ui/piece-card-grid';
+import PieceCardGrid from '../components/piece-card-grid';
 
 export default function Work(){
   return(
