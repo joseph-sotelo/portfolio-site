@@ -43,7 +43,7 @@ export default function Page(){
                             Code and I
                         </AccordionTrigger>
                         <AccordionContent>
-                            Overlapping the world of design is the neighboring territory of programming. Ever since my first web design class I have been in love with it. From experimenting in Unity to building this website with Next.js, I make every effort to continuously grow in these skills. This is all done through self-learning and the guidance of several mentor friends.                        
+                            Overlapping the world of design is the neighboring territory of programming. Ever since my first web design class I have been in love with it. From experimenting in Unity to building this website with Next.js, I make every effort to continuously grow in these skills. This is all done through self-learning, extracurricular classes, and the guidance of several mentor friends. I'm not an engineer, but I'm well-acquanited with what they do.                       
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>
