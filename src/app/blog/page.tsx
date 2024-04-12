@@ -1,7 +1,7 @@
 export default function Page(){
     return(
         <h1>
-            Resume
+            Blog
         </h1>
     )
 }

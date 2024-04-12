@@ -31,9 +31,9 @@ export default function MainNav() {
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/resume" legacyBehavior passHref>
+                    <Link href="/blog" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            Resume
+                            Blog
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
