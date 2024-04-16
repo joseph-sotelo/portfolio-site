@@ -12,9 +12,9 @@ const articipateData = {
         image: '/../../work/articipate/articipate-cover.png'
     },
     overview: {
-        challenge: 'Visual Artists often lack the motivation and inspiration they need to thrive.',
-        insight: 'Artists are commonly inspired by other artists.',
-        solution: 'Articipate, an app in which users are given a daily prompt for a piece of art. Users can post their art for others to see and critique.',
+        Challenge: 'Visual Artists often lack the motivation and inspiration they need to thrive.',
+        Insight: 'Artists are commonly inspired by other artists.',
+        Solution: 'Articipate, an app in which users are given a daily prompt for a piece of art. Users can post their art for others to see and critique.',
     },
     interviews: {
         sectionHeader: 'Interviews',
@@ -25,10 +25,19 @@ const articipateData = {
 
 export default function Page() {
     return(
-        <div>
-            <CaseStudyHero {...articipateData.hero}/>
-            <CaseStudyOverview props={articipateData.overview}/>
-            {/* <CaseStudySection {...articipateData.interviews}/> */}
+        <div className='p-[10vw]'>
+            <div>
+                <CaseStudyHero {...articipateData.hero}/>
+                <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[70vw] m-auto'></div>
+            </div>
+            <div>
+                <CaseStudyOverview props={articipateData.overview}/>
+                <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[70vw] m-auto'></div>
+            </div>
+            <div>
+                {/* <CaseStudySection {...articipateData.interviews}/>   */}
+                <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[70vw] m-auto'></div>
+            </div>
         </div>
     )
 }

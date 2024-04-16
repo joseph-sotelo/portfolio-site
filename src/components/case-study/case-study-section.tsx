@@ -13,7 +13,7 @@ import {
 export default function CaseStudySection({sectionHeader, mainText, bullets, images}: {sectionHeader: string, mainText?: string, bullets?: string[], images: string[][]}){
     return(
         <div className='flex justify-between w-[70vw] ml-auto mr-auto mt-12 mb-12'>
-            <div id='left' className='w-[25vw] mt-auto mb-auto'>
+            <div id='left' className='w-[28vw] mt-auto mb-auto'>
                 <h2>
                     {sectionHeader}
                 </h2>

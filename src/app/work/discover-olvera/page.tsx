@@ -1,8 +1,9 @@
 'use client'
 
 import CaseStudyHero from '@/components/case-study/case-study-hero';
-import Overview from '@/components/case-study/case-study-overview';
+import CaseStudyOverview from '@/components/case-study/case-study-overview';
 import CaseStudySection from '@/components/case-study/case-study-section';
+import CaseStudyBigText from '@/components/case-study/case-study-big-text';
 
 const discoverOlveraData = {
     hero: {
@@ -12,9 +13,9 @@ const discoverOlveraData = {
         image: '/../../work/discover-olvera/discover-olvera-cover.png'
     },
     overview: {
-        challenge: 'Olvera Street\'s businesses are suffering due to a lingering, pandemic-enduced drop in foot traffic',
-        process: 'Ethnography, Netnography, Prototype, Test, Refine',
-        role: 'Design Research, Branding, UX Design',
+        Challenge: 'Olvera Street\'s businesses are suffering due to a lingering, pandemic-enduced drop in foot traffic',
+        Process: 'Ethnography, Netnography, Prototype, Test, Refine',
+        Role: 'Design Research, Branding, UX Design',
     },
     observations: {
         sectionHeader: 'Ethnography: Observations',
@@ -80,9 +81,13 @@ const discoverOlveraData = {
             ]
         ],
     },
+    howMightWe: {
+        secondaryText: 'At this point a design direction was beginning to emerge:',
+        primaryText: 'How might we leverage Olvera\'s hidden museums and it\'s small yet loyal customer base to increase foot traffic at Olvera Street?',
+    },
     persona: {
         sectionHeader: 'Persona',
-        mainText: 'We created a persona named Jessica based on the visitors that we interviewed. Our design, whatever it would end up being, would focus on bringing her pysically to Olvera Street',
+        mainText: 'We created a persona named Jessica based on the visitors that we interviewed. Our design, whatever it would end up being, would focus on bringing her pysically to Olvera Street.',
         images: [
             [
                 '/../../work/discover-olvera/persona-left.png',
@@ -94,20 +99,29 @@ const discoverOlveraData = {
             ]
         ],
     },
-    howMightWe: {
-
-    },
     paperPrototype: {
         sectionHeader: 'Paper Prototype',
-        mainText: 'We created a persona named Jessica based on the visitors that we interviewed. Our design, whatever it would end up being, would focus on bringing her pysically to Olvera Street',
+        mainText: 'The first iteration of our solution was a system consisting of several digital and physical components.',
+        bullets: [
+            'App: An app with a detailed map of Olvera’s attractions, as well as AR experiences.',
+            'Digital Displays: Users would have the opportunity to post photos of their experiences to digital displays on billboards in public.',            
+            'QR Codes: QR codes at Olvera street would have to be scanned to download the app and activate the AR experiences.',
+        ],
         images: [
             [
-                '/../../work/discover-olvera/persona-left.png',
-                'Screenshot of the Jessica Persona',
+                '/../../work/discover-olvera/paper-prototype.png',
+                'The app prototype, made of paper and lego',
+                'Lego makes a great prototyping material!',
             ], 
             [
-                '/../../work/discover-olvera/persona-right.png',
-                'Screenshot of the Jessica Persona',
+                '/../../work/discover-olvera/camera-sim.png',
+                'The app prototype, made of paper and lego',
+                'Simulating an AR-colorized mural',
+            ],
+            [
+                '/../../work/discover-olvera/prototype-map.png',
+                'The app prototype, made of paper and lego',
+                'Simulating physical movement around the location',
             ]
         ],
     }
@@ -121,7 +135,7 @@ export default function Page() {
                 <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[70vw] m-auto'></div>
             </div>
             <div>
-                <Overview props={discoverOlveraData.overview}/>
+                <CaseStudyOverview props={discoverOlveraData.overview}/>
                 <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[100%] w-[70vw] m-auto'></div>
             </div>
             <div>
@@ -137,15 +151,15 @@ export default function Page() {
                 <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[100%] w-[70vw] m-auto'></div>
             </div>
             <div>
-                <h6>
-                    At this point a design direction was beginning to emerge:
-                </h6>
-                <h3>
-                    How might we leverage Olvera's hidden museums and it's small yet loyal customer base to increase foot traffic at Olvera Street?
-                </h3>
+                <CaseStudyBigText {...discoverOlveraData.howMightWe}/>
+                <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[100%] w-[70vw] m-auto'></div>
             </div>
             <div>
                 <CaseStudySection {...discoverOlveraData.persona}/>
+                <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[100%] w-[70vw] m-auto'></div>
+            </div>
+            <div>
+                <CaseStudySection {...discoverOlveraData.paperPrototype}/>
                 <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[100%] w-[70vw] m-auto'></div>
             </div>
         </div>
