@@ -4,6 +4,7 @@ import CaseStudyHero from '@/components/case-study/case-study-hero';
 import CaseStudyOverview from '@/components/case-study/case-study-overview';
 import CaseStudySection from '@/components/case-study/case-study-section';
 import CaseStudyBigText from '@/components/case-study/case-study-big-text';
+import CaseStudyInsights from '@/components/case-study/case-study-insights';
 
 const discoverOlveraData = {
     hero: {
@@ -124,7 +125,43 @@ const discoverOlveraData = {
                 'Simulating physical movement around the location',
             ]
         ],
-    }
+    },
+    prototypeInsights: [
+        [
+            'Comfort Levels',
+            'Most users would not be comfortable sharing their photos to public displays and billboards. Most felt comfortable sharing their experiences on social media.'
+        ],
+        [
+            'America Tropical',
+            'We prototyped three AR experiences, and the most delightful was the one that displayed America Tropical, a white-washed mural, in its original colors.'
+        ]
+    ],
+    branding: {
+        sectionHeader: 'Branding',
+        mainText: 'I was placed in charge of the branding for the app.',
+        bullets: [
+            'App: An app with a detailed map of Olvera’s attractions, as well as AR experiences.',
+            'Digital Displays: Users would have the opportunity to post photos of their experiences to digital displays on billboards in public.',            
+            'QR Codes: QR codes at Olvera street would have to be scanned to download the app and activate the AR experiences.',
+        ],
+        images: [
+            [
+                '/../../work/discover-olvera/paper-prototype.png',
+                'The app prototype, made of paper and lego',
+                'Lego makes a great prototyping material!',
+            ], 
+            [
+                '/../../work/discover-olvera/camera-sim.png',
+                'The app prototype, made of paper and lego',
+                'Simulating an AR-colorized mural',
+            ],
+            [
+                '/../../work/discover-olvera/prototype-map.png',
+                'The app prototype, made of paper and lego',
+                'Simulating physical movement around the location',
+            ]
+        ],
+    },
 }
 
 export default function Page() {
@@ -160,6 +197,10 @@ export default function Page() {
             </div>
             <div>
                 <CaseStudySection {...discoverOlveraData.paperPrototype}/>
+                <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[100%] w-[70vw] m-auto'></div>
+            </div>
+            <div>
+                <CaseStudyInsights props={discoverOlveraData.prototypeInsights}/>
                 <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[100%] w-[70vw] m-auto'></div>
             </div>
         </div>
