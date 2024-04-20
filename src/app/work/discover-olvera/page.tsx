@@ -9,7 +9,7 @@ import CaseStudyInsights from '@/components/case-study/case-study-insights';
 const discoverOlveraData = {
     hero: {
         title: 'Discover Olvera',
-        tagline: 'An impactful mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using AR.',
+        tagline: 'A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using AR.',
         occasion: 'IxD Studio 1 // Fall 2023',
         image: '/../../work/discover-olvera/discover-olvera-cover.png'
     },
@@ -60,6 +60,22 @@ const discoverOlveraData = {
             ]
         ],
     },
+    interviewQuotes: {
+        title: 'Quotes',
+        insights: [
+            [
+                '\“We aren\t 100% like we used to be. We need more promotions so that people realize Olvera Street is back open\”'
+            ],
+            [
+                'America Tropical',
+                'We prototyped three AR experiences, and the most delightful was the one that displayed America Tropical, a white-washed mural, in its original colors.'
+            ],
+            [
+                'Emphasize AR',
+                'The user flow needs to culminate in sharing AR experiences, rather than just having them.'
+            ],
+        ]
+    },
     netnography: {
         sectionHeader: 'Netnography',
         mainText: 'Next, we took an in-depth look at the online presence of Olvera Street. We investigated what’s said about Olvera on Yelp, Tripadvisor, and in the news. We also looked what others have already done to solve similar challenges.',
@@ -83,7 +99,7 @@ const discoverOlveraData = {
         ],
     },
     howMightWe: {
-        secondaryText: 'At this point a design direction was beginning to emerge:',
+        secondaryText: 'After reviewing our data, a design direction emerged:',
         primaryText: 'How might we leverage Olvera\'s hidden museums and it\'s small yet loyal customer base to increase foot traffic at Olvera Street?',
     },
     persona: {
@@ -126,16 +142,57 @@ const discoverOlveraData = {
             ]
         ],
     },
-    prototypeInsights: [
-        [
-            'Comfort Levels',
-            'Most users would not be comfortable sharing their photos to public displays and billboards. Most felt comfortable sharing their experiences on social media.'
-        ],
-        [
-            'America Tropical',
-            'We prototyped three AR experiences, and the most delightful was the one that displayed America Tropical, a white-washed mural, in its original colors.'
+    prototypeInsights: {
+        title: 'Insights',
+        caption: 'Several usability tests of our paper prototype revealed these insights:',
+        insights: [
+            [
+                'Comfort Levels',
+                'All of our participants said that they would be uncomfortable sharing their photos to public displays and billboards.'
+            ],
+            [
+                'America Tropical',
+                'We prototyped three AR experiences, and the most delightful was the one that displayed America Tropical, a white-washed mural, in its original colors.'
+            ],
+            [
+                'Emphasize AR',
+                'The user flow needs to culminate in sharing AR experiences, rather than just having them.'
+            ],
         ]
-    ],
+    },
+    midFiPrototype: {
+        sectionHeader: 'Mid-Fi Prototype',
+        mainText: 'We used our insights to design an interactive mid-fidelity prototype in Figma.',
+        bullets: [
+            'We discarded the idea of sharing photos to public digital displays. Instead, we aimed to provoke users to share their experiences on their own social media. This would be done by rewarding users with camera filters for participtation in AR experiences.',
+            'We built out the AR mural feature to include a variety of interactions.',            
+            'We made the AR more prominent from the very beginning of the user journey',
+        ],
+        images: [
+            [
+                '/../../work/discover-olvera/broken-statues.png',
+                'A screen from the app showing an AR enhanced mural.',
+                'One of our new features for the mural was informative popovers.',
+            ], 
+        ],
+    },
+    midFiInsights: {
+        title: 'Insights',
+        caption: 'Several usability tests of our first Figma prototype revealed these insights:',
+        insights: [
+            [
+                'Simplify',
+                'Several participants mentioned that there were too many clicks in the map and the tutorial'            
+            ],
+            [
+                'Delighted by AR',
+                'Our participants cherished all of the new AR mural features, suggesting that this formula be applied to other muesum exhibits at Olvera.'            ],
+            [
+                'Be careful about Spanish phrases',
+                'Our prototype had some phrases like \'Vamos!\'. Some participants said they didn\'t understand what these phrases meant and that they would look for a way to switch to English.'
+            ],
+        ]
+    },
     branding: {
         sectionHeader: 'Branding',
         mainText: 'I was placed in charge of the branding for the app.',
@@ -169,39 +226,47 @@ export default function Page() {
         <div className='p-[10vw]'>
             <div>
                 <CaseStudyHero {...discoverOlveraData.hero}/>
-                <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[70vw] m-auto'></div>
+                <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[70vw] m-auto'></div>
             </div>
             <div>
                 <CaseStudyOverview props={discoverOlveraData.overview}/>
-                <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[100%] w-[70vw] m-auto'></div>
+                <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[100%] w-[70vw] m-auto'></div>
             </div>
             <div>
                 <CaseStudySection {...discoverOlveraData.observations}/>
-                <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[100%] w-[70vw] m-auto'></div>
+                <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[100%] w-[70vw] m-auto'></div>
             </div>
             <div>
                 <CaseStudySection {...discoverOlveraData.interviews}/>
-                <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[100%] w-[70vw] m-auto'></div>
+                <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[100%] w-[70vw] m-auto'></div>
             </div>
             <div>
                 <CaseStudySection {...discoverOlveraData.netnography}/>
-                <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[100%] w-[70vw] m-auto'></div>
+                <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[100%] w-[70vw] m-auto'></div>
             </div>
             <div>
                 <CaseStudyBigText {...discoverOlveraData.howMightWe}/>
-                <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[100%] w-[70vw] m-auto'></div>
+                <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[100%] w-[70vw] m-auto'></div>
             </div>
             <div>
                 <CaseStudySection {...discoverOlveraData.persona}/>
-                <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[100%] w-[70vw] m-auto'></div>
+                <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[100%] w-[70vw] m-auto'></div>
             </div>
             <div>
                 <CaseStudySection {...discoverOlveraData.paperPrototype}/>
-                <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[100%] w-[70vw] m-auto'></div>
+                <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[100%] w-[70vw] m-auto'></div>
             </div>
             <div>
-                <CaseStudyInsights props={discoverOlveraData.prototypeInsights}/>
-                <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[100%] w-[70vw] m-auto'></div>
+                <CaseStudyInsights {...discoverOlveraData.prototypeInsights}/>
+                <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[100%] w-[70vw] m-auto'></div>
+            </div>
+            <div>
+                <CaseStudySection {...discoverOlveraData.midFiPrototype}/>
+                <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[100%] w-[70vw] m-auto'></div>
+            </div>
+            <div>
+                <CaseStudyInsights {...discoverOlveraData.midFiInsights}/>
+                <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[100%] w-[70vw] m-auto'></div>
             </div>
         </div>
     )

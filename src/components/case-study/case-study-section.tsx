@@ -1,6 +1,7 @@
 'use client'
 
 import Image from 'next/image'
+import ImageAndCaption from '../ui/image-and-caption'
 import {
     Carousel,
     CarouselContent,
@@ -33,37 +34,25 @@ export default function CaseStudySection({sectionHeader, mainText, bullets, imag
                 </div>
             </div>
             <div id='right' className='w-[35vw]'>
-                <Carousel>
+                {images.length >= 2 &&(
+                    <Carousel>
                     <CarouselContent>
                         {images.map((image) =>(
-                            <CarouselItem >
-                                <div>
-                                    <Image src={image[0]} alt={image[1]} width='500' height='500' className='w-[100%] h-[100%] object-cover'/>
-                                    <p>{image[2]}</p>
-                                </div>
-                            </CarouselItem>
+                                <CarouselItem >
+                                    <ImageAndCaption props={image}></ImageAndCaption>
+                                </CarouselItem>
                         ))}
                     </CarouselContent>
                     <CarouselPrevious />
                     <CarouselNext />
-                </Carousel>
+                    </Carousel>
+                )}
+                {images.length == 1 && (
+                    <ImageAndCaption props={images[0]}></ImageAndCaption>
+                )
+                }
+
             </div>
         </div>
     )
 }
-
-{/* <Swiper 
-modules={[Navigation, Pagination]}
-spaceBetween={50}
-slidesPerView={1}
-className='w-[35vw] h-[35vw] bg-black'
-navigation
-pagination={{clickable: true}}
->
-{images.map((image) =>(
-    <SwiperSlide >
-        <Image src={image[0]} alt={image[1]} width='500' height='500' className='w-[100%] h-[100%] object-cover'/>
-        <p>{image[2]}</p>
-    </SwiperSlide>
-))}
-</Swiper> */}
