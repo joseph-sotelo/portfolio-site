@@ -4,8 +4,8 @@ import PieceCardGrid from '../components/piece-card-grid';
 
 export default function Work(){
   return(
-    <div className='mt-[1rem]'>
-      <h1 className='w-3/5 ml-auto mr-auto mb-[1rem]'>
+    <div className='w-[75vw] m-auto'>
+      <h1 className='mb-[1rem]'>
           Work
       </h1>
       <div id="card-grid">

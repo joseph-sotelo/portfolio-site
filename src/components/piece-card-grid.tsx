@@ -14,9 +14,9 @@ import PieceCard from './piece-card';
       ]
     
     return(
-        <div className='flex flex-row items-start flex-wrap gap-[20px] w-3/5 m-auto'>
+        <div className='flex flex-row justify-start flex-wrap gap-[1rem] m-auto'>
           {PortfolioPieces.map((piece, index) => 
-              <PieceCard key={index} {...piece}  />
+              <PieceCard key={index} {...piece}/>
           )}
         </div>
     )

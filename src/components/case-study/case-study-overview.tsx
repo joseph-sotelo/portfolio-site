@@ -1,10 +1,10 @@
 'use client'
 
-export default function CasStudyOverview({props}: {props: object}){
+export default function CaseStudyOverview({props}: {props: object}){
 
     return(
         <div className='w-[70vw] ml-auto mr-auto mt-12 mb-12'>
-            <h2>
+            <h2 className='mb-[1rem]'>
                 Overview
             </h2>
             <dl>
@@ -12,7 +12,7 @@ export default function CasStudyOverview({props}: {props: object}){
                     <>
                         <dt>
                             <strong>
-                                {key}
+                                {key}:
                             </strong>
                         </dt>
                         <dd>

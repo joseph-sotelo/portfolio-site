@@ -96,17 +96,24 @@ h4 {
 }
 
 h5 {
-  font-size: 1.44rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
 h6 {
- font-size: 1.2rem;
- font-weight: 500;
+ font-size: 1rem;
+ font-weight: 400;
 }
 
-p{
-  font-size: 1rem;
+p, li {
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+/* cards */
+
+#card-header{
+  border-top: 1px solid hsl(240 5.9% 90%);
 }
 
 /* h1 {
