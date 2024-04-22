@@ -5,6 +5,7 @@ import CaseStudyOverview from '@/components/case-study/case-study-overview';
 import CaseStudySection from '@/components/case-study/case-study-section';
 import CaseStudyBigText from '@/components/case-study/case-study-big-text';
 import CaseStudyInsights from '@/components/case-study/case-study-insights';
+import CaseStudyVideo from '@/components/case-study/case-study-video';
 
 const discoverOlveraData = {
     hero: {
@@ -181,6 +182,10 @@ const discoverOlveraData = {
         caption: 'Several usability tests of our first Figma prototype revealed these insights:',
         insights: [
             [
+                'Tutorial',
+                'Many of the participants in our digital usability tests suggested including some kind of tutorial or abundance of tooltips.'            
+            ],
+            [
                 'Simplify',
                 'Several participants mentioned that there were too many clicks in the map and the tutorial'            
             ],
@@ -195,28 +200,56 @@ const discoverOlveraData = {
     },
     branding: {
         sectionHeader: 'Branding',
-        mainText: 'I was placed in charge of the branding for the app.',
+        mainText: 'I designed all aspects of the brand with feedback from my team. Like the structure and UI of the app, the branding went through a sustained iterative process.',
         bullets: [
-            'App: An app with a detailed map of Olvera’s attractions, as well as AR experiences.',
-            'Digital Displays: Users would have the opportunity to post photos of their experiences to digital displays on billboards in public.',            
-            'QR Codes: QR codes at Olvera street would have to be scanned to download the app and activate the AR experiences.',
+            'The interviews with vendors had revealed that Dia de los Muertos, as well as the movie \'Coco\' generated a lot of foot traffic. We chose a style that was reminiscent of these themes, using festive colors contrasted by dark backgrounds.',
+            'Through Figma’s Material Theme Builder plugin, I was able to enter our colors and quickly customize a UI kit for our Hi-Fi wireframes.',            
         ],
         images: [
             [
-                '/../../work/discover-olvera/paper-prototype.png',
-                'The app prototype, made of paper and lego',
-                'Lego makes a great prototyping material!',
+                '/../../work/discover-olvera/color-palette.png',
+                'The final logo, animated with After Effects',
+                'The final animated logo',
             ], 
             [
-                '/../../work/discover-olvera/camera-sim.png',
-                'The app prototype, made of paper and lego',
-                'Simulating an AR-colorized mural',
+                '/../../work/discover-olvera/color-palette.png',
+                'Discover Olvera color palette',
+                'Color palette for the brand',
+            ], 
+            [
+                '/../../work/discover-olvera/ui-colors.png',
+                'Color palette for the UI',
+                'Color palette for the app\'s UI',
             ],
             [
-                '/../../work/discover-olvera/prototype-map.png',
-                'The app prototype, made of paper and lego',
-                'Simulating physical movement around the location',
+                '/../../work/discover-olvera/olvera-logo-thumbnails.png',
+                'Thumbnail sketches for the logo',
+                'An early set of logo ideas',
+            ],
+            [
+                '/../../work/discover-olvera/figma-logo-ideation.png',
+                'Digital logo ideas',
+                'Later refinements of the wordmark',
             ]
+        ],
+    },
+    hiFiPrototype: {
+        header: 'Hi-Fi Prototype and user story',
+        mainText: 'Below is our final deliverable - a video showcasing our hi-fi protoype through a user story. The animated infographics at the beginning were created by myself in After Effects.',
+        src: 'https://www.youtube.com/embed/ZsmuhoPbTFE?si=KM_yda74JZBiBpgW',
+    },
+    reflection: {
+        sectionHeader: 'Reflection',
+        bullets: [
+            'This was, by far, the most research-intensive project I’ve done so far. I got to practice familiar research methods and learn a new one - ethnography. I am more confident now in my ability to design a research program and execute it, tailored to the needs of the project.',
+            'We made use of one another’s varied skillsets to share the load in a productive way. I will be looking for this kind of opportunity in future teams.',
+        ],
+        images: [
+            [
+                '/../../work/discover-olvera/team-photo.png',
+                'Team Photo',
+                'Tony, Erick, and I Discovering Olvera',
+            ],
         ],
     },
 }
@@ -266,6 +299,18 @@ export default function Page() {
             </div>
             <div>
                 <CaseStudyInsights {...discoverOlveraData.midFiInsights}/>
+                <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[100%] w-[70vw] m-auto'></div>
+            </div>
+            <div>
+                <CaseStudySection {...discoverOlveraData.branding}/>
+                <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[100%] w-[70vw] m-auto'></div>
+            </div>
+            <div>
+                <CaseStudyVideo {...discoverOlveraData.hiFiPrototype}/>
+                <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[100%] w-[70vw] m-auto'></div>
+            </div>
+            <div>
+                <CaseStudySection {...discoverOlveraData.reflection}/>
                 <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[100%] w-[70vw] m-auto'></div>
             </div>
         </div>

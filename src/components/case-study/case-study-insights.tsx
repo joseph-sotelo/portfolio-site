@@ -26,8 +26,8 @@ export default function CaseStudyInsights({title, caption, insights}: {title: st
                             <CardHeader>
                                 {insight.length >= 2?(
                                     <>
-                                    <CardTitle className='mb-[.5rem]'>{insight[0]}</CardTitle>
-                                    <CardDescription>{insight[1]}</CardDescription>
+                                        <CardTitle className='mb-[.5rem]'>{insight[0]}</CardTitle>
+                                        <CardDescription>{insight[1]}</CardDescription>
                                     </>
                                 ): (
                                     <CardDescription>{insight[0]}</CardDescription>  

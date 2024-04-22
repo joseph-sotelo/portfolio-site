@@ -51,7 +51,6 @@ export default function CaseStudySection({sectionHeader, mainText, bullets, imag
                     <ImageAndCaption props={images[0]}></ImageAndCaption>
                 )
                 }
-
             </div>
         </div>
     )

@@ -16,13 +16,17 @@ const caseStudyImageProps = {
 
 export default function Page(){
     return(
-        <div className='w-[75vw] m-auto'>
+        <div className='w-[70vw] m-auto'>
             <h1 className='mb-[1rem]'>
               About Me
             </h1>
-            <div className='flex justify-between w-[70vw] ml-auto mr-auto mt-12 mb-12'>
+            <div className='flex justify-between ml-auto mr-auto mt-12 mb-12'>
                 <div id='left' className='w-[25vw] mt-auto mb-auto'>
-                    <h2>
+                <Image src='/about/informal_portrait_1.png' alt='Photo of Joseph Sotelo' width='375' height='375'>
+                    </Image>
+                </div>
+                <div id='right' className='w-[35vw]'>
+                <h2>
                         Hi!
                     </h2>
                     <p>
@@ -55,12 +59,8 @@ export default function Page(){
                         </AccordionItem>
                     </Accordion>
                 </div>
-                <div id='right' className='w-[35vw]'>
-                    <Image src='/about/informal_portrait_1.png' alt='Photo of Joseph Sotelo' width='375' height='375'>
-                    </Image>
-                </div>
             </div>
-            <div>
+            <div className='mt-24'>
                 <CaseStudyBigImage {...caseStudyImageProps}></CaseStudyBigImage>
             </div>
         </div>
