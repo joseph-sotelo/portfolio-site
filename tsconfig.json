@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/types/app/ui/main-nav-links.tsx", ".next/types/app/ui/main-nav.tsx", ".next/types/app/layout.tsx", ".next/types/app/about/page.tsx", ".next/types/app/resume/page.tsx", ".next/types/app/work/other-stuff-i-do/page.tsx", ".next/types/app/work/ux-ui/page.tsx", ".next/types/app/work/page.tsx", ".next/types/app/ui/piece-card.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", ".next/types/app/ui/main-nav-links.tsx", ".next/types/app/ui/main-nav.tsx", ".next/types/app/layout.tsx", ".next/types/app/about/page.tsx", ".next/types/app/resume/page.tsx", ".next/types/app/work/other-stuff-i-do/page.tsx", ".next/types/app/work/ux-ui/page.tsx", ".next/types/app/work/page.tsx", ".next/types/app/ui/piece-card.tsx", "src/components/case-study/case-study-video.tsx"],
   "exclude": ["node_modules"]
 }
