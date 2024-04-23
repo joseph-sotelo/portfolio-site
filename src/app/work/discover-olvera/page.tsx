@@ -12,7 +12,7 @@ const discoverOlveraData = {
         title: 'Discover Olvera',
         tagline: 'A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using AR.',
         occasion: 'IxD Studio 1 // Fall 2023',
-        image: '/../../work/discover-olvera/discover-olvera-cover.png'
+        image: '/work/discover-olvera/discover-olvera-cover.png'
     },
     overview: {
         Challenge: 'Olvera Street\'s businesses are suffering due to a lingering, pandemic-enduced drop in foot traffic',
@@ -29,12 +29,12 @@ const discoverOlveraData = {
         ],
         images: [
             [
-                '/../../work/discover-olvera/olvera-empty.png',
+                '/work/discover-olvera/olvera-empty.png',
                 'Vacant shops at Olvera Street',
                 'Vacant shops at Olvera Street',            
             ],
             [
-                '/../../work/discover-olvera/firehouse-museum.png',
+                '/work/discover-olvera/firehouse-museum.png',
                 'Exterior view of the Firehouse Museum. It is an old-fashioned brick building in a cobblestone plaza',
                 'The Firehouse Museum, one of many hidden gems of Placita Olvera',
             ],
@@ -50,12 +50,12 @@ const discoverOlveraData = {
         ],
         images: [
             [
-                '/../../work/discover-olvera/museum-of-social-justice.png',
+                '/work/discover-olvera/museum-of-social-justice.png',
                 'Entrance to the Museum of Social Justice',
                 'Another one of Placita Olvera\'s hidden gems',
             ], 
             [
-                '/../../work/discover-olvera/mural-a.jpg',
+                '/work/discover-olvera/mural-a.jpg',
                 'The mural \'America Tropical\' by David Alfaro Siquieros',
                 '\'America Tropical\', a mural by David Alfaro Siquieros, lies right in the center of Olvera Street but can only be viewed from a one particular balcony'
             ]
@@ -88,12 +88,12 @@ const discoverOlveraData = {
         ],
         images: [
             [
-                '/../../work/discover-olvera/chroma.png',
+                '/work/discover-olvera/chroma.png',
                 'Image of text reading \'Chroma: ancient sculpture in color\' in front of a Sphinx sculpture',
                 'Poster for Chroma AR by The MET',
             ], 
             [
-                '/../../work/discover-olvera/google-maps.png',
+                '/work/discover-olvera/google-maps.png',
                 'Screenshot of Olvera Street on Google maps',
                 'Many businesses at Olvera are not displayed on Google and Apple maps.'
             ]
@@ -108,11 +108,11 @@ const discoverOlveraData = {
         mainText: 'We created a persona named Jessica based on the visitors that we interviewed. Our design, whatever it would end up being, would focus on bringing her pysically to Olvera Street.',
         images: [
             [
-                '/../../work/discover-olvera/persona-left.png',
+                '/work/discover-olvera/persona-left.png',
                 'Screenshot of the Jessica Persona',
             ], 
             [
-                '/../../work/discover-olvera/persona-right.png',
+                '/work/discover-olvera/persona-right.png',
                 'Screenshot of the Jessica Persona',
             ]
         ],
@@ -127,17 +127,17 @@ const discoverOlveraData = {
         ],
         images: [
             [
-                '/../../work/discover-olvera/paper-prototype.png',
+                '/work/discover-olvera/paper-prototype.png',
                 'The app prototype, made of paper and lego',
                 'Lego makes a great prototyping material!',
             ], 
             [
-                '/../../work/discover-olvera/camera-sim.png',
+                '/work/discover-olvera/camera-sim.png',
                 'The app prototype, made of paper and lego',
                 'Simulating an AR-colorized mural',
             ],
             [
-                '/../../work/discover-olvera/prototype-map.png',
+                '/work/discover-olvera/prototype-map.png',
                 'The app prototype, made of paper and lego',
                 'Simulating physical movement around the location',
             ]
@@ -171,7 +171,7 @@ const discoverOlveraData = {
         ],
         images: [
             [
-                '/../../work/discover-olvera/broken-statues.png',
+                '/work/discover-olvera/broken-statues.png',
                 'A screen from the app showing an AR enhanced mural.',
                 'One of our new features for the mural was informative popovers.',
             ], 
@@ -207,27 +207,27 @@ const discoverOlveraData = {
         ],
         images: [
             [
-                '/../../work/discover-olvera/color-palette.png',
+                '/work/discover-olvera/color-palette.png',
                 'The final logo, animated with After Effects',
                 'The final animated logo',
             ], 
             [
-                '/../../work/discover-olvera/color-palette.png',
+                '/work/discover-olvera/color-palette.png',
                 'Discover Olvera color palette',
                 'Color palette for the brand',
             ], 
             [
-                '/../../work/discover-olvera/ui-colors.png',
+                '/work/discover-olvera/ui-colors.png',
                 'Color palette for the UI',
                 'Color palette for the app\'s UI',
             ],
             [
-                '/../../work/discover-olvera/olvera-logo-thumbnails.png',
+                '/work/discover-olvera/olvera-logo-thumbnails.png',
                 'Thumbnail sketches for the logo',
                 'An early set of logo ideas',
             ],
             [
-                '/../../work/discover-olvera/figma-logo-ideation.png',
+                '/work/discover-olvera/figma-logo-ideation.png',
                 'Digital logo ideas',
                 'Later refinements of the wordmark',
             ]
@@ -246,7 +246,7 @@ const discoverOlveraData = {
         ],
         images: [
             [
-                '/../../work/discover-olvera/team-photo.png',
+                '/work/discover-olvera/team-photo.png',
                 'Team Photo',
                 'Tony, Erick, and I Discovering Olvera',
             ],

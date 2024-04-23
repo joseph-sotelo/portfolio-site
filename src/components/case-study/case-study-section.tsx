@@ -24,8 +24,8 @@ export default function CaseStudySection({sectionHeader, mainText, bullets, imag
                     </p>
                     {bullets && (
                         <ul className='mt-6 pl-[14px]'>
-                            {bullets.map((bullet) => (
-                                <li className='list-disc mb-6'>
+                            {bullets.map((bullet, index) => (
+                                <li key ={index} className='list-disc mb-6'>
                                     {bullet}
                                 </li>
                             ))}
@@ -37,8 +37,8 @@ export default function CaseStudySection({sectionHeader, mainText, bullets, imag
                 {images.length >= 2 &&(
                     <Carousel>
                     <CarouselContent>
-                        {images.map((image) =>(
-                                <CarouselItem >
+                        {images.map((image, index) =>(
+                                <CarouselItem key={index}>
                                     <ImageAndCaption props={image}></ImageAndCaption>
                                 </CarouselItem>
                         ))}
