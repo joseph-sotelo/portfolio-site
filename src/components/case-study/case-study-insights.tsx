@@ -21,8 +21,8 @@ export default function CaseStudyInsights({title, caption, insights}: {title: st
                 </h6>
             )}
             <div className='flex flex-row gap-[1.5rem]'>
-                {insights.map((insight)=>
-                            <Card>
+                {insights.map((insight, index)=>
+                            <Card key={index}>
                             <CardHeader>
                                 {insight.length >= 2?(
                                     <>
@@ -30,7 +30,7 @@ export default function CaseStudyInsights({title, caption, insights}: {title: st
                                         <CardDescription>{insight[1]}</CardDescription>
                                     </>
                                 ): (
-                                    <CardDescription>{insight[0]}</CardDescription>  
+                                    <CardDescription key={index}>{insight[0]}</CardDescription>  
                                 ) 
                                 }
                             </CardHeader>
