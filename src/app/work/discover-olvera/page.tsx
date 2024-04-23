@@ -246,7 +246,7 @@ const discoverOlveraData = {
         ],
         images: [
             [
-                '/../../work/discover-olvera/team-photo.png',
+                '/../../static/images/team-photo.png',
                 'Team Photo',
                 'Tony, Erick, and I Discovering Olvera',
             ],
