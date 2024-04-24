@@ -1,247 +1,276 @@
 {
-    "hero": {
-        "title": "Discover Olvera",
-        "tagline": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using AR.",
-        "occasion": "IxD Studio 1 // Fall 2023",
-        "image": "/work/discover-olvera/discover-olvera-cover.png"
-    },
-    "overview": {
-        "Challenge": "Olvera Street's businesses are suffering due to a lingering, pandemic-enduced drop in foot traffic",
-        "Process": "Ethnography, Netnography, Prototype, Test, Refine",
-        "Role": "Design Research, Branding, UX Design"
-    },
-    "observations": {
-        "sectionHeader": "Ethnography: Observations",
-        "mainText": "Our first form of research was to visit Olvera Street in person. The goal was to unearth problems through observation",
-        "bullets": [
-            "Six shops and one popular resturant were closed down.",
-            "There were many transient individuals within Olvera Street, and we witnessed an attempted theft - perhaps they feel emboldened to steal because of the low foot traffic.",
-            "Olvera Street is part of a slightly larger area known as Placita Olvera, which houses five small museums. These Museums are under-promoted, gaining most visitors through outdoor signs, scheduled visits from guided tours, and seasonal events."
-        ],
-        "images": [
-            [
-                "/work/discover-olvera/olvera-empty.png",
-                "Vacant shops at Olvera Street",
-                "Vacant shops at Olvera Street"           
+    "sections": [
+        {
+            "key": "hero",
+            "componentType": "caseStudyHero",
+            "props": {
+                "title": "Discover Olvera",
+                "tagline": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using AR.",
+                "occasion": "IxD Studio 1 // Fall 2023",
+                "image": "/work/discover-olvera/discover-olvera-cover.png"
+            }
+        },
+        {
+            "key": "overview",
+            "componentType": "caseStudyOverview",
+            "props": {
+                "bullets": [
+                    [
+                        "Challenge",
+                        "Olvera Street's businesses are suffering due to a lingering, pandemic-enduced drop in foot traffic"
+                    ],
+                    [
+                        "Process",
+                        "Ethnography, Netnography, Prototype, Test, Refine"
+                    ],
+                    [
+                        "Role",
+                        "Design Research, Branding, UX Design"
+                    ]
+                ]
+            }
+        },
+        {
+            "key": "observations",
+            "componentType": "caseStudySection",
+            "sectionHeader": "Ethnography: Observations",
+            "mainText": "Our first form of research was to visit Olvera Street in person. The goal was to unearth problems through observation",
+            "bullets": [
+                "Six shops and one popular resturant were closed down.",
+                "There were many transient individuals within Olvera Street, and we witnessed an attempted theft - perhaps they feel emboldened to steal because of the low foot traffic.",
+                "Olvera Street is part of a slightly larger area known as Placita Olvera, which houses five small museums. These Museums are under-promoted, gaining most visitors through outdoor signs, scheduled visits from guided tours, and seasonal events."
             ],
-            [
-                "/work/discover-olvera/firehouse-museum.png",
-                "Exterior view of the Firehouse Museum. It is an old-fashioned brick building in a cobblestone plaza",
-                "The Firehouse Museum, one of many hidden gems of Placita Olvera"
+            "images": [
+                [
+                    "/work/discover-olvera/olvera-empty.png",
+                    "Vacant shops at Olvera Street",
+                    "Vacant shops at Olvera Street"           
+                ],
+                [
+                    "/work/discover-olvera/firehouse-museum.png",
+                    "Exterior view of the Firehouse Museum. It is an old-fashioned brick building in a cobblestone plaza",
+                    "The Firehouse Museum, one of many hidden gems of Placita Olvera"
+                ]
             ]
-        ]
-    },
-    "interviews": {
-        "sectionHeader": "Ethnography: Interviews",
-        "mainText": "In addition to observations, we interviewed 7 vendors, 5 visitors, and 2 museum clerks.",
-        "bullets": [
-            "All vendors concurred that they have not recovered economically from Covid.",
-            "The Museums hae a lot to offer but are mainly promoted through entrance signage. They are hidden gems",            
-            "Frequent visitors tend to naturally promote Olvera street to their friends and family."
-        ],
-        "images": [
-            [
-                "/work/discover-olvera/museum-of-social-justice.png",
-                "Entrance to the Museum of Social Justice",
-                "Another one of Placita Olvera's hidden gems"
-            ], 
-            [
-                "/work/discover-olvera/mural-a.jpg",
-                "The mural 'America Tropical' by David Alfaro Siquieros",
-                "'America Tropical', a mural by David Alfaro Siquieros, lies right in the center of Olvera Street but can only be viewed from a one particular balcony"
+        },
+        {
+            "key": "interviews",
+            "componentType": "caseStudySection",
+            "sectionHeader": "Ethnography: Interviews",
+            "mainText": "In addition to observations, we interviewed 7 vendors, 5 visitors, and 2 museum clerks.",
+            "bullets": [
+                "All vendors concurred that they have not recovered economically from Covid.",
+                "The Museums hae a lot to offer but are mainly promoted through entrance signage. They are hidden gems",            
+                "Frequent visitors tend to naturally promote Olvera street to their friends and family."
+            ],
+            "images": [
+                [
+                    "/work/discover-olvera/museum-of-social-justice.png",
+                    "Entrance to the Museum of Social Justice",
+                    "Another one of Placita Olvera's hidden gems"
+                ], 
+                [
+                    "/work/discover-olvera/mural-a.jpg",
+                    "The mural 'America Tropical' by David Alfaro Siquieros",
+                    "'America Tropical', a mural by David Alfaro Siquieros, lies right in the center of Olvera Street but can only be viewed from a one particular balcony"
+                ]
             ]
-        ]
-    },
-    "interviewQuotes": {
-        "title": "Quotes",
-        "insights": [
-            [
-                "\\“We aren't 100% like we used to be. We need more promotions so that people realize Olvera Street is back open\\”"
+        },
+        {
+            "key": "netnography",
+            "componentType": "caseStudySection",
+            "sectionHeader": "Netnography",
+            "mainText": "Next, we took an in-depth look at the online presence of Olvera Street. We investigated what’s said about Olvera on Yelp, Tripadvisor, and in the news. We also looked what others have already done to solve similar challenges.",
+            "bullets": [
+                "The Met used an AR app to enhance artwork and draw the crowds back after Covid. Should we use AR to increase foot traffic at Olvera?",
+                "Placita Olvera has poor internet representation. For example, many shops are not represented on Google Maps",            
+                "We found qualitative data that confirmed our ethnography, such as the fact that businesses are currently down 30-60%",
+                "Journalist Javier Cabral suggests that leveraging social media could be a solution. How might this look in our project?"
             ],
-            [
-                "America Tropical",
-                "We prototyped three AR experiences, and the most delightful was the one that displayed America Tropical, a white-washed mural, in its original colors."
-            ],
-            [
-                "Emphasize AR",
-                "The user flow needs to culminate in sharing AR experiences, rather than just having them."
+            "images": [
+                [
+                    "/work/discover-olvera/chroma.png",
+                    "Image of text reading 'Chroma: ancient sculpture in color' in front of a Sphinx sculpture",
+                    "Poster for Chroma AR by The MET"
+                ], 
+                [
+                    "/work/discover-olvera/google-maps.png",
+                    "Screenshot of Olvera Street on Google maps",
+                    "Many businesses at Olvera are not displayed on Google and Apple maps."
+                ]
             ]
-        ]
-    },
-    "netnography": {
-        "sectionHeader": "Netnography",
-        "mainText": "Next, we took an in-depth look at the online presence of Olvera Street. We investigated what’s said about Olvera on Yelp, Tripadvisor, and in the news. We also looked what others have already done to solve similar challenges.",
-        "bullets": [
-            "The Met used an AR app to enhance artwork and draw the crowds back after Covid. Should we use AR to increase foot traffic at Olvera?",
-            "Placita Olvera has poor internet representation. For example, many shops are not represented on Google Maps",            
-            "We found qualitative data that confirmed our ethnography, such as the fact that businesses are currently down 30-60%",
-            "Journalist Javier Cabral suggests that leveraging social media could be a solution. How might this look in our project?"
-        ],
-        "images": [
-            [
-                "/work/discover-olvera/chroma.png",
-                "Image of text reading 'Chroma: ancient sculpture in color' in front of a Sphinx sculpture",
-                "Poster for Chroma AR by The MET"
-            ], 
-            [
-                "/work/discover-olvera/google-maps.png",
-                "Screenshot of Olvera Street on Google maps",
-                "Many businesses at Olvera are not displayed on Google and Apple maps."
+        },
+        {
+            "key": "how-might-we",
+            "componentType": "caseStudyBigText",
+            "secondaryText": "After reviewing our data, a design direction emerged:",
+            "primaryText": "How might we leverage Olvera's hidden museums and it's small yet loyal customer base to increase foot traffic at Olvera Street?"
+        },
+        {
+            "key": "persona",
+            "componentType": "caseStudySection",
+            "sectionHeader": "Persona",
+            "mainText": "We created a persona named Jessica based on the visitors that we interviewed. Our design, whatever it would end up being, would focus on bringing her pysically to Olvera Street.",
+            "images": [
+                [
+                    "/work/discover-olvera/persona-left.png",
+                    "Screenshot of the Jessica Persona"
+                ], 
+                [
+                    "/work/discover-olvera/persona-right.png",
+                    "Screenshot of the Jessica Persona"
+                ]
             ]
-        ]
-    },
-    "howMightWe": {
-        "secondaryText": "After reviewing our data, a design direction emerged:",
-        "primaryText": "How might we leverage Olvera's hidden museums and it's small yet loyal customer base to increase foot traffic at Olvera Street?"
-    },
-    "persona": {
-        "sectionHeader": "Persona",
-        "mainText": "We created a persona named Jessica based on the visitors that we interviewed. Our design, whatever it would end up being, would focus on bringing her pysically to Olvera Street.",
-        "images": [
-            [
-                "/work/discover-olvera/persona-left.png",
-                "Screenshot of the Jessica Persona"
-            ], 
-            [
-                "/work/discover-olvera/persona-right.png",
-                "Screenshot of the Jessica Persona"
+        },
+        {
+            "key": "paper-prototype",
+            "componentType": "caseStudySection",
+            "sectionHeader": "Paper Prototype",
+            "mainText": "The first iteration of our solution was a system consisting of several digital and physical components.",
+            "bullets": [
+                "App: An app with a detailed map of Olvera’s attractions, as well as AR experiences.",
+                "Digital Displays: Users would have the opportunity to post photos of their experiences to digital displays on billboards in public.",            
+                "QR Codes: QR codes at Olvera street would have to be scanned to download the app and activate the AR experiences."
+            ],
+            "images": [
+                [
+                    "/work/discover-olvera/paper-prototype.png",
+                    "The app prototype, made of paper and lego",
+                    "Lego makes a great prototyping material!"
+                ], 
+                [
+                    "/work/discover-olvera/camera-sim.png",
+                    "The app prototype, made of paper and lego",
+                    "Simulating an AR-colorized mural"
+                ],
+                [
+                    "/work/discover-olvera/prototype-map.png",
+                    "The app prototype, made of paper and lego",
+                    "Simulating physical movement around the location"
+                ]
             ]
-        ]
-    },
-    "paperPrototype": {
-        "sectionHeader": "Paper Prototype",
-        "mainText": "The first iteration of our solution was a system consisting of several digital and physical components.",
-        "bullets": [
-            "App: An app with a detailed map of Olvera’s attractions, as well as AR experiences.",
-            "Digital Displays: Users would have the opportunity to post photos of their experiences to digital displays on billboards in public.",            
-            "QR Codes: QR codes at Olvera street would have to be scanned to download the app and activate the AR experiences."
-        ],
-        "images": [
-            [
-                "/work/discover-olvera/paper-prototype.png",
-                "The app prototype, made of paper and lego",
-                "Lego makes a great prototyping material!"
-            ], 
-            [
-                "/work/discover-olvera/camera-sim.png",
-                "The app prototype, made of paper and lego",
-                "Simulating an AR-colorized mural"
-            ],
-            [
-                "/work/discover-olvera/prototype-map.png",
-                "The app prototype, made of paper and lego",
-                "Simulating physical movement around the location"
+        },
+        {
+            "key": "prototype-insights",
+            "componentType": "caseStudyInsights",
+            "title": "Insights",
+            "caption": "Several usability tests of our paper prototype revealed these insights:",
+            "insights": [
+                [
+                    "Comfort Levels",
+                    "All of our participants said that they would be uncomfortable sharing their photos to public displays and billboards."
+                ],
+                [
+                    "America Tropical",
+                    "We prototyped three AR experiences, and the most delightful was the one that displayed America Tropical, a white-washed mural, in its original colors."
+                ],
+                [
+                    "Emphasize AR",
+                    "The user flow needs to culminate in sharing AR experiences, rather than just having them."
+                ]
             ]
-        ]
-    },
-    "prototypeInsights": {
-        "title": "Insights",
-        "caption": "Several usability tests of our paper prototype revealed these insights:",
-        "insights": [
-            [
-                "Comfort Levels",
-                "All of our participants said that they would be uncomfortable sharing their photos to public displays and billboards."
+        },
+        {
+            "key": "mid-fi-prototype",
+            "componentType": "caseStudySection",
+            "sectionHeader": "Mid-Fi Prototype",
+            "mainText": "We used our insights to design an interactive mid-fidelity prototype in Figma.",
+            "bullets": [
+                "We discarded the idea of sharing photos to public digital displays. Instead, we aimed to provoke users to share their experiences on their own social media. This would be done by rewarding users with camera filters for participtation in AR experiences.",
+                "We built out the AR mural feature to include a variety of interactions.",            
+                "We made the AR more prominent from the very beginning of the user journey"
             ],
-            [
-                "America Tropical",
-                "We prototyped three AR experiences, and the most delightful was the one that displayed America Tropical, a white-washed mural, in its original colors."
-            ],
-            [
-                "Emphasize AR",
-                "The user flow needs to culminate in sharing AR experiences, rather than just having them."
+            "images": [
+                [
+                    "/work/discover-olvera/broken-statues.png",
+                    "A screen from the app showing an AR enhanced mural.",
+                    "One of our new features for the mural was informative popovers."
+                ] 
             ]
-        ]
-    },
-    "midFiPrototype": {
-        "sectionHeader": "Mid-Fi Prototype",
-        "mainText": "We used our insights to design an interactive mid-fidelity prototype in Figma.",
-        "bullets": [
-            "We discarded the idea of sharing photos to public digital displays. Instead, we aimed to provoke users to share their experiences on their own social media. This would be done by rewarding users with camera filters for participtation in AR experiences.",
-            "We built out the AR mural feature to include a variety of interactions.",            
-            "We made the AR more prominent from the very beginning of the user journey"
-        ],
-        "images": [
-            [
-                "/work/discover-olvera/broken-statues.png",
-                "A screen from the app showing an AR enhanced mural.",
-                "One of our new features for the mural was informative popovers."
-            ] 
-        ]
-    },
-    "midFiInsights": {
-        "title": "Insights",
-        "caption": "Several usability tests of our first Figma prototype revealed these insights:",
-        "insights": [
-            [
-                "Tutorial",
-                "Many of the participants in our digital usability tests suggested including some kind of tutorial or abundance of tooltips."            
-            ],
-            [
-                "Simplify",
-                "Several participants mentioned that there were too many clicks in the map and the tutorial"            
-            ],
-            [
-                "Delighted by AR",
-                "Our participants cherished all of the new AR mural features, suggesting that this formula be applied to other muesum exhibits at Olvera."            
-            ],
-            [
-                "Be careful about Spanish phrases",
-                "Our prototype had some phrases like 'Vamos!'. Some participants said they didn't understand what these phrases meant and that they would look for a way to switch to English."
+        },
+        {
+            "key": "mid-fi-insights",
+            "componentType": "caseStudyInsights",
+            "title": "Insights",
+            "caption": "Several usability tests of our first Figma prototype revealed these insights:",
+            "insights": [
+                [
+                    "Tutorial",
+                    "Many of the participants in our digital usability tests suggested including some kind of tutorial or abundance of tooltips."            
+                ],
+                [
+                    "Simplify",
+                    "Several participants mentioned that there were too many clicks in the map and the tutorial"            
+                ],
+                [
+                    "Delighted by AR",
+                    "Our participants cherished all of the new AR mural features, suggesting that this formula be applied to other muesum exhibits at Olvera."            
+                ],
+                [
+                    "Be careful about Spanish phrases",
+                    "Our prototype had some phrases like 'Vamos!'. Some participants said they didn't understand what these phrases meant and that they would look for a way to switch to English."
+                ]
             ]
-        ]
-    },
-    "branding": {
-        "sectionHeader": "Branding",
-        "mainText": "I designed all aspects of the brand with feedback from my team. Like the structure and UI of the app, the branding went through a sustained iterative process.",
-        "bullets": [
-            "The interviews with vendors had revealed that Dia de los Muertos, as well as the movie 'Coco' generated a lot of foot traffic. We chose a style that was reminiscent of these themes, using festive colors contrasted by dark backgrounds.",
-            "Through Figma’s Material Theme Builder plugin, I was able to enter our colors and quickly customize a UI kit for our Hi-Fi wireframes."           
-        ],
-        "images": [
-            [
-                "/work/discover-olvera/color-palette.png",
-                "The final logo, animated with After Effects",
-                "The final animated logo"
-            ], 
-            [
-                "/work/discover-olvera/color-palette.png",
-                "Discover Olvera color palette",
-                "Color palette for the brand"
-            ], 
-            [
-                "/work/discover-olvera/ui-colors.png",
-                "Color palette for the UI",
-                "Color palette for the app's UI"
+        },
+        {   
+            "key": "branding",
+            "componentType": "caseStudySection",
+            "sectionHeader": "Branding",
+            "mainText": "I designed all aspects of the brand with feedback from my team. Like the structure and UI of the app, the branding went through a sustained iterative process.",
+            "bullets": [
+                "The interviews with vendors had revealed that Dia de los Muertos, as well as the movie 'Coco' generated a lot of foot traffic. We chose a style that was reminiscent of these themes, using festive colors contrasted by dark backgrounds.",
+                "Through Figma’s Material Theme Builder plugin, I was able to enter our colors and quickly customize a UI kit for our Hi-Fi wireframes."           
             ],
-            [
-                "/work/discover-olvera/olvera-logo-thumbnails.png",
-                "Thumbnail sketches for the logo",
-                "An early set of logo ideas"
+            "images": [
+                [
+                    "/work/discover-olvera/color-palette.png",
+                    "The final logo, animated with After Effects",
+                    "The final animated logo"
+                ], 
+                [
+                    "/work/discover-olvera/color-palette.png",
+                    "Discover Olvera color palette",
+                    "Color palette for the brand"
+                ], 
+                [
+                    "/work/discover-olvera/ui-colors.png",
+                    "Color palette for the UI",
+                    "Color palette for the app's UI"
+                ],
+                [
+                    "/work/discover-olvera/olvera-logo-thumbnails.png",
+                    "Thumbnail sketches for the logo",
+                    "An early set of logo ideas"
+                ],
+                [
+                    "/work/discover-olvera/figma-logo-ideation.png",
+                    "Digital logo ideas",
+                    "Later refinements of the wordmark"
+                ]
+            ]
+        },
+        {
+            "key": "hi-fi-prototype",
+            "componentType": "caseStudyVideo",
+            "header": "Hi-Fi Prototype and user story",
+            "mainText": "Below is our final deliverable - a video showcasing our hi-fi protoype through a user story. The animated infographics at the beginning were created by myself in After Effects.",
+            "src": "https://www.youtube.com/embed/ZsmuhoPbTFE?si=KM_yda74JZBiBpgW"
+        },
+        {
+            "key": "reflection",
+            "componentType": "caseStudySection",
+            "sectionHeader": "Reflection",
+            "bullets": [
+                "This was, by far, the most research-intensive project I’ve done so far. I got to practice familiar research methods and learn a new one - ethnography. I am more confident now in my ability to design a research program and execute it, tailored to the needs of the project.",
+                "We made use of one another’s varied skillsets to share the load in a productive way. I will be looking for this kind of opportunity in future teams."
             ],
-            [
-                "/work/discover-olvera/figma-logo-ideation.png",
-                "Digital logo ideas",
-                "Later refinements of the wordmark"
+            "images": [
+                [
+                    "/work/discover-olvera/team-photo.png",
+                    "Team Photo",
+                    "Tony, Erick, and I Discovering Olvera"
+                ]
             ]
-        ]
-    },
-    "hiFiPrototype": {
-        "header": "Hi-Fi Prototype and user story",
-        "mainText": "Below is our final deliverable - a video showcasing our hi-fi protoype through a user story. The animated infographics at the beginning were created by myself in After Effects.",
-        "src": "https://www.youtube.com/embed/ZsmuhoPbTFE?si=KM_yda74JZBiBpgW"
-    },
-    "reflection": {
-        "sectionHeader": "Reflection",
-        "bullets": [
-            "This was, by far, the most research-intensive project I’ve done so far. I got to practice familiar research methods and learn a new one - ethnography. I am more confident now in my ability to design a research program and execute it, tailored to the needs of the project.",
-            "We made use of one another’s varied skillsets to share the load in a productive way. I will be looking for this kind of opportunity in future teams."
-        ],
-        "images": [
-            [
-                "/work/discover-olvera/team-photo.png",
-                "Team Photo",
-                "Tony, Erick, and I Discovering Olvera"
-            ]
-        ]
-    }
+        }
+    ]
 }
