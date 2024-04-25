@@ -1,6 +1,7 @@
 'use client'
 
-export default function CaseStudyOverview({props}: {props: object}){
+export default function CaseStudyOverview({props}){
+    const bullets = props.bullets;
 
     return(
         <div className='w-[70vw] ml-auto mr-auto mt-12 mb-12'>
@@ -8,17 +9,19 @@ export default function CaseStudyOverview({props}: {props: object}){
                 Overview
             </h2>
             <dl>
-                {Object.entries(props).map(([key, value]) =>
+                {bullets.map((bullet, index) =>
+                <div key={index}>
                     <>
                         <dt>
                             <strong>
-                                {key}:
+                                {bullet[0]}:
                             </strong>
                         </dt>
                         <dd>
-                            {value}
+                            {bullet[1]}
                         </dd>
                     </>
+                </div>
                 )}
             </dl>
         </div>
