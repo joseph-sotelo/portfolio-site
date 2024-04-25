@@ -11,7 +11,8 @@ import CaseStudyVideo from '@/components/case-study/case-study-video';
 export default async function Page() {
     const file = await fs.readFile(process.cwd() + '/src/app/content/case-studies.json', 'utf8');
     const data = JSON.parse(file);
-    const sections = data.sections;
+    const discoverOlvera = data[0];
+    const sections = discoverOlvera.sections;
     const sectionsLength = sections.length -1;
     
     return(
@@ -23,7 +24,7 @@ export default async function Page() {
                             <div key={index}>
                                 <CaseStudyHero props={section.props}/>
                                 {index !== sectionsLength && (
-                                        <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[70vw] m-auto'></div>
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[70vw] m-auto'></div>
                                 )}
                             </div>
                         );
@@ -33,7 +34,7 @@ export default async function Page() {
                             <div key={index}>
                                 <CaseStudyOverview props={section.props}/>
                                 {index !== sectionsLength && (
-                                        <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[70vw] m-auto'></div>
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[70vw] m-auto'></div>
                                 )}
                             </div>
                         );
@@ -43,7 +44,7 @@ export default async function Page() {
                             <div key={index}>
                                 <CaseStudySection {...section}/>
                                 {index !== sectionsLength && (
-                                        <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[70vw] m-auto'></div>
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[70vw] m-auto'></div>
                                 )}
                             </div>
                         );
@@ -53,7 +54,7 @@ export default async function Page() {
                             <div key={index}>
                                 <CaseStudyBigImage {...section}/>
                                 {index !== sectionsLength && (
-                                        <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[70vw] m-auto'></div>
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[70vw] m-auto'></div>
                                 )}
                             </div>
                         );
@@ -63,7 +64,7 @@ export default async function Page() {
                             <div key={index}>
                                 <CaseStudyBigText {...section}/>
                                 {index !== sectionsLength && (
-                                        <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[70vw] m-auto'></div>
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[70vw] m-auto'></div>
                                 )}
                             </div>
                         );
@@ -73,7 +74,7 @@ export default async function Page() {
                             <div key={index}>
                                 <CaseStudyInsights {...section}/>
                                 {index !== sectionsLength && (
-                                        <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[70vw] m-auto'></div>
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[70vw] m-auto'></div>
                                 )}
                             </div>
                         );
@@ -83,7 +84,7 @@ export default async function Page() {
                             <div key={index}>
                                 <CaseStudyVideo {...section}/>
                                 {index !== sectionsLength && (
-                                        <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[70vw] m-auto'></div>
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[70vw] m-auto'></div>
                                 )}
                             </div>
                         );
