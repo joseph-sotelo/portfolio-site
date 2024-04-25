@@ -26,18 +26,6 @@ const articipateData = {
 export default function Page() {
     return(
         <div className='p-[10vw]'>
-            <div>
-                <CaseStudyHero {...articipateData.hero}/>
-                <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[70vw] m-auto'></div>
-            </div>
-            <div>
-                <CaseStudyOverview props={articipateData.overview}/>
-                <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[70vw] m-auto'></div>
-            </div>
-            <div>
-                {/* <CaseStudySection {...articipateData.interviews}/>   */}
-                <div className='mt-[6rem] mb-[6rem] bg-primary h-[1px] w-[70vw] m-auto'></div>
-            </div>
         </div>
     )
 }
