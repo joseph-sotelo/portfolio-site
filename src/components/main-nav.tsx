@@ -8,14 +8,15 @@ import {
     NavigationMenuList,
     NavigationMenuTrigger,
     NavigationMenuViewport,
+    navigationMenuTriggerStyle
   } from "@/components/ui/navigation-menu"
-  import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
+  
   import Link from "next/link";
 
 export default function MainNav() {
     return(
-        <NavigationMenu>
-            <NavigationMenuList>
+        <NavigationMenu orientation='vertical'>
+            <NavigationMenuList className='gap-[1rem]'>
                 <NavigationMenuItem>
                     <Link href="/" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>

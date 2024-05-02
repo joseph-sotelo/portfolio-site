@@ -22,7 +22,7 @@ export default function Page(){
             </h1>
             <div className='flex justify-between ml-auto mr-auto mt-12 mb-12'>
                 <div id='left' className='w-[25vw] mt-auto mb-auto'>
-                <Image src='/about/informal_portrait_1.png' alt='Photo of Joseph Sotelo' width='375' height='375'>
+                <Image src='/about/business_portrait_small.jpg' alt='Photo of Joseph Sotelo' width='375' height='375'>
                     </Image>
                 </div>
                 <div id='right' className='w-[35vw]'>

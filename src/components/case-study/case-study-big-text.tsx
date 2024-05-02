@@ -1,8 +1,8 @@
 'use client'
 
-export default function CaseStudyBigText({secondaryText, primaryText}: {secondaryText: string, primaryText: string}){
+export default function CaseStudyBigText({secondaryText, primaryText}: {secondaryText: string | undefined, primaryText: string | undefined}){
     return(
-        <div className=' w-[70vw] ml-auto mr-auto mt-12 mb-12'>
+        <div className='mt-12 mb-12'>
             <h6 className='mb-[1rem]'>
                 {secondaryText}
             </h6>
