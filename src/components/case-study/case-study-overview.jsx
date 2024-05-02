@@ -1,11 +1,12 @@
 'use client'
+import Image from "next/image";
 
 export default function CaseStudyOverview({props}){
     const bullets = props.bullets;
 
     return(
-        <div className='mt-12 mb-12'>
-             <div id='hero' className='flex justify-between mt-12 mb-12'>
+        <div className='flex justify-between mt-12 mb-12'>
+             <div id='left' className='w-[28vw] mt-auto mb-auto'>
                 <h2 className='mb-[1rem]'>
                     Overview
                 </h2>
