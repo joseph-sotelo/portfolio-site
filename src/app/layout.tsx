@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Roboto_Mono as FontSans } from 'next/font/google'
 import './globals.css'
-import MainNav from '../components/main-nav'
 
 import { cn } from "@/lib/utils"
  
@@ -26,9 +25,6 @@ export default function RootLayout({
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}>
-        {/* <div>
-          <MainNav />
-        </div> */}
         <div>
           {children}
         </div>

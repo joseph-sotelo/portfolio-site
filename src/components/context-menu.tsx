@@ -3,7 +3,7 @@ import MainNav from "./main-nav";
 type ContextMenu = {
     header: string,  
     subHeader: string,  
-    mainText: string, 
+    mainText?: string, 
     links?: string[]
 }
 
