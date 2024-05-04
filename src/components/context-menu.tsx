@@ -1,10 +1,12 @@
+'use client'
 import MainNav from "./main-nav";
+import { Separator } from "./ui/separator";
 
 type ContextMenu = {
     header: string,  
     subHeader: string,  
     mainText?: string, 
-    links?: string[]
+    links?: string[][]
 }
 
 export default function ContextMenu({props}: {props: ContextMenu}) {
@@ -12,6 +14,7 @@ export default function ContextMenu({props}: {props: ContextMenu}) {
         <div className='fixed h-[97.5vh] mt-0 w-[15vw] flex flex-col justify-between'>
         <div className='flex flex-col gap-[3rem] mt-[3rem]'>
             <MainNav/>
+            <Separator />
             <div>
                 <h5 className='text-right'>
                     {props.header}
@@ -23,6 +26,7 @@ export default function ContextMenu({props}: {props: ContextMenu}) {
                     {props.mainText}
                 </p>
             </div>
+            <Separator />
         </div>
         <small className='text-right'>
             All content &#169; 2024 Joseph Sotelo <br />
