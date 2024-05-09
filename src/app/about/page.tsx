@@ -7,6 +7,7 @@ import {
     AccordionTrigger,
   } from "@/components/ui/accordion"
 import CaseStudyBigImage from "@/components/case-study/case-study-big-image"
+import ContextMenu from "@/components/context-menu"
 
 const caseStudyImageProps = {
     src: '/about/data-selfie.png',
@@ -14,19 +15,39 @@ const caseStudyImageProps = {
     caption: '\'Data Selfie\' exercise for a class on interactive stotytelling // Fall 2023',
 }
 
+
+const contextMenu = {
+    props: {
+      header: 'About Me',
+      subHeader: 'Joey Sotelo',
+      mainText: 'Design Technologist',
+      links: [
+        [
+            'Linkedin',
+            'http://www.linkedin.com/in/joseph-sotelo-27bb82221'
+        ],
+        [
+            'Github',
+            'https://github.com/joseph-sotelo'
+        ]
+      ]
+    }
+  }
+
 export default function Page(){
     return(
-        <div className='w-[70vw] m-auto'>
-            <h1 className='mb-[1rem]'>
-              About Me
-            </h1>
-            <div className='flex justify-between ml-auto mr-auto mt-12 mb-12'>
-                <div id='left' className='w-[25vw] mt-auto mb-auto'>
-                <Image src='/about/informal_portrait_1.png' alt='Photo of Joseph Sotelo' width='375' height='375'>
+        <div className='flex flex-row gap-[3.5rem] w-[88vw] mx-auto'>
+            <div className='w-[15vw] h-screen'>
+                <ContextMenu props={contextMenu.props}></ContextMenu>
+            </div>
+            <div>
+            <div className='flex flex-row justify-between ml-auto mr-auto mt-12 mb-12 w-67vw'>
+                <div id='left' className='w-[28vw] mt-auto mb-auto'>
+                    <Image src='/about/business_portrait_small.jpg' alt='Photo of Joseph Sotelo' width='375' height='375'>
                     </Image>
                 </div>
                 <div id='right' className='w-[35vw]'>
-                <h2>
+                    <h2>
                         Hi!
                     </h2>
                     <p>
@@ -62,6 +83,7 @@ export default function Page(){
             </div>
             <div className='mt-24'>
                 <CaseStudyBigImage {...caseStudyImageProps}></CaseStudyBigImage>
+            </div>
             </div>
         </div>
       )

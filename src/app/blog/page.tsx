@@ -19,7 +19,7 @@ export default function Page(){
             <h6>
                 Heading 6
             </h6>
-            <p>
+            <p >
                 paragraph
             </p>
         </div>
