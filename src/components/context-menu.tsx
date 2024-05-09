@@ -28,6 +28,13 @@ export default function ContextMenu({props}: {props: ContextMenu}) {
             </div>
             <Separator />
         </div>
+        {props.links && (
+                    props.links.map((link, index) => 
+                        <div className='mt-[1rem]'>
+                            <a href={link[1]} target="_blank">{link[0]}</a>
+                        </div>
+                    )
+                )}
         <small className='text-right'>
             All content &#169; 2024 Joseph Sotelo <br />
             Site by @joseph-sotelo

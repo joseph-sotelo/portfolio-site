@@ -7,7 +7,7 @@ const contextMenu = {
   props: {
     header: 'My Work',
     subHeader: 'Joey Sotelo',
-    mainText: 'Human-Centered Designer'
+    mainText: 'Design Technologist'
   }
 }
 

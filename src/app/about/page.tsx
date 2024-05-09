@@ -20,20 +20,16 @@ const contextMenu = {
     props: {
       header: 'About Me',
       subHeader: 'Joey Sotelo',
-      mainText: 'Human-Centered Designer',
+      mainText: 'Design Technologist',
       links: [
         [
             'Linkedin',
-            ''
+            'http://www.linkedin.com/in/joseph-sotelo-27bb82221'
         ],
         [
             'Github',
-            ''
-        ],
-        [
-            'Resume',
-            ''
-        ],
+            'https://github.com/joseph-sotelo'
+        ]
       ]
     }
   }

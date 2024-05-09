@@ -110,6 +110,11 @@ p, li {
   font-weight: 400;
 }
 
+a {
+  font-size: .74rem;
+  font-weight: 400;
+}
+
 .p-small {
   font-size: .74rem;
   font-weight: 400;
