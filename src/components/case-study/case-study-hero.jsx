@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function CaseStudyHero({props}){
     return(
-        <div id='hero' className='flex justify-between w-[70vw] ml-auto mr-auto mt-12 mb-12'>
+        <div id='hero' className='flex justify-between mt-12 mb-12'>
             <div id='left' className='w-[28vw] mt-auto mb-auto'>
                 <h1 className='mb-[1rem]'>
                     {props.title}

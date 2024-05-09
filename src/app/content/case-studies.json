@@ -13,17 +13,14 @@
                 "User Story"
             ]
         },
+        "contextMenuData": {
+            "props": {
+                "header": "Discover Olvera",
+                "subHeader": "IxD Studio 1 // Fall 2023",
+                "mainText": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using augmented reality."
+            }
+        },
         "sections": [
-            {
-                "key": "hero",
-                "componentType": "caseStudyHero",
-                "props": {
-                    "title": "Discover Olvera",
-                    "tagline": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using AR.",
-                    "occasion": "IxD Studio 1 // Fall 2023",
-                    "image": "/work/discover-olvera/discover-olvera-cover.png"
-                }
-            },
             {
                 "key": "overview",
                 "componentType": "caseStudyOverview",
@@ -41,7 +38,8 @@
                             "Role",
                             "Design Research, Branding, UX Design"
                         ]
-                    ]
+                    ],
+                    "image": "/work/discover-olvera/discover-olvera-cover.png"
                 }
             },
             {
@@ -301,6 +299,12 @@
                 "User Story"
             ]
         },
+        "contextMenuData": {
+            "props": {
+                "header": "Discover Olvera",
+                "subHeader": "IxD Studio 1 // Fall 2023",
+                "mainText": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using AR."
+            }        },
         "sections": [
         
         ]
@@ -317,6 +321,12 @@
                 "Analog Art"
             ]
         },
+        "contextMenuData": {
+            "props": {
+                "header": "Discover Olvera",
+                "subHeader": "IxD Studio 1 // Fall 2023",
+                "mainText": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using AR."
+            }        },
         "sections": [
         
         ]

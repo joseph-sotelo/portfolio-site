@@ -9,9 +9,9 @@ import {
     CardTitle,
   } from "@/components/ui/card"
 
-export default function CaseStudyInsights({title, caption, insights}: {title: string, caption?: string, insights: string[][]}){
+export default function CaseStudyInsights({title, caption, insights}: {title: string | undefined, caption?: string, insights: string[][]}){
     return(
-        <div className='w-[70vw] ml-auto mr-auto mt-12 mb-12 flex-wrap'>
+        <div className='mt-12 mb-12 flex-wrap'>
             <h2 className='mb-[1rem]'>
                 {title}
             </h2>

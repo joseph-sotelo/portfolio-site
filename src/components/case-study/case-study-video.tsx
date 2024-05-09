@@ -1,9 +1,9 @@
 'use client'
 
-export default function CaseStudyVideo({header, mainText, src}: {header: string, mainText: string, src: string}){
+export default function CaseStudyVideo({header, mainText, src}: {header: string | undefined, mainText: string | undefined, src: string | undefined}){
 
     return(
-        <div className='w-[70vw] ml-auto mr-auto mt-12 mb-12'>
+        <div className='mt-12 mb-12'>
             <h2>
                 {header}
             </h2>

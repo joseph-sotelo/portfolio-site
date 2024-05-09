@@ -10,21 +10,27 @@ import {
     CarouselPrevious,
   } from "@/components/ui/carousel"
 
+  type caseStudySection = {
+    sectionHeader: string | undefined;
+    mainText: string | undefined;
+    bullets: string[] | undefined;
+    images: string[][];
+  }
 
-export default function CaseStudySection({sectionHeader, mainText, bullets, images}: {sectionHeader: string, mainText?: string, bullets?: string[], images: string[][]}){
+export default function CaseStudySection(props:caseStudySection){
     return(
-        <div className='flex justify-between w-[70vw] ml-auto mr-auto mt-12 mb-12'>
+        <div className='flex justify-between mt-24 mb-24'>
             <div id='left' className='w-[28vw] mt-auto mb-auto'>
                 <h2>
-                    {sectionHeader}
+                    {props.sectionHeader}
                 </h2>
                 <div>
                     <p className='mt-6'>
-                        {mainText}
+                        {props.mainText}
                     </p>
-                    {bullets && (
+                    {props.bullets && (
                         <ul className='mt-6 pl-[14px]'>
-                            {bullets.map((bullet, index) => (
+                            {props.bullets.map((bullet, index) => (
                                 <li key ={index} className='list-disc mb-6'>
                                     {bullet}
                                 </li>
@@ -34,10 +40,10 @@ export default function CaseStudySection({sectionHeader, mainText, bullets, imag
                 </div>
             </div>
             <div id='right' className='w-[35vw]'>
-                {images.length >= 2 &&(
+                {props.images.length >= 2 &&(
                     <Carousel>
                     <CarouselContent>
-                        {images.map((image, index) =>(
+                        {props.images.map((image, index) =>(
                                 <CarouselItem key={index}>
                                     <ImageAndCaption props={image}></ImageAndCaption>
                                 </CarouselItem>
@@ -47,8 +53,8 @@ export default function CaseStudySection({sectionHeader, mainText, bullets, imag
                     <CarouselNext />
                     </Carousel>
                 )}
-                {images.length == 1 && (
-                    <ImageAndCaption props={images[0]}></ImageAndCaption>
+                {props.images.length == 1 && (
+                    <ImageAndCaption props={props.images[0]}></ImageAndCaption>
                 )
                 }
             </div>
