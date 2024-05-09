@@ -11,18 +11,18 @@ type ContextMenu = {
 
 export default function ContextMenu({props}: {props: ContextMenu}) {
     return (
-        <div className='fixed h-[97.5vh] mt-0 w-[15vw] flex flex-col justify-between'>
+        <div className='fixed h-[97.5vh] mt-0 w-[15vw] flex flex-col justify-between text-right'>
         <div className='flex flex-col gap-[3rem] mt-[3rem]'>
             <MainNav/>
             <Separator />
             <div>
-                <h5 className='text-right'>
+                <h5>
                     {props.header}
                 </h5>
-                <p className='text-right mt-[1rem]'>
+                <p className='mt-[1rem]'>
                     {props.subHeader}
                 </p>
-                <p className='text-right mt-[1rem]'>
+                <p className='mt-[1rem]'>
                     {props.mainText}
                 </p>
             </div>
@@ -30,7 +30,7 @@ export default function ContextMenu({props}: {props: ContextMenu}) {
         </div>
         {props.links && (
                     props.links.map((link, index) => 
-                        <div className='mt-[1rem]'>
+                        <div key={index} className='mt-[1rem]'>
                             <a href={link[1]} target="_blank">{link[0]}</a>
                         </div>
                     )
