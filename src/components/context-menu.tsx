@@ -12,7 +12,7 @@ type ContextMenu = {
 export default function ContextMenu({props}: {props: ContextMenu}) {
     return (
         <div className='fixed h-[97.5vh] mt-0 w-[15vw] flex flex-col justify-between text-right'>
-            <div className='flex flex-col gap-[1.25rem] mt-[3.5rem]'>
+            <div className='flex flex-col gap-[1.25rem] mt-[3.36rem]'>
                 <MainNav/>
                 <Separator />
                 <div className='opacity-60'>
@@ -35,7 +35,7 @@ export default function ContextMenu({props}: {props: ContextMenu}) {
                 </div>
                 <Separator />
             </div>
-            <div className='p-small text-right'>
+            <div className='p-small text-right opacity-60'>
                 All content &#169; 2024 Joseph Sotelo <br />
                 Site by @joseph-sotelo
             </div>

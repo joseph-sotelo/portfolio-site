@@ -7,7 +7,7 @@
     --background: 53 100% 98%;
     --foreground: 244, 12%, 43%;
 
-    --card: 53 100% 98%;
+    --card: 51, 84%, 93%;
     --card-foreground: 159 20% 34%;
 
     --popover: 0 0% 100%;
@@ -83,6 +83,8 @@ h1 {
 h2 {
   font-size: 2.5rem;
   font-weight: 500;
+  line-height: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 h3 {

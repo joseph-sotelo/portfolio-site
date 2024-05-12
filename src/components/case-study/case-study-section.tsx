@@ -25,7 +25,7 @@ export default function CaseStudySection(props:caseStudySection){
                     {props.sectionHeader}
                 </h2>
                 <div>
-                    <p className='mt-6'>
+                    <p>
                         {props.mainText}
                     </p>
                     {props.bullets && (
