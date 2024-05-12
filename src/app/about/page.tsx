@@ -40,13 +40,13 @@ export default function Page(){
                 <ContextMenu props={contextMenu.props}></ContextMenu>
             </div>
             <div>
-            <div className='flex flex-row justify-between ml-auto mr-auto mt-12 mb-12 w-67vw'>
-                <div id='left' className='w-[28vw] mt-auto mb-auto'>
-                    <Image src='/about/business_portrait_small.jpg' alt='Photo of Joseph Sotelo' width='375' height='375'>
+            <div className='flex flex-row justify-start gap-12 ml-auto mr-auto mt-12 w-67vw'>
+                <div id='left' className='w-[300px] mt-auto mb-auto'>
+                    <Image src='/about/business_portrait_small.jpg' alt='Photo of Joseph Sotelo' width='300' height='300' className='border border-border'>
                     </Image>
                 </div>
-                <div id='right' className='w-[35vw]'>
-                    <h2>
+                <div id='right' className='w-[35vw] mt-[-.6rem]'>
+                    <h2 className='text-secondary-foreground'>
                         Hi!
                     </h2>
                     <p>
@@ -80,7 +80,8 @@ export default function Page(){
                     </Accordion>
                 </div>
             </div>
-            <div className='mt-24'>
+            <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] m-auto'></div>
+            <div>
                 <CaseStudyBigImage {...caseStudyImageProps}></CaseStudyBigImage>
             </div>
             </div>

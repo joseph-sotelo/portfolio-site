@@ -1,6 +1,7 @@
 'use client'
 import MainNav from "./main-nav";
 import { Separator } from "./ui/separator";
+import { ExternalLinkIcon } from "@radix-ui/react-icons";
 
 type ContextMenu = {
     header: string,  
@@ -12,7 +13,7 @@ type ContextMenu = {
 export default function ContextMenu({props}: {props: ContextMenu}) {
     return (
         <div className='fixed h-[97.5vh] mt-0 w-[15vw] flex flex-col justify-between text-right'>
-            <div className='flex flex-col gap-[1.25rem] mt-[3.36rem]'>
+            <div className='flex flex-col gap-[1.25rem] mt-[3rem]'>
                 <MainNav/>
                 <Separator />
                 <div className='opacity-60'>
@@ -27,8 +28,10 @@ export default function ContextMenu({props}: {props: ContextMenu}) {
                     </div>
                     {props.links && (
                     props.links.map((link, index) => 
-                        <div key={index} className='mt-[1.25rem]'>
-                            <a href={link[1]} target="_blank">{link[0]}</a>
+                        <div key={index} className='mt-[1.25rem] underline'>
+                            <a href={link[1]} target="_blank">
+                                {link[0]}
+                            </a>
                         </div>
                     )
                 )}

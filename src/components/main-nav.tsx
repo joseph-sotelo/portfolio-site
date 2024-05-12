@@ -14,7 +14,7 @@ import Link from "next/link";
 export default function MainNav() {
     return(
         <NavigationMenu orientation='vertical'>
-            <NavigationMenuList className='gap-[1rem]'>
+            <NavigationMenuList className='gap-6 mb-[.6rem]'>
                 <NavigationMenuItem>
                     <Link href="/" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
