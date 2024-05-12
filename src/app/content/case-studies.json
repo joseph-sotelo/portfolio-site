@@ -16,7 +16,7 @@
         "contextMenuData": {
             "props": {
                 "header": "Discover Olvera",
-                "subHeader": "IxD Studio 1 // Fall 2023",
+                "subHeader": "IXD STUDIO 1 // FALL 2023",
                 "mainText": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using augmented reality."
             }
         },
@@ -27,15 +27,15 @@
                 "props": {
                     "bullets": [
                         [
-                            "Challenge",
+                            "Challenge: ",
                             "Olvera Street's businesses are suffering due to a lingering, pandemic-enduced drop in foot traffic"
                         ],
                         [
-                            "Process",
+                            "Process: ",
                             "Ethnography, Netnography, Prototype, Test, Refine"
                         ],
                         [
-                            "Role",
+                            "Role: ",
                             "Design Research, Branding, UX Design"
                         ]
                     ],

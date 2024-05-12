@@ -12,7 +12,7 @@ import {
 export default function CaseStudyInsights({title, caption, insights}: {title: string | undefined, caption?: string, insights: string[][]}){
     return(
         <div className='mt-12 mb-12 flex-wrap'>
-            <h2 className='mb-[1rem]'>
+            <h2 className='text-secondary-foreground'>
                 {title}
             </h2>
             {caption && (

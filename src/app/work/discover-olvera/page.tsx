@@ -27,7 +27,7 @@ export default async function Page() {
                             <div key={index}>
                                 <CaseStudyOverview props={section.props}/>
                                 {index !== sectionsLength && (
-                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[67vw] m-auto'></div>
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] m-auto'></div>
                                 )}
                             </div>
                         )
@@ -39,7 +39,7 @@ export default async function Page() {
                                     <CaseStudySection sectionHeader={section.sectionHeader} mainText={section.mainText} bullets={section.bullets} images={section.images}/>
                                 )}
                                 {index !== sectionsLength && (
-                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[67vw] m-auto'></div>
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] m-auto'></div>
                                 )}
                             </div>
                         )
@@ -49,7 +49,7 @@ export default async function Page() {
                             <div key={index}>
                                 <CaseStudyVideo header={section.header} mainText={section.mainText} src={section.src}/>
                                 {index !== sectionsLength && (
-                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[67vw] m-auto'></div>
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] m-auto'></div>
                                 )}
                             </div>
                         )
@@ -59,7 +59,7 @@ export default async function Page() {
                             <div key={index}>
                                 <CaseStudyBigText secondaryText={section.secondaryText} primaryText={section.primaryText}/>
                                 {index !== sectionsLength && (
-                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[67vw] m-auto'></div>
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] m-auto'></div>
                                 )}
                             </div>
                         )
@@ -71,7 +71,7 @@ export default async function Page() {
                                 <CaseStudyInsights title={section.title} caption={section.caption} insights={section.insights}/>
                                 )}
                                 {index !== sectionsLength && (
-                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[2px] w-[67vw] m-auto'></div>
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] m-auto'></div>
                                 )}
                             </div>
                         ) 

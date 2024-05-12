@@ -4,11 +4,11 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
+    --background: 53 100% 98%;
+    --foreground: 245, 24%, 42%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card: 51, 84%, 93%;
+    --card-foreground: 159 20% 34%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
@@ -17,18 +17,18 @@
     --primary-foreground: 0 0% 98%;
 
     --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
+    --secondary-foreground: 0, 93%, 74%;
 
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
 
     --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
+    --accent-foreground: 244, 99%, 51%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 5.9% 90%;
+    --border: 245 17% 72%;
     --input: 240 5.9% 90%;
     --ring: 240 10% 3.9%;
 
@@ -76,22 +76,24 @@
 }
 
 h1 {
-  font-size: 2.986rem;
+  font-size: 3rem;
   font-weight: 500;
 }
 
 h2 {
-  font-size: 2.488rem;
-  font-weight: 500;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
-  font-size: 2.074rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 
 h4 {
-  font-size: 1.728rem;
+  font-size: 1.75rem;
   font-weight: 500;
 }
 
@@ -105,18 +107,21 @@ h6 {
  font-weight: 400;
 }
 
-p, li {
-  font-size: .9rem;
+p, li, dt, dl, ul {
+  line-height: 1.25rem;
+  font-size: .875rem;
   font-weight: 400;
 }
 
 a {
-  font-size: .74rem;
+  font-size: .75rem;
   font-weight: 400;
 }
 
 .p-small {
-  font-size: .74rem;
+  line-height: 1.25rem;
+  margin-top: 1.5rem;
+  font-size: .75rem;
   font-weight: 400;
 }
 
