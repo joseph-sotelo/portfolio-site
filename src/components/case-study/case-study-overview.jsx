@@ -6,26 +6,24 @@ export default function CaseStudyOverview({props}){
 
     return(
         <div className='flex justify-between mt-12 mb-12'>
-             <div id='left' className='w-[28vw] mt-auto mb-auto'>
-                <h2 className='mb-[1rem]'>
+             <div id='left' className='w-[28vw] mt-[11.35rem] mb-auto'>
+                <h2 className='mb-[1rem] text-secondary-foreground'>
                     Overview
                 </h2>
-                <dl>
+                <ul>
                     {bullets.map((bullet, index) =>
-                    <div key={index}>
+                    <div key={index} className='mb-[1.5rem]'>
                         <>
-                            <dt>
+                            <li>
                                 <strong>
-                                    {bullet[0]}:
+                                    {bullet[0]}
                                 </strong>
-                            </dt>
-                            <dd>
                                 {bullet[1]}
-                            </dd>
+                            </li>
                         </>
                     </div>
                     )}
-                </dl>
+                </ul>
              </div>
              <div id='right' className='w-[35vw]'>
                 <Image src={props.image} alt={`High fidelity mockups from the ${props.title} project`} width='600' height='600' className='mr-auto ml-auto'/>

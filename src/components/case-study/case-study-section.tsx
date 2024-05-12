@@ -21,7 +21,7 @@ export default function CaseStudySection(props:caseStudySection){
     return(
         <div className='flex justify-between mt-24 mb-24'>
             <div id='left' className='w-[28vw] mt-auto mb-auto'>
-                <h2>
+                <h2 className='text-secondary-foreground'>
                     {props.sectionHeader}
                 </h2>
                 <div>
@@ -31,7 +31,7 @@ export default function CaseStudySection(props:caseStudySection){
                     {props.bullets && (
                         <ul className='mt-6 pl-[14px]'>
                             {props.bullets.map((bullet, index) => (
-                                <li key ={index} className='list-disc mb-6'>
+                                <li key ={index} className='list-[square] mb-6'>
                                     {bullet}
                                 </li>
                             ))}

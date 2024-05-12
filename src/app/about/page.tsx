@@ -19,8 +19,7 @@ const caseStudyImageProps = {
 const contextMenu = {
     props: {
       header: 'About Me',
-      subHeader: 'Joey Sotelo',
-      mainText: 'Design Technologist',
+      subHeader: 'Joey Sotelo // Design Technologist',
       links: [
         [
             'Linkedin',

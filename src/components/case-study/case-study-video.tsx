@@ -4,7 +4,7 @@ export default function CaseStudyVideo({header, mainText, src}: {header: string 
 
     return(
         <div className='mt-12 mb-12'>
-            <h2>
+            <h2 className='text-secondary-foreground'>
                 {header}
             </h2>
             <p className='mt-6'>
