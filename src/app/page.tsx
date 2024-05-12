@@ -6,8 +6,7 @@ import ContextMenu from '@/components/context-menu';
 const contextMenu = {
   props: {
     header: 'My Work',
-    subHeader: 'Joey Sotelo',
-    mainText: 'Design Technologist'
+    subHeader: 'Joey Sotelo // Design Technologist',
   }
 }
 

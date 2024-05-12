@@ -4,7 +4,7 @@ export default function CaseStudyHero({props}){
     return(
         <div id='hero' className='flex justify-between mt-12 mb-12'>
             <div id='left' className='w-[28vw] mt-auto mb-auto'>
-                <h1 className='mb-[1rem]'>
+                <h1 className='mb-[1rem] text-secondary-foreground'>
                     {props.title}
                 </h1>
                 <h6 className='mb-[1rem]'>
