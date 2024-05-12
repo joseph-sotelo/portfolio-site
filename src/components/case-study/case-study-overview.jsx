@@ -6,8 +6,8 @@ export default function CaseStudyOverview({props}){
 
     return(
         <div className='flex justify-between mt-12 mb-12'>
-             <div id='left' className='w-[28vw] mt-[11.35rem] mb-auto'>
-                <h2 className='mb-[1rem] text-secondary-foreground'>
+             <div id='left' className='w-[28vw] mt-[11.45rem]'>
+                <h2 className='mb-[1.1rem] text-secondary-foreground'>
                     Overview
                 </h2>
                 <ul>
