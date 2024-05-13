@@ -12,7 +12,7 @@ type ContextMenu = {
 
 export default function ContextMenu({props}: {props: ContextMenu}) {
     return (
-        <div className='fixed h-full mt-0 w-[13.2vw] flex flex-col justify-between text-right'>
+        <div className='mx-auto sm:fixed h-full mt-0 w-[217px] flex flex-col justify-between text-right'>
             <div className='flex flex-col gap-[1.25rem] mt-[3rem]'>
                 <MainNav/>
                 <Separator className='opacity-60'/>

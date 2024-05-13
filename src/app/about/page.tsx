@@ -47,7 +47,7 @@ export default function Page(){
             </div>
             <div className='w-[56.7vw]'>
                 <div className='flex flex-row justify-between mt-12 w-[56.7vw]'>
-                    <div id='left' className='w-[35vw] mt-[-.6rem]'>
+                    <div id='left' className='w-[35vw] mt-[.6rem]'>
                         <h2 className='text-secondary-foreground'>
                             Hi!
                         </h2>

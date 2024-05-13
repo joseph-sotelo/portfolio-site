@@ -22,7 +22,7 @@
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
 
-    --accent: 240 4.8% 95.9%;
+    --accent: 258, 19%, 76%;
     --accent-foreground: 244, 99%, 51%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,7 +32,7 @@
     --input: 240 5.9% 90%;
     --ring: 240 10% 3.9%;
 
-    --radius: 0.5rem;
+    --radius: 0rem;
   }
 
   .dark {
@@ -84,7 +84,7 @@ h2 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 h3 {
@@ -120,7 +120,7 @@ a {
 
 .p-small {
   line-height: 1.25rem;
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
   font-size: .75rem;
   font-weight: 400;
 }

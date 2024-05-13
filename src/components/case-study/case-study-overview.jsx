@@ -12,7 +12,8 @@ export default function CaseStudyOverview({props}){
                 </h2>
                 <ul>
                     {bullets.map((bullet, index) =>
-                    <div key={index} className='mb-[1.5rem]'>
+                    <>
+                                        <div key={index}>
                         <>
                             <li>
                                 <strong>
@@ -22,6 +23,8 @@ export default function CaseStudyOverview({props}){
                             </li>
                         </>
                     </div>
+                    <br />
+                    </>
                     )}
                 </ul>
              </div>
