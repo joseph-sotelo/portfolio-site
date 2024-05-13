@@ -15,8 +15,8 @@ export default async function Page() {
     const contextMenu = discoverOlvera.contextMenuData;
     
     return(
-        <div className='flex flex-row gap-[3.5rem] w-[88vw] mx-auto'>
-            <div className='w-[15vw] h-screen'>
+        <div className='flex flex-row gap-14 w-[88vw] mx-auto'>
+            <div className='w-[13.2vw] h-screen'>
                 <ContextMenu props={contextMenu.props}></ContextMenu>
             </div>
             <div className='w-[67vw]'>

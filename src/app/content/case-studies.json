@@ -16,7 +16,10 @@
         "contextMenuData": {
             "props": {
                 "header": "Discover Olvera",
-                "subHeader": "IXD STUDIO 1 // FALL 2023",
+                "subHeader": [
+                    "IXD STUDIO 1",
+                    "FALL 2023"
+                ],
                 "mainText": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using augmented reality."
             }
         },
@@ -266,7 +269,7 @@
                 "componentType": "caseStudyVideo",
                 "header": "Hi-Fi Prototype and user story",
                 "mainText": "Below is our final deliverable - a video showcasing our hi-fi protoype through a user story. The animated infographics at the beginning were created by myself in After Effects.",
-                "src": "https://www.youtube.com/embed/ZsmuhoPbTFE?si=KM_yda74JZBiBpgW"
+                "src": "https:|www.youtube.com/embed/ZsmuhoPbTFE?si=KM_yda74JZBiBpgW"
             },
             {
                 "key": "reflection",
@@ -302,7 +305,7 @@
         "contextMenuData": {
             "props": {
                 "header": "Discover Olvera",
-                "subHeader": "IxD Studio 1 // Fall 2023",
+                "subHeader": ["IxD Studio 1 | Fall 2023"],
                 "mainText": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using AR."
             }        },
         "sections": [
@@ -324,7 +327,7 @@
         "contextMenuData": {
             "props": {
                 "header": "Discover Olvera",
-                "subHeader": "IxD Studio 1 // Fall 2023",
+                "subHeader": ["IxD Studio 1 | Fall 2023"],
                 "mainText": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using AR."
             }        },
         "sections": [

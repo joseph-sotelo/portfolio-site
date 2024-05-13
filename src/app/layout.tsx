@@ -32,7 +32,7 @@ export default function RootLayout({
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable
         )}>
-        <div>
+        <div className='px-[5.5vw]'>
           {children}
         </div>
       </body>

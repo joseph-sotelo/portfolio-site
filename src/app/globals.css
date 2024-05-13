@@ -125,6 +125,10 @@ a {
   font-weight: 400;
 }
 
+svg {
+  display: inline;
+}
+
 /* cards */
 
 #card-header{
