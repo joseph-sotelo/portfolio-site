@@ -39,7 +39,7 @@ export default function CaseStudySection(props:caseStudySection){
                     )}
                 </div>
             </div>
-            <div id='right' className='xl:w-[35vw]'>
+            <div id='right' className='mt-6 sl:mt-0 xl:w-[35vw]'>
                 {props.images.length >= 2 &&(
                     <Carousel>
                     <CarouselContent>

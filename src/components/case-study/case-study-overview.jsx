@@ -6,13 +6,13 @@ export default function CaseStudyOverview({props}){
 
     return(
         <div className='w-[67vw] flex flex-col xl:flex-row justify-between mb-12 mx-auto xl:ml-0'>
-             <div id='left' className='xl:w-[28vw] xl:mt-[11.45rem]'>
+             <div id='left' className='xl:w-[28vw] xl:mt-[11.25rem] mt-[.75rem]'>
                 <h2 className='text-secondary-foreground'>
                     Overview
                 </h2>
-                <ul>
+                <ul className='xl:mt-[-.1rem]'>
                 {bullets.map((bullet, index) =>
-                    <div key={index} className='mb-[1.5rem]'>
+                    <div key={index}>
                         <>
                             <li>
                                 <strong>
@@ -20,6 +20,7 @@ export default function CaseStudyOverview({props}){
                                 </strong>
                                 {bullet[1]}
                             </li>
+                            <br />
                         </>
                     </div>
                     )}

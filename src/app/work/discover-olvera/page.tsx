@@ -28,7 +28,7 @@ export default function Page() {
                     <ContextMenu props={contextMenu.props}></ContextMenu>
                 </div>
             </div>
-            <div className='mt-16 xl:mt-12 mb-24 sm:w-[60vw] lg:w-[75vw] sm:mt-12 grow-0 z-9'>
+            <div className='mt-16 xl:mt-12 sm:w-[60vw] lg:w-[75vw] sm:mt-12 grow-0 z-9'>
             {sections.map((section, index) => {
                 switch(section.componentType) {
                     case 'caseStudyOverview':

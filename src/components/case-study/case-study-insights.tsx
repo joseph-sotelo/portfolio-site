@@ -11,7 +11,7 @@ import {
 
 export default function CaseStudyInsights({title, caption, insights}: {title: string | undefined, caption?: string, insights: string[][]}){
     return(
-        <div className='my-12 flex-wrap xl:w-[67vw] mx-auto xl:ml-0'>
+        <div className='my-12 flex-wrap w-[67vw] mx-auto xl:ml-0'>
             <h2 className='text-secondary-foreground'>
                 {title}
             </h2>
@@ -20,9 +20,9 @@ export default function CaseStudyInsights({title, caption, insights}: {title: st
                     {caption}
                 </h6>
             )}
-            <div className='flex flex-col xl:flex-row gap-[1.5rem] flex-wrap'>
+            <div className='flex flex-row gap-[1.5rem] flex-wrap'>
                 {insights.map((insight, index)=>
-                            <Card key={index} className='min-w-[210px] max-w-[262px]'>
+                            <Card key={index} className='min-w-[210px] max-w-[262px] shadow'>
                             <CardHeader>
                                 {insight.length >= 2?(
                                     <>
