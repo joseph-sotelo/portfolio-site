@@ -32,7 +32,7 @@
     --input: 240 5.9% 90%;
     --ring: 240 10% 3.9%;
 
-    --radius: 0rem;
+    --radius: .75rem;
   }
 
   .dark {
@@ -122,6 +122,13 @@ a {
   line-height: 1.25rem;
   margin-top: 1.25rem;
   font-size: .75rem;
+  font-weight: 400;
+}
+
+.p-footer {
+  line-height: 1.25rem;
+  margin-top: 1.25rem;
+  font-size: .6rem;
   font-weight: 400;
 }
 
