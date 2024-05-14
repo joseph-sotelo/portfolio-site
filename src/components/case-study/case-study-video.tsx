@@ -3,7 +3,7 @@
 export default function CaseStudyVideo({header, mainText, src}: {header: string | undefined, mainText: string | undefined, src: string | undefined}){
 
     return(
-        <div className='mt-12 mb-12'>
+        <div className='mx-auto w-[67vw] mt-12 mb-12 xl:ml-0'>
             <h2 className='text-secondary-foreground'>
                 {header}
             </h2>
