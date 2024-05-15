@@ -4,10 +4,10 @@
 
 @layer base {
   :root {
-    --background: 53 100% 98%;
+    --background: 0, 0%, 100%;
     --foreground: 245, 24%, 42%;
-
-    --card: 51, 84%, 93%;
+    
+    --card: 53 100% 98%;
     --card-foreground: 159 20% 34%;
 
     --popover: 0 0% 100%;
@@ -115,7 +115,7 @@ h6 {
 p, li, dt, dl, ul {
   line-height: 1.25rem;
   font-size: .875rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 a {

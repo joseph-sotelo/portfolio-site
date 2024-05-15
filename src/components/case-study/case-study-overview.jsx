@@ -5,8 +5,8 @@ export default function CaseStudyOverview({props}){
     const bullets = props.bullets;
 
     return(
-        <div className='w-[67vw] flex flex-col xl:flex-row justify-between mb-12 mx-auto xl:ml-0'>
-             <div id='left' className='xl:w-[28vw] xl:mt-[11.25rem] mt-[.75rem]'>
+        <div className='w-[67vw] sm:w-[60vw] md:w-[67vw] flex flex-col xl:flex-row justify-between mb-12 mx-auto xl:ml-0'>
+             <div id='left' className='xl:w-[28vw] lg:mt-[11.25rem] mt-[.75rem]'>
                 <h2 className='text-secondary-foreground'>
                     Overview
                 </h2>
