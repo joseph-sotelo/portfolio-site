@@ -5,14 +5,14 @@ export default function CaseStudyOverview({props}){
     const bullets = props.bullets;
 
     return(
-        <div className='flex justify-between mt-12 mb-12'>
-             <div id='left' className='w-[28vw] mt-[11.45rem]'>
+        <div className='w-[67vw] sm:w-[60vw] md:w-[67vw] flex flex-col xl:flex-row justify-between mb-12 mx-auto xl:ml-0'>
+             <div id='left' className='xl:w-[28vw] lg:mt-[11.25rem] mt-[.75rem]'>
                 <h2 className='text-secondary-foreground'>
                     Overview
                 </h2>
-                <ul>
-                    {bullets.map((bullet, index) =>
-                    <div key={index} className='mb-[1.5rem]'>
+                <ul className='xl:mt-[-.1rem]'>
+                {bullets.map((bullet, index) =>
+                    <div key={index}>
                         <>
                             <li>
                                 <strong>
@@ -20,14 +20,17 @@ export default function CaseStudyOverview({props}){
                                 </strong>
                                 {bullet[1]}
                             </li>
+                            <br />
                         </>
                     </div>
                     )}
                 </ul>
              </div>
-             <div id='right' className='w-[35vw]'>
-                <Image src={props.image} alt={`High fidelity mockups from the ${props.title} project`} width='600' height='600' className='mr-auto ml-auto border border-border'/>
+             <div id='right' className='xl:w-[35vw]'>
+                <Image src={props.image} alt={`High fidelity mockups from the ${props.title} project`} width='600' height='600' className='mr-auto ml-auto border border-border w-full rounded-sm'/>
             </div>
         </div>
     )
 }
+
+// className=''

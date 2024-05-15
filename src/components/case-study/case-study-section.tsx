@@ -19,13 +19,13 @@ import {
 
 export default function CaseStudySection(props:caseStudySection){
     return(
-        <div className='flex justify-between mt-24 mb-24'>
-            <div id='left' className='w-[28vw] mt-auto mb-auto'>
+        <div className='w-[67vw] sm:w-[60vw] md:w-[67vw] flex flex-col xl:flex-row justify-between my-24 mx-auto xl:ml-0'>
+            <div id='left' className='my-auto sm:w-[58.5vw] xl:w-[25vw]'>
                 <h2 className='text-secondary-foreground'>
                     {props.sectionHeader}
                 </h2>
                 <div>
-                    <p>
+                    <p className='mb-6'>
                         {props.mainText}
                     </p>
                     {props.bullets && (
@@ -39,7 +39,7 @@ export default function CaseStudySection(props:caseStudySection){
                     )}
                 </div>
             </div>
-            <div id='right' className='w-[35vw]'>
+            <div id='right' className='mt-6 sm:mt-0 sm:w-[50vw] md:w-[67vw] sm:mx-auto xl:w-[35vw] xl:mr-0'>
                 {props.images.length >= 2 &&(
                     <Carousel>
                     <CarouselContent>

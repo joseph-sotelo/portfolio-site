@@ -1,0 +1,25 @@
+{
+    "work" : {
+        "props": {
+            "header": "Discover Olvera",
+            "subHeader": "IXD STUDIO 1 // FALL 2023",
+            "mainText": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using augmented reality."
+        }
+    },
+    "about": {
+        "props": {
+            "header": "About Me",
+            "subHeader": "Joey Sotelo // Design Technologist",
+            "links": [
+                [
+                    "Linkedin",
+                    "http://www.linkedin.com/in/joseph-sotelo-27bb82221"
+                ],
+                [
+                    "Github",
+                    "https://github.com/joseph-sotelo"
+                ]
+            ]
+        }
+    }
+}

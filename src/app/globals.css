@@ -4,10 +4,10 @@
 
 @layer base {
   :root {
-    --background: 53 100% 98%;
+    --background: 0, 0%, 100%;
     --foreground: 245, 24%, 42%;
-
-    --card: 51, 84%, 93%;
+    
+    --card: 53 100% 98%;
     --card-foreground: 159 20% 34%;
 
     --popover: 0 0% 100%;
@@ -22,7 +22,7 @@
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
 
-    --accent: 240 4.8% 95.9%;
+    --accent: 258, 19%, 76%;
     --accent-foreground: 244, 99%, 51%;
 
     --destructive: 0 84.2% 60.2%;
@@ -32,7 +32,7 @@
     --input: 240 5.9% 90%;
     --ring: 240 10% 3.9%;
 
-    --radius: 0.5rem;
+    --radius: .75rem;
   }
 
   .dark {
@@ -84,7 +84,7 @@ h2 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 3rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 h3 {
@@ -99,7 +99,12 @@ h4 {
 
 h5 {
   font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 500;
+}
+
+.leading-none {
+  line-height: 2rem;
 }
 
 h6 {
@@ -110,7 +115,7 @@ h6 {
 p, li, dt, dl, ul {
   line-height: 1.25rem;
   font-size: .875rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 a {
@@ -120,9 +125,20 @@ a {
 
 .p-small {
   line-height: 1.25rem;
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
   font-size: .75rem;
   font-weight: 400;
+}
+
+.p-footer {
+  line-height: 1.25rem;
+  margin-top: 1.25rem;
+  font-size: .6rem;
+  font-weight: 400;
+}
+
+svg {
+  display: inline;
 }
 
 /* cards */
