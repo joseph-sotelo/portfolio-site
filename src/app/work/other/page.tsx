@@ -4,19 +4,17 @@ import MobileMenu from '@/components/mobile-menu';
 
 import data from '@/app/content/case-studies.json'
 
-const scrollHeight = document.documentElement.scrollHeight;
+const other = data[2];
+const sections = other.sections;
+const sectionsLength = sections.length -1;
+const contextMenu = other.contextMenuData;
+var scrollHeight = 5000;
+
+if (typeof document !== 'undefined') {
+    scrollHeight = document.documentElement.scrollHeight;
+}
 
 export default function Page(){
-
-    const other = data[2];
-    const sections = other.sections;
-    const sectionsLength = sections.length -1;
-    const contextMenu = other.contextMenuData;
-    var scrollHeight = 5000;
-
-    if (typeof document !== 'undefined') {
-        scrollHeight = document.documentElement.scrollHeight;
-    }
         
         return(
             <div className='m-auto w-[90vw] sm:w-full sm:m-0 sm:flex justify-evenly'>

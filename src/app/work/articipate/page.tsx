@@ -4,7 +4,11 @@ import MobileMenu from '@/components/mobile-menu';
 
 import data from '@/app/content/case-studies.json'
 
-const scrollHeight = document.documentElement.scrollHeight;
+var scrollHeight = 5000;
+
+if (typeof document !== 'undefined') {
+    scrollHeight = document.documentElement.scrollHeight;
+}
 
 export default function Page(){
 
@@ -12,11 +16,6 @@ export default function Page(){
     const sections = articipate.sections;
     const sectionsLength = sections.length -1;
     const contextMenu = articipate.contextMenuData;
-    var scrollHeight = 5000;
-
-    if (typeof document !== 'undefined') {
-        scrollHeight = document.documentElement.scrollHeight;
-    }
         
         return(
             <div className='m-auto w-[90vw] sm:w-full sm:m-0 sm:flex justify-evenly'>
