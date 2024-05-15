@@ -34,7 +34,7 @@ const contextMenu = {
         ],
         [
             'Resume',
-            'https://github.com/joseph-sotelo'
+            'https://drive.google.com/file/d/1QOQX90k8UsTVoyWRSoy7191cTZCTMw4y/view?usp=sharing'
         ]
       ]
     }
@@ -101,9 +101,42 @@ export default function Page(){
                                     </p>                      
                                 </AccordionContent>
                             </AccordionItem>
+                            <AccordionItem value="item-4">
+                                <AccordionTrigger>
+                                    <p>
+                                        Education
+                                    </p>
+                                </AccordionTrigger>
+                                <AccordionContent>
+                                    <div>
+                                        <p>
+                                            B.S. Interaction Design
+                                        </p>
+                                        <span className='font-light'>
+                                            Anticipated Spring 2025
+                                        </span>  
+                                        <br />
+                                        <span className='font-light'>
+                                            Santa Monica College
+                                        </span>  
+                                    </div>
+                                    <div className='mt-4'>
+                                        <p>
+                                            A.S. Graphic Design
+                                        </p>
+                                        <span className='font-light'>
+                                            Completed Spring 2023
+                                        </span>
+                                        <br />
+                                        <span className='font-light'>
+                                            Santa Monica College
+                                        </span>    
+                                    </div>                 
+                                </AccordionContent>
+                            </AccordionItem>
                         </Accordion>
                     </div>
-                    <div id='right' className='w-full mt-6 sm:mt-0 md:w-[25vw] lg:w-[320px] md:mt-[4.6rem]'>
+                    <div id='right' className='w-full mt-6 md:w-[25vw] lg:w-[320px] md:mt-[4.6rem]'>
                         <Image src='/about/business_portrait_small.jpg' alt='Photo of Joseph Sotelo' width='300' height='300' className='w-full border border-border md:max-w-[320px]'>
                         </Image>
                     </div>

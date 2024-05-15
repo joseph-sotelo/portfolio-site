@@ -29,9 +29,11 @@ export default function ContextMenu({props}: {props: ContextMenu}) {
                             )
                         })}
                     </div>
-                    <div className='p-small'>
-                        {props.mainText}
-                    </div>
+                    {props.mainText && (
+                            <div className='p-small'>
+                                {props.mainText}
+                            </div>
+                    )}
                 </div>
                 <Separator className='opacity-60'/>
                 <div className='opacity-60'>
@@ -40,7 +42,7 @@ export default function ContextMenu({props}: {props: ContextMenu}) {
                         switch(link[0]) {
                             case 'LinkedIn':
                                 return (
-                                    <div key={index} className='mt-[1.25rem]'>
+                                    <div key={index}>
                                         <a href={link[1]} target="_blank" className='w-[15px]'>
                                             <LinkedInLogoIcon className='hover:text-accent-foreground hover:opacity-100 transition-colors w-6 h-6 opacity-60' />
                                         </a>
