@@ -12,7 +12,11 @@ const contextMenu = {
     }
     }
 
-const scrollHeight = document.documentElement.scrollHeight;
+var scrollHeight = 5000;
+
+if (typeof document !== 'undefined') {
+    scrollHeight = document.documentElement.scrollHeight;
+}
 
 export default function Page(){
         

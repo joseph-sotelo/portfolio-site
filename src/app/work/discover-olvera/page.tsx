@@ -16,14 +16,18 @@ export default function Page() {
     const sections = discoverOlvera.sections;
     const sectionsLength = sections.length -1;
     const contextMenu = discoverOlvera.contextMenuData;
-    const scrollHeight = document.documentElement.scrollHeight;
+    var scrollHeight = 5000;
+
+    if (typeof document !== 'undefined') {
+        scrollHeight = document.documentElement.scrollHeight;
+    }
     
     return(
         <div className='m-auto w-[90vw] sm:w-full sm:m-0 sm:flex justify-evenly'>
             <div className='sm:hidden z-10'>
                 <MobileMenu props={contextMenu.props}></MobileMenu>
             </div>
-            <div className={`hidden sm:block sm:w-[30vw] lg:w-[15vw] min-w-[217px] h-[${scrollHeight}] relative`}>
+            <div className={`hidden sm:block sm:w-[30vw] lg:w-[15vw] min-w-[217px] h-[${scrollHeight}px] relative`}>
                 <div id='context-menu-wrapper' className='sticky top-0 right-0 min-w-[217px] h-screen'>
                     <ContextMenu props={contextMenu.props}></ContextMenu>
                 </div>

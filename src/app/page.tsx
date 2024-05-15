@@ -15,7 +15,11 @@ const contextMenu = {
 
 export default function Work(){
 
-  const scrollHeight = document.documentElement.scrollHeight;
+  var scrollHeight = 5000;
+
+  if (typeof document !== 'undefined') {
+      scrollHeight = document.documentElement.scrollHeight;
+  }
 
   return(
     <div className='m-auto w-[90vw] sm:w-full sm:m-0 sm:flex justify-evenly'>

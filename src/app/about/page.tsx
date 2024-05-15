@@ -40,7 +40,11 @@ const contextMenu = {
     }
   }
 
-const scrollHeight = document.documentElement.scrollHeight;
+  var scrollHeight = 5000;
+
+  if (typeof document !== 'undefined') {
+      scrollHeight = document.documentElement.scrollHeight;
+  }
 
 // when you find a better pic of you, remove lg:w-[858px] and md:max-w-[320px]
 
