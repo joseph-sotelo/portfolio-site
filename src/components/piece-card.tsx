@@ -16,7 +16,7 @@ export default function PieceCard({name, image, page, labels}: {name: string, im
         <Link href={page}>
             <Card className='w-[90vw] sm:w-[50vw] md:w-[375px] shadow'>
                 <CardContent>
-                        <Image alt={`${name} cover image`} src={image} className='object-cover w-full h-full aspect-square' width='375' height='375'/>
+                        <Image alt={`${name} cover image`} src={image} className='object-cover w-full h-full aspect-square rounded-t-sm' width='375' height='375'/>
                 </CardContent>
                 <CardHeader id='card-header'>
                     <CardTitle>{name}</CardTitle>

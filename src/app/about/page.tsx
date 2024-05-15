@@ -137,7 +137,7 @@ export default function Page(){
                         </Accordion>
                     </div>
                     <div id='right' className='w-full mt-6 md:w-[25vw] lg:w-[320px] md:mt-[4.6rem]'>
-                        <Image src='/about/business_portrait_small.jpg' alt='Photo of Joseph Sotelo' width='300' height='300' className='w-full border border-border md:max-w-[320px]'>
+                        <Image src='/about/business_portrait_small.jpg' alt='Photo of Joseph Sotelo' width='300' height='300' className='w-full border border-border md:max-w-[320px] rounded-sm'>
                         </Image>
                     </div>
                 </div>

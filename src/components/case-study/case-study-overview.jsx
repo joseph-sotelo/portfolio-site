@@ -27,7 +27,7 @@ export default function CaseStudyOverview({props}){
                 </ul>
              </div>
              <div id='right' className='xl:w-[35vw]'>
-                <Image src={props.image} alt={`High fidelity mockups from the ${props.title} project`} width='600' height='600' className='mr-auto ml-auto border border-border w-full'/>
+                <Image src={props.image} alt={`High fidelity mockups from the ${props.title} project`} width='600' height='600' className='mr-auto ml-auto border border-border w-full rounded-sm'/>
             </div>
         </div>
     )

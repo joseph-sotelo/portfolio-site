@@ -1,31 +1,34 @@
 'use client'
+import ContextMenu from '@/components/context-menu';
+import MobileMenu from '@/components/mobile-menu';
 
-import CaseStudyHero from '@/components/case-study/case-study-hero';
-import CaseStudyOverview from '@/components/case-study/case-study-overview';
-import CaseStudySection from '@/components/case-study/case-study-section';
+import data from '@/app/content/case-studies.json'
 
-const articipateData = {
-    hero: {
-        title: 'Articipate',
-        tagline: 'A mobile app that uses community to stimulate and challenge visual artists',
-        occasion: 'Mobile Design // Spring 2021',
-        image: '/../../work/articipate/articipate-cover.png'
-    },
-    overview: {
-        Challenge: 'Visual Artists often lack the motivation and inspiration they need to thrive.',
-        Insight: 'Artists are commonly inspired by other artists.',
-        Solution: 'Articipate, an app in which users are given a daily prompt for a piece of art. Users can post their art for others to see and critique.',
-    },
-    interviews: {
-        sectionHeader: 'Interviews',
-        mainText: '',
-        image: '',
-    }
-}
+const scrollHeight = document.documentElement.scrollHeight;
 
-export default function Page() {
-    return(
-        <div className='p-[10vw]'>
-        </div>
-    )
+export default function Page(){
+
+    const articipate = data[1];
+    const sections = articipate.sections;
+    const sectionsLength = sections.length -1;
+    const contextMenu = articipate.contextMenuData;
+    const scrollHeight = document.documentElement.scrollHeight;
+        
+        return(
+            <div className='m-auto w-[90vw] sm:w-full sm:m-0 sm:flex justify-evenly'>
+                <div className='sm:hidden z-10'>
+                    <MobileMenu props={contextMenu.props}></MobileMenu>
+                </div>
+                <div className={`hidden sm:block sm:w-[30vw] lg:w-[15vw] min-w-[217px] h-[${scrollHeight}] relative`}>
+                    <div id='context-menu-wrapper' className='sticky top-0 right-0 min-w-[217px] h-screen'>
+                        <ContextMenu props={contextMenu.props}></ContextMenu>
+                    </div>
+                </div>
+                <div className='mt-16 xl:mt-12 sm:w-[60vw] lg:w-[75vw] sm:mt-12 grow-0 z-9'>
+                    <h1 className='opacity-20 mx-auto mt-[21vh]'>
+                        case study incoming
+                    </h1>
+                </div>
+            </div>
+        )
 }

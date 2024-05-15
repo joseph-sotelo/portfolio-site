@@ -37,6 +37,10 @@
                             "Ethnography, Netnography, Prototype, Test, Refine"
                         ],
                         [
+                            "Team: ",
+                            "Erick Olivares, Ian Goldstein, Tony Renoj, Myself"
+                        ],
+                        [
                             "Role: ",
                             "Design Research, Branding, UX Design"
                         ]
@@ -56,14 +60,14 @@
                 ],
                 "images": [
                     [
-                        "/work/discover-olvera/olvera-empty.png",
-                        "Vacant shops at Olvera Street",
-                        "Vacant shops at Olvera Street"           
-                    ],
-                    [
                         "/work/discover-olvera/firehouse-museum.png",
                         "Exterior view of the Firehouse Museum. It is an old-fashioned brick building in a cobblestone plaza",
                         "The Firehouse Museum, one of many hidden gems of Placita Olvera"
+                    ],
+                    [
+                        "/work/discover-olvera/olvera-empty.png",
+                        "Vacant shops at Olvera Street",
+                        "Vacant shops at Olvera Street"           
                     ]
                 ]
             },
@@ -74,7 +78,7 @@
                 "mainText": "In addition to observations, we interviewed 7 vendors, 5 visitors, and 2 museum clerks.",
                 "bullets": [
                     "All vendors concurred that they have not recovered economically from Covid.",
-                    "The Museums hae a lot to offer but are mainly promoted through entrance signage. They are hidden gems",            
+                    "The Museums have a lot to offer but are mainly promoted through entrance signage. They are hidden gems",            
                     "Frequent visitors tend to naturally promote Olvera street to their friends and family."
                 ],
                 "images": [
@@ -237,8 +241,8 @@
                 ],
                 "images": [
                     [
-                        "/work/discover-olvera/color-palette.png",
-                        "The final logo, animated with After Effects",
+                        "/work/discover-olvera/discover-olvera-logo.png",
+                        "The final logo",
                         "The final animated logo"
                     ], 
                     [
@@ -303,10 +307,10 @@
         },
         "contextMenuData": {
             "props": {
-                "header": "Discover Olvera",
-                "subHeader": ["IxD Studio 1 | Fall 2023"],
-                "mainText": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using AR."
-            }        },
+                "header": "Articipate",
+                "subHeader": ["IxD Studio 1 | Fall 2023"]
+            }
+        },
         "sections": [
         
         ]
@@ -325,10 +329,13 @@
         },
         "contextMenuData": {
             "props": {
-                "header": "Discover Olvera",
-                "subHeader": ["IxD Studio 1 | Fall 2023"],
-                "mainText": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using AR."
-            }        },
+                "header": "Other Skills",
+                "subHeader": [
+                    "Joey Sotelo",
+                    "Design Technologist"
+                ]
+            }        
+        },
         "sections": [
         
         ]
