@@ -21,7 +21,7 @@ export default function PieceCard({name, image, page, labels}: {name: string, im
                 <CardHeader id='card-header' className='px-4 py-3'>
                     <CardTitle>{name}</CardTitle>
                 </CardHeader>
-                <CardFooter className='w-full px-4 pb-4 hidden md:block'>
+                <CardFooter className='w-full px-3 pb-4 hidden md:block'>
                     <div className='w=[100%]'>
                         {
                             labels.map((label, index) =>

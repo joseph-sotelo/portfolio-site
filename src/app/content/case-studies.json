@@ -292,52 +292,97 @@
             }
         ]
     },
+
+
+
+
+
+
+
+
+
     {
         "cardProps": {
-            "name": "Articipate",
-            "image": "/work/articipate/articipate-cover.png",
-            "page": "/work/articipate",
+            "name": "VoxAI",
+            "image": "/work/voxai/voxai-cover.png",
+            "page": "/work/voxai",
             "labels": [
-                "Interviews",
-                "UX/UI",
-                "Usability Testing",
-                "Personas",
-                "User Story"
+                "UI for AI",
+                "Heuristics",
+                "Insight Sorting",
+                "Project Management",
+                "Accessibility"
             ]
         },
         "contextMenuData": {
             "props": {
-                "header": "Articipate",
-                "subHeader": ["IxD Studio 1 | Fall 2023"]
+                "header": "VoxAI",
+                "subHeader": [
+                    "IXD STUDIO 2",
+                    "Spring 2023"
+                ],
+                "mainText": "A mobile app and tablet case that improves communication for non-verbal autistic users."
             }
         },
         "sections": [
-        
-        ]
-    },
-    {
-        "cardProps": {
-            "name": "Other Stuff I Do",
-            "image": "/work/other/other-cover.png",
-            "page": "/work/other",
-            "labels": [
-                "Typography",
-                "Book Illustration",
-                "Digital Art",
-                "Analog Art"
-            ]
-        },
-        "contextMenuData": {
-            "props": {
-                "header": "Other Skills",
-                "subHeader": [
-                    "Joey Sotelo",
-                    "Design Technologist"
+            {
+                "key": "overview",
+                "componentType": "caseStudyOverview",
+                "props": {
+                    "bullets": [
+                        [
+                            "Users: ",
+                            "Young adults with non-verbal autism."
+                        ],
+                        [
+                            "User Pain Point: ",
+                            "AAC (Assistive + Augmentative Communication) devices often leave users unable to communicate as swiftly and personally as they need to in all contexts."
+                        ],
+                        [
+                            "Solution: ",
+                            "Use AI to enhance the standard AAC model."
+                        ],
+                        [
+                            "Team: ",
+                            "Thanh Quach, Birgess Weston,  Lois Kim, Myself"
+                        ],
+                        [
+                            "Role: ",
+                            "Project Manager, Lead UI Designer"
+                        ]
+                    ],
+                    "image": "/work/voxai/voxai-cover.png"
+                }
+            },
+            {   
+                "key": "expert interveiw",
+                "componentType": "caseStudySection",
+                "sectionHeader": "Expert Interveiw",
+                "mainText": "We kicked off our project with an interview of an expert in AAC tech, AnnMarie Pence. She is a speech and behavioral pathologist specializing in autism, and many of her pupils use AAC tablets and apps. She provided us with key information on the AAC landscape and common user pain points. ",                
+                "bullets": [
+                    "AAC apps facilitate communication for people with impaired speech due to autism, aphasia, stroke, or injury.",
+                    "AAC apps are essentially keyboards representing words rather than letters. This is because users often have difficulty reading as well.",
+                    "Once the user forms a desired sentence, the app can output it through an artificial voice.",
+                    "The output can be enhanced through specialized cases that have speakers and a rear-facing screen for displaying text."
+                    ],
+                "images": [
+                    [
+                        "/work/voxai/ann-marie-pence.png",
+                        "Ann-Marie Pence",
+                        "Ann-Marie Pence, speech and behavioral pathologist"
+                    ], 
+                    [
+                        "/work/voxai/proloquo-dark-mode.png",
+                        "Homepage of Proloquo, an industry leader in AAC tech.",
+                        "Homepage of Proloquo, an industry leader in AAC tech."
+                    ], 
+                    [
+                        "/work/voxai/tobii-dynavox.webp",
+                        "Tobii Dynavox iPad case with a rear-facing screen",
+                        "Tobii Dynavox makes AAc cases with rear-facing screens."
+                    ]
                 ]
-            }        
-        },
-        "sections": [
-        
+            }
         ]
     }
 ]
