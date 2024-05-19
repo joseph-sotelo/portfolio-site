@@ -355,7 +355,7 @@
                 }
             },
             {   
-                "key": "expert interveiw",
+                "key": "expert-interveiw",
                 "componentType": "caseStudySection",
                 "sectionHeader": "Expert Interveiw",
                 "mainText": "We kicked off our project with an interview of an expert in AAC tech, AnnMarie Pence. She is a speech and behavioral pathologist specializing in autism, and many of her pupils use AAC tablets and apps. She provided us with key information on the AAC landscape and common user pain points. ",                
@@ -382,7 +382,69 @@
                         "Tobii Dynavox makes AAc cases with rear-facing screens."
                     ]
                 ]
+            },
+            {
+                "key": "pain-points",
+                "componentType": "caseStudyInsights",
+                "title": "Pain Points",
+                "caption": "Common pain points for a non-verbal autistic user:",
+                "insights": [
+                    [
+                        "Too Slow",
+                        "Conversations held using AAC apps tend to be too slow because it takes time to find the right words within the app. Finding the right word is much like digging through folders in a computer’s file system."                    
+                    ],
+                    [
+                        "Lack of personal touch",
+                        "While users have some customizability over the vocal output, it sounds monotone and artificial. Users desire to use slang and emotional tones."                    
+                    ],
+                    [
+                        "Dependence",
+                        "Users can often only communicate with caregivers and people who understand AAC apps. Non-familar listeners often walk away from the conversation before it is over because the user can take a long time to respond."
+                    ],
+                    [
+                        "Rigidity",
+                        "Default words do not accommodate peculiar situations. If a user knows they are going to need a ‘fringe word’, they need to make a custom button ahead of time. Unexpected necessity of fringe words stalls conversations."
+                    ]
+                ]
+            },
+            {
+                "key": "how-might-we",
+                "componentType": "caseStudyBigText",
+                "secondaryText": "Based on our research, we saw a clear design direction:",
+                "primaryText": "How might we enhance the standard AAC model to help young adults with non-verbal autism communicate more swiftly, personally, independently, and versatilely?"
+            },
+            {
+                "key": "ai-landscape",
+                "componentType": "caseStudyBillBoard",
+                "header": "AI Landscape",
+                "mainText": "We began to imagine that AI could be implemented into the solution, but needed a concrete understanding of what opportunities within AI were realistic. A ‘From…To’ map is useful for making predictions based on current trends - just what we needed.",
+                "src": "/work/voxai/from-to.png"
             }
+        ]
+    },
+    {
+        "cardProps": {
+            "name": "Other Stuff I Do",
+            "image": "/work/other/other-cover.png",
+            "page": "/work/other",
+            "labels": [
+                "Typography",
+                "Book Illustration",
+                "Digital Art",
+                "Analog Art"
+            ]
+        },
+        "contextMenuData": {
+            "props": {
+                "header": "Other Skills",
+                "subHeader": [
+                    "Joey Sotelo",
+                    "Design Technologist"
+                ]
+            }        
+        },
+        "sections": [
+        
         ]
     }
 ]
