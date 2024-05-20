@@ -503,10 +503,10 @@
     {
         "cardProps": {
             "name": "SlimBox",
-            "image": "/work/slimbox/slimbox-cover.png",
+            "image": "/work/slimbox/swot.png",
             "page": "/work/slimbox",
             "labels": [
-                "SWOT",
+                "S.W.O.T.",
                 "micro-interactions",
                 "precedent exploration"
             ]
@@ -522,7 +522,117 @@
             }        
         },
         "sections": [
-        
+            {
+                "key": "overview",
+                "componentType": "caseStudyOverview",
+                "props": {
+                    "bullets": [
+                        [
+                            "Problem: ",
+                            "Users are often overwhelmed by the size of their inbox and can't keep their inbox empty."
+                        ],
+                        [
+                            "Solution: ",
+                            "A UI that helps users arrange all their unread emails into a sequential and segmented flow, meant to speed up the process of decluttering an inbox."
+                        ],
+                        [
+                            "Process: ",
+                            "SWOT analysis, precedent exploration, flowchart, prototype, refine."
+                        ]
+                    ],
+                    "image": "/work/slimbox/swot.png"
+                }
+            },
+            {
+                "key": "project-brief",
+                "componentType": "caseStudyBigText",
+                "secondaryText": "Excerpt from the project brief:",
+                "primaryText": "\"... redesign the micro-interactions users have with desktop email clients ... we will focus our attention on the ability or micro-interactions to make those digital chores easier, simpler, more enjoyable - and less noticeable.\""
+            },
+            {   
+                "key": "research",
+                "componentType": "caseStudyChapter",
+                "title": "Research"
+            },
+            {
+                "key": "swot-analysis",
+                "componentType": "caseStudySection",
+                "sectionHeader": "S.W.O.T.",
+                "mainText": "A S.W.O.T. analysis (Strengths, Weaknesses, Opportunities, Threats) is a way to analyze the competitive landscape and inform design decisions. I used this method to examine three existing email clients - Gmail, Outlook, and Apple Mail. Here are my main findings.",
+                "bullets": [
+                    "Strength: All  clients have a toolbar with reply, delete, and actions.",
+                    "Weakness: Addressing unread emails can be a very back and forth process. This can make it slow and stressful.",
+                    "Opportunity: Take all the things users can do with unread emails and arrange it into a single rewarding flow.",
+                    "Opportunity: Help people keep their inbox empty."
+                ],
+                "images": [
+                    [
+                        "/work/slimbox/strengths.png",
+                        "The strengths section of the SWOT analysis"
+                    ],
+                    [
+                        "/work/slimbox/weaknesses.png",
+                        "The weaknesses section of the SWOT analysis"
+                    ],
+                    [
+                        "/work/slimbox/opportunities.png",
+                        "The opportunities section of the SWOT analysis"
+                    ],
+                    [
+                        "/work/slimbox/threats.png",
+                        "The thresats section of the SWOT analysis"
+                    ]
+                ]
+            },
+            {
+                "key": "design-direction",
+                "componentType": "caseStudyBigText",
+                "secondaryText": "The S.W.O.T. analysis led me to adopt this design direction:",
+                "primaryText": "How might I make the process of decluttering one's inbox more streamlined, easy, and delightful?"
+            },
+            {   
+                "key": "precedent-exploration",
+                "componentType": "caseStudySection",
+                "sectionHeader": "Precedent Exploration",
+                "mainText": "The next step was to look at existing UI's that tackle the same issue as me. I was evaluating them for examples to follow and non-examples to avoid.",
+                "bullets": [
+                    "Responding to emails can be as tedious as doing taxes. TurboTax uses a progress bar to encourage and reward the user.",
+                    "Outlook's toolbar for handling an email includes moving to a folder, deleting, flagging, and replying.",
+                    "Gmail has useful left and right arrows for moving to consecutive and previous emails. This makes the user experience more flowing.",
+                    "Hey has a 'Focus and Reply' mode that allows users to reply to selected emails in a scroll."
+                ],         
+                "images": [
+                    [
+                        "/work/slimbox/hey-outline.png",
+                        "Screenshot of HeyMail's 'Focus and Reply' mode",
+                        "Hey's Focus and Reply mode helps the user flow through responding to emails."                        
+                    ], 
+                    [
+                        "/work/slimbox/turbotax-outline.png",
+                        "'Turbotax's progess bar.",
+                        "TurboTax's progress bar"
+                    ]
+                ]
+            },
+            {   
+                "key": "design",
+                "componentType": "caseStudyChapter",
+                "title": "Design"
+            },
+            {
+                "key": "flowchart",
+                "componentType": "caseStudyBillBoard",
+                "header": "Flowchart",
+                "mainText": "This flowchart outlines my solution, which includes user-dictated categorization and a progress bar.",
+                "src": "/work/slimbox/slimbox-flowchart.png"
+            },
+            {
+                "key": "mid-fi-ui",
+                "componentType": "caseStudyBillBoard",
+                "header": "Mid-Fidelity UI",
+                "mainText": "This project was an exercise in playing with micro-interactions, and did not involve any branding, so this mid-fidelity UI was the final deliverable.",
+                "src": "/work/slimbox/slimbox-flowchart.png"
+            }
         ]
     },
     {

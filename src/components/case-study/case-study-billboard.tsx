@@ -13,7 +13,7 @@ export default function CaseStudyBillBoard({header, mainText, src}: {header: str
             </p>
             {
                 src !== undefined && mainText !== undefined && (
-                        <Image className='mt-12 w-full rounded-sm border border-border' width="1200" height="1200" src={src} alt={mainText}/>                   
+                        <Image className='mt-7 w-full rounded-sm border border-border' width="1200" height="1200" src={src} alt={mainText}/>                   
                 )
             }
         </div>
