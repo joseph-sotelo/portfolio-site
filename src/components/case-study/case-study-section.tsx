@@ -29,7 +29,7 @@ export default function CaseStudySection(props:caseStudySection){
                         {props.mainText}
                     </p>
                     {props.bullets && (
-                        <ul className='mt-6 pl-[14px]'>
+                        <ul className='mt-6 pl-[14px] lg:pl-0'>
                             {props.bullets.map((bullet, index) => (
                                 <li key ={index} className='list-[square] mb-6'>
                                     {bullet}

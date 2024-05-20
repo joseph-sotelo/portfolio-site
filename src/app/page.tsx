@@ -39,21 +39,3 @@ export default function Work(){
     </div>
   )
 }
-
-// export default function Work(){
-//   return(
-//     <div className='flex flex-row gap-14 w-[88vw] mx-auto'>
-//       <div className='sm:hidden z-10'>
-//         <MobileMenu props={contextMenu.props}></MobileMenu>
-//       </div>
-//       <div className='hidden sm:block w-[217px] h-screen'>
-//         <ContextMenu props={contextMenu.props}></ContextMenu>
-//       </div>
-//       <div className='w-[67vw] mt-12 mb-24'>
-//         <div id="card-grid">
-//           <PieceCardGrid />
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }

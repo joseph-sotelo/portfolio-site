@@ -1,7 +1,7 @@
 'use client'
-import Image from "next/image";
+import Image from "next/image"
 
-export default function CaseStudyBillBoard({header, mainText, src, alt, caption}: {header?: string, mainText?: string, src: string, alt: string, caption: string}){
+export default function CaseStudyBillBoard({header, mainText, src}: {header: string | undefined, mainText: string | undefined, src: string | undefined}){
 
     return(
         <div className='mx-auto w-[67vw] mt-12 mb-12 xl:ml-0'>
@@ -11,8 +11,11 @@ export default function CaseStudyBillBoard({header, mainText, src, alt, caption}
             <p>
                 {mainText}
             </p>
-            <Image src={src} alt={alt} width='700' height='500' className='w-[100%] rounded-t-sm border borde-border'></Image>
-            <p className='mt-12 w-full border border-border rounded-b-sm'>{caption}</p>
+            {
+                src !== undefined && mainText !== undefined && (
+                        <Image className='mt-12 w-full rounded-sm border border-border' width="1200" height="1200" src={src} alt={mainText}/>                   
+                )
+            }
         </div>
     )
 }
