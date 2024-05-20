@@ -5,11 +5,11 @@
             "image": "/work/discover-olvera/discover-olvera-cover.png",
             "page": "/work/discover-olvera",
             "labels": [
-                "Ethnography",
-                "Netnography",
-                "Prototyping",
-                "User Testing",
-                "Animated Logo"
+                "ethnography",
+                "netnography",
+                "prototyping",
+                "user testing",
+                "animated logo"
             ]
         },
         "contextMenuData": {
@@ -308,10 +308,10 @@
             "page": "/work/voxai",
             "labels": [
                 "UI for AI",
-                "Heuristics",
-                "Insight Sorting",
-                "Project Management",
-                "Accessibility"
+                "heuristics",
+                "insight sorting",
+                "project management",
+                "accessibility"
             ]
         },
         "contextMenuData": {
@@ -492,14 +492,39 @@
     },
     {
         "cardProps": {
+            "name": "SlimBox",
+            "image": "/work/slimbox/slimbox-cover.png",
+            "page": "/work/slimbox",
+            "labels": [
+                "SWOT",
+                "micro-interactions",
+                "precedent exploration"
+            ]
+        },
+        "contextMenuData": {
+            "props": {
+                "header": "SlimBox",
+                "subHeader": [
+                    "IxD Studio 2",
+                    "Spring 2024"
+                ],
+                "mainText": "A UI concept helping users keep their inbox decluttered."
+            }        
+        },
+        "sections": [
+        
+        ]
+    },
+    {
+        "cardProps": {
             "name": "Other Stuff I Do",
             "image": "/work/other/other-cover.png",
             "page": "/work/other",
             "labels": [
-                "Typography",
-                "Book Illustration",
-                "Digital Art",
-                "Analog Art"
+                "typography",
+                "book illustration",
+                "digital art",
+                "analog art"
             ]
         },
         "contextMenuData": {
