@@ -5,6 +5,7 @@ import CaseStudySection from '@/components/case-study/case-study-section';
 import CaseStudyBigText from '@/components/case-study/case-study-big-text';
 import CaseStudyInsights from '@/components/case-study/case-study-insights';
 import CaseStudyVideo from '@/components/case-study/case-study-video';
+import CaseStudyBillBoard from '@/components/case-study/case-study-billboard';
 import ContextMenu from '@/components/context-menu';
 import MobileMenu from '@/components/mobile-menu';
 import CaseStudyChapter from '@/components/case-study/case-study-chapter';
@@ -13,10 +14,10 @@ import data from '@/app/content/case-studies.json'
 
 export default function Page() {
 
-    const discoverOlvera = data[0];
-    const sections = discoverOlvera.sections;
+    const slimbox = data[2];
+    const sections = slimbox.sections;
     const sectionsLength = sections.length -1;
-    const contextMenu = discoverOlvera.contextMenuData;
+    const contextMenu = slimbox.contextMenuData;
     var scrollHeight = 5000;
 
     if (typeof document !== 'undefined') {
@@ -82,13 +83,23 @@ export default function Page() {
                         return (
                             <div key={index}>
                                 {section.insights !== undefined && (
-                                <CaseStudyInsights title={section.title} caption={section.caption} insights={section.insights}/>
+                                    <CaseStudyInsights title={section.title} caption={section.caption} insights={section.insights}/>
                                 )}
                                 {index !== sectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
                         ) 
+                      break;
+                      case 'caseStudyBillBoard':
+                        return (
+                            <div key={index}>
+                                    <CaseStudyBillBoard header={section.header} mainText={section.mainText} src={section.src}/>
+                                {index !== sectionsLength && (
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
+                                )}
+                            </div>
+                        )
                       break;
                       case 'caseStudyChapter':
                         return (

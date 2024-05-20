@@ -118,6 +118,12 @@ p, li, dt, dl, ul {
   font-weight: 500;
 }
 
+li {
+  line-height: 1.25rem;
+  font-size: .875rem;
+  font-weight: 400;
+}
+
 a {
   font-size: .75rem;
   font-weight: 400;

@@ -5,11 +5,11 @@
             "image": "/work/discover-olvera/discover-olvera-cover.png",
             "page": "/work/discover-olvera",
             "labels": [
-                "Ethnography",
-                "Netnography",
-                "Prototyping",
-                "User Testing",
-                "Animated Logo"
+                "ethnography",
+                "netnography",
+                "prototyping",
+                "user testing",
+                "animated logo"
             ]
         },
         "contextMenuData": {
@@ -47,6 +47,11 @@
                     ],
                     "image": "/work/discover-olvera/discover-olvera-cover.png"
                 }
+            },
+            {   
+                "key": "research",
+                "componentType": "caseStudyChapter",
+                "title": "Research"
             },
             {
                 "key": "observations",
@@ -139,6 +144,11 @@
                         "Screenshot of the Jessica Persona"
                     ]
                 ]
+            },
+            {   
+                "key": "design",
+                "componentType": "caseStudyChapter",
+                "title": "Design"
             },
             {
                 "key": "paper-prototype",
@@ -292,24 +302,224 @@
             }
         ]
     },
+
+
+
+
+
+
+
+
+
     {
         "cardProps": {
-            "name": "Articipate",
-            "image": "/work/articipate/articipate-cover.png",
-            "page": "/work/articipate",
+            "name": "VoxAI",
+            "image": "/work/voxai/voxai-exploded-view.jpg",
+            "page": "/work/voxai",
             "labels": [
-                "Interviews",
-                "UX/UI",
-                "Usability Testing",
-                "Personas",
-                "User Story"
+                "UI for AI",
+                "heuristics",
+                "insight sorting",
+                "project management",
+                "accessibility"
             ]
         },
         "contextMenuData": {
             "props": {
-                "header": "Articipate",
-                "subHeader": ["IxD Studio 1 | Fall 2023"]
+                "header": "VoxAI",
+                "subHeader": [
+                    "IXD STUDIO 2",
+                    "Spring 2023"
+                ],
+                "mainText": "A mobile app and tablet case that improves communication for non-verbal autistic users."
             }
+        },
+        "sections": [
+            {
+                "key": "overview",
+                "componentType": "caseStudyOverview",
+                "props": {
+                    "bullets": [
+                        [
+                            "Users: ",
+                            "Young adults with non-verbal autism."
+                        ],
+                        [
+                            "User Pain Point: ",
+                            "AAC (Assistive + Augmentative Communication) devices often leave users unable to communicate as swiftly and personally as they need to in all contexts."
+                        ],
+                        [
+                            "Solution: ",
+                            "Use AI to enhance the standard AAC model."
+                        ],
+                        [
+                            "Team: ",
+                            "Thanh Quach, Birgess Weston,  Lois Kim, Myself"
+                        ],
+                        [
+                            "Role: ",
+                            "Project Manager, Lead UI Designer"
+                        ]
+                    ],
+                    "image": "/work/voxai/voxai-exploded-view.jpg"
+                }
+            },
+            {   
+                "key": "research",
+                "componentType": "caseStudyChapter",
+                "title": "Research"
+            },
+            {   
+                "key": "expert-interveiw",
+                "componentType": "caseStudySection",
+                "sectionHeader": "Expert Interveiw",
+                "mainText": "We kicked off our project with an interview of an expert in AAC tech, AnnMarie Pence. She is a speech-language pathologist specializing in autism, and many of her pupils use AAC tablets and apps. She provided us with key information on the AAC landscape and common user pain points. ",                
+                "bullets": [
+                    "AAC apps facilitate communication for people with impaired speech due to autism, aphasia, stroke, or injury.",
+                    "AAC apps are essentially keyboards representing words rather than letters. This is because users often have difficulty reading as well.",
+                    "Once the user forms a desired sentence, the app can output it through an artificial voice.",
+                    "The output can be enhanced through specialized cases that have speakers and a rear-facing screen for displaying text."
+                    ],
+                "images": [
+                    [
+                        "/work/voxai/ann-marie-pence.jpeg",
+                        "Ann-Marie Pence",
+                        "Ann-Marie Pence, speech and behavioral pathologist"
+                    ], 
+                    [
+                        "/work/voxai/proloquo-dark-mode.png",
+                        "Homepage of Proloquo, an industry leader in AAC tech.",
+                        "Homepage of Proloquo, an industry leader in AAC tech."
+                    ], 
+                    [
+                        "/work/voxai/tobii-dynavox.webp",
+                        "Tobii Dynavox iPad case with a rear-facing screen",
+                        "Tobii Dynavox makes AAc cases with rear-facing screens."
+                    ]
+                ]
+            },
+            {
+                "key": "pain-points",
+                "componentType": "caseStudyInsights",
+                "title": "Pain Points",
+                "caption": "Common pain points for a non-verbal autistic user:",
+                "insights": [
+                    [
+                        "Too Slow",
+                        "Conversations held using AAC apps tend to be too slow because it takes time to find the right words within the app. Finding the right word is much like digging through folders in a computer’s file system."                    
+                    ],
+                    [
+                        "Lack of personal touch",
+                        "While users have some customizability over the vocal output, it sounds monotone and artificial. Users desire to use slang and emotional tones."                    
+                    ],
+                    [
+                        "Dependence",
+                        "Users can often only communicate with caregivers and people who understand AAC apps. Non-familar listeners often walk away from the conversation before it is over because the user can take a long time to respond."
+                    ],
+                    [
+                        "Rigidity",
+                        "Default words do not accommodate peculiar situations. If a user knows they are going to need a ‘fringe word’, they need to make a custom button ahead of time. Unexpected necessity of fringe words stalls conversations."
+                    ]
+                ]
+            },
+            {
+                "key": "how-might-we",
+                "componentType": "caseStudyBigText",
+                "secondaryText": "Based on our research, we saw a clear design direction:",
+                "primaryText": "How might we enhance the standard AAC model to help young adults with non-verbal autism communicate more swiftly, personally, independently, and versatilely?"
+            },
+            {
+                "key": "ai-landscape",
+                "componentType": "caseStudyBillBoard",
+                "header": "AI Landscape",
+                "mainText": "We began to imagine that AI could be implemented into the solution, but needed a concrete understanding of what opportunities within AI were realistic. A ‘From…To’ map is useful for making predictions based on current trends - just what we needed.",
+                "src": "/work/voxai/from-to.png"
+            },
+            {
+                "key": "Insights",
+                "componentType": "caseStudyInsights",
+                "title": "Insights",
+                "caption": "Relevant insights uncovered by the From-To map:",
+                "insights": [
+                    [
+                        "Multimodality",
+                        "There is an increase in the ability for a single model can more easily combine different kinds of media as input and output."                    
+                    ],
+                    [
+                        "Democratization",
+                        "Many companies are opting to use locally run, privately owned small language models because they are easier to manipulate, better at specific tasks, and cheaper."                    
+                    ]
+                ]
+            },
+            {
+                "key": "Insights",
+                "componentType": "caseStudyInsights",
+                "title": "Designing for Autistic Users",
+                "caption": "Our interview with AnnMarie, as well as desktop research, revealed common heuristics for autistic users. They are mainly centered around avoiding overstimulation. While some of them align with typical design practices, many don’t. This was therefore an exercise in setting aside familiar practices in an effort to empathize.",
+                "insights": [
+                    [
+                        "Layout",
+                        "Layouts should be simple and hierarchical. Fanciful typographical tricks/animation should be avoided. Layout should be consistent across all pages without any major changes. There should only be one navigation toolbar."                    ],
+                    [
+                        "Colors",
+                        "Colors should be muted, not bright. Stark color contrast should be avoided. "
+                    ],
+                    [
+                        "Be Literal",
+                        "Avoid using figurative language. Accompany icons with text in order to avoid ambiguity."
+                    ]
+                ]
+            },
+            {   
+                "key": "precedent-exploration",
+                "componentType": "caseStudySection",
+                "sectionHeader": "Precedent Exploration",
+                "mainText": "We analyzed the two most popular AAC apps in order to understand what opportunities for improvement exist concerning UI and what standards exist for such a niche user group. We decided to keep the following aspects of the typical AAC structure within our own UI",
+                "bullets": [
+                    "AAC apps adhere to the ‘Fistzgerald Key’ or a modified Fitzgerald Key in order to color code word types.",
+                    "The typical ‘masonry’ layout of ordinary keyboards can be jarring to autistic users. A gridded keyboard layour is optimal.",
+                    "Keys can be either represent words or word categories, much like how a computer’s file system has files and folders."
+                ],         
+                "images": [
+                    [
+                        "/work/voxai/fitzgerald-key.png",
+                        "The modified Fitzgerald Key used by Proloquo",
+                        "The modified Fitzgerald Key used by Proloquo"                        
+                    ], 
+                    [
+                        "/work/voxai/lamp-home-screen.png",
+                        "Lamp‘s homescreen.",
+                        "Lamp‘s homescreen, with a gridded key layout."
+                    ], 
+                    [
+                        "/work/voxai/proloquo-button-types.png",
+                        "A sample of Proloquo's buttons",
+                        "Proloquo's keys represent either words or folders."
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "cardProps": {
+            "name": "SlimBox",
+            "image": "/work/slimbox/slimbox-cover.png",
+            "page": "/work/slimbox",
+            "labels": [
+                "SWOT",
+                "micro-interactions",
+                "precedent exploration"
+            ]
+        },
+        "contextMenuData": {
+            "props": {
+                "header": "SlimBox",
+                "subHeader": [
+                    "IxD Studio 2",
+                    "Spring 2024"
+                ],
+                "mainText": "A UI concept helping users keep their inbox decluttered."
+            }        
         },
         "sections": [
         
@@ -321,10 +531,10 @@
             "image": "/work/other/other-cover.png",
             "page": "/work/other",
             "labels": [
-                "Typography",
-                "Book Illustration",
-                "Digital Art",
-                "Analog Art"
+                "typography",
+                "book illustration",
+                "digital art",
+                "analog art"
             ]
         },
         "contextMenuData": {

@@ -22,7 +22,7 @@ export default function CaseStudyInsights({title, caption, insights}: {title: st
             )}
             <div className='flex flex-col gap-[1.5rem] xl:flex-row xl:items-start'>
                 {insights.map((insight, index)=>
-                            <Card key={index} className='min-w-[210px] xl:w-[262px] shadow'>
+                            <Card key={index} className='min-w-[210px] xl:w-[262px]'>
                             <CardHeader>
                                 {insight.length >= 2?(
                                     <>
