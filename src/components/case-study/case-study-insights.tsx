@@ -16,9 +16,9 @@ export default function CaseStudyInsights({title, caption, insights}: {title: st
                 {title}
             </h2>
             {caption && (
-                <h5 className='mb-[2rem]'>
+                <h6 className='mb-[2rem]'>
                     {caption}
-                </h5>
+                </h6>
             )}
             <div className='flex flex-col gap-[1.5rem] xl:flex-row xl:items-start'>
                 {insights.map((insight, index)=>

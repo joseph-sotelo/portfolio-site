@@ -8,7 +8,7 @@ export default function ImageAndCaption({props}: {props: string[]}){
                 <Image src={props[0]} alt={props[1]} fill className='object-contain'/>
             </div>
             {props[2] && (
-                <p className='border border-border mt-[-1px] p-[1rem] rounded-b-sm'>{props[2]}</p>
+                <p className='border border-border mt-[-1px] p-[1rem] rounded-b-sm text-center'>{props[2]}</p>
             )} 
         </div>
     )

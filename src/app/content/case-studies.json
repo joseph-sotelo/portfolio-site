@@ -304,7 +304,7 @@
     {
         "cardProps": {
             "name": "VoxAI",
-            "image": "/work/voxai/voxai-cover.png",
+            "image": "/work/voxai/voxai-exploded-view.jpg",
             "page": "/work/voxai",
             "labels": [
                 "UI for AI",
@@ -351,14 +351,19 @@
                             "Project Manager, Lead UI Designer"
                         ]
                     ],
-                    "image": "/work/voxai/voxai-cover.png"
+                    "image": "/work/voxai/voxai-exploded-view.jpg"
                 }
+            },
+            {   
+                "key": "research",
+                "componentType": "caseStudyChapter",
+                "title": "Research"
             },
             {   
                 "key": "expert-interveiw",
                 "componentType": "caseStudySection",
                 "sectionHeader": "Expert Interveiw",
-                "mainText": "We kicked off our project with an interview of an expert in AAC tech, AnnMarie Pence. She is a speech and behavioral pathologist specializing in autism, and many of her pupils use AAC tablets and apps. She provided us with key information on the AAC landscape and common user pain points. ",                
+                "mainText": "We kicked off our project with an interview of an expert in AAC tech, AnnMarie Pence. She is a speech-language pathologist specializing in autism, and many of her pupils use AAC tablets and apps. She provided us with key information on the AAC landscape and common user pain points. ",                
                 "bullets": [
                     "AAC apps facilitate communication for people with impaired speech due to autism, aphasia, stroke, or injury.",
                     "AAC apps are essentially keyboards representing words rather than letters. This is because users often have difficulty reading as well.",
@@ -367,7 +372,7 @@
                     ],
                 "images": [
                     [
-                        "/work/voxai/ann-marie-pence.png",
+                        "/work/voxai/ann-marie-pence.jpeg",
                         "Ann-Marie Pence",
                         "Ann-Marie Pence, speech and behavioral pathologist"
                     ], 
@@ -419,6 +424,69 @@
                 "header": "AI Landscape",
                 "mainText": "We began to imagine that AI could be implemented into the solution, but needed a concrete understanding of what opportunities within AI were realistic. A ‘From…To’ map is useful for making predictions based on current trends - just what we needed.",
                 "src": "/work/voxai/from-to.png"
+            },
+            {
+                "key": "Insights",
+                "componentType": "caseStudyInsights",
+                "title": "Insights",
+                "caption": "Relevant insights uncovered by the From-To map:",
+                "insights": [
+                    [
+                        "Multimodality",
+                        "There is an increase in the ability for a single model can more easily combine different kinds of media as input and output."                    
+                    ],
+                    [
+                        "Democratization",
+                        "Many companies are opting to use locally run, privately owned small language models because they are easier to manipulate, better at specific tasks, and cheaper."                    
+                    ]
+                ]
+            },
+            {
+                "key": "Insights",
+                "componentType": "caseStudyInsights",
+                "title": "Designing for Autistic Users",
+                "caption": "Our interview with AnnMarie, as well as desktop research, revealed common heuristics for autistic users. They are mainly centered around avoiding overstimulation. While some of them align with typical design practices, many don’t. This was therefore an exercise in setting aside familiar practices in an effort to empathize.",
+                "insights": [
+                    [
+                        "Layout",
+                        "Layouts should be simple and hierarchical. Fanciful typographical tricks/animation should be avoided. Layout should be consistent across all pages without any major changes. There should only be one navigation toolbar."                    ],
+                    [
+                        "Colors",
+                        "Colors should be muted, not bright. Stark color contrast should be avoided. "
+                    ],
+                    [
+                        "Be Literal",
+                        "Avoid using figurative language. Accompany icons with text in order to avoid ambiguity."
+                    ]
+                ]
+            },
+            {   
+                "key": "precedent-exploration",
+                "componentType": "caseStudySection",
+                "sectionHeader": "Precedent Exploration",
+                "mainText": "We analyzed the two most popular AAC apps in order to understand what opportunities for improvement exist concerning UI and what standards exist for such a niche user group. We decided to keep the following aspects of the typical AAC structure within our own UI",
+                "bullets": [
+                    "AAC apps adhere to the ‘Fistzgerald Key’ or a modified Fitzgerald Key in order to color code word types.",
+                    "The typical ‘masonry’ layout of ordinary keyboards can be jarring to autistic users. A gridded keyboard layour is optimal.",
+                    "Keys can be either represent words or word categories, much like how a computer’s file system has files and folders."
+                ],         
+                "images": [
+                    [
+                        "/work/voxai/fitzgerald-key.png",
+                        "The modified Fitzgerald Key used by Proloquo",
+                        "The modified Fitzgerald Key used by Proloquo"                        
+                    ], 
+                    [
+                        "/work/voxai/lamp-home-screen.png",
+                        "Lamp‘s homescreen.",
+                        "Lamp‘s homescreen, with a gridded key layout."
+                    ], 
+                    [
+                        "/work/voxai/proloquo-button-types.png",
+                        "A sample of Proloquo's buttons",
+                        "Proloquo's keys represent either words or folders."
+                    ]
+                ]
             }
         ]
     },

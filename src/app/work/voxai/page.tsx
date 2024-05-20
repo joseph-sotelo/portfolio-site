@@ -8,6 +8,7 @@ import CaseStudyVideo from '@/components/case-study/case-study-video';
 import CaseStudyBillBoard from '@/components/case-study/case-study-billboard';
 import ContextMenu from '@/components/context-menu';
 import MobileMenu from '@/components/mobile-menu';
+import CaseStudyChapter from '@/components/case-study/case-study-chapter';
 
 import data from '@/app/content/case-studies.json'
 
@@ -100,10 +101,27 @@ export default function Page() {
                             </div>
                         )
                       break;
+                      case 'caseStudyChapter':
+                        return (
+                            <div key={index}>
+                                    <CaseStudyChapter title={section.title}/>
+                                {index !== sectionsLength && (
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
+                                )}
+                            </div>
+                        )
+                      break;
                       default:
                         console.log('This is not an accepted component type')
                   }
             })}
+            <div className='mx-auto w-[67vw] mt-12 mb-12 xl:ml-0'>
+            <h1 className='opacity-20 mx-auto mt-[21vh] text-center'>
+                <em>
+                    VoxAI is an ongoing project
+                </em>
+            </h1>
+        </div>
             </div>
         </div>
     )
