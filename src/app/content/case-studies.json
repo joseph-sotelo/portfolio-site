@@ -48,6 +48,11 @@
                     "image": "/work/discover-olvera/discover-olvera-cover.png"
                 }
             },
+            {   
+                "key": "research",
+                "componentType": "caseStudyChapter",
+                "title": "Research"
+            },
             {
                 "key": "observations",
                 "componentType": "caseStudySection",
@@ -139,6 +144,11 @@
                         "Screenshot of the Jessica Persona"
                     ]
                 ]
+            },
+            {   
+                "key": "design",
+                "componentType": "caseStudyChapter",
+                "title": "Design"
             },
             {
                 "key": "paper-prototype",

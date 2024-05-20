@@ -7,6 +7,7 @@ import CaseStudyInsights from '@/components/case-study/case-study-insights';
 import CaseStudyVideo from '@/components/case-study/case-study-video';
 import ContextMenu from '@/components/context-menu';
 import MobileMenu from '@/components/mobile-menu';
+import CaseStudyChapter from '@/components/case-study/case-study-chapter';
 
 import data from '@/app/content/case-studies.json'
 
@@ -88,6 +89,16 @@ export default function Page() {
                                 )}
                             </div>
                         ) 
+                      break;
+                      case 'caseStudyChapter':
+                        return (
+                            <div key={index}>
+                                    <CaseStudyChapter title={section.title}/>
+                                {index !== sectionsLength && (
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
+                                )}
+                            </div>
+                        )
                       break;
                       default:
                         console.log('This is not an accepted component type')
