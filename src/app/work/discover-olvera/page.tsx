@@ -61,7 +61,7 @@ export default function Page() {
                       case 'caseStudyVideo':
                         return (
                             <div key={index}>
-                                <CaseStudyVideo header={section.header} mainText={section.mainText} src={section.src}/>
+                                <CaseStudyVideo header={section.header} mainText={section.mainText}/>
                                 {index !== sectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
@@ -82,7 +82,7 @@ export default function Page() {
                         return (
                             <div key={index}>
                                 {section.insights !== undefined && (
-                                <CaseStudyInsights title={section.title} caption={section.caption} insights={section.insights}/>
+                                    <CaseStudyInsights title={section.title} caption={section.caption} insights={section.insights}/>
                                 )}
                                 {index !== sectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>

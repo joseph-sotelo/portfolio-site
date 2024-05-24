@@ -2,9 +2,9 @@
 import ContextMenu from '@/components/context-menu';
 import MobileMenu from '@/components/mobile-menu';
 
-import data from '@/app/content/case-studies.json'
+import data from '@/app/content/case-studies-no-insights.json'
 
-const other = data[2];
+const other = data[1];
 const sections = other.sections;
 const sectionsLength = sections.length -1;
 const contextMenu = other.contextMenuData;
@@ -27,7 +27,7 @@ export default function Page(){
                     </div>
                 </div>
                 <div className='mt-16 xl:mt-12 sm:w-[60vw] lg:w-[75vw] sm:mt-12 grow-0 z-9'>
-                    <h1 className='opacity-20 mx-auto mt-[21vh]'>
+                    <h1 className='opacity-20 mx-auto mt-[21vh] text-center'>
                         gallery incoming
                     </h1>
                 </div>

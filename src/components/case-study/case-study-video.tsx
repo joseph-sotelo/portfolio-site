@@ -1,6 +1,6 @@
 'use client'
 
-export default function CaseStudyVideo({header, mainText, src}: {header: string | undefined, mainText: string | undefined, src: string | undefined}){
+export default function CaseStudyVideo({header, mainText}: {header: string | undefined, mainText: string | undefined}){
 
     return(
         <div className='mx-auto w-[67vw] mt-12 mb-12 xl:ml-0'>
@@ -10,7 +10,7 @@ export default function CaseStudyVideo({header, mainText, src}: {header: string 
             <p>
                 {mainText}
             </p>
-            <iframe className='mt-12 w-full aspect-video rounded-sm' width="1184" height="666" src={src} title="Youtube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe className='mt-12 w-full aspect-video rounded-sm' width="1184" height="666" src="https://www.youtube.com/embed/ZsmuhoPbTFE" title="Youtube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
         </div>
     )
 }

@@ -253,7 +253,7 @@
                     [
                         "/work/discover-olvera/discover-olvera-logo.png",
                         "The final logo",
-                        "The final animated logo"
+                        "The final logo"
                     ], 
                     [
                         "/work/discover-olvera/color-palette.png",
@@ -281,8 +281,7 @@
                 "key": "hi-fi-prototype",
                 "componentType": "caseStudyVideo",
                 "header": "Hi-Fi Prototype and user story",
-                "mainText": "Below is our final deliverable - a video showcasing our hi-fi protoype through a user story. The animated infographics at the beginning were created by myself in After Effects.",
-                "src": "https://www.youtube.com/embed/ZsmuhoPbTFE"
+                "mainText": "Below is our final deliverable - a video showcasing our hi-fi protoype through a user story. The animated infographics at the beginning were created by myself in After Effects."
             },
             {
                 "key": "reflection",
@@ -433,7 +432,12 @@
                 "componentType": "caseStudyBillBoard",
                 "header": "AI Landscape",
                 "mainText": "We began to imagine that AI could be implemented into the solution, but needed a concrete understanding of what opportunities within AI were realistic. A ‘From…To’ map is useful for making predictions based on current trends - just what we needed.",
-                "src": "/work/voxai/from-to.png"
+                "images": [
+                    [
+                        "/work/voxai/from-to.png",
+                        "A From-To map used to explore AI trends"
+                    ]
+                ]
             },
             {
                 "key": "Insights",
@@ -498,56 +502,6 @@
                     ]
                 ]
             }
-        ]
-    },
-    {
-        "cardProps": {
-            "name": "SlimBox",
-            "image": "/work/slimbox/slimbox-cover.png",
-            "page": "/work/slimbox",
-            "labels": [
-                "SWOT",
-                "micro-interactions",
-                "precedent exploration"
-            ]
-        },
-        "contextMenuData": {
-            "props": {
-                "header": "SlimBox",
-                "subHeader": [
-                    "IxD Studio 2",
-                    "Spring 2024"
-                ],
-                "mainText": "A UI concept helping users keep their inbox decluttered."
-            }        
-        },
-        "sections": [
-        
-        ]
-    },
-    {
-        "cardProps": {
-            "name": "Other Stuff I Do",
-            "image": "/work/other/other-cover.png",
-            "page": "/work/other",
-            "labels": [
-                "typography",
-                "book illustration",
-                "digital art",
-                "analog art"
-            ]
-        },
-        "contextMenuData": {
-            "props": {
-                "header": "Other Skills",
-                "subHeader": [
-                    "Joey Sotelo",
-                    "Design Technologist"
-                ]
-            }        
-        },
-        "sections": [
-        
         ]
     }
 ]
