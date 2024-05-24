@@ -25,17 +25,17 @@ const contextMenu = {
         'Design Technologist'],
       links: [
         [
-            'Resume',
-            'https://drive.google.com/file/d/1QOQX90k8UsTVoyWRSoy7191cTZCTMw4y/view?usp=sharing'
-        ],
-        [
             'LinkedIn',
             'http://www.linkedin.com/in/joseph-sotelo-27bb82221'
         ],
         [
             'GitHub',
             'https://github.com/joseph-sotelo'
-        ]
+        ],
+        [
+            'Resume',
+            'https://drive.google.com/file/d/1QOQX90k8UsTVoyWRSoy7191cTZCTMw4y/view?usp=sharing'
+        ],
       ]
     }
   }

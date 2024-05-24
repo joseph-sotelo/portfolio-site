@@ -253,7 +253,7 @@
                     [
                         "/work/discover-olvera/discover-olvera-logo.png",
                         "The final logo",
-                        "The final animated logo"
+                        "The final logo"
                     ], 
                     [
                         "/work/discover-olvera/color-palette.png",
@@ -433,7 +433,12 @@
                 "componentType": "caseStudyBillBoard",
                 "header": "AI Landscape",
                 "mainText": "We began to imagine that AI could be implemented into the solution, but needed a concrete understanding of what opportunities within AI were realistic. A ‘From…To’ map is useful for making predictions based on current trends - just what we needed.",
-                "src": "/work/voxai/from-to.png"
+                "images": [
+                    [
+                        "/work/voxai/from-to.png",
+                        "A From-To map used to explore AI trends"
+                    ]
+                ]
             },
             {
                 "key": "Insights",
@@ -540,7 +545,7 @@
                             "SWOT analysis, precedent exploration, flowchart, prototype, refine."
                         ]
                     ],
-                    "image": "/work/slimbox/swot.png"
+                    "image": "/work/slimbox/swot-2.png"
                 }
             },
             {
@@ -624,14 +629,25 @@
                 "componentType": "caseStudyBillBoard",
                 "header": "Flowchart",
                 "mainText": "This flowchart outlines my solution, which includes user-dictated categorization and a progress bar.",
-                "src": "/work/slimbox/slimbox-flowchart.png"
+                "images": [
+                    [
+                        "/work/slimbox/slimbox-flowchart.png",
+                        "A flowchart outlining the 'Declutter Inbox' feature"
+                    ]
+                ]
             },
             {
                 "key": "mid-fi-ui",
-                "componentType": "caseStudyBillBoard",
+                "componentType": "caseStudyPrototype",
                 "header": "Mid-Fidelity UI",
-                "mainText": "This project was an exercise in playing with micro-interactions, and did not involve any branding, so this mid-fidelity UI was the final deliverable.",
-                "src": "/work/slimbox/slimbox-flowchart.png"
+                "mainText": "This project was an exercise in playing with micro-interactions, and did not involve any branding, so this mid-fidelity UI was the final deliverable. Take it for a spin!",
+                "src": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F03fMbGdhWZTUtRot9hSkfp%2FSlimBox%3Fpage-id%3D0%253A1%26node-id%3D6-212%26viewport%3D-1021%252C-315%252C0.07%26t%3DzDpKzIYiXPuAh661-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D6%253A212"
+            },
+            {
+                "key": "further-possibilities",
+                "componentType": "caseStudyParagraph",
+                "header": "Further Possibilities",
+                "mainText": "I see this project as a small contribution to a larger trend of rethinking email clients. While this movement has some clear trailblazers such as Hey or Sparkmail, I hope that this example of gaining inspiration from other contexts will help inspire designers who are tackling these issues. Always remember to think outside the (in)box."
             }
         ]
     },
