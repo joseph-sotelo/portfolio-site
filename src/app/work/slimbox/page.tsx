@@ -3,18 +3,18 @@
 import CaseStudyOverview from '@/components/case-study/case-study-overview.jsx';
 import CaseStudySection from '@/components/case-study/case-study-section';
 import CaseStudyBigText from '@/components/case-study/case-study-big-text';
-import CaseStudyInsights from '@/components/case-study/case-study-insights';
-import CaseStudyVideo from '@/components/case-study/case-study-video';
 import CaseStudyBillBoard from '@/components/case-study/case-study-billboard';
 import ContextMenu from '@/components/context-menu';
 import MobileMenu from '@/components/mobile-menu';
 import CaseStudyChapter from '@/components/case-study/case-study-chapter';
+import CaseStudyPrototype from '@/components/case-study/case-study-prototype';
+import CaseStudyParagraph from '@/components/case-study/case-study-paragraph';
 
-import data from '@/app/content/case-studies.json'
+import data from '@/app/content/case-studies-no-insights.json'
 
 export default function Page() {
 
-    const slimbox = data[2];
+    const slimbox = data[0];
     const sections = slimbox.sections;
     const sectionsLength = sections.length -1;
     const contextMenu = slimbox.contextMenuData;
@@ -34,9 +34,29 @@ export default function Page() {
                     <ContextMenu props={contextMenu.props}></ContextMenu>
                 </div>
             </div>
-            <div className='mt-16 xl:mt-12 sm:w-[60vw] lg:w-[75vw] sm:mt-12 grow-0 z-9'>
+            <div className='mt-16 xl:mt-12 sm:w-[60vw] lg:w-[75vw] sm:mt-12 grow-0 z-9 mb-12'>
             {sections.map((section, index) => {
                 switch(section.componentType) {
+                    case 'caseStudyPrototype':
+                        return (
+                            <div key={index}>
+                                    <CaseStudyPrototype header={section.header} mainText={section.mainText} ></CaseStudyPrototype>
+                                {index !== sectionsLength && (
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
+                                )}
+                            </div>
+                        )
+                      break;
+                      case 'caseStudyParagraph':
+                        return (
+                            <div key={index}>
+                                    <CaseStudyParagraph header={section.header} mainText={section.mainText} ></CaseStudyParagraph>
+                                {index !== sectionsLength && (
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
+                                )}
+                            </div>
+                        )
+                      break;
                     case 'caseStudyOverview':
                         return (
                             <div key={index}>
@@ -59,16 +79,6 @@ export default function Page() {
                             </div>
                         )
                       break;
-                      case 'caseStudyVideo':
-                        return (
-                            <div key={index}>
-                                <CaseStudyVideo header={section.header} mainText={section.mainText} src={section.src}/>
-                                {index !== sectionsLength && (
-                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
-                                )}
-                            </div>
-                        )
-                      break;
                       case 'caseStudyBigText':
                         return (
                             <div key={index}>
@@ -79,22 +89,10 @@ export default function Page() {
                             </div>
                         )
                       break;
-                      case 'caseStudyInsights':
-                        return (
-                            <div key={index}>
-                                {section.insights !== undefined && (
-                                    <CaseStudyInsights title={section.title} caption={section.caption} insights={section.insights}/>
-                                )}
-                                {index !== sectionsLength && (
-                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
-                                )}
-                            </div>
-                        ) 
-                      break;
                       case 'caseStudyBillBoard':
                         return (
                             <div key={index}>
-                                    <CaseStudyBillBoard header={section.header} mainText={section.mainText} src={section.src}/>
+                                    <CaseStudyBillBoard header={section.header} mainText={section.mainText} images={section.images ?? []}/>
                                 {index !== sectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}

@@ -31,7 +31,7 @@ export default function Page(){
                     </div>
                 </div>
                 <div className='mt-16 xl:mt-12 sm:w-[60vw] lg:w-[75vw] sm:mt-12 grow-0 z-9'>
-                    <h1 className='opacity-20 mx-auto mt-[21vh]'>
+                    <h1 className='opacity-20 mx-auto mt-[21vh] text-center'>
                         first post incoming
                     </h1>
                 </div>
