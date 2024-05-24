@@ -10,11 +10,11 @@ import CaseStudyChapter from '@/components/case-study/case-study-chapter';
 import CaseStudyPrototype from '@/components/case-study/case-study-prototype';
 import CaseStudyParagraph from '@/components/case-study/case-study-paragraph';
 
-import data from '@/app/content/case-studies.json'
+import data from '@/app/content/case-studies-no-insights.json'
 
 export default function Page() {
 
-    const slimbox = data[2];
+    const slimbox = data[0];
     const sections = slimbox.sections;
     const sectionsLength = sections.length -1;
     const contextMenu = slimbox.contextMenuData;
