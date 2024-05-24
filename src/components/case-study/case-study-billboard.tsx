@@ -19,7 +19,7 @@ export default function CaseStudyBillBoard(props: caseStudyBillBoard){
             </p>
             {props.images.map((image, index) => (
                 image[0] !== undefined && (
-                        <Image className='mt-7 w-full rounded-sm border border-border' width="1200" height="1200" src={image[0]} alt={image[1]}/> 
+                        <Image key={index} className='mt-7 w-full rounded-sm border border-border' width="1200" height="1200" src={image[0]} alt={image[1]}/> 
                 )                  
             ))}
         </div>
