@@ -1,6 +1,6 @@
 'use client'
 
-export default function CaseStudyVideo({header, mainText}: {header: string | undefined, mainText: string | undefined}){
+export default function CaseStudyVideo({header, mainText}: {header?: string, mainText?: string}){
 
     return(
         <div className='mx-auto w-[67vw] mt-12 mb-12 xl:ml-0'>
