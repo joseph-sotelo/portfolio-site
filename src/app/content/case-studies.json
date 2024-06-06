@@ -281,7 +281,9 @@
                 "componentType": "caseStudyVideo",
                 "header": "Hi-Fi Prototype and user story",
                 "mainText": "Below is our final deliverable - a video showcasing our hi-fi protoype through a user story. The animated infographics at the beginning were created by myself in After Effects.",
-                "src": "https://www.youtube.com/embed/ZsmuhoPbTFE",
+                "sources": [
+                    "https://www.youtube.com/embed/ZsmuhoPbTFE"
+                ],
                 "hostType": "iframe"
             },
             {
@@ -623,7 +625,9 @@
                 "componentType": "caseStudyVideo",
                 "header": "Feature: Word Prediction",
                 "mainText": "As the user types the VoxAI suggests words based on users’ habits, geolocation, and other optional forms of data.",
-                "src": "/work/voxai/word-prediction-A.mp4",
+                "sources": [
+                    "/work/voxai/word-prediction-A.mp4"
+                ],
                 "hostType": "local"
             },
             {
@@ -631,7 +635,9 @@
                 "componentType": "caseStudyVideo",
                 "header": "Feature: Tone Control",
                 "mainText": "The user can control the emotion of the vocal output using tone buttons. The default UI would have three for simplicity but more can be added of the user desires.",
-                "src": "/work/voxai/tones.mov",
+                "sources": [
+                    "/work/voxai/tones.mov"
+                ],
                 "hostType": "local"
             },
             {   
@@ -654,6 +660,54 @@
                         "/work/voxai/rear-screen-3.png",
                         "The rear screen displaying the text, 'Good to see you!'",
                         "The rear screen displays any text the user wants."
+                    ]
+                ]
+            },
+            {
+                "key": "listening",
+                "componentType": "caseStudyVideo",
+                "header": "Feature: AI Listening",
+                "mainText": "VoxAI uses AI to suggest entire phrases based on audio from the conversation.",
+                "sources": [
+                    "/work/voxai/conversation-A.mov",
+                    "/work/voxai/conversation-B.mov"
+                ],
+                "hostType": "local"
+            },
+            {   
+                "key": "reflection",
+                "componentType": "caseStudyChapter",
+                "header": "Reflection"
+            },
+            {   
+                "key": "projectManagement",
+                "componentType": "caseStudySection",
+                "header": "Project Management",
+                "mainText": "In addition to acting as the UI lead, I had the privilege of being the project manager for this team. This included creating a timeline before any of the work began, creating agendas for meetings, and sending a weekly report to our stakeholders.",      
+                "images": [
+                    [
+                        "/work/voxai/raci-matrix.png",
+                        "A spreadsheet outlining all of the projected work for the project",
+                        "I used a RACI Matrix to plan out every step of the project before we began."                        
+                    ]
+                ]
+            },
+            {
+                "key": "n ext-steps",
+                "componentType": "caseStudyInsights",
+                "header": "Next Steps",
+                "descriptiveList": [
+                    [
+                        "Usability Tests",
+                        "While our VoxAI has the approval of AnnMarie, our field expert, we are yet to test it in the hands of actual users. I’m certain that this would generate many more rounds of refinements."
+                    ],
+                    [
+                        "GIF Integration",
+                        "We see ways to further address our second pain point on the lack of personal touch. One such concept is to give VoxAI access to a GIF library so the user can display GIFs on the rear screen."
+                    ],
+                    [
+                        "Tones Integration",
+                        "Another concept for addressing our second pain point is to allow the tones to be reflected in the rear screen display. This would enable our users to express more emotion in their conversations."
                     ]
                 ]
             }

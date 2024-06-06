@@ -26,7 +26,7 @@ type CaseStudySection = {
     image?: string;
     src?: string;
     hostType?: string;
-    noBorder?: string;
+    sources?: string[];
 }
 
 export default function Page() {
@@ -91,7 +91,9 @@ export default function Page() {
                     case 'caseStudyVideo':
                         return (
                             <div key={index}>
-                                <CaseStudyVideo header={section.header} mainText={section.mainText} src={section.src} hostType={section.hostType}/>
+                                {section.sources !== undefined && (
+                                    <CaseStudyVideo header={section.header} mainText={section.mainText} sources={section.sources} hostType={section.hostType}/>
+                                )}
                                 {index !== sectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
