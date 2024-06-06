@@ -24,6 +24,8 @@ type CaseStudySection = {
     bullets?: string[];
     images?: string[][];
     image?: string;
+    src?: string;
+    hostType?: string;
 }
 
 export default function Page() {
@@ -88,7 +90,7 @@ export default function Page() {
                     case 'caseStudyVideo':
                         return (
                             <div key={index}>
-                                <CaseStudyVideo header={section.header} mainText={section.mainText}/>
+                                <CaseStudyVideo header={section.header} mainText={section.mainText} src={section.src} hostType={section.hostType}/>
                                 {index !== sectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
@@ -147,9 +149,19 @@ export default function Page() {
                             </div>
                         )
                     break;
+                    case 'caseStudyBigText':
+                        return (
+                            <div key={index}>
+                                    <CaseStudyBigText secondaryText={section.secondaryText} mainText={section.mainText} ></CaseStudyBigText>
+                                {index !== sectionsLength && (
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
+                                )}
+                            </div>
+                        )
+                    break;
                     default:
                         console.log('This is not an accepted component type')
-                  }
+                }
             })}
             </div>
         </div>

@@ -280,7 +280,9 @@
                 "key": "hi-fi-prototype",
                 "componentType": "caseStudyVideo",
                 "header": "Hi-Fi Prototype and user story",
-                "mainText": "Below is our final deliverable - a video showcasing our hi-fi protoype through a user story. The animated infographics at the beginning were created by myself in After Effects."
+                "mainText": "Below is our final deliverable - a video showcasing our hi-fi protoype through a user story. The animated infographics at the beginning were created by myself in After Effects.",
+                "src": "https://www.youtube.com/embed/ZsmuhoPbTFE",
+                "hostType": "iframe"
             },
             {
                 "key": "reflection",
@@ -303,7 +305,7 @@
     {
         "cardProps": {
             "name": "VoxAI",
-            "image": "/work/voxai/voxai-exploded-view.jpg",
+            "image": "/work/voxai/hi-fi-render.png",
             "page": "/work/voxai",
             "labels": [
                 "UI for AI",
@@ -350,7 +352,7 @@
                         "Project Manager, Lead UI Designer"
                     ]
                 ],
-                "image": "/work/voxai/voxai-exploded-view.jpg"
+                "image": "/work/voxai/hi-fi-render.png"
             },
             {   
                 "key": "research",
@@ -441,6 +443,10 @@
                     [
                         "Democratization",
                         "Many companies are opting to use locally run, privately owned small language models because they are easier to manipulate, better at specific tasks, and cheaper."                    
+                    ],
+                    [
+                        "Dramatization",
+                        "AI models that produce a vocal output are able to emulate a wide range of emotions with minimal loading time."                    
                     ]
                 ]
             },
@@ -460,6 +466,10 @@
                     [
                         "Be Literal",
                         "Avoid using figurative language. Accompany icons with text in order to avoid ambiguity."
+                    ],
+                    [
+                        "Fonts",
+                        "Use a font that follows a hand-written structure. For instance, a's should be single story, not two story."
                     ]
                 ]
             },
@@ -490,8 +500,134 @@
                         "Proloquo's keys represent either words or folders."
                     ]
                 ]
+            },
+            {   
+                "key": "Design",
+                "componentType": "caseStudyChapter",
+                "header": "Design"
+            },
+            {   
+                "key": "caseProcess",
+                "componentType": "caseStudySection",
+                "header": "Tablet Case: Process",
+                "mainText": "Part of our solution was an ipad case that originally included the following distinguishing features:",
+                "bullets": [
+                    "A rear screen that would supplement the user’s audio output with visual output. This would be useful in noisy places. Currently, there is only one case on the market that has a rear screen, and it has to be mounted to a wheelchair.",
+                    "The screen would also be a stand, supporting both portrait and landscape.",
+                    "A strap for portability",
+                    "Padded corners for shock protection."
+                ],         
+                "images": [
+                    [
+                        "/work/voxai/sketches.png",
+                        "Early thumbnail sketches created by Lois",
+                        "Early thumbnail sketches created by Lois"                        
+                    ], 
+                    [
+                        "/work/voxai/lo-fi-prototype.png",
+                        "Lo-Fi Prototype",
+                        "Lo-Fi prototype, with screen stand. Created by myself."
+                    ], 
+                    [
+                        "/work/voxai/bill-of-materials.png",
+                        "Bill of Materials",
+                        "Bill of Materials, created by Birgess."
+                    ],
+                    [
+                        "/work/voxai/hi-fi-prototype.jpg",
+                        "Hi-Fi Prototype",
+                        "Hi-Fi Prototype, with handle and screen. Created by Lois"
+                    ],
+                    [
+                        "/work/voxai/hi-fi-render.png",
+                        "Hi-Fi Render",
+                        "Final render, modeled by Thanh."
+                    ]
+                ]
+            },
+            {
+                "key": "tabletCaseRedirects",
+                "componentType": "caseStudyInsights",
+                "header": "Tablet Case: Redirects",
+                "secondaryText": "For about two weeks we refined our prototypes, getting feedback from designers, professors, and our field expert, Ann-Marie Pence. Here are the major changes our design went through:",
+                "descriptiveList": [
+                    [
+                        "Simplify the Screen",
+                        "While our screen remained in the final iteration, we dropped the idea that it would serve also as a stand. Our research revealed that it would likely be too delicate for this. This was later confirmed by feedback we received later from product design expert Alexis Schlemer."
+                    ],
+                    [
+                        "Sensory Overload",
+                        "Discussions with autistic individuals, as well as internet research revealed that a tight strap on the neck would be too overstimulating for the majority of our audience, so we replaced the strap and grip with a swiveling grip, so the user can type while securely holding the ipad."
+                    ],
+                    [
+                        "Slim it Down",
+                        "Our original designs were shock-proof at the cost of size and weight. We decided to opt instead for lightness, as portability is one of our users’ central needs. "
+                    ]
+                ]
+            },
+            {   
+                "key": "uiProcess",
+                "componentType": "caseStudySection",
+                "header": "UI: Process",
+                "mainText": "VoxAI Our follows the typical AAC structure used by Lamp and Proloquo. Our early iterations included the following distinguishing features:",
+                "bullets": [
+                    "AI generated word prediction. The word choice would be informed by geolocation and user habits.",
+                    "AI generated images for custom buttons.",
+                    "A feature that records the conversation and generates entire phrases for the user to respond with."
+                ],         
+                "images": [
+                    [
+                        "/work/voxai/layout.png",
+                        "The layout of VoxAI's homepage",
+                        "Lo-Fi wireframe outlining our layout."                        
+                    ], 
+                    [
+                        "/work/voxai/listen-page-ideas.png",
+                        "Iterations of the listening page",
+                        "Four out of dozens of iterations on the listening feature."
+                    ], 
+                    [
+                        "/work/voxai/flowchart.png",
+                        "Flowchart",
+                        "We created a flowchart to inform our UI decisions."
+                    ]
+                ]
+            },
+            {
+                "key": "uiRedirects",
+                "componentType": "caseStudyInsights",
+                "header": "UI: Redirects",
+                "secondaryText": "For about two weeks we refined our prototypes, getting feedback from designers, professors, and our field expert, Ann-Marie Pence. Here are the major changes our UI went through:",
+                "descriptiveList": [
+                    [
+                        "Remove Customization",
+                        "While AI generated imagery for custom buttons was a convenient feature, it did not directly address any of our users’ pain points."
+                    ],
+                    [
+                        "Add Tones",
+                        "One of our users’ pain points was an inability to express emotion and personality. Our original concept overlooked this need, so we added the ability for the user to control the emotional tone of the vocal output."
+                    ],
+                    [
+                        "System Feedback",
+                        "Our early iterations fell short of Jakob Nielsen’s first usability heuristic, which states, “The design should always keep users informed about what is going on, through appropriate feedback within a reasonable amount of time”."
+                    ]
+                ]
+            },
+            {   
+                "key": "finalProduct",
+                "componentType": "caseStudyChapter",
+                "header": "Final Product"
+            },
+            {
+                "key": "wordPrediction",
+                "componentType": "caseStudyVideo",
+                "header": "Feature: Word Prediction",
+                "mainText": "As the user types the VoxAI suggests words based on users’ habits, geolocation, and other optional forms of data.",
+                "src": "/work/voxai/word-prediction-A.mov",
+                "hostType": "local"
             }
-        ]
+        ],
+        "terminus": "terminus"
     },
     {
         "cardProps": {

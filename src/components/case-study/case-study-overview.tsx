@@ -31,5 +31,3 @@ export default function CaseStudyOverview({header, descriptiveList, image}: {hea
         </div>
     )
 }
-
-// className=''

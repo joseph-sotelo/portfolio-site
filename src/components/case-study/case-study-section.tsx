@@ -9,7 +9,7 @@ import {
     CarouselPrevious,
   } from "@/components/ui/carousel"
 
-export default function CaseStudyTextAndCarousel({header, mainText, bullets, images}: {header?: string, mainText?: string, bullets?: string[], images: string[][]}){
+export default function CaseStudySection({header, mainText, bullets, images}: {header?: string, mainText?: string, bullets?: string[], images: string[][]}){
     return(
         <div className='w-[67vw] sm:w-[60vw] md:w-[67vw] flex flex-col xl:flex-row justify-between my-24 mx-auto xl:ml-0'>
             <div id='left' className='my-auto sm:w-[58.5vw] xl:w-[25vw]'>
