@@ -87,14 +87,14 @@
                 ],
                 "images": [
                     [
-                        "/work/discover-olvera/museum-of-social-justice.png",
-                        "Entrance to the Museum of Social Justice",
-                        "Another one of Placita Olvera's hidden gems"
-                    ], 
-                    [
                         "/work/discover-olvera/mural-a.jpg",
                         "The mural 'America Tropical' by David Alfaro Siquieros",
                         "'America Tropical', a mural by David Alfaro Siquieros, lies right in the center of Olvera Street but can only be viewed from a one particular balcony"
+                    ],
+                    [
+                        "/work/discover-olvera/museum-of-social-justice.png",
+                        "Entrance to the Museum of Social Justice",
+                        "Another one of Placita Olvera's hidden gems"
                     ]
                 ]
             },
@@ -623,8 +623,39 @@
                 "componentType": "caseStudyVideo",
                 "header": "Feature: Word Prediction",
                 "mainText": "As the user types the VoxAI suggests words based on users’ habits, geolocation, and other optional forms of data.",
-                "src": "/work/voxai/word-prediction-A.mov",
+                "src": "/work/voxai/word-prediction-A.mp4",
                 "hostType": "local"
+            },
+            {
+                "key": "toneControl",
+                "componentType": "caseStudyVideo",
+                "header": "Feature: Tone Control",
+                "mainText": "The user can control the emotion of the vocal output using tone buttons. The default UI would have three for simplicity but more can be added of the user desires.",
+                "src": "/work/voxai/tones.mov",
+                "hostType": "local"
+            },
+            {   
+                "key": "rearScreen",
+                "componentType": "caseStudySection",
+                "header": "Rear Screen",
+                "mainText": "The rear screen can supplement the audio output with visual output for the user's audience to read. This can be especially useful in noisy places. It also serves to alert the other member of the conversation when the conversation is being recorded.",      
+                "images": [
+                    [
+                        "/work/voxai/rear-screen-1.png",
+                        "The rear screen, alerting the user that they are being recorded",
+                        "The rear screen gives essential system feedback"                        
+                    ], 
+                    [
+                        "/work/voxai/rear-screen-2.png",
+                        "The rear screen of the ipad case displaying the text, 'I'm Typing'",
+                        "The rear screen helps the listener avoid prematurely leaving the conversation."
+                    ], 
+                    [
+                        "/work/voxai/rear-screen-3.png",
+                        "The rear screen displaying the text, 'Good to see you!'",
+                        "The rear screen displays any text the user wants."
+                    ]
+                ]
             }
         ],
         "terminus": "terminus"

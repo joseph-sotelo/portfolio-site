@@ -26,6 +26,7 @@ type CaseStudySection = {
     image?: string;
     src?: string;
     hostType?: string;
+    noBorder?: string;
 }
 
 export default function Page() {

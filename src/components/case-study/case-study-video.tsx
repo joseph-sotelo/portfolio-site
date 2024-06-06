@@ -7,16 +7,16 @@ export default function CaseStudyVideo({header, mainText, src, hostType}: {heade
             <h2 className='text-secondary-foreground'>
                 {header}
             </h2>
-            <p>
+            <p className='mb-8 mt-3'>
                 {mainText}
             </p>
-            {hostType == 'iframe' && (
-                <iframe className='mt-12 w-full aspect-video rounded-sm' src={src} title="Youtube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-            )} else {
-                <video autoPlay loop muted className='mt-12 w-full aspect-video rounded-sm' width="2000" height="1000">
+            {hostType === 'iframe' ? (
+                <iframe className='w-full aspect-video rounded-sm' src={src} title="Youtube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            ):(
+                <video autoPlay loop muted className='rounded-sm w-[50vw]' width="2000" height="1000">
                     <source src={src} type='video/mp4'/>
                 </video>
-            }
+            )}
         </div>
     )
 }
