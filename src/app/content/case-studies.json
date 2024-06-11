@@ -14,10 +14,9 @@
         },
         "contextMenuData": {
             "props": {
-                "header": "Discover Olvera",
                 "subHeader": [
-                    "IXD STUDIO 1",
-                    "FALL 2023"
+                    "Academic Project",
+                    "14 Weeks"
                 ],
                 "mainText": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using augmented reality."
             }
@@ -319,7 +318,6 @@
         },
         "contextMenuData": {
             "props": {
-                "header": "VoxAI",
                 "subHeader": [
                     "IXD STUDIO 2",
                     "Spring 2023"
@@ -727,7 +725,6 @@
         },
         "contextMenuData": {
             "props": {
-                "header": "SlimBox",
                 "subHeader": [
                     "IxD Studio 2",
                     "Spring 2024"

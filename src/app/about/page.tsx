@@ -34,7 +34,7 @@ const contextMenu = {
         ],
         [
             'Resume',
-            'https://drive.google.com/file/d/1QOQX90k8UsTVoyWRSoy7191cTZCTMw4y/view?usp=sharing'
+            'https://drive.google.com/file/d/1xJqjc8eAIXUvVddKYYgyuVyAO13XGfu-/view?usp=sharing'
         ],
       ]
     }

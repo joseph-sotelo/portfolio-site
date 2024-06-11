@@ -4,7 +4,7 @@ import { Separator } from "./ui/separator";
 import { LinkedInLogoIcon, GitHubLogoIcon, ArrowTopRightIcon } from "@radix-ui/react-icons";
 
 type ContextMenu = {
-    header: string,  
+    header?: string,  
     subHeader: string[],  
     mainText?: string, 
     links?: string[][]
@@ -17,10 +17,12 @@ export default function ContextMenu({props}: {props: ContextMenu}) {
                 <MainNav/>
                 <Separator className='opacity-60'/>
                 <div className='opacity-50'>
-                    <h5>
-                        {props.header}
-                    </h5>
-                    <div className='p-small uppercase tracking-wide'>
+                    {props.header && (
+                        <h5 className='mb-5'>
+                            {props.header}
+                        </h5>
+                    )}
+                    <div className='subheader'>
                         {props.subHeader.map((line) => {
                             return (
                                 <>
