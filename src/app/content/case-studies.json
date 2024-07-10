@@ -14,6 +14,7 @@
         },
         "contextMenuData": {
             "props": {
+                "header": "Discover Olvera",
                 "subHeader": [
                     "Academic Project",
                     "14 Weeks"
@@ -318,6 +319,7 @@
         },
         "contextMenuData": {
             "props": {
+                "header": "VoxAI",
                 "subHeader": [
                     "IXD STUDIO 2",
                     "Spring 2023"
@@ -725,6 +727,7 @@
         },
         "contextMenuData": {
             "props": {
+                "header": "SlimBox",
                 "subHeader": [
                     "IxD Studio 2",
                     "Spring 2024"

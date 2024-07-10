@@ -1,27 +1,41 @@
 'use client'
+import { useRef, useEffect, useState } from "react";
 import MainNav from "./main-nav";
 import { Separator } from "./ui/separator";
 import { LinkedInLogoIcon, GitHubLogoIcon, ArrowTopRightIcon } from "@radix-ui/react-icons";
 
 type ContextMenu = {
-    header?: string,  
+    header: string,  
     subHeader: string[],  
     mainText?: string, 
-    links?: string[][]
+    links?: string[][],
 }
 
-export default function ContextMenu({props}: {props: ContextMenu}) {
+export default function ContextMenu({props, isInvisible, hideTitleAtStart}: {props: ContextMenu, isInvisible: boolean, hideTitleAtStart: boolean}) {
+
+    const headerRef = useRef<HTMLHeadingElement>(null);
+    const mainTextRef = useRef<HTMLDivElement>(null);
+
+    const [headerHeight, setHeaderHeight] = useState(0);
+    const [mainTextHeight, setMainTextHeight] = useState(0);
+
+    useEffect(() => {
+        if (headerRef.current) {
+            setHeaderHeight(headerRef.current.scrollHeight)
+        };
+        if (mainTextRef.current) {
+            setMainTextHeight(mainTextRef.current.scrollHeight)
+        };
+    }, []);
+
+    const mainInfoHeight = headerHeight + mainTextHeight;
+ 
     return (
         <div className='mx-auto sm:mr-0 h-full mt-0 w-[217px] flex flex-col justify-between text-right'>
-            <div className='flex flex-col gap-[1.25rem] mt-[3rem]'>
+            <div className='flex flex-col mt-[3rem]'>
                 <MainNav/>
-                <Separator className='opacity-60'/>
-                <div className='opacity-50'>
-                    {props.header && (
-                        <h5 className='mb-5'>
-                            {props.header}
-                        </h5>
-                    )}
+                <Separator className='opacity-60 mt-5'/>
+                <div className='opacity-50 flex flex-col gap-5 mt-5'>
                     <div className='subheader'>
                         {props.subHeader.map((line) => {
                             return (
@@ -31,14 +45,27 @@ export default function ContextMenu({props}: {props: ContextMenu}) {
                             )
                         })}
                     </div>
-                    {props.mainText && (
-                            <div className='p-small'>
+                    <div id='mainInfo' className='flex flex-col gap-5 transition-all duration-1000 overflow-hidden'
+                    style={
+                        hideTitleAtStart ? {
+                            height: isInvisible ? `${mainInfoHeight + 20}px` : '0px',
+                            opacity: isInvisible ? '1' : '0'
+                        } : {
+                            marginBottom: '1.25rem',
+                        }
+                    }>
+                        <h5 id='header' ref={headerRef}>
+                                {props.header}
+                        </h5>
+                        {props.mainText && (
+                        <div id='mainText' ref={mainTextRef} className='p-small pb-5'>
                                 {props.mainText}
-                            </div>
-                    )}
+                        </div>
+                        )}
+                    </div>
                 </div>
                 <Separator className='opacity-60'/>
-                <div className='opacity-60'>
+                <div className='opacity-60 mt-5'>
                 {props.links && (
                     props.links.map((link, index) => {
                         switch(link[0]) {
