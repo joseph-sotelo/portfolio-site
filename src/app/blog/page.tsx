@@ -2,15 +2,7 @@
 import ContextMenu from '@/components/context-menu';
 import MobileMenu from '@/components/mobile-menu';
 
-const contextMenu = {
-    props: {
-        header: 'Blog',
-        subHeader: [
-        'Joey Sotelo',
-        'Design Technologist'],
-        mainText: 'I write to help me process new information about design, but hey - maybe someone actually reads these too.'
-    }
-}
+import data from '@/app/content/context-menu.json';
 
 var scrollHeight = 5000;
 
@@ -19,15 +11,17 @@ if (typeof document !== 'undefined') {
 }
 
 export default function Page(){
+
+        const contextMenuData = data.blog;
         
         return(
             <div className='m-auto w-[90vw] sm:w-full sm:m-0 sm:flex justify-evenly'>
                 <div className='sm:hidden z-10'>
-                    <MobileMenu props={contextMenu.props}></MobileMenu>
+                    <MobileMenu props={contextMenuData.props}></MobileMenu>
                 </div>
                 <div className={`hidden sm:block sm:w-[30vw] lg:w-[15vw] min-w-[217px] h-[${scrollHeight}] relative`}>
                     <div id='context-menu-wrapper' className='sticky top-0 right-0 min-w-[217px] h-screen'>
-                        <ContextMenu props={contextMenu.props} isInvisible={true} hideTitleAtStart={false}></ContextMenu>
+                        <ContextMenu props={contextMenuData.props} isInvisible={true} hideTitleAtStart={false}></ContextMenu>
                     </div>
                 </div>
                 <div className='mt-16 xl:mt-12 sm:w-[60vw] lg:w-[75vw] sm:mt-12 grow-0 z-9'>

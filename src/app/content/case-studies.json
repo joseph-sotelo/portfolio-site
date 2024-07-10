@@ -37,6 +37,10 @@
                         "Ethnography, Netnography, Prototype, Test, Refine"
                     ],
                     [
+                        "Solution: ",
+                        "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using augmented reality."
+                    ],
+                    [
                         "Team: ",
                         "Erick Olivares, Ian Goldstein, Tony Renoj, Myself"
                     ],
@@ -321,8 +325,8 @@
             "props": {
                 "header": "VoxAI",
                 "subHeader": [
-                    "IXD STUDIO 2",
-                    "Spring 2023"
+                    "Academic Project",
+                    "8 Weeks"
                 ],
                 "mainText": "A mobile app and tablet case that improves communication for non-verbal autistic users."
             }
@@ -729,8 +733,8 @@
             "props": {
                 "header": "SlimBox",
                 "subHeader": [
-                    "IxD Studio 2",
-                    "Spring 2024"
+                    "Academic Project",
+                    "4 Weeks"
                 ],
                 "mainText": "A UI concept helping users keep their inbox decluttered."
             }        
