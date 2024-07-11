@@ -12,6 +12,8 @@ import CaseStudyParagraph from '@/components/case-study/case-study-paragraph';
 import CaseStudyVideo from '@/components/case-study/case-study-video';
 import CaseStudyInsights from '@/components/case-study/case-study-insights';
 
+import { useRef, useEffect, useState } from 'react';
+
 import data from '@/app/content/case-studies.json';
 
 type CaseStudySection = {
@@ -30,6 +32,19 @@ type CaseStudySection = {
 }
 
 export default function Page() {
+ 
+    const overviewRef = useRef(null);
+    const [isInvisible, setIsInvisible] = useState(false);
+    
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) =>{
+            const entry = entries[0];
+            setIsInvisible(!entry.isIntersecting);
+        })
+        {overviewRef.current && (
+            observer.observe(overviewRef.current)
+        )}
+    }, [])
 
     const discoverOlvera = data[0];
     const sections: CaseStudySection[] = discoverOlvera.sections;
@@ -48,7 +63,7 @@ export default function Page() {
             </div>
             <div className={`hidden sm:block sm:w-[30vw] lg:w-[15vw] min-w-[217px] h-[${scrollHeight}px] relative`}>
                 <div id='context-menu-wrapper' className='sticky top-0 right-0 min-w-[217px] h-screen'>
-                    <ContextMenu props={contextMenu.props}></ContextMenu>
+                <ContextMenu props={contextMenu.props} isInvisible={isInvisible} hideTitleAtStart={true}></ContextMenu> 
                 </div>
             </div>
             <div className='mt-16 xl:mt-12 sm:w-[60vw] lg:w-[75vw] sm:mt-12 grow-0 z-9'>
@@ -71,7 +86,7 @@ export default function Page() {
                                     <CaseStudyOverview header={section.header} descriptiveList={section.descriptiveList} image={section.image}/>
                                 )}
                                 {index !== sectionsLength && (
-                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
+                                    <div ref={overviewRef} className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
                         )
@@ -166,6 +181,9 @@ export default function Page() {
                         console.log('This is not an accepted component type')
                 }
             })}
+                <div id='visibilityCheckTest' >
+                    Howdy
+                </div>
             </div>
         </div>
     )

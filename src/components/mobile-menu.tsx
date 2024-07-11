@@ -25,7 +25,7 @@ export default function MobileMenu({props}: {props: ContextMenu}){
             </h6>
         </SheetTrigger>
         <SheetContent side='left' className='w-[250px]'>
-           <ContextMenu props={props} ></ContextMenu>
+           <ContextMenu props={props} isInvisible={true} hideTitleAtStart={false}></ContextMenu>
         </SheetContent>
       </Sheet>
     </>

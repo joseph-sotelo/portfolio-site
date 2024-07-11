@@ -10,35 +10,14 @@ import CaseStudyBigImage from "@/components/case-study/case-study-big-image"
 import ContextMenu from "@/components/context-menu"
 import MobileMenu from "@/components/mobile-menu"
 
+import data from '@/app/content/context-menu.json';
+
 const caseStudyImageProps = {
     src: '/about/data-selfie.svg',
     alt: 'An infographic displaying what Joey takes pictures of',
-    caption: 'Interpret however you like. Interactive Storytelling | Fall 2023',
+    caption: 'Interpret however you like. ',
+    captionSuffix: 'Academic Project | Fall 2023'
 }
-
-
-const contextMenu = {
-    props: {
-      header: 'About Me',
-      subHeader: [
-        'Joey Sotelo',
-        'Design Technologist'],
-      links: [
-        [
-            'LinkedIn',
-            'http://www.linkedin.com/in/joseph-sotelo-27bb82221'
-        ],
-        [
-            'GitHub',
-            'https://github.com/joseph-sotelo'
-        ],
-        [
-            'Resume',
-            'https://drive.google.com/file/d/1QOQX90k8UsTVoyWRSoy7191cTZCTMw4y/view?usp=sharing'
-        ],
-      ]
-    }
-  }
 
   var scrollHeight = 5000;
 
@@ -49,14 +28,17 @@ const contextMenu = {
 // when you find a better pic of you, remove lg:w-[858px] and md:max-w-[320px]
 
 export default function Page(){
+
+    const contextMenuData = data.about;
+
     return(
         <div className='m-auto w-[90vw] sm:w-full sm:m-0 sm:flex justify-evenly'>
             <div className='sm:hidden z-10'>
-                <MobileMenu props={contextMenu.props}></MobileMenu>
+                <MobileMenu props={contextMenuData.props}></MobileMenu>
             </div>
             <div className={`hidden sm:block sm:w-[30vw] lg:w-[15vw] min-w-[217px] h-[${scrollHeight}] relative`}>
                 <div id='context-menu-wrapper' className='sticky top-0 right-0 min-w-[217px] h-screen'>
-                    <ContextMenu props={contextMenu.props}></ContextMenu>
+                    <ContextMenu props={contextMenuData.props} isInvisible={true} hideTitleAtStart={false}></ContextMenu>
                 </div>
             </div>
             <div id='main' className='mt-16 xl:mt-12 sm:w-[60vw] md:w-[67vw] lg:w-[75vw] sm:mt-12 grow-0 z-9'>
