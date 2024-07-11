@@ -131,7 +131,14 @@ a {
 
 .p-small {
   line-height: 1.25rem;
-  margin-top: 1.25rem;
+  font-size: .75rem;
+  font-weight: 400;
+}
+
+.subheader {
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
   font-size: .75rem;
   font-weight: 400;
 }

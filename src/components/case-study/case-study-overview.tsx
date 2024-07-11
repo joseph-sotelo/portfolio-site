@@ -5,7 +5,7 @@ export default function CaseStudyOverview({header, descriptiveList, image}: {hea
 
     return(
         <div className='w-[67vw] sm:w-[60vw] md:w-[67vw] flex flex-col xl:flex-row justify-between mb-12 mx-auto xl:ml-0'>
-             <div id='left' className='xl:w-[28vw] lg:mt-[11.25rem] mt-[.75rem]'>
+             <div id='left' className='xl:w-[28vw] lg:mt-[11.8rem] mt-[.75rem]'>
                 <h2 className='text-secondary-foreground'>
                     {header}
                 </h2>
