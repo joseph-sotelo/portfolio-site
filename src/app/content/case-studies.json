@@ -115,14 +115,14 @@
                 ],
                 "images": [
                     [
-                        "/work/discover-olvera/chroma.png",
-                        "Image of text reading 'Chroma: ancient sculpture in color' in front of a Sphinx sculpture",
-                        "Poster for Chroma AR by The MET"
-                    ], 
-                    [
                         "/work/discover-olvera/google-maps.png",
                         "Screenshot of Olvera Street on Google maps",
                         "Many businesses at Olvera are not displayed on Google and Apple maps."
+                    ],
+                    [
+                        "/work/discover-olvera/chroma.png",
+                        "Image of text reading 'Chroma: ancient sculpture in color' in front of a Sphinx sculpture",
+                        "Poster for Chroma AR by The MET"
                     ]
                 ]
             },

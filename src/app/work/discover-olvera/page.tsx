@@ -66,7 +66,7 @@ export default function Page() {
                 <ContextMenu props={contextMenu.props} isInvisible={isInvisible} hideTitleAtStart={true}></ContextMenu> 
                 </div>
             </div>
-            <div className='mt-16 xl:mt-12 sm:w-[60vw] lg:w-[75vw] sm:mt-12 grow-0 z-9'>
+            <div className='mt-16 xl:mt-12 sm:w-[60vw] lg:w-[75vw] sm:mt-12 grow-0 z-9 mb-24'>
             {sections.map((section, index) => {
                 switch(section.componentType) {
                     case 'caseStudyBigText':
@@ -181,9 +181,6 @@ export default function Page() {
                         console.log('This is not an accepted component type')
                 }
             })}
-                <div id='visibilityCheckTest' >
-                    Howdy
-                </div>
             </div>
         </div>
     )

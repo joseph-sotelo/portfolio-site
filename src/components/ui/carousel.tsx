@@ -206,9 +206,9 @@ const CarouselPrevious = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute  h-8 w-8 rounded-full",
+        "h-8 w-8 rounded-full border border-accent-foreground",
         orientation === "horizontal"
-          ? "-left-12 top-1/2 -translate-y-1/2"
+          ? "mt-8"
           : "-top-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
@@ -216,7 +216,7 @@ const CarouselPrevious = React.forwardRef<
       onClick={scrollPrev}
       {...props}
     >
-      <ArrowLeftIcon className="h-4 w-4" />
+      <ArrowLeftIcon className="h-4 w-4" color="#0a0182" />
       <span className="sr-only">Previous slide</span>
     </Button>
   )
@@ -235,9 +235,9 @@ const CarouselNext = React.forwardRef<
       variant={variant}
       size={size}
       className={cn(
-        "absolute h-8 w-8 rounded-full",
+        "h-8 w-8 rounded-full border border-accent-foreground",
         orientation === "horizontal"
-          ? "-right-12 top-1/2 -translate-y-1/2"
+          ? "mt-8"
           : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90",
         className
       )}
@@ -245,12 +245,21 @@ const CarouselNext = React.forwardRef<
       onClick={scrollNext}
       {...props}
     >
-      <ArrowRightIcon className="h-4 w-4" />
+      <ArrowRightIcon className="h-4 w-4" color="#0a0182" />
       <span className="sr-only">Next slide</span>
     </Button>
   )
 })
 CarouselNext.displayName = "CarouselNext"
+
+// const CarouselButtons = React.forwardRef<
+// HTMLDivElement,
+// React.HTMLAttributes<HTMLDivElement>
+// >(({ className, ...props }, ref) => {
+//  return(
+  
+//  )
+// })
 
 export {
   type CarouselApi,

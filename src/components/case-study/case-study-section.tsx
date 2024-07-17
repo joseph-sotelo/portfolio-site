@@ -41,8 +41,10 @@ export default function CaseStudySection({header, mainText, bullets, images}: {h
                                 </CarouselItem>
                         ))}
                     </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
+                    <div className='absolute top-full flex justify-around w-full'>
+                        <CarouselPrevious />
+                        <CarouselNext />
+                    </div>
                     </Carousel>
                 )}
                 {images.length == 1 && (
