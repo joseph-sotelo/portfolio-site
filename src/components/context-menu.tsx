@@ -31,7 +31,7 @@ export default function ContextMenu({props, isInvisible, hideTitleAtStart}: {pro
     const mainInfoHeight = headerHeight + mainTextHeight;
  
     return (
-        <div className='mx-auto sm:mr-0 h-full mt-0 w-[217px] flex flex-col justify-between text-right'>
+        <div id='static-text-menu' className='sticky top-0 h-screen flex flex-col justify-between text-right'>
             <div className='flex flex-col mt-[3rem]'>
                 <MainNav/>
                 <Separator className='opacity-60 mt-5'/>
