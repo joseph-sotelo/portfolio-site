@@ -32,7 +32,7 @@ export default function ContextMenu({props, isInvisible, hideTitleAtStart}: {pro
  
     return (
         <div id='static-text-menu' className='sticky top-0 h-screen flex flex-col justify-between text-right'>
-            <div className='flex flex-col mt-[3rem]'>
+            <div className='flex flex-col mt-12'>
                 <MainNav/>
                 <Separator className='opacity-60 mt-5'/>
                 <div className='opacity-50 flex flex-col gap-5 mt-5'>

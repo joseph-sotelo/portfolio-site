@@ -14,19 +14,19 @@ import {
 export default function PieceCard({name, image, page, labels}: {name: string, image: string, page: string, labels: string[]}) {
     return(
         <Link href={page}>
-            <Card className='max-w-[375px] shadow'>
+            <Card className='max-w-[375px] sm:max-w-full shadow'>
                 <CardContent>
                         <Image alt={`${name} cover image`} src={image} className='object-cover w-full h-full aspect-square rounded-t-sm' width='375' height='375'/>
                 </CardContent>
                 <CardHeader id='card-header' className='px-4 py-3'>
                     <CardTitle>{name}</CardTitle>
                 </CardHeader>
-                <CardFooter className='w-full px-4 pb-4'>
-                    <div className='w=full'>
+                <CardFooter className='w-full px-4 pb-4 max-h-[76px] flex items-start'>
+                    <div className='w-full max-h-[60px] overflow-y-clip'>
                         {
                             labels.map((label, index) =>
                                 <Badge variant='outline' key={index} className='m-[4px]'>
-                                    {label}
+                                    {`#${label}`}
                                 </Badge>
                             )
                         }
