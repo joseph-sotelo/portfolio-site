@@ -2,7 +2,7 @@
 
 import PieceCardGrid from '../components/piece-card-grid';
 
-export default function Work(){
+export default function Page(){
 
   return(
       <div id="card-grid-wrapper" className='mt-12 mb-24'>

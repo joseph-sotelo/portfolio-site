@@ -1,17 +1,33 @@
 'use client'
-import { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState, useContext } from "react";
 import MainNav from "./main-nav";
 import { Separator } from "./ui/separator";
 import { LinkedInLogoIcon, GitHubLogoIcon, ArrowTopRightIcon } from "@radix-ui/react-icons";
+import { StaticMenuContext } from "@/app/sub-layout";
+import { usePathname } from 'next/navigation';
 
-type ContextMenu = {
+import data from '@/app/content/context-menu.json';
+
+type ContextMenuProps = {
     header: string,  
+    hideTitleAtStart: boolean,
     subHeader: string[],  
     mainText?: string, 
     links?: string[][],
 }
 
-export default function ContextMenu({props, isInvisible, hideTitleAtStart}: {props: ContextMenu, isInvisible: boolean, hideTitleAtStart: boolean}) {
+type PageKey = '' | 'blog' | 'about' | 'discover-olvera';
+
+export default function ContextMenu() {
+    
+    let currentPathname = usePathname();
+    const currentPage = currentPathname.slice(currentPathname.lastIndexOf('/') + 1, currentPathname.length) as PageKey;
+    const contextMenuProps = data[currentPage] as ContextMenuProps;
+
+    let {isOffScreen} = useContext(StaticMenuContext);
+    useEffect(()=>{
+        console.log('context change in context menu: ' + isOffScreen);
+    },[isOffScreen]);
 
     const headerRef = useRef<HTMLHeadingElement>(null);
     const mainTextRef = useRef<HTMLDivElement>(null);
@@ -37,7 +53,7 @@ export default function ContextMenu({props, isInvisible, hideTitleAtStart}: {pro
                 <Separator className='opacity-60 mt-5'/>
                 <div className='opacity-50 flex flex-col gap-5 mt-5'>
                     <div className='subheader'>
-                        {props.subHeader.map((line) => {
+                        {contextMenuProps.subHeader.map((line) => {
                             return (
                                 <>
                                     {line}<br />
@@ -47,27 +63,27 @@ export default function ContextMenu({props, isInvisible, hideTitleAtStart}: {pro
                     </div>
                     <div id='mainInfo' className='flex flex-col gap-5 transition-all duration-1000 overflow-hidden'
                     style={
-                        hideTitleAtStart ? {
-                            height: isInvisible ? `${mainInfoHeight + 20}px` : '0px',
-                            opacity: isInvisible ? '1' : '0'
+                        contextMenuProps.hideTitleAtStart ? {
+                            height: isOffScreen ? `${mainInfoHeight + 20}px` : '0px',
+                            opacity: isOffScreen ? '1' : '0'
                         } : {
                             marginBottom: '1.25rem',
                         }
                     }>
                         <h5 id='header' ref={headerRef}>
-                                {props.header}
+                                {contextMenuProps.header}
                         </h5>
-                        {props.mainText && (
+                        {contextMenuProps.mainText && (
                         <div id='mainText' ref={mainTextRef} className='p-small pb-5'>
-                                {props.mainText}
+                                {contextMenuProps.mainText}
                         </div>
                         )}
                     </div>
                 </div>
                 <Separator className='opacity-60'/>
                 <div className='opacity-60 mt-5'>
-                {props.links && (
-                    props.links.map((link, index) => {
+                {contextMenuProps.links && (
+                    contextMenuProps.links.map((link, index) => {
                         switch(link[0]) {
                             case 'LinkedIn':
                                 return (

@@ -1,44 +1,50 @@
 {
-    "work" : {
-        "props": {
-            "header": "My Work",
-            "subHeader": [
-                "Joey Sotelo",
-                "Design Technologist"
-            ]
-        }
+    "" : {
+        "header": "My Work",
+        "hideTitleAtStart": false,
+        "subHeader": [
+            "Joey Sotelo",
+            "Design Technologist"
+        ]
     },
     "about": {
-        "props": {
-            "header": "About Me",
-            "subHeader": [
-                "Joey Sotelo",
-                "Design Technologist"
+        "header": "About Me",
+        "hideTitleAtStart": false,
+        "subHeader": [
+            "Joey Sotelo",
+            "Design Technologist"
+        ],
+        "links": [
+            [
+                "LinkedIn",
+                "http://www.linkedin.com/in/joseph-sotelo-27bb82221"
             ],
-            "links": [
-                [
-                    "LinkedIn",
-                    "http://www.linkedin.com/in/joseph-sotelo-27bb82221"
-                ],
-                [
-                    "GitHub",
-                    "https://github.com/joseph-sotelo"
-                ],
-                [
-                    "Resume",
-                    "https://drive.google.com/file/d/1xJqjc8eAIXUvVddKYYgyuVyAO13XGfu-/view?usp=sharing"
-                ]
+            [
+                "GitHub",
+                "https://github.com/joseph-sotelo"
+            ],
+            [
+                "Resume",
+                "https://drive.google.com/file/d/1xJqjc8eAIXUvVddKYYgyuVyAO13XGfu-/view?usp=sharing"
             ]
-        }
+        ]
     },
     "blog": {
-        "props": {
-            "header": "Blog",
-            "subHeader": [
-                "Joey Sotelo",
-                "Design Technologist"
-            ],
-            "mainText": "I write to help me process new information about design, but hey - maybe someone actually reads these too."
-        }
+        "header": "Blog",
+        "hideTitleAtStart": false,
+        "subHeader": [
+            "Joey Sotelo",
+            "Design Technologist"
+        ],
+        "mainText": "I write to help me process new information about design, but hey - maybe someone actually reads these too."
+    },
+    "discover-olvera": {
+        "header": "Discover Olvera",
+        "hideTitleAtStart": true,
+        "subHeader": [
+            "Academic Project",
+            "14 Weeks"
+        ],
+        "mainText": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using augmented reality."
     }    
 }

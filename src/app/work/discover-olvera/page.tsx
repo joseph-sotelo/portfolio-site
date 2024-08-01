@@ -4,15 +4,15 @@ import CaseStudyOverview from '@/components/case-study/case-study-overview';
 import CaseStudySection from '@/components/case-study/case-study-section';
 import CaseStudyBigText from '@/components/case-study/case-study-big-text';
 import CaseStudyBillBoard from '@/components/case-study/case-study-billboard';
-import ContextMenu from '@/components/context-menu';
-import MobileMenu from '@/components/mobile-menu';
 import CaseStudyChapter from '@/components/case-study/case-study-chapter';
 import CaseStudyPrototype from '@/components/case-study/case-study-prototype';
 import CaseStudyParagraph from '@/components/case-study/case-study-paragraph';
 import CaseStudyVideo from '@/components/case-study/case-study-video';
 import CaseStudyInsights from '@/components/case-study/case-study-insights';
 
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState, useContext } from 'react';
+
+import { StaticMenuContext } from '@/app/sub-layout';
 
 import data from '@/app/content/case-studies.json';
 
@@ -32,14 +32,17 @@ type CaseStudySection = {
 }
 
 export default function Page() {
- 
+
     const overviewRef = useRef(null);
-    const [isInvisible, setIsInvisible] = useState(false);
+    const {setIsOffScreen} = useContext(StaticMenuContext);
     
     useEffect(() => {
         const observer = new IntersectionObserver((entries) =>{
             const entry = entries[0];
-            setIsInvisible(!entry.isIntersecting);
+            let isInvisible = (!entry.isIntersecting);
+            console.log('isinvisible: ' + isInvisible)
+            setIsOffScreen(isInvisible);
+            console.log('context: ' + StaticMenuContext);
         })
         {overviewRef.current && (
             observer.observe(overviewRef.current)

@@ -1,10 +1,12 @@
+'use client'
+
 import {
     Sheet,
     SheetContent,
     SheetTrigger,
   } from "@/components/ui/sheet"
 import ContextMenu from '@/components/context-menu';
-import { Button } from "./ui/button";
+import { StaticMenuContext } from "../app/content/static-menu-context";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 
 type ContextMenu = {
@@ -14,7 +16,7 @@ type ContextMenu = {
   links?: string[][]
 }
 
-export default function MobileMenu({props}: {props: ContextMenu}){
+export default function MobileMenu(){
   return(
     <>
       <Sheet>
@@ -26,14 +28,14 @@ export default function MobileMenu({props}: {props: ContextMenu}){
               </SheetTrigger>
               <h6>
                 <strong>
-                  {props.header}
+                  Header
                 </strong>
               </h6>
             </div>
           </div>
         </div>
         <SheetContent side='left' className='w-2/3 px-4 pt-4'>
-           <ContextMenu props={props} isInvisible={true} hideTitleAtStart={false}></ContextMenu>
+           <ContextMenu></ContextMenu>
         </SheetContent>
       </Sheet>
     </>
