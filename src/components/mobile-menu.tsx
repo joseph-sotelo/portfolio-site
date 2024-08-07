@@ -6,7 +6,7 @@ import {
     SheetTrigger,
   } from "@/components/ui/sheet"
 import ContextMenu from '@/components/context-menu';
-import { StaticMenuContext } from "../app/content/static-menu-context";
+import { StaticMenuContext } from "../app/data/static-menu-context";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 
 type ContextMenu = {

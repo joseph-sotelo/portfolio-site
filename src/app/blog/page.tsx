@@ -2,7 +2,7 @@
 import ContextMenu from '@/components/context-menu';
 import MobileMenu from '@/components/mobile-menu';
 
-import data from '@/app/content/context-menu.json';
+import data from '@/app/data/context-menu.json';
 
 var scrollHeight = 5000;
 

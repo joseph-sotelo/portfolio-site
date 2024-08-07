@@ -14,7 +14,7 @@ import CaseStudyParagraph from '@/components/case-study/case-study-paragraph';
 import CaseStudyVideo from '@/components/case-study/case-study-video';
 import CaseStudyInsights from '@/components/case-study/case-study-insights';
 
-import data from '@/app/content/case-studies.json';
+import data from '@/app/data/case-studies.json';
 
 type CaseStudySection = {
     key: string;

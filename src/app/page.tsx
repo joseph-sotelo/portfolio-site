@@ -1,12 +1,13 @@
-'use client'
-
-import PieceCardGrid from '../components/piece-card-grid';
+import CaseStudyLayout from "@/components/case-study/case-study-layout"
+import { MainLayout } from "@/components/main-layout"
+import PieceCardGrid from "@/components/piece-card-grid"
 
 export default function Page(){
 
-  return(
-      <div id="card-grid-wrapper" className='mt-12 mb-24'>
-          <PieceCardGrid />
-        </div>
-  )
+    const thisPageContent = <PieceCardGrid />
+
+    return(
+        <MainLayout mainContent = {thisPageContent}>
+        </MainLayout>
+    )
 }

@@ -1,6 +1,6 @@
-[
-    {
-        "cardProps": {
+{
+    "discover-olvera": {
+        "caseStudyCardProps": {
             "name": "Discover Olvera",
             "image": "/work/discover-olvera/discover-olvera-cover.png",
             "page": "/work/discover-olvera",
@@ -13,14 +13,13 @@
             ]
         },
         "contextMenuData": {
-            "props": {
-                "header": "Discover Olvera",
-                "subHeader": [
-                    "Academic Project",
-                    "14 Weeks"
-                ],
-                "mainText": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using augmented reality."
-            }
+            "header": "Discover Olvera",
+            "hideTitleAtStart": true,
+            "subHeader": [
+                "Academic Project",
+                "14 Weeks"
+            ],
+            "mainText": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using augmented reality."
         },
         "sections": [
             {
@@ -308,8 +307,8 @@
             }
         ]
     },
-    {
-        "cardProps": {
+    "voxai": {
+        "caseStudyCardProps": {
             "name": "VoxAI",
             "image": "/work/voxai/hi-fi-render.png",
             "page": "/work/voxai",
@@ -322,14 +321,13 @@
             ]
         },
         "contextMenuData": {
-            "props": {
-                "header": "VoxAI",
-                "subHeader": [
-                    "Academic Project",
-                    "8 Weeks"
-                ],
-                "mainText": "A mobile app and tablet case that improves communication for non-verbal autistic users."
-            }
+            "header": "VoxAI",
+            "hideTitleAtStart": true,
+            "subHeader": [
+                "Academic Project",
+                "8 Weeks"
+            ],
+            "mainText": "A mobile app and tablet case that improves communication for non-verbal autistic users."
         },
         "sections": [
             {
@@ -718,8 +716,8 @@
         ],
         "terminus": "terminus"
     },
-    {
-        "cardProps": {
+    "slimbox": {
+        "caseStudyCardProps": {
             "name": "SlimBox",
             "image": "/work/slimbox/swot.png",
             "page": "/work/slimbox",
@@ -730,14 +728,13 @@
             ]
         },
         "contextMenuData": {
-            "props": {
-                "header": "SlimBox",
-                "subHeader": [
-                    "Academic Project",
-                    "4 Weeks"
-                ],
-                "mainText": "A UI concept helping users keep their inbox decluttered."
-            }        
+            "header": "SlimBox",
+            "hideTitleAtStart": true,
+            "subHeader": [
+                "Academic Project",
+                "4 Weeks"
+            ],
+            "mainText": "A UI concept helping users keep their inbox decluttered."   
         },
         "sections": [
             {
@@ -863,8 +860,8 @@
             }
         ]
     },
-    {
-        "cardProps": {
+    "other": {
+        "caseStudyCardProps": {
             "name": "Other Stuff I Do",
             "image": "/work/other/other-cover.png",
             "page": "/work/other",
@@ -876,16 +873,15 @@
             ]
         },
         "contextMenuData": {
-            "props": {
-                "header": "Other Skills",
-                "subHeader": [
-                    "Joey Sotelo",
-                    "Design Technologist"
-                ]
-            }        
-        },
+            "header": "Other Skills",
+            "hideTitleAtStart": true,
+            "subHeader": [
+                "Joey Sotelo",
+                "Design Technologist"
+            ]
+        },        
         "sections": [
         
         ]
     }
-]
+}

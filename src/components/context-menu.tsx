@@ -3,10 +3,10 @@ import { useRef, useEffect, useState, useContext } from "react";
 import MainNav from "./main-nav";
 import { Separator } from "./ui/separator";
 import { LinkedInLogoIcon, GitHubLogoIcon, ArrowTopRightIcon } from "@radix-ui/react-icons";
-import { StaticMenuContext } from "@/app/sub-layout";
+import { StaticMenuContext } from "@/app/data/static-menu-context";
 import { usePathname } from 'next/navigation';
 
-import data from '@/app/content/context-menu.json';
+import data from '@/app/data/context-menu.json';
 
 type ContextMenuProps = {
     header: string,  

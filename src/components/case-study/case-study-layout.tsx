@@ -1,55 +1,49 @@
 'use client'
 
-import { useRef, useEffect, useState } from 'react';
-
 import CaseStudyOverview from '@/components/case-study/case-study-overview';
-import CaseStudySection from '@/components/case-study/case-study-section';
+import CaseStudyStandardSection from '@/components/case-study/case-study-standard-section';
 import CaseStudyBigText from '@/components/case-study/case-study-big-text';
 import CaseStudyBillBoard from '@/components/case-study/case-study-billboard';
-import ContextMenu from '@/components/context-menu';
-import MobileMenu from '@/components/mobile-menu';
 import CaseStudyChapter from '@/components/case-study/case-study-chapter';
 import CaseStudyPrototype from '@/components/case-study/case-study-prototype';
 import CaseStudyParagraph from '@/components/case-study/case-study-paragraph';
 import CaseStudyVideo from '@/components/case-study/case-study-video';
 import CaseStudyInsights from '@/components/case-study/case-study-insights';
 
-import data from '@/app/data/case-studies.json'
+import { useRef, useEffect, useState, useContext } from 'react';
 
-type CaseStudySection = {
-    key: string;
-    componentType: string;
-    descriptiveList?: string[][];
-    header?: string;
-    secondaryText?: string;
-    mainText?: string;
-    bullets?: string[];
-    images?: string[][];
-    image?: string;
-    src?: string;
-    hostType?: string;
-    sources?: string[];
-}
+import { usePathname } from 'next/navigation';
 
-export default function Page() {
+import { StaticMenuContext } from '@/app/data/static-menu-context';
+
+import { CaseStudySection, PageKey, CaseStudy } from '../component-types';
+
+import data from '@/app/data/case-studies.json';
+
+export default function CaseStudyLayout() {
+
+    let currentPathname = usePathname();
+    const currentPage = currentPathname.slice(currentPathname.lastIndexOf('/') + 1, currentPathname.length) as PageKey;
+    const pageData: CaseStudy = data[currentPage];
+    const pageSections: CaseStudySection[] = pageData.sections;
+    const pageSectionsLength = pageSections.length -1;
 
     const overviewRef = useRef(null);
-    const [isInvisible, setIsInvisible] = useState(false);
+    const {setIsOffScreen} = useContext(StaticMenuContext);
     
     useEffect(() => {
         const observer = new IntersectionObserver((entries) =>{
             const entry = entries[0];
-            setIsInvisible(!entry.isIntersecting);
+            let isInvisible = (!entry.isIntersecting);
+            console.log('isinvisible: ' + isInvisible)
+            setIsOffScreen(isInvisible);
+            console.log('context: ' + StaticMenuContext);
         })
         {overviewRef.current && (
             observer.observe(overviewRef.current)
         )}
     }, [])
 
-    const slimBox = data[2];
-    const sections: CaseStudySection[] = slimBox.sections;
-    const sectionsLength = sections.length -1;
-    const contextMenu = slimBox.contextMenuData;
     var scrollHeight = 5000;
 
     if (typeof document !== 'undefined') {
@@ -57,23 +51,14 @@ export default function Page() {
     }
     
     return(
-        <div className='m-auto w-[90vw] sm:w-full sm:m-0 sm:flex justify-evenly'>
-            <div className='sm:hidden z-10'>
-                <MobileMenu props={contextMenu.props}></MobileMenu>
-            </div>
-            <div className={`hidden sm:block sm:w-[30vw] lg:w-[15vw] min-w-[217px] h-[${scrollHeight}px] relative`}>
-                <div id='context-menu-wrapper' className='sticky top-0 right-0 min-w-[217px] h-screen'>
-                    <ContextMenu props={contextMenu.props} isInvisible={isInvisible} hideTitleAtStart={true}></ContextMenu>
-                </div>
-            </div>
             <div className='mt-16 xl:mt-12 sm:w-[60vw] lg:w-[75vw] sm:mt-12 grow-0 z-9 mb-24'>
-            {sections.map((section, index) => {
+            {pageSections.map((section, index) => {
                 switch(section.componentType) {
                     case 'caseStudyBigText':
                         return (
                             <div key={index}>
                                 <CaseStudyBigText secondaryText={section.secondaryText} mainText={section.mainText}/>
-                                {index !== sectionsLength && (
+                                {index !== pageSectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
@@ -85,7 +70,7 @@ export default function Page() {
                                 {section.header !== undefined && section.descriptiveList !== undefined && section.image !== undefined && (
                                     <CaseStudyOverview header={section.header} descriptiveList={section.descriptiveList} image={section.image}/>
                                 )}
-                                {index !== sectionsLength && (
+                                {index !== pageSectionsLength && (
                                     <div ref={overviewRef} className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
@@ -95,9 +80,9 @@ export default function Page() {
                         return (
                             <div key={index}>
                                 {section.images !== undefined && (
-                                    <CaseStudySection header={section.header} mainText={section.mainText} bullets={section.bullets} images={section.images}/>
+                                    <CaseStudyStandardSection header={section.header} mainText={section.mainText} bullets={section.bullets} images={section.images}/>
                                 )}
-                                {index !== sectionsLength && (
+                                {index !== pageSectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
@@ -109,7 +94,7 @@ export default function Page() {
                                 {section.sources !== undefined && (
                                     <CaseStudyVideo header={section.header} mainText={section.mainText} sources={section.sources} hostType={section.hostType}/>
                                 )}
-                                {index !== sectionsLength && (
+                                {index !== pageSectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
@@ -121,7 +106,7 @@ export default function Page() {
                                 {section.descriptiveList !== undefined && (
                                     <CaseStudyInsights header={section.header} secondaryText={section.secondaryText} descriptiveList={section.descriptiveList}/>
                                 )}
-                                {index !== sectionsLength && (
+                                {index !== pageSectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
@@ -131,7 +116,7 @@ export default function Page() {
                         return (
                             <div key={index}>
                                     <CaseStudyChapter header={section.header}/>
-                                {index !== sectionsLength && (
+                                {index !== pageSectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
@@ -141,7 +126,7 @@ export default function Page() {
                         return (
                             <div key={index}>
                                     <CaseStudyBillBoard header={section.header} mainText={section.mainText} images={section.images ?? []}/>
-                                {index !== sectionsLength && (
+                                {index !== pageSectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
@@ -151,7 +136,7 @@ export default function Page() {
                         return (
                             <div key={index}>
                                     <CaseStudyPrototype header={section.header} mainText={section.mainText} ></CaseStudyPrototype>
-                                {index !== sectionsLength && (
+                                {index !== pageSectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
@@ -161,7 +146,7 @@ export default function Page() {
                         return (
                             <div key={index}>
                                     <CaseStudyParagraph header={section.header} mainText={section.mainText} ></CaseStudyParagraph>
-                                {index !== sectionsLength && (
+                                {index !== pageSectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
@@ -171,7 +156,7 @@ export default function Page() {
                         return (
                             <div key={index}>
                                     <CaseStudyBigText secondaryText={section.secondaryText} mainText={section.mainText} ></CaseStudyBigText>
-                                {index !== sectionsLength && (
+                                {index !== pageSectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
@@ -182,6 +167,5 @@ export default function Page() {
                 }
             })}
             </div>
-        </div>
     )
 }
