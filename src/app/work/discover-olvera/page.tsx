@@ -3,10 +3,9 @@ import { MainLayout } from "@/components/main-layout"
 
 export default function Page(){
 
-    const discoverOlvera = <ScrollSectionsFormatter />
-
     return(
-        <MainLayout mainContent = {discoverOlvera}>
+        <MainLayout>
+            <ScrollSectionsFormatter />
         </MainLayout>
     )
 }

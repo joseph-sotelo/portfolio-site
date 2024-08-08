@@ -3,10 +3,9 @@ import { MainLayout } from "@/components/main-layout"
 
 export default function Page(){
 
-    const voxai = <ScrollSectionsFormatter />
-
     return(
-        <MainLayout mainContent = {voxai}>
+        <MainLayout>
+            <ScrollSectionsFormatter />
         </MainLayout>
     )
 }

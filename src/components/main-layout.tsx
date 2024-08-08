@@ -10,7 +10,11 @@ interface MainContent {
   mainContent: React.ReactNode;
 }
 
-export function MainLayout({mainContent}: MainContent){
+export function MainLayout({
+  children,
+}: {
+  children: React.ReactNode
+}){
 
     const [isOffScreen, setIsOffScreen] = useState(false);
     const value = {isOffScreen, setIsOffScreen};
@@ -27,7 +31,7 @@ export function MainLayout({mainContent}: MainContent){
               </div>
             </div>
             <div id='content' className='mr-auto ml-auto max-w-[373px] sm:ml-0 sm:max-w-full sm:col-span-8 2xl:col-span-10'> 
-              {mainContent}
+              {children}
             </div> 
           </StaticMenuContext.Provider>
       </div>

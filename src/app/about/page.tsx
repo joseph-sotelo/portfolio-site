@@ -11,14 +11,12 @@ export default function Page(){
     const accordionData = aboutSections[0] as AccordionType;
     const bigImageData = aboutSections[1] as BigImageType;
 
-    const about =  (
-        <>
-            <AccordionScrollSection props={accordionData} />
-            <BigImage props={bigImageData} />
-        </>
-    )
     return(
-        <MainLayout mainContent = {about}>
+        <MainLayout >
+            <>
+                <AccordionScrollSection props={accordionData} />
+                <BigImage props={bigImageData} />
+            </>
         </MainLayout>
     )
 }
