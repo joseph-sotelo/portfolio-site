@@ -1,4 +1,4 @@
-export type CaseStudySection = {
+export type CaseStudySectionType = {
     key: string;
     componentType: string;
     descriptiveList?: string[][];
@@ -13,14 +13,14 @@ export type CaseStudySection = {
     sources?: string[];
 }
 
-export type CaseStudyCardProps = {
+export type CaseStudyCardType = {
     name: string;
     image: string;
     page: string;
     labels: string[];
 }
 
-export type ContextMenu = {
+export type StaticMenuType = {
     header: string,  
     hideTitleAtStart: boolean,
     subHeader: string[],  
@@ -28,10 +28,12 @@ export type ContextMenu = {
     links?: string[][],
 }
 
-export type CaseStudy = {
-    caseStudyCardProps: CaseStudyCardProps;
-    contextMenuData: ContextMenu;
-    sections: CaseStudySection[];
+export type CaseStudyType = {
+    caseStudyCardProps: CaseStudyCardType;
+    contextMenuData: StaticMenuType;
+    sections: CaseStudySectionType[];
 }
 
-export type PageKey = 'discover-olvera' | 'voxai' | 'slimbox' | 'other';
+export type CaseStudyPageKeyType = 'discover-olvera' | 'voxai' | 'slimbox' | 'other';
+
+export type GlobalPageKeyType = 'discover-olvera' | 'voxai' | 'slimbox' | 'other' | '' | 'about';

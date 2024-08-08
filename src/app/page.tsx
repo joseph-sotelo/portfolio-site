@@ -1,13 +1,13 @@
 import CaseStudyLayout from "@/components/case-study/case-study-layout"
 import { MainLayout } from "@/components/main-layout"
-import PieceCardGrid from "@/components/piece-card-grid"
+import CardGrid from "@/components/card-grid"
 
 export default function Page(){
 
-    const thisPageContent = <PieceCardGrid />
+    const cardGrid = <CardGrid />
 
     return(
-        <MainLayout mainContent = {thisPageContent}>
+        <MainLayout mainContent = {cardGrid}>
         </MainLayout>
     )
 }

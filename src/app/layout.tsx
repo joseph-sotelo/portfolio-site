@@ -27,12 +27,6 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
 
-  var scrollHeight = 5000;
-
-  if (typeof document !== 'undefined') {
-      scrollHeight = document.documentElement.scrollHeight;
-  }
-
   return (
     <html lang="en">
       <body className={cn(

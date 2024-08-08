@@ -11,44 +11,35 @@ import CaseStudyVideo from '@/components/case-study/case-study-video';
 import CaseStudyInsights from '@/components/case-study/case-study-insights';
 
 import { useRef, useEffect, useState, useContext } from 'react';
-
 import { usePathname } from 'next/navigation';
 
 import { StaticMenuContext } from '@/app/data/static-menu-context';
-
-import { CaseStudySection, PageKey, CaseStudy } from '../component-types';
-
+import { CaseStudySectionType, CaseStudyPageKeyType, CaseStudyType } from '../component-types';
 import data from '@/app/data/case-studies.json';
 
 export default function CaseStudyLayout() {
 
+    // get relevant data from json file based on pathname
     let currentPathname = usePathname();
-    const currentPage = currentPathname.slice(currentPathname.lastIndexOf('/') + 1, currentPathname.length) as PageKey;
-    const pageData: CaseStudy = data[currentPage];
-    const pageSections: CaseStudySection[] = pageData.sections;
+    const currentPage = currentPathname.slice(currentPathname.lastIndexOf('/') + 1, currentPathname.length) as CaseStudyPageKeyType;
+    const pageData: CaseStudyType = data[currentPage];
+    const pageSections: CaseStudySectionType[] = pageData.sections;
     const pageSectionsLength = pageSections.length -1;
 
+    // set the context-stored boolean based on the overview component's visibility. Context is consumed by the static menu component.
     const overviewRef = useRef(null);
     const {setIsOffScreen} = useContext(StaticMenuContext);
     
     useEffect(() => {
         const observer = new IntersectionObserver((entries) =>{
             const entry = entries[0];
-            let isInvisible = (!entry.isIntersecting);
-            console.log('isinvisible: ' + isInvisible)
-            setIsOffScreen(isInvisible);
-            console.log('context: ' + StaticMenuContext);
+            let isOffScreen = (!entry.isIntersecting);
+            setIsOffScreen(isOffScreen);
         })
         {overviewRef.current && (
             observer.observe(overviewRef.current)
         )}
     }, [])
-
-    var scrollHeight = 5000;
-
-    if (typeof document !== 'undefined') {
-        scrollHeight = document.documentElement.scrollHeight;
-    }
     
     return(
             <div className='mt-16 xl:mt-12 sm:w-[60vw] lg:w-[75vw] sm:mt-12 grow-0 z-9 mb-24'>

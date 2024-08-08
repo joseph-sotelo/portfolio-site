@@ -1,20 +1,8 @@
 'use client'
 
-import {
-    Sheet,
-    SheetContent,
-    SheetTrigger,
-  } from "@/components/ui/sheet"
-import ContextMenu from '@/components/context-menu';
-import { StaticMenuContext } from "../app/data/static-menu-context";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import StaticMenu from '@/components/static-menu';
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
-
-type ContextMenu = {
-  header: string,  
-  subHeader: string[],  
-  mainText?: string, 
-  links?: string[][]
-}
 
 export default function MobileMenu(){
   return(
@@ -35,7 +23,7 @@ export default function MobileMenu(){
           </div>
         </div>
         <SheetContent side='left' className='w-2/3 px-4 pt-4'>
-           <ContextMenu></ContextMenu>
+           <StaticMenu></StaticMenu>
         </SheetContent>
       </Sheet>
     </>

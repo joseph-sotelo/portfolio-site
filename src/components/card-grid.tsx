@@ -3,7 +3,7 @@
 import PieceCard from './piece-card';
 import data from '../app/data/case-studies.json'
 
-  export default function PieceCardGrid(){
+  export default function CardGrid(){
 
     var sections = Object.values(data);
     

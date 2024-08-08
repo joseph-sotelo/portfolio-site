@@ -3,10 +3,10 @@ import { MainLayout } from "@/components/main-layout"
 
 export default function Page(){
 
-    const thisPageContent = <CaseStudyLayout />
+    const discoverOlvera = <CaseStudyLayout />
 
     return(
-        <MainLayout mainContent = {thisPageContent}>
+        <MainLayout mainContent = {discoverOlvera}>
         </MainLayout>
     )
 }

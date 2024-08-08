@@ -1,29 +1,19 @@
 'use client'
 
-import ContextMenu from '@/components/context-menu';
+import StaticMenu from '@/components/static-menu';
 import MobileMenu from '@/components/mobile-menu';
 import { StaticMenuContext } from '@/app/data/static-menu-context';
 
-import { useState, useEffect, createContext, SetStateAction, Dispatch, ReactNode } from 'react';
+import { useState, useEffect } from 'react';
 
-interface StaticMenuContextType { 
-  isOffScreen: boolean,
-  setIsOffScreen: Dispatch<SetStateAction<boolean>> 
-}
-
-
-interface MainLayoutProps {
+interface MainContent {
   mainContent: React.ReactNode;
 }
 
-export function MainLayout({mainContent}: MainLayoutProps){
+export function MainLayout({mainContent}: MainContent){
 
     const [isOffScreen, setIsOffScreen] = useState(false);
-    const value = {isOffScreen, setIsOffScreen}
-  
-    useEffect(() => {
-      console.log('isOffScreen: ' + isOffScreen);
-    }, [isOffScreen])
+    const value = {isOffScreen, setIsOffScreen};
 
     return(
         <div id='layout-grid' className='sm:grid  sm:grid-cols-12 gap-6 mx-6'>
@@ -33,7 +23,7 @@ export function MainLayout({mainContent}: MainLayoutProps){
                 <MobileMenu ></MobileMenu>
               </div>
               <div id='context-menu-wrapper' className='hidden sm:block h-full'>
-                  <ContextMenu></ContextMenu>
+                  <StaticMenu></StaticMenu>
               </div>
             </div>
             <div id='content' className='mr-auto ml-auto max-w-[373px] sm:ml-0 sm:max-w-full sm:col-span-8 2xl:col-span-10'> 

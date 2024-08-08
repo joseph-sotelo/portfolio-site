@@ -1,27 +1,17 @@
-'use client'
-import ContextMenu from '@/components/context-menu';
-import MobileMenu from '@/components/mobile-menu';
-
-import data from '@/app/data/case-studies.json'
-
-const other = data[1];
-const sections = other.sections;
-const sectionsLength = sections.length -1;
-const contextMenu = other.contextMenuData;
-var scrollHeight = 5000;
-
-if (typeof document !== 'undefined') {
-    scrollHeight = document.documentElement.scrollHeight;
-}
+import CaseStudyLayout from "@/components/case-study/case-study-layout"
+import { MainLayout } from "@/components/main-layout"
 
 export default function Page(){
-        
-    return(
 
-        <div id='grid-parent' className='w-full h-40 grid grid-cols-12 gap-6 p-6'> 
-            <div id='area-2' className='bg-green-500 rounded-sm'></div>
-            <div id='area-3' className='bg-green-500 rounded-sm'></div>
-       </div>
+    const other = <CaseStudyLayout />
+
+    return(
+        <MainLayout mainContent = {other}>
+        </MainLayout>
+    )
+}
+
+
 
         // <div className='m-auto w-[90vw] sm:w-full sm:m-0 sm:flex justify-evenly mb-24'>
         //     <div className='sm:hidden z-10'>
@@ -38,5 +28,3 @@ export default function Page(){
         //         </h1>
         //     </div>
         // </div>
-    )
-}

@@ -1,37 +1,28 @@
 'use client'
+
 import { useRef, useEffect, useState, useContext } from "react";
 import MainNav from "./main-nav";
 import { Separator } from "./ui/separator";
 import { LinkedInLogoIcon, GitHubLogoIcon, ArrowTopRightIcon } from "@radix-ui/react-icons";
 import { StaticMenuContext } from "@/app/data/static-menu-context";
 import { usePathname } from 'next/navigation';
+import { StaticMenuType, GlobalPageKeyType } from "./component-types";
 
 import data from '@/app/data/context-menu.json';
 
-type ContextMenuProps = {
-    header: string,  
-    hideTitleAtStart: boolean,
-    subHeader: string[],  
-    mainText?: string, 
-    links?: string[][],
-}
-
-type PageKey = '' | 'blog' | 'about' | 'discover-olvera';
-
-export default function ContextMenu() {
+export default function StaticMenu() {
     
+    // get data for the static menu
     let currentPathname = usePathname();
-    const currentPage = currentPathname.slice(currentPathname.lastIndexOf('/') + 1, currentPathname.length) as PageKey;
-    const contextMenuProps = data[currentPage] as ContextMenuProps;
+    const currentPage = currentPathname.slice(currentPathname.lastIndexOf('/') + 1, currentPathname.length) as GlobalPageKeyType;
+    const staticMenuData = data[currentPage] as StaticMenuType;
 
+    // get context-stored boolean to control expansion of the static menu
     let {isOffScreen} = useContext(StaticMenuContext);
-    useEffect(()=>{
-        console.log('context change in context menu: ' + isOffScreen);
-    },[isOffScreen]);
 
+    // calculate what height the static menu should expand to
     const headerRef = useRef<HTMLHeadingElement>(null);
     const mainTextRef = useRef<HTMLDivElement>(null);
-
     const [headerHeight, setHeaderHeight] = useState(0);
     const [mainTextHeight, setMainTextHeight] = useState(0);
 
@@ -53,7 +44,7 @@ export default function ContextMenu() {
                 <Separator className='opacity-60 mt-5'/>
                 <div className='opacity-50 flex flex-col gap-5 mt-5'>
                     <div className='subheader'>
-                        {contextMenuProps.subHeader.map((line) => {
+                        {staticMenuData.subHeader.map((line) => {
                             return (
                                 <>
                                     {line}<br />
@@ -63,7 +54,7 @@ export default function ContextMenu() {
                     </div>
                     <div id='mainInfo' className='flex flex-col gap-5 transition-all duration-1000 overflow-hidden'
                     style={
-                        contextMenuProps.hideTitleAtStart ? {
+                        staticMenuData.hideTitleAtStart ? {
                             height: isOffScreen ? `${mainInfoHeight + 20}px` : '0px',
                             opacity: isOffScreen ? '1' : '0'
                         } : {
@@ -71,19 +62,19 @@ export default function ContextMenu() {
                         }
                     }>
                         <h5 id='header' ref={headerRef}>
-                                {contextMenuProps.header}
+                                {staticMenuData.header}
                         </h5>
-                        {contextMenuProps.mainText && (
+                        {staticMenuData.mainText && (
                         <div id='mainText' ref={mainTextRef} className='p-small pb-5'>
-                                {contextMenuProps.mainText}
+                                {staticMenuData.mainText}
                         </div>
                         )}
                     </div>
                 </div>
                 <Separator className='opacity-60'/>
                 <div className='opacity-60 mt-5'>
-                {contextMenuProps.links && (
-                    contextMenuProps.links.map((link, index) => {
+                {staticMenuData.links && (
+                    staticMenuData.links.map((link, index) => {
                         switch(link[0]) {
                             case 'LinkedIn':
                                 return (
@@ -118,7 +109,8 @@ export default function ContextMenu() {
             </div>
             <div className='p-footer text-right opacity-60 mb-5'>
                 All content &#169; 2024 Joseph Sotelo <br />
-                Site by @joseph-sotelo
+                Site by @joseph-sotelo <br />
+                Built with React
             </div>
         </div>
     )
