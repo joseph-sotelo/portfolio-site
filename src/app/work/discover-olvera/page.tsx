@@ -1,9 +1,9 @@
-import CaseStudyLayout from "@/components/case-study/case-study-layout"
+import ScrollSectionsFormatter from "@/components/scroll-sections/scroll-sections-formatter"
 import { MainLayout } from "@/components/main-layout"
 
 export default function Page(){
 
-    const discoverOlvera = <CaseStudyLayout />
+    const discoverOlvera = <ScrollSectionsFormatter />
 
     return(
         <MainLayout mainContent = {discoverOlvera}>

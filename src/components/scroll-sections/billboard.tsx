@@ -1,13 +1,13 @@
 'use client'
 import Image from "next/image"
 
-type caseStudyBillBoard = {
-    header: string | undefined;
-    mainText: string | undefined;
-    images: string[][] ;
+export type BillboardType = {
+    header: string;
+    mainText: string;
+    images: string[][];
   }
 
-export default function CaseStudyBillBoard(props: caseStudyBillBoard){
+export function Billboard({props}: {props: BillboardType}){
 
     return(
         <div className='mx-auto w-[67vw] mt-12 mb-12 xl:ml-0'>

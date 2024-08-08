@@ -1,16 +1,19 @@
-export type CaseStudySectionType = {
+export type ScrollSectionType = {
     key: string;
     componentType: string;
     descriptiveList?: string[][];
     header?: string;
+    subheader?: string;
     secondaryText?: string;
     mainText?: string;
     bullets?: string[];
     images?: string[][];
     image?: string;
     src?: string;
+    alt?: string;
     hostType?: string;
     sources?: string[];
+    accordionSections?: string[][];
 }
 
 export type CaseStudyCardType = {
@@ -30,8 +33,7 @@ export type StaticMenuType = {
 
 export type CaseStudyType = {
     caseStudyCardProps: CaseStudyCardType;
-    contextMenuData: StaticMenuType;
-    sections: CaseStudySectionType[];
+    sections: ScrollSectionType[];
 }
 
 export type CaseStudyPageKeyType = 'discover-olvera' | 'voxai' | 'slimbox' | 'other';

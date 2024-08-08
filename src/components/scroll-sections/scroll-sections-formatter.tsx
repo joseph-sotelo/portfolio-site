@@ -1,29 +1,30 @@
 'use client'
 
-import CaseStudyOverview from '@/components/case-study/case-study-overview';
-import CaseStudyStandardSection from '@/components/case-study/case-study-standard-section';
-import CaseStudyBigText from '@/components/case-study/case-study-big-text';
-import CaseStudyBillBoard from '@/components/case-study/case-study-billboard';
-import CaseStudyChapter from '@/components/case-study/case-study-chapter';
-import CaseStudyPrototype from '@/components/case-study/case-study-prototype';
-import CaseStudyParagraph from '@/components/case-study/case-study-paragraph';
-import CaseStudyVideo from '@/components/case-study/case-study-video';
-import CaseStudyInsights from '@/components/case-study/case-study-insights';
-
-import { useRef, useEffect, useState, useContext } from 'react';
+import { AccordionScrollSection, AccordionType } from './accordion-scroll-section';
+import { BigImage, BigImageType } from './big-image';
+import { Overview, OverviewType } from './overview';
+import { StandardScrollSection, StandardScrollSectionType } from './standard-scroll-section';
+import { BigText, BigTextType} from '@/components/scroll-sections/big-text';
+import { Billboard, BillboardType } from '@/components/scroll-sections/billboard';
+import { ChapterHeader, ChapterHeaderType} from '@/components/scroll-sections/chapter-header';
+import { Paragraph, ParagraphType } from './paragraph';
+import { Video, VideoType } from './video';
+import { InsightsScrollSection, InsightsScrollSectionType } from './insights-scroll-section';
+import { IFrame, IFrameType } from './iframe';
+import { useRef, useEffect, useContext } from 'react';
 import { usePathname } from 'next/navigation';
 
 import { StaticMenuContext } from '@/app/data/static-menu-context';
-import { CaseStudySectionType, CaseStudyPageKeyType, CaseStudyType } from '../component-types';
+import { CaseStudyPageKeyType, CaseStudyType } from '../component-types';
 import data from '@/app/data/case-studies.json';
 
-export default function CaseStudyLayout() {
+export default function ScrollSectionsFormatter() {
 
     // get relevant data from json file based on pathname
     let currentPathname = usePathname();
     const currentPage = currentPathname.slice(currentPathname.lastIndexOf('/') + 1, currentPathname.length) as CaseStudyPageKeyType;
     const pageData: CaseStudyType = data[currentPage];
-    const pageSections: CaseStudySectionType[] = pageData.sections;
+    const pageSections = pageData.sections;
     const pageSectionsLength = pageSections.length -1;
 
     // set the context-stored boolean based on the overview component's visibility. Context is consumed by the static menu component.
@@ -45,108 +46,110 @@ export default function CaseStudyLayout() {
             <div className='mt-16 xl:mt-12 sm:w-[60vw] lg:w-[75vw] sm:mt-12 grow-0 z-9 mb-24'>
             {pageSections.map((section, index) => {
                 switch(section.componentType) {
-                    case 'caseStudyBigText':
+                    case 'accordionScrollSection':
                         return (
                             <div key={index}>
-                                <CaseStudyBigText secondaryText={section.secondaryText} mainText={section.mainText}/>
+                                <AccordionScrollSection props={section as AccordionType}/>
                                 {index !== pageSectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
                         )
                     break;
-                    case 'caseStudyOverview':
+                    case 'bigImage':
                         return (
                             <div key={index}>
-                                {section.header !== undefined && section.descriptiveList !== undefined && section.image !== undefined && (
-                                    <CaseStudyOverview header={section.header} descriptiveList={section.descriptiveList} image={section.image}/>
+                                <BigImage props={section as BigImageType}/>
+                                {index !== pageSectionsLength && (
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
+                            </div>
+                        )
+                    break;
+                    case 'bigText':
+                        return (
+                            <div key={index}>
+                                <BigText props={section as BigTextType}/>
+                                {index !== pageSectionsLength && (
+                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
+                                )}
+                            </div>
+                        )
+                    break;
+                    case 'overview':
+                        return (
+                            <div key={index}>
+                                    <Overview props={section as OverviewType}/>
                                 {index !== pageSectionsLength && (
                                     <div ref={overviewRef} className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
                         )
                     break;
-                    case 'caseStudySection':
+                    case 'standardScrollSection':
                         return (
                             <div key={index}>
-                                {section.images !== undefined && (
-                                    <CaseStudyStandardSection header={section.header} mainText={section.mainText} bullets={section.bullets} images={section.images}/>
-                                )}
+                                <StandardScrollSection props={section as StandardScrollSectionType}/>
                                 {index !== pageSectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
                         )
                     break;
-                    case 'caseStudyVideo':
+                    case 'video':
                         return (
                             <div key={index}>
-                                {section.sources !== undefined && (
-                                    <CaseStudyVideo header={section.header} mainText={section.mainText} sources={section.sources} hostType={section.hostType}/>
-                                )}
+                                <Video props={section as VideoType}/>
                                 {index !== pageSectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
                         )
                     break;
-                    case 'caseStudyInsights':
+                    case 'insightsScrollSection':
                         return (
                             <div key={index}>
-                                {section.descriptiveList !== undefined && (
-                                    <CaseStudyInsights header={section.header} secondaryText={section.secondaryText} descriptiveList={section.descriptiveList}/>
-                                )}
+                                    <InsightsScrollSection props={section as InsightsScrollSectionType}/>
                                 {index !== pageSectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
                         ) 
                     break;
-                    case 'caseStudyChapter':
+                    case 'chapterHeader':
                         return (
                             <div key={index}>
-                                    <CaseStudyChapter header={section.header}/>
+                                    <ChapterHeader props={section as ChapterHeaderType}/>
                                 {index !== pageSectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
                         )
                     break;
-                    case 'caseStudyBillBoard':
+                    case 'billboard':
                         return (
                             <div key={index}>
-                                    <CaseStudyBillBoard header={section.header} mainText={section.mainText} images={section.images ?? []}/>
+                                    <Billboard props={section as BillboardType}/>
                                 {index !== pageSectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
                         )
                     break;
-                    case 'caseStudyPrototype':
+                    case 'iFrame':
                         return (
                             <div key={index}>
-                                    <CaseStudyPrototype header={section.header} mainText={section.mainText} ></CaseStudyPrototype>
+                                    <IFrame props={section as IFrameType} />
                                 {index !== pageSectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}
                             </div>
                         )
                     break; 
-                    case 'caseStudyParagraph':
+                    case 'paragraph':
                         return (
                             <div key={index}>
-                                    <CaseStudyParagraph header={section.header} mainText={section.mainText} ></CaseStudyParagraph>
-                                {index !== pageSectionsLength && (
-                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
-                                )}
-                            </div>
-                        )
-                    break;
-                    case 'caseStudyBigText':
-                        return (
-                            <div key={index}>
-                                    <CaseStudyBigText secondaryText={section.secondaryText} mainText={section.mainText} ></CaseStudyBigText>
+                                    <Paragraph props={section as ParagraphType} />
                                 {index !== pageSectionsLength && (
                                     <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
                                 )}

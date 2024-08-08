@@ -12,19 +12,10 @@
                 "animated logo"
             ]
         },
-        "contextMenuData": {
-            "header": "Discover Olvera",
-            "hideTitleAtStart": true,
-            "subHeader": [
-                "Academic Project",
-                "14 Weeks"
-            ],
-            "mainText": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using augmented reality."
-        },
         "sections": [
             {
                 "key": "overview",
-                "componentType": "caseStudyOverview",
+                "componentType": "overview",
                 "header": "Discover Olvera",
                 "descriptiveList": [
                     [
@@ -52,12 +43,12 @@
             },
             {   
                 "key": "research",
-                "componentType": "caseStudyChapter",
+                "componentType": "chapterHeader",
                 "header": "Research"
             },
             {
                 "key": "observations",
-                "componentType": "caseStudySection",
+                "componentType": "standardScrollSection",
                 "header": "Ethnography: Observations",
                 "mainText": "Our first form of research was to visit Olvera Street in person. The goal was to unearth problems through observation",
                 "bullets": [
@@ -80,7 +71,7 @@
             },
             {
                 "key": "interviews",
-                "componentType": "caseStudySection",
+                "componentType": "standardScrollSection",
                 "header": "Ethnography: Interviews",
                 "mainText": "In addition to observations, we interviewed 7 vendors, 5 visitors, and 2 museum clerks.",
                 "bullets": [
@@ -103,7 +94,7 @@
             },
             {
                 "key": "netnography",
-                "componentType": "caseStudySection",
+                "componentType": "standardScrollSection",
                 "header": "Netnography",
                 "mainText": "Next, we took an in-depth look at the online presence of Olvera Street. We investigated what’s said about Olvera on Yelp, Tripadvisor, and in the news. We also looked what others have already done to solve similar challenges.",
                 "bullets": [
@@ -127,13 +118,13 @@
             },
             {
                 "key": "how-might-we",
-                "componentType": "caseStudyBigText",
+                "componentType": "bigText",
                 "secondaryText": "After reviewing our data, a design direction emerged:",
                 "mainText": "How might we leverage Olvera's hidden museums and it's small yet loyal customer base to increase foot traffic at Olvera Street?"
             },
             {
                 "key": "persona",
-                "componentType": "caseStudySection",
+                "componentType": "standardScrollSection",
                 "header": "Persona",
                 "mainText": "We created a persona named Jessica based on the visitors that we interviewed. Our design, whatever it would end up being, would focus on bringing her pysically to Olvera Street.",
                 "images": [
@@ -149,12 +140,12 @@
             },
             {   
                 "key": "design",
-                "componentType": "caseStudyChapter",
+                "componentType": "chapterHeader",
                 "header": "Design"
             },
             {
                 "key": "paper-prototype",
-                "componentType": "caseStudySection",
+                "componentType": "standardScrollSection",
                 "header": "Paper Prototype",
                 "mainText": "The first iteration of our solution was a system consisting of several digital and physical components.",
                 "bullets": [
@@ -182,7 +173,7 @@
             },
             {
                 "key": "prototype-insights",
-                "componentType": "caseStudyInsights",
+                "componentType": "insights",
                 "header": "Insights",
                 "secondaryText": "Several usability tests of our paper prototype revealed these insights:",
                 "descriptiveList": [
@@ -202,7 +193,7 @@
             },
             {
                 "key": "mid-fi-prototype",
-                "componentType": "caseStudySection",
+                "componentType": "standardScrollSection",
                 "header": "Mid-Fi Prototype",
                 "mainText": "We used our insights to design an interactive mid-fidelity prototype in Figma.",
                 "bullets": [
@@ -220,7 +211,7 @@
             },
             {
                 "key": "mid-fi-insights",
-                "componentType": "caseStudyInsights",
+                "componentType": "insightsScrollSection",
                 "header": "Insights",
                 "secondaryText": "Several usability tests of our first Figma prototype revealed these insights:",
                 "descriptiveList": [
@@ -244,7 +235,7 @@
             },
             {   
                 "key": "branding",
-                "componentType": "caseStudySection",
+                "componentType": "standardScrollSection",
                 "header": "Branding",
                 "mainText": "I designed all aspects of the brand with feedback from my team. Like the structure and UI of the app, the branding went through a sustained iterative process.",
                 "bullets": [
@@ -281,7 +272,7 @@
             },
             {
                 "key": "hi-fi-prototype",
-                "componentType": "caseStudyVideo",
+                "componentType": "video",
                 "header": "Hi-Fi Prototype and user story",
                 "mainText": "Below is our final deliverable - a video showcasing our hi-fi protoype through a user story. The animated infographics at the beginning were created by myself in After Effects.",
                 "sources": [
@@ -291,7 +282,7 @@
             },
             {
                 "key": "reflection",
-                "componentType": "caseStudySection",
+                "componentType": "standardScrollSection",
                 "header": "Reflection",
                 "bullets": [
                     "This was, by far, the most research-intensive project I’ve done so far. I got to practice familiar research methods and learn a new one - ethnography. I am more confident now in my ability to design a research program and execute it, tailored to the needs of the project.",
@@ -320,19 +311,10 @@
                 "accessibility"
             ]
         },
-        "contextMenuData": {
-            "header": "VoxAI",
-            "hideTitleAtStart": true,
-            "subHeader": [
-                "Academic Project",
-                "8 Weeks"
-            ],
-            "mainText": "A mobile app and tablet case that improves communication for non-verbal autistic users."
-        },
         "sections": [
             {
                 "key": "overview",
-                "componentType": "caseStudyOverview",
+                "componentType": "overview",
                 "header": "VoxAI",
                 "descriptiveList": [
                     [
@@ -360,12 +342,12 @@
             },
             {   
                 "key": "research",
-                "componentType": "caseStudyChapter",
+                "componentType": "chapterHeader",
                 "header": "Research"
             },
             {   
                 "key": "expert-interveiw",
-                "componentType": "caseStudySection",
+                "componentType": "standardScrollSection",
                 "header": "Expert Interveiw",
                 "mainText": "We kicked off our project with an interview of an expert in AAC tech, AnnMarie Pence. She is a speech-language pathologist specializing in autism, and many of her pupils use AAC tablets and apps. She provided us with key information on the AAC landscape and common user pain points. ",                
                 "bullets": [
@@ -394,7 +376,7 @@
             },
             {
                 "key": "pain-points",
-                "componentType": "caseStudyInsights",
+                "componentType": "insightsScrollSection",
                 "header": "Pain Points",
                 "secondaryText": "Common pain points for a non-verbal autistic user:",
                 "descriptiveList": [
@@ -418,13 +400,13 @@
             },
             {
                 "key": "how-might-we",
-                "componentType": "caseStudyBigText",
+                "componentType": "bigText",
                 "secondaryText": "Based on our research, we saw a clear design direction:",
                 "mainText": "How might we enhance the standard AAC model to help young adults with non-verbal autism communicate more swiftly, personally, independently, and versatilely?"
             },
             {
                 "key": "ai-landscape",
-                "componentType": "caseStudyBillBoard",
+                "componentType": "billBoard",
                 "header": "AI Landscape",
                 "mainText": "We began to imagine that AI could be implemented into the solution, but needed a concrete understanding of what opportunities within AI were realistic. A ‘From…To’ map is useful for making predictions based on current trends - just what we needed.",
                 "images": [
@@ -436,7 +418,7 @@
             },
             {
                 "key": "Insights",
-                "componentType": "caseStudyInsights",
+                "componentType": "insightsScrollSection",
                 "header": "Insights",
                 "secondarytext": "Relevant insights uncovered by the From-To map:",
                 "descriptiveList": [
@@ -456,7 +438,7 @@
             },
             {
                 "key": "Insights",
-                "componentType": "caseStudyInsights",
+                "componentType": "insightsScrollSection",
                 "header": "Designing for Autistic Users",
                 "secondaryText": "Our interview with AnnMarie, as well as desktop research, revealed common heuristics for autistic users. They are mainly centered around avoiding overstimulation. While some of them align with typical design practices, many don’t. This was therefore an exercise in setting aside familiar practices in an effort to empathize.",
                 "descriptiveList": [
@@ -479,7 +461,7 @@
             },
             {   
                 "key": "precedent-exploration",
-                "componentType": "caseStudySection",
+                "componentType": "standardScrollSection",
                 "header": "Precedent Exploration",
                 "mainText": "We analyzed the two most popular AAC apps in order to understand what opportunities for improvement exist concerning UI and what standards exist for such a niche user group. We decided to keep the following aspects of the typical AAC structure within our own UI",
                 "bullets": [
@@ -507,12 +489,12 @@
             },
             {   
                 "key": "Design",
-                "componentType": "caseStudyChapter",
+                "componentType": "chapterHeader",
                 "header": "Design"
             },
             {   
                 "key": "caseProcess",
-                "componentType": "caseStudySection",
+                "componentType": "standardScrollSection",
                 "header": "Tablet Case: Process",
                 "mainText": "Part of our solution was an ipad case that originally included the following distinguishing features:",
                 "bullets": [
@@ -551,7 +533,7 @@
             },
             {
                 "key": "tabletCaseRedirects",
-                "componentType": "caseStudyInsights",
+                "componentType": "insightsScrollSection",
                 "header": "Tablet Case: Redirects",
                 "secondaryText": "For about two weeks we refined our prototypes, getting feedback from designers, professors, and our field expert, Ann-Marie Pence. Here are the major changes our design went through:",
                 "descriptiveList": [
@@ -571,7 +553,7 @@
             },
             {   
                 "key": "uiProcess",
-                "componentType": "caseStudySection",
+                "componentType": "standardScrollSection",
                 "header": "UI: Process",
                 "mainText": "VoxAI Our follows the typical AAC structure used by Lamp and Proloquo. Our early iterations included the following distinguishing features:",
                 "bullets": [
@@ -599,7 +581,7 @@
             },
             {
                 "key": "uiRedirects",
-                "componentType": "caseStudyInsights",
+                "componentType": "insightsScrollSection",
                 "header": "UI: Redirects",
                 "secondaryText": "For about two weeks we refined our prototypes, getting feedback from designers, professors, and our field expert, Ann-Marie Pence. Here are the major changes our UI went through:",
                 "descriptiveList": [
@@ -619,12 +601,12 @@
             },
             {   
                 "key": "finalProduct",
-                "componentType": "caseStudyChapter",
+                "componentType": "chapterHeader",
                 "header": "Final Product"
             },
             {
                 "key": "wordPrediction",
-                "componentType": "caseStudyVideo",
+                "componentType": "video",
                 "header": "Feature: Word Prediction",
                 "mainText": "As the user types the VoxAI suggests words based on users’ habits, geolocation, and other optional forms of data.",
                 "sources": [
@@ -634,7 +616,7 @@
             },
             {
                 "key": "toneControl",
-                "componentType": "caseStudyVideo",
+                "componentType": "video",
                 "header": "Feature: Tone Control",
                 "mainText": "The user can control the emotion of the vocal output using tone buttons. The default UI would have three for simplicity but more can be added of the user desires.",
                 "sources": [
@@ -644,7 +626,7 @@
             },
             {   
                 "key": "rearScreen",
-                "componentType": "caseStudySection",
+                "componentType": "standardScrollSection",
                 "header": "Rear Screen",
                 "mainText": "The rear screen can supplement the audio output with visual output for the user's audience to read. This can be especially useful in noisy places. It also serves to alert the other member of the conversation when the conversation is being recorded.",      
                 "images": [
@@ -667,7 +649,7 @@
             },
             {
                 "key": "listening",
-                "componentType": "caseStudyVideo",
+                "componentType": "video",
                 "header": "Feature: AI Listening",
                 "mainText": "VoxAI uses AI to suggest entire phrases based on audio from the conversation.",
                 "sources": [
@@ -678,12 +660,12 @@
             },
             {   
                 "key": "reflection",
-                "componentType": "caseStudyChapter",
+                "componentType": "chapterHeader",
                 "header": "Reflection"
             },
             {   
                 "key": "projectManagement",
-                "componentType": "caseStudySection",
+                "componentType": "standardScrollSection",
                 "header": "Project Management",
                 "mainText": "In addition to acting as the UI lead, I had the privilege of being the project manager for this team. This included creating a timeline before any of the work began, creating agendas for meetings, and sending a weekly report to our stakeholders.",      
                 "images": [
@@ -696,7 +678,7 @@
             },
             {
                 "key": "n ext-steps",
-                "componentType": "caseStudyInsights",
+                "componentType": "insightsScrollSection",
                 "header": "Next Steps",
                 "descriptiveList": [
                     [
@@ -727,19 +709,10 @@
                 "precedent exploration"
             ]
         },
-        "contextMenuData": {
-            "header": "SlimBox",
-            "hideTitleAtStart": true,
-            "subHeader": [
-                "Academic Project",
-                "4 Weeks"
-            ],
-            "mainText": "A UI concept helping users keep their inbox decluttered."   
-        },
         "sections": [
             {
                 "key": "overview",
-                "componentType": "caseStudyOverview",
+                "componentType": "overview",
                 "header": "SlimBox",
                 "descriptiveList": [
                     [
@@ -759,18 +732,18 @@
             },
             {
                 "key": "project-brief",
-                "componentType": "caseStudyBigText",
+                "componentType": "bigText",
                 "secondaryText": "Excerpt from the project brief:",
                 "mainText": "\"... redesign the micro-interactions users have with desktop email clients ... we will focus our attention on the ability or micro-interactions to make those digital chores easier, simpler, more enjoyable - and less noticeable.\""
             },
             {   
                 "key": "research",
-                "componentType": "caseStudyChapter",
+                "componentType": "chapterHeader",
                 "header": "Research"
             },
             {
                 "key": "swot-analysis",
-                "componentType": "caseStudySection",
+                "componentType": "standardScrollSection",
                 "header": "S.W.O.T.",
                 "mainText": "A S.W.O.T. analysis (Strengths, Weaknesses, Opportunities, Threats) is a way to analyze the competitive landscape and inform design decisions. I used this method to examine three existing email clients - Gmail, Outlook, and Apple Mail. Here are my main findings.",
                 "bullets": [
@@ -800,13 +773,13 @@
             },
             {
                 "key": "design-direction",
-                "componentType": "caseStudyBigText",
+                "componentType": "bigText",
                 "secondaryText": "The S.W.O.T. analysis led me to adopt this design direction:",
                 "mainText": "How might I make the process of decluttering one's inbox more streamlined, easy, and delightful?"
             },
             {   
                 "key": "precedent-exploration",
-                "componentType": "caseStudySection",
+                "componentType": "standardScrollSection",
                 "header": "Precedent Exploration",
                 "mainText": "The next step was to look at existing UI's that tackle the same issue as me. I was evaluating them for examples to follow and non-examples to avoid.",
                 "bullets": [
@@ -830,12 +803,12 @@
             },
             {   
                 "key": "design",
-                "componentType": "caseStudyChapter",
+                "componentType": "chapterHeader",
                 "header": "Design"
             },
             {
                 "key": "flowchart",
-                "componentType": "caseStudyBillBoard",
+                "componentType": "billBoard",
                 "header": "Flowchart",
                 "mainText": "This flowchart outlines my solution, which includes user-dictated categorization and a progress bar.",
                 "images": [
@@ -847,14 +820,14 @@
             },
             {
                 "key": "mid-fi-ui",
-                "componentType": "caseStudyPrototype",
+                "componentType": "iFrame",
                 "header": "Mid-Fidelity UI",
                 "mainText": "This project was an exercise in playing with micro-interactions, and did not involve any branding, so this mid-fidelity UI was the final deliverable. Take it for a spin!",
                 "src": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F03fMbGdhWZTUtRot9hSkfp%2FSlimBox%3Fpage-id%3D0%253A1%26node-id%3D6-212%26viewport%3D-1021%252C-315%252C0.07%26t%3DzDpKzIYiXPuAh661-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D6%253A212"
             },
             {
                 "key": "further-possibilities",
-                "componentType": "caseStudyParagraph",
+                "componentType": "paragraph",
                 "header": "Further Possibilities",
                 "mainText": "I see this project as a small contribution to a larger trend of rethinking email clients. While this movement has some clear trailblazers such as Hey or Sparkmail, I hope that this example of gaining inspiration from other contexts will help inspire designers who are tackling these issues. Always remember to think outside the (in)box."
             }
@@ -871,15 +844,7 @@
                 "digital art",
                 "analog art"
             ]
-        },
-        "contextMenuData": {
-            "header": "Other Skills",
-            "hideTitleAtStart": true,
-            "subHeader": [
-                "Joey Sotelo",
-                "Design Technologist"
-            ]
-        },        
+        },       
         "sections": [
         
         ]

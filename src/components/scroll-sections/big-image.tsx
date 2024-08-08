@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 
-type CaseStudyBigImageType = {
+export type BigImageType = {
     key: string,
     componentType: string,
     src: string,
@@ -10,7 +10,7 @@ type CaseStudyBigImageType = {
     captionSuffix: string,
 }
 
-export default function CaseStudyBigImage({props}: {props: CaseStudyBigImageType}){
+export function BigImage({props}: {props: BigImageType}){
 
     return(
         <div className='mt-12 mb-12 rounded-sm'>

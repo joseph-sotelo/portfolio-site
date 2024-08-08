@@ -1,4 +1,4 @@
-import CaseStudyLayout from "@/components/case-study/case-study-layout"
+import CaseStudyLayout from "@/components/scroll-sections/case-study-layout"
 import { MainLayout } from "@/components/main-layout"
 import CardGrid from "@/components/card-grid"
 

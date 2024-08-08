@@ -9,7 +9,7 @@ import {
 
 
 
-type CaseStudyAccordionType = {
+export type AccordionType = {
     key: string;
     componentType: string;
     header: string,
@@ -19,7 +19,7 @@ type CaseStudyAccordionType = {
     alt: string
 }
 
-export default function CaseStudyAccordion({props}: {props: CaseStudyAccordionType}){
+export function AccordionScrollSection({props}: {props: AccordionType}){
 
     return(
 
