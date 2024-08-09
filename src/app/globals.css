@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* color theme */
+
 @layer base {
   :root {
     --background: 0, 0%, 100%;
@@ -74,6 +76,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* type scale */
 
 h1 {
   font-size: 3rem;
@@ -150,48 +154,18 @@ a {
   font-weight: 400;
 }
 
-svg {
-  display: inline;
-}
-
-/* cards */
+/* below styles are done here because of tailwind limitations*/
 
 #card-header{
   border-top: 1px solid hsl(240 5.9% 90%);
 }
 
-/* layout */
-
-.side-menu {
-  position: fixed;
-  width: 15vw;
-  height: 100vh;
-  padding-top: 30vh;
+#top-bar{
+  border-bottom: 1px solid hsl(245 17% 72%);
 }
 
-.side-menu-wrapper {
-  width: 20vw;
-  height: 100vh;
-}
+/* misc */
 
-.side-menu-text {
-  text-align: right;
-  margin-top: 1rem;
-}
-
-.side-menu-item {
-  margin-right: 0;
-}
-
-.page-wrapper {
-  display: flex;
-  flex-direction: row;
-  gap: 3vw;
-  width: 88vw;
-  margin-left: 3vw;
-  margin-right: 9vw;
-}
-
-.main-scroll {
-  width: 70vw;
+svg {
+  display: inline;
 }

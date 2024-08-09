@@ -1,0 +1,76 @@
+{
+    "" : {
+        "header": "My Work",
+        "hideTitleAtStart": false,
+        "subHeader": [
+            "Joey Sotelo",
+            "Design Technologist"
+        ]
+    },
+    "about": {
+        "header": "About Me",
+        "hideTitleAtStart": false,
+        "subHeader": [
+            "Joey Sotelo",
+            "Design Technologist"
+        ],
+        "links": [
+            [
+                "LinkedIn",
+                "http://www.linkedin.com/in/joseph-sotelo-27bb82221"
+            ],
+            [
+                "GitHub",
+                "https://github.com/joseph-sotelo"
+            ],
+            [
+                "Resume",
+                "https://drive.google.com/file/d/1xJqjc8eAIXUvVddKYYgyuVyAO13XGfu-/view?usp=sharing"
+            ]
+        ]
+    },
+    "blog": {
+        "header": "Blog",
+        "hideTitleAtStart": false,
+        "subHeader": [
+            "Joey Sotelo",
+            "Design Technologist"
+        ],
+        "mainText": "I write to help me process new information about design, but hey - maybe someone actually reads these too."
+    },
+    "discover-olvera": {
+        "header": "Discover Olvera",
+        "hideTitleAtStart": true,
+        "subHeader": [
+            "Academic Project",
+            "14 Weeks"
+        ],
+        "mainText": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using augmented reality."
+    },
+    "voxai": {
+        "header": "VoxAI",
+        "hideTitleAtStart": true,
+        "subHeader": [
+            "Academic Project",
+            "8 Weeks"
+        ],
+        "mainText": "A mobile app and tablet case that improves communication for non-verbal autistic users."
+    },
+    "slimbox": {
+        "header": "SlimBox",
+        "hideTitleAtStart": true,
+        "subHeader": [
+            "Academic Project",
+            "4 Weeks"
+        ],
+        "mainText": "A UI concept helping users keep their inbox decluttered."   
+    },
+    "other": {
+        "header": "Other Skills",
+        "hideTitleAtStart": true,
+        "subHeader": [
+            "Joey Sotelo",
+            "Design Technologist"
+        ]
+    }
+}
