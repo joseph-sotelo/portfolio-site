@@ -22,7 +22,6 @@ export type AccordionType = {
 export function AccordionScrollSection({props}: {props: AccordionType}){
 
     return(
-
         <div id='about-section' className='w-[67vw] md:w-[67vw] lg:w-[858px] flex flex-col justify-between md:justify-evenly xl:justify-between my-24 sm:w-[60vw] sm:mt-[0.6rem] mx-auto md:flex-row xl:ml-0'>
         <div id='left' className='mb-auto md:w-[35vw] lg:w-[448px]'>
             <h2 className='text-secondary-foreground'>

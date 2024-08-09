@@ -10,8 +10,8 @@ export type OverviewType = {
 export function Overview({props}: {props: OverviewType}){
 
     return(
-        <div className='w-[67vw] sm:w-[60vw] md:w-[67vw] flex flex-col xl:flex-row justify-between mb-12 mx-auto xl:ml-0'>
-             <div id='left' className='xl:w-[28vw] lg:mt-[11.8rem] mt-[.75rem]'>
+        <div className='flex flex-col xl:flex-row justify-between my-12'>
+             <div id='left' className='lg:mt-[11.8rem]'>
                 <h2 className='text-secondary-foreground'>
                     {props.header}
                 </h2>

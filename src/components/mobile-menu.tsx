@@ -1,10 +1,11 @@
 'use client'
 
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import StaticMenu from '@/components/static-menu';
+import InfoMenu from '@/components/info-menu';
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import { InfoMenuType } from "./component-types";
 
-export default function MobileMenu(){
+export default function MobileMenu({props}: {props: InfoMenuType}){
   return(
     <>
       <Sheet>
@@ -16,14 +17,14 @@ export default function MobileMenu(){
               </SheetTrigger>
               <h6>
                 <strong>
-                  Header
+                  {props.header}
                 </strong>
               </h6>
             </div>
           </div>
         </div>
         <SheetContent side='left' className='w-2/3 px-4 pt-4'>
-           <StaticMenu></StaticMenu>
+           <InfoMenu props={props}></InfoMenu>
         </SheetContent>
       </Sheet>
     </>
