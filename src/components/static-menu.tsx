@@ -14,11 +14,11 @@ export default function StaticMenu(){
     const staticMenuData = data[currentPage] as InfoMenuType;
 
     return(
-        <div id='static-menu' className='md:col-span-4 lg:col-span-3 xl:col-span-2 xl:col-start-2 2xl:col-span-2'>
-            <div className='sm:hidden'> 
+        <div id='static-menu'>
+            <div className='md:hidden'> 
                 <MobileMenu props={staticMenuData}/>
             </div>
-            <div id='context-menu-wrapper' className='hidden sm:block h-full'>
+            <div id='context-menu-wrapper' className='hidden md:block h-full'>
                 <InfoMenu props={staticMenuData}/>
             </div>
       </div>

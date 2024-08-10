@@ -406,7 +406,7 @@
             },
             {
                 "key": "ai-landscape",
-                "componentType": "billBoard",
+                "componentType": "billboard",
                 "header": "AI Landscape",
                 "mainText": "We began to imagine that AI could be implemented into the solution, but needed a concrete understanding of what opportunities within AI were realistic. A ‘From…To’ map is useful for making predictions based on current trends - just what we needed.",
                 "images": [

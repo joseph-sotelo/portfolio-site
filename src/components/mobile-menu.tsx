@@ -9,9 +9,9 @@ export default function MobileMenu({props}: {props: InfoMenuType}){
   return(
     <>
       <Sheet>
-        <div id='top-bar' className='h-12 top-0 left-0 px-6 fixed w-full bg-card shadow-md'>
+        <div id='top-bar' className='h-12 top-0 left-0 px-6 fixed z-20 w-full bg-card shadow-md'>
           <div className='h-full'>
-            <div className='flex justify-between items-center max-w-[373px] h-full mx-auto'>
+            <div className='flex justify-between items-center max-w-[500px] h-full mx-auto'>
               <SheetTrigger>
                   <HamburgerMenuIcon className='h-6 w-6' />
               </SheetTrigger>
@@ -23,7 +23,7 @@ export default function MobileMenu({props}: {props: InfoMenuType}){
             </div>
           </div>
         </div>
-        <SheetContent side='left' className='w-2/3 px-4 pt-4'>
+        <SheetContent side='left' className='px-4 pt-4'>
            <InfoMenu props={props}></InfoMenu>
         </SheetContent>
       </Sheet>

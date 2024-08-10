@@ -1,13 +1,6 @@
 'use client'
 
-import ImageAndCaption from '../ui/image-and-caption'
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselNext,
-    CarouselPrevious,
-  } from "@/components/ui/carousel"
+import StandardCarousel from "../standard-carousel";
 
 export type StandardScrollSectionType = {
     header: string; 
@@ -18,19 +11,19 @@ export type StandardScrollSectionType = {
 
 export function StandardScrollSection({props}: {props: StandardScrollSectionType}){
     return(
-        <div className='flex flex-col xl:flex-row justify-between my-12'>
+        <div className='flex flex-col xl:flex-row justify-between'>
             <div id='left' className='my-auto'>
-                <h2 className='text-secondary-foreground'>
+                <h2 className='text-secondary-foreground mb-standard-gap'>
                     {props.header}
                 </h2>
                 <div>
-                    <p className='mb-6'>
+                    <p className='mb-standard-gap'>
                         {props.mainText}
                     </p>
                     {props.bullets && (
-                        <ul className='mt-6 pl-[14px] lg:pl-0'>
+                        <ul className='pl-[14px] lg:pl-0'>
                             {props.bullets.map((bullet, index) => (
-                                <li key ={index} className='list-[square] mb-6'>
+                                <li key ={index} className='list-[square] mb-standard-gap'>
                                     {bullet}
                                 </li>
                             ))}
@@ -38,26 +31,8 @@ export function StandardScrollSection({props}: {props: StandardScrollSectionType
                     )}
                 </div>
             </div>
-            <div id='right' className='mt-6 sm:mt-0'>
-                {props.images.length >= 2 &&(
-                    <Carousel>
-                    <CarouselContent>
-                        {props.images.map((image, index) =>(
-                                <CarouselItem key={index}>
-                                    <ImageAndCaption props={image}></ImageAndCaption>
-                                </CarouselItem>
-                        ))}
-                    </CarouselContent>
-                    <div className='absolute top-full flex justify-around w-full'>
-                        <CarouselPrevious />
-                        <CarouselNext />
-                    </div>
-                    </Carousel>
-                )}
-                {props.images.length == 1 && (
-                    <ImageAndCaption props={props.images[0]}></ImageAndCaption>
-                )
-                }
+            <div id='right'>
+                <StandardCarousel props={props.images} />
             </div>
         </div>
     )

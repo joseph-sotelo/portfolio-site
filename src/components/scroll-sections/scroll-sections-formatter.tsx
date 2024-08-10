@@ -44,7 +44,7 @@ export default function ScrollSectionsFormatter() {
     }, [])
     
     return(
-            <div className='z-9 mb-24'>
+            <div>
             {sections.map((section, index) => {
                 switch(section.componentType) {
                     case 'accordionScrollSection':

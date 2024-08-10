@@ -35,6 +35,10 @@
     --ring: 240 10% 3.9%;
 
     --radius: .75rem;
+
+    --standard-gap: 1.5rem;
+    --big-gap: 6rem;
+    --mobile-content: 373px;
   }
 
   .dark {

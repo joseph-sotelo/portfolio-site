@@ -31,7 +31,7 @@ export default function InfoMenu({props}: {props: InfoMenuType}) {
     const mainInfoHeight = headerHeight + mainTextHeight;
  
     return (
-        <div id='static-text-menu' className='sticky top-0 h-screen flex flex-col justify-between text-right'>
+        <div id='info-menu' className='sticky top-0 h-screen flex flex-col justify-between text-right'>
             <div className='flex flex-col mt-12'>
                 <MainNav/>
                 <Separator className='opacity-60 mt-5'/>

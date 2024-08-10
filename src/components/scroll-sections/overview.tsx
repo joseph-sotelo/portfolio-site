@@ -10,12 +10,12 @@ export type OverviewType = {
 export function Overview({props}: {props: OverviewType}){
 
     return(
-        <div className='flex flex-col xl:flex-row justify-between my-12'>
-             <div id='left' className='lg:mt-[11.8rem]'>
+        <div className='flex flex-col flex-col-reverse gap-standard-gap justify-between'>
+             <div id='left'>
                 <h2 className='text-secondary-foreground'>
                     {props.header}
                 </h2>
-                <ul className='xl:mt-[-.1rem]'>
+                <ul>
                 {props.descriptiveList.map((listItem, index) =>
                     <div key={index}>
                         <>
@@ -31,8 +31,8 @@ export function Overview({props}: {props: OverviewType}){
                     )}
                 </ul>
              </div>
-             <div id='right' className='xl:w-[35vw]'>
-                <Image src={props.image} alt={`High fidelity mockups from the ${props.header} project`} width='600' height='600' className='mr-auto ml-auto border border-border w-full rounded-sm'/>
+             <div id='right'>
+                <Image src={props.image} alt={`High fidelity mockups from the ${props.header} project`} width='600' height='600' className='border border-border w-full rounded-sm'/>
             </div>
         </div>
     )

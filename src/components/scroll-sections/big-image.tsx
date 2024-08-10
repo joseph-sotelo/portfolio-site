@@ -13,7 +13,7 @@ export type BigImageType = {
 export function BigImage({props}: {props: BigImageType}){
 
     return(
-        <div className='my-12 rounded-sm'>
+        <div className='rounded-sm'>
             <Image src={props.src} alt={props.alt} width='700' height='500' className='w-full rounded-t-sm'></Image>
                 <p className='border border-border mt-[-1px] p-4 rounded-b-sm'>
                     {props.caption}

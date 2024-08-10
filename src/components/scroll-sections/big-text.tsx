@@ -7,8 +7,8 @@ export type BigTextType = {
 
 export function BigText({props}: {props: BigTextType}){
     return(
-        <div className='my-12'>
-            <h6 className='mb-6'>
+        <div>
+            <h6 className='mb-standard-gap'>
                 {props.secondaryText}
             </h6>
             <h3>

@@ -22,8 +22,8 @@ export type AccordionType = {
 export function AccordionScrollSection({props}: {props: AccordionType}){
 
     return(
-        <div id='about-section' className='w-[67vw] md:w-[67vw] lg:w-[858px] flex flex-col justify-between md:justify-evenly xl:justify-between my-24 sm:w-[60vw] sm:mt-[0.6rem] mx-auto md:flex-row xl:ml-0'>
-        <div id='left' className='mb-auto md:w-[35vw] lg:w-[448px]'>
+        <div id='about-section'>
+        <div id='left'>
             <h2 className='text-secondary-foreground'>
                 {props.header}
             </h2>
@@ -80,8 +80,8 @@ export function AccordionScrollSection({props}: {props: AccordionType}){
                 </AccordionItem>
             </Accordion>
         </div>
-        <div id='right' className='w-full mt-6 md:w-[25vw] lg:w-[320px] md:mt-[4.6rem]'>
-            <Image src={props.src} alt={props.alt} width='300' height='300' className='w-full border border-border md:max-w-[320px] rounded-sm'>
+        <div id='right' className='w-full mt-big-gap'>
+            <Image src={props.src} alt={props.alt} width='300' height='300' className='w-full border border-border rounded-sm'>
             </Image>
         </div>
     </div>

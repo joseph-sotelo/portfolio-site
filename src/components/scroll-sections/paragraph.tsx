@@ -8,7 +8,7 @@ export type ParagraphType = {
 export function Paragraph({props}: {props: ParagraphType}){
 
     return(
-        <div className='my-12'>
+        <div>
             <h2 className='text-secondary-foreground'>
                 {props.header}
             </h2>
