@@ -19,7 +19,7 @@ export function InsightsScrollSection({props}: {props: InsightsScrollSectionType
                     {props.secondaryText}
                 </h6>
             )}
-            <div className='flex flex-col gap-standard-gap xl:flex-row xl:items-start'>
+            <div className='flex flex-col gap-standard-gap flex-wrap lg:max-h-[700px] lg:content-start'>
                 {props.descriptiveList.map((listItem, index)=>
                     <div key={index}>
                         <InsightsCard props={listItem}/>

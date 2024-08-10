@@ -10,8 +10,8 @@ export type OverviewType = {
 export function Overview({props}: {props: OverviewType}){
 
     return(
-        <div className='flex flex-col flex-col-reverse gap-standard-gap justify-between'>
-             <div id='left'>
+        <div className='flex flex-col flex-col-reverse gap-standard-gap justify-between xl:grid xl:gap-medium-gap xl:grid-cols-9'>
+             <div id='left' className='xl:col-span-4 xl:mt-[11px]'>
                 <h2 className='text-secondary-foreground'>
                     {props.header}
                 </h2>
@@ -31,7 +31,7 @@ export function Overview({props}: {props: OverviewType}){
                     )}
                 </ul>
              </div>
-             <div id='right'>
+             <div id='right' className='xl:col-span-5'>
                 <Image src={props.image} alt={`High fidelity mockups from the ${props.header} project`} width='600' height='600' className='border border-border w-full rounded-sm'/>
             </div>
         </div>

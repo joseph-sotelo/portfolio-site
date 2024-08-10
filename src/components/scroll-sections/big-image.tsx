@@ -16,7 +16,7 @@ export function BigImage({props}: {props: BigImageType}){
         <div className='rounded-sm'>
             <Image src={props.src} alt={props.alt} width='700' height='500' className='w-full rounded-t-sm'></Image>
                 <p className='border border-border mt-[-1px] p-4 rounded-b-sm'>
-                    {props.caption}
+                    {`${props.caption}  |  `}
                     <em className='font-normal'>
                         {props.captionSuffix}
                     </em>

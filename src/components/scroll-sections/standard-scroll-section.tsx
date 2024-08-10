@@ -11,9 +11,9 @@ export type StandardScrollSectionType = {
 
 export function StandardScrollSection({props}: {props: StandardScrollSectionType}){
     return(
-        <div className='flex flex-col xl:flex-row justify-between'>
-            <div id='left' className='my-auto'>
-                <h2 className='text-secondary-foreground mb-standard-gap'>
+        <div className='xl:grid xl:gap-medium-gap xl:grid-cols-9'>
+            <div id='left' className='mb-standard-gap xl:col-span-4 xl:my-auto'>
+                <h2 className='text-secondary-foreground'>
                     {props.header}
                 </h2>
                 <div>
@@ -21,7 +21,7 @@ export function StandardScrollSection({props}: {props: StandardScrollSectionType
                         {props.mainText}
                     </p>
                     {props.bullets && (
-                        <ul className='pl-[14px] lg:pl-0'>
+                        <ul className='pl-[14px]'>
                             {props.bullets.map((bullet, index) => (
                                 <li key ={index} className='list-[square] mb-standard-gap'>
                                     {bullet}
@@ -31,7 +31,7 @@ export function StandardScrollSection({props}: {props: StandardScrollSectionType
                     )}
                 </div>
             </div>
-            <div id='right'>
+            <div id='right' className='xl:col-span-5'>
                 <StandardCarousel props={props.images} />
             </div>
         </div>

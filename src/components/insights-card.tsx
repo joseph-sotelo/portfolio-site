@@ -9,7 +9,7 @@ import {
 export default function InsightsCard({props}: {props: string[]}){
 
     return(
-        <Card className='min-w-[210px] xl:w-[262px]'>
+        <Card className='min-w-[210px] lg:w-[262px]'>
         <CardHeader>
             {props.length >= 2?(
                 <>

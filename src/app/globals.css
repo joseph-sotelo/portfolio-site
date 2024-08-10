@@ -37,8 +37,12 @@
     --radius: .75rem;
 
     --standard-gap: 1.5rem;
+    --medium-gap: 3rem;
     --big-gap: 6rem;
     --mobile-content: 373px;
+
+    --tier-two-left-md: repeat(4, minmax(0, 1fr));
+    --tier-two-right-md: repeat(8, minmax(0, 1fr));
   }
 
   .dark {
