@@ -1,21 +1,20 @@
 'use client'
-import { useRef, useEffect, useState } from "react";
+
+import { useRef, useEffect, useState, useContext } from "react";
 import MainNav from "./main-nav";
 import { Separator } from "./ui/separator";
 import { LinkedInLogoIcon, GitHubLogoIcon, ArrowTopRightIcon } from "@radix-ui/react-icons";
+import { StaticMenuContext } from "@/app/data/static-menu-context";
+import { InfoMenuType } from "./component-types";
 
-type ContextMenu = {
-    header: string,  
-    subHeader: string[],  
-    mainText?: string, 
-    links?: string[][],
-}
+export default function InfoMenu({props}: {props: InfoMenuType}) {
 
-export default function ContextMenu({props, isInvisible, hideTitleAtStart}: {props: ContextMenu, isInvisible: boolean, hideTitleAtStart: boolean}) {
+    // get context-stored boolean to control expansion of the static menu
+    let {isOffScreen} = useContext(StaticMenuContext);
 
+    // calculate what height the static menu should expand to
     const headerRef = useRef<HTMLHeadingElement>(null);
     const mainTextRef = useRef<HTMLDivElement>(null);
-
     const [headerHeight, setHeaderHeight] = useState(0);
     const [mainTextHeight, setMainTextHeight] = useState(0);
 
@@ -26,13 +25,14 @@ export default function ContextMenu({props, isInvisible, hideTitleAtStart}: {pro
         if (mainTextRef.current) {
             setMainTextHeight(mainTextRef.current.scrollHeight)
         };
+        console.log("mainInfoHeight: " + mainTextHeight + headerHeight)
     }, []);
 
     const mainInfoHeight = headerHeight + mainTextHeight;
  
     return (
-        <div className='mx-auto sm:mr-0 h-full mt-0 w-[217px] flex flex-col justify-between text-right'>
-            <div className='flex flex-col mt-[3rem]'>
+        <div id='info-menu' className='h-screen flex flex-col justify-between text-right'>
+            <div className='flex flex-col mt-12'>
                 <MainNav/>
                 <Separator className='opacity-60 mt-5'/>
                 <div className='opacity-50 flex flex-col gap-5 mt-5'>
@@ -47,9 +47,9 @@ export default function ContextMenu({props, isInvisible, hideTitleAtStart}: {pro
                     </div>
                     <div id='mainInfo' className='flex flex-col gap-5 transition-all duration-1000 overflow-hidden'
                     style={
-                        hideTitleAtStart ? {
-                            height: isInvisible ? `${mainInfoHeight + 20}px` : '0px',
-                            opacity: isInvisible ? '1' : '0'
+                        props.hideTitleAtStart ? {
+                            height: isOffScreen ? `${mainInfoHeight + 20}px` : '0px',
+                            opacity: isOffScreen ? '1' : '0'
                         } : {
                             marginBottom: '1.25rem',
                         }
@@ -102,7 +102,8 @@ export default function ContextMenu({props, isInvisible, hideTitleAtStart}: {pro
             </div>
             <div className='p-footer text-right opacity-60 mb-5'>
                 All content &#169; 2024 Joseph Sotelo <br />
-                Site by @joseph-sotelo
+                Site by @joseph-sotelo <br />
+                Built with React
             </div>
         </div>
     )
