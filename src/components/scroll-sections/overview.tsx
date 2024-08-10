@@ -10,12 +10,12 @@ export type OverviewType = {
 export function Overview({props}: {props: OverviewType}){
 
     return(
-        <div className='w-[67vw] sm:w-[60vw] md:w-[67vw] flex flex-col xl:flex-row justify-between mb-12 mx-auto xl:ml-0'>
-             <div id='left' className='xl:w-[28vw] lg:mt-[11.8rem] mt-[.75rem]'>
+        <div className='flex flex-col flex-col-reverse gap-standard-gap justify-between xl:grid xl:gap-medium-gap xl:grid-cols-9'>
+             <div id='left' className='xl:col-span-4 xl:mt-[11px]'>
                 <h2 className='text-secondary-foreground'>
                     {props.header}
                 </h2>
-                <ul className='xl:mt-[-.1rem]'>
+                <ul>
                 {props.descriptiveList.map((listItem, index) =>
                     <div key={index}>
                         <>
@@ -31,8 +31,8 @@ export function Overview({props}: {props: OverviewType}){
                     )}
                 </ul>
              </div>
-             <div id='right' className='xl:w-[35vw]'>
-                <Image src={props.image} alt={`High fidelity mockups from the ${props.header} project`} width='600' height='600' className='mr-auto ml-auto border border-border w-full rounded-sm'/>
+             <div id='right' className='xl:col-span-5'>
+                <Image src={props.image} alt={`High fidelity mockups from the ${props.header} project`} width='600' height='600' className='border border-border w-full rounded-sm'/>
             </div>
         </div>
     )

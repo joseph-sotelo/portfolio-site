@@ -15,6 +15,8 @@ const config = {
       center: true,
       padding: "2rem",
       screens: {
+        "lg": "974px",
+        "xl": "1255px",
         "2xl": "1400px",
       },
     },
@@ -64,6 +66,16 @@ const config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      spacing: {
+        "standard-gap": "var(--standard-gap)",
+        "medium-gap": "var(--medium-gap)",
+        "big-gap": "var(--big-gap)",
+        "mobile-content": "var(--mobile-content)",
+      },
+      layout: {
+        "tier-two-left-md": "var(--tier-two-left-md)",
+        "tier-two-right-md": "var(--tier-two-right-md)"
       },
       keyframes: {
         "accordion-down": {

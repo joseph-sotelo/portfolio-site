@@ -23,7 +23,7 @@ export type CaseStudyCardType = {
     labels: string[];
 }
 
-export type StaticMenuType = {
+export type InfoMenuType = {
     header: string,  
     hideTitleAtStart: boolean,
     subHeader: string[],  

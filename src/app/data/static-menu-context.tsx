@@ -1,5 +1,5 @@
 'use client'
-import { createContext, useState, useEffect, Dispatch, SetStateAction } from "react";
+import { createContext, Dispatch, SetStateAction } from "react";
 
 interface StaticMenuContextType { 
     isOffScreen: boolean,

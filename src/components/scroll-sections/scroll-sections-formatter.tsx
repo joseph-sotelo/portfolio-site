@@ -13,6 +13,7 @@ import { InsightsScrollSection, InsightsScrollSectionType } from './insights-scr
 import { IFrame, IFrameType } from './iframe';
 import { useRef, useEffect, useContext } from 'react';
 import { usePathname } from 'next/navigation';
+import ScrollSectionDivider from './scroll-section-divider';
 
 import { StaticMenuContext } from '@/app/data/static-menu-context';
 import { CaseStudyPageKeyType, CaseStudyType } from '../component-types';
@@ -24,8 +25,8 @@ export default function ScrollSectionsFormatter() {
     let currentPathname = usePathname();
     const currentPage = currentPathname.slice(currentPathname.lastIndexOf('/') + 1, currentPathname.length) as CaseStudyPageKeyType;
     const pageData: CaseStudyType = data[currentPage];
-    const pageSections = pageData.sections;
-    const pageSectionsLength = pageSections.length -1;
+    const sections = pageData.sections;
+    const sectionsCount = sections.length -1;
 
     // set the context-stored boolean based on the overview component's visibility. Context is consumed by the static menu component.
     const overviewRef = useRef(null);
@@ -43,16 +44,14 @@ export default function ScrollSectionsFormatter() {
     }, [])
     
     return(
-            <div className='mt-16 xl:mt-12 sm:w-[60vw] lg:w-[75vw] sm:mt-12 grow-0 z-9 mb-24'>
-            {pageSections.map((section, index) => {
+            <div>
+            {sections.map((section, index) => {
                 switch(section.componentType) {
                     case 'accordionScrollSection':
                         return (
                             <div key={index}>
                                 <AccordionScrollSection props={section as AccordionType}/>
-                                {index !== pageSectionsLength && (
-                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
-                                )}
+                                <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
                         )
                     break;
@@ -60,9 +59,7 @@ export default function ScrollSectionsFormatter() {
                         return (
                             <div key={index}>
                                 <BigImage props={section as BigImageType}/>
-                                {index !== pageSectionsLength && (
-                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
-                                )}
+                                <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
                         )
                     break;
@@ -70,19 +67,15 @@ export default function ScrollSectionsFormatter() {
                         return (
                             <div key={index}>
                                 <BigText props={section as BigTextType}/>
-                                {index !== pageSectionsLength && (
-                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
-                                )}
+                                <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
                         )
                     break;
                     case 'overview':
                         return (
-                            <div key={index}>
+                            <div key={index} ref={overviewRef}>
                                     <Overview props={section as OverviewType}/>
-                                {index !== pageSectionsLength && (
-                                    <div ref={overviewRef} className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
-                                )}
+                                    <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
                         )
                     break;
@@ -90,9 +83,7 @@ export default function ScrollSectionsFormatter() {
                         return (
                             <div key={index}>
                                 <StandardScrollSection props={section as StandardScrollSectionType}/>
-                                {index !== pageSectionsLength && (
-                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
-                                )}
+                                <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
                         )
                     break;
@@ -100,9 +91,7 @@ export default function ScrollSectionsFormatter() {
                         return (
                             <div key={index}>
                                 <Video props={section as VideoType}/>
-                                {index !== pageSectionsLength && (
-                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
-                                )}
+                                <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
                         )
                     break;
@@ -110,9 +99,7 @@ export default function ScrollSectionsFormatter() {
                         return (
                             <div key={index}>
                                     <InsightsScrollSection props={section as InsightsScrollSectionType}/>
-                                {index !== pageSectionsLength && (
-                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
-                                )}
+                                    <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
                         ) 
                     break;
@@ -120,9 +107,7 @@ export default function ScrollSectionsFormatter() {
                         return (
                             <div key={index}>
                                     <ChapterHeader props={section as ChapterHeaderType}/>
-                                {index !== pageSectionsLength && (
-                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
-                                )}
+                                    <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
                         )
                     break;
@@ -130,9 +115,7 @@ export default function ScrollSectionsFormatter() {
                         return (
                             <div key={index}>
                                     <Billboard props={section as BillboardType}/>
-                                {index !== pageSectionsLength && (
-                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
-                                )}
+                                    <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
                         )
                     break;
@@ -140,9 +123,7 @@ export default function ScrollSectionsFormatter() {
                         return (
                             <div key={index}>
                                     <IFrame props={section as IFrameType} />
-                                {index !== pageSectionsLength && (
-                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
-                                )}
+                                    <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
                         )
                     break; 
@@ -150,9 +131,7 @@ export default function ScrollSectionsFormatter() {
                         return (
                             <div key={index}>
                                     <Paragraph props={section as ParagraphType} />
-                                {index !== pageSectionsLength && (
-                                    <div className='mt-[6rem] mb-[6rem] bg-border h-[1px] w-[67vw] sm:w-[60vw] md:w-[67vw] m-auto xl:ml-0'></div>
-                                )}
+                                    <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
                         )
                     break;

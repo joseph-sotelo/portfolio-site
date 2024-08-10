@@ -1,14 +1,9 @@
 'use client'
 
 import StaticMenu from '@/components/static-menu';
-import MobileMenu from '@/components/mobile-menu';
 import { StaticMenuContext } from '@/app/data/static-menu-context';
 
 import { useState, useEffect } from 'react';
-
-interface MainContent {
-  mainContent: React.ReactNode;
-}
 
 export function MainLayout({
   children,
@@ -20,17 +15,12 @@ export function MainLayout({
     const value = {isOffScreen, setIsOffScreen};
 
     return(
-        <div id='layout-grid' className='sm:grid  sm:grid-cols-12 gap-6 mx-6'>
+        <div id='layout-grid' className='md:grid md:grid-cols-12 gap-standard-gap mx-standard-gap lg:gap-medium-gap lg:mx-medium-gap max-w-[1400px] 2xl:mx-auto'>
           <StaticMenuContext.Provider value={value}>
-            <div id='static-menu' className='sm:col-span-4 lg:col-span-3 xl:col-span-2 xl:col-start-2 2xl:col-span-2'>
-              <div className='sm:hidden'> 
-                <MobileMenu ></MobileMenu>
-              </div>
-              <div id='context-menu-wrapper' className='hidden sm:block h-full'>
-                  <StaticMenu></StaticMenu>
-              </div>
+            <div id='static-menu-wrapper' className='sticky top-0 z-20 md:h-screen md:col-span-3 xl:col-start-1'>
+              <StaticMenu />
             </div>
-            <div id='content' className='mr-auto ml-auto max-w-[373px] sm:ml-0 sm:max-w-full sm:col-span-8 2xl:col-span-10'> 
+            <div id='content' className='my-big-gap mx-auto max-w-[500px] md:ml-0 md:max-w-full md:col-span-9 md:mt-medium-gap lg:col-span-8 xl:col-span-9'>
               {children}
             </div> 
           </StaticMenuContext.Provider>
