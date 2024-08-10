@@ -1,0 +1,43 @@
+{
+    "contextMenuData": {
+        "header": "Discover Olvera",
+        "hideTitleAtStart": true,
+        "subHeader": [
+            "Academic Project",
+            "14 Weeks"
+        ],
+        "mainText": "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using augmented reality."
+    },
+    "sections": [
+        {
+            "key": "accordion",
+            "componentType": "accordionScrollSection",
+            "header": "Hi!",
+            "subheader": "I’m a human-centered designer based out of Los Angeles. When I’m not in the zone, I enjoy reading, fidgeting with code, and inventing new games to play with my nieces and nephews.",
+            "accordionSections": [
+                [
+                    "Art and I",
+                    "My earliest creative expression was illustration. I find myself constantly learning to appreciate new kinds of art. Today I have a well-developed eye for aesthetics that I use for my own art and for design."
+                ],
+                [
+                    "Design and I",
+                    "In college I discovered the world of design - graphic, UX/UI, and IxD. I found it to be a beautiful blend of art and practicality. I love submitting my creative and technical skills to the parameters created by other people’s needs. This means that the most fundamental part of the design process is research. Without research, it’s just art."
+                ],
+                [
+                    "Code and I",
+                    "Ever since my first web design class I have been in love with code. From experimenting in Unity to building this website with Next.js, I make every effort to continuously grow in these skills. This is all done through self-learning, extracurricular classes, and the guidance of several mentor friends. I’m not an engineer, but I’m well-acquanited with what they do."
+                ]
+            ],
+            "src": "/about/business_portrait_small.jpg",
+            "alt": "Photo of Joseph Sotelo"
+        },
+        {
+            "key": "bigImage",
+            "componentType": "bigImage",
+            "src": "/about/data-selfie.svg",
+            "alt": "An infographic displaying what Joey takes pictures of",
+            "caption": "Interpret however you like.",
+            "captionSuffix": "Academic Project, Fall 2023"
+        }
+    ]
+}

@@ -1,12 +1,11 @@
-'use client'
+import { MainLayout } from "@/components/main-layout"
+import CardGrid from "@/components/card-grid"
 
-import PieceCardGrid from '../components/piece-card-grid';
+export default function Page(){
 
-export default function Work(){
-
-  return(
-      <div id="card-grid-wrapper" className='mt-12 mb-24'>
-          <PieceCardGrid />
-        </div>
-  )
+    return(
+        <MainLayout>
+            <CardGrid />
+        </MainLayout>
+    )
 }
