@@ -808,7 +808,7 @@
             },
             {
                 "key": "flowchart",
-                "componentType": "billBoard",
+                "componentType": "billboard",
                 "header": "Flowchart",
                 "mainText": "This flowchart outlines my solution, which includes user-dictated categorization and a progress bar.",
                 "images": [
