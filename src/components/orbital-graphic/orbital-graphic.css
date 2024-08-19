@@ -1,0 +1,3 @@
+#top-blur, #bottom-blur {
+    mask: radial-gradient(black 20%, grey 30%, transparent 80%);
+}
