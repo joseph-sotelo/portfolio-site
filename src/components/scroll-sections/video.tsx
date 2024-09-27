@@ -19,7 +19,7 @@ export function Video({props}: {props: VideoType}){
             </p>
             {props.hostType === 'iframe' ? (
                 props.sources.map((src, index) => (
-                    <iframe key='index' className='w-full aspect-video rounded-sm mt-standard-gap' src={src} title="Youtube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    <iframe key='index' className='w-full aspect-square rounded-sm mt-standard-gap' src={src} title="Youtube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 ))
             ):(
                 props.sources.map((src, index) => (

@@ -848,5 +848,103 @@
         "sections": [
         
         ]
+    },
+    "semiotic-clock": {
+        "caseStudyCardProps": {
+            "name": "Semiotic Clock",
+            "image": "/work/semiotic-clock/semiotic-clock-cover.png",
+            "page": "/work/semiotic-clock",
+            "labels": [
+                "processing",
+                "p5js",
+                "O.O.P."
+            ]
+        },
+        "sections": [
+            {
+                "key": "overview",
+                "componentType": "overview",
+                "header": "Semiotic Clock",
+                "descriptiveList": [
+                    [
+                        "Context: ",
+                        "This project was my submission for a coding challenge as part of a programming class."
+                    ],
+                    [
+                        "Challenge: ",
+                        "Create an animation that shows a clock for aliens. The clock cannot display time tied to the rotation of the Earth - years, months, days, hours, minutes, etc. Instead create your own system of time - however large or small."
+                    ],
+                    [
+                        "Tools: ",
+                        "Processing, p5js"
+                    ]
+                ],
+                "image": "/work/semiotic-clock/semiotic-clock-cover.png"
+            },
+            {   
+                "key": "process",
+                "componentType": "chapterHeader",
+                "header": "Process"
+            },
+            {
+                "key": "inspiration",
+                "componentType": "billboard",
+                "header": "Inspiration",
+                "mainText": "For the 1979 'Alien' movie, concept artist Ron Cobb designed a set of signs that follow a visual language he called 'Semiotic Standard'. I decided to make the clock follow this language because of it's minimalist, wordless clarity.",
+                "images": [
+                    [
+                        "/work/semiotic-clock/semiotic-standard-captions.png",
+                        "Semiotic Standard"
+                    ]
+                ]
+            },
+            {
+                "key": "concept",
+                "componentType": "billboard",
+                "header": "Concept",
+                "mainText": "As a basis for measuring time, I used what I call death-spans. This is the amount of time that a passenger can survive without water.",
+                "images": [
+                    [
+                        "/work/semiotic-clock/semiotic-clock-concept.png",
+                        "Semiotic Clock Concept"
+                    ]
+                ]
+            },
+            {
+                "key": "final-product",
+                "componentType": "iFrame",
+                "header": "Final Product",
+                "mainText": "The clock displays the amount of time left until the ship runs out of various resources, measured in death-spans. Additionally, the visor begins to flash when a metric runs out. The clock shown here is accelerated.",
+                "src": "https://editor.p5js.org/jsotelo/full/seEN0FM1T"
+            },
+            {
+                "key": "metricObject",
+                "componentType": "codeFragmentBillboard",
+                "header": "Metric Object",
+                "mainText": "Instead of hard-coding the coordinates for all the metrics and their segments, I designed a Metric class and a Segment class. They dynamically render the metric bars based on a simple object declaratioon in which the developer defines the resource type, the color, they quantity, and a numeric key. Voila!",
+                "lines": [
+                    [
+                        "metrics.push(new Metric('water', 1,'blue', 5));",
+                        "metrics.push(new Metric('oxygen', 2,'teal', 7));"
+                    ],
+                    [
+                        "metrics.push(new Metric('water', 1,'blue', 5));",
+                        "metrics.push(new Metric('oxygen', 2,'teal', 7));",
+                        "metrics.push(new Metric('food', 3,'green', 15));",
+                        "metrics.push(new Metric('food', 3,'green', 15));"
+                    ]
+                ],
+                "images": [
+                    [
+                        "/work/semiotic-clock/water-oxygen.png",
+                        "Two Metrics"
+                    ],
+                    [
+                        "/work/semiotic-clock/food-electricity.png",
+                        "Four metrics"
+                    ]
+                ]
+            }
+        ]
     }
 }

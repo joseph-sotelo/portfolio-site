@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import { Roboto_Mono as FontSans } from 'next/font/google'
-import { Inter as SecondaryFont } from 'next/font/google'
 import './globals.css'
 
 import { cn } from "@/lib/utils"
@@ -8,12 +7,6 @@ import { cn } from "@/lib/utils"
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
-})
-
-const secondaryFont = SecondaryFont({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--secondary-font'
 })
 
 export const metadata: Metadata = {
