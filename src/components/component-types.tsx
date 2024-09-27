@@ -14,6 +14,7 @@ export type ScrollSectionType = {
     hostType?: string;
     sources?: string[];
     accordionSections?: string[][];
+    lines?: string[][];
 }
 
 export type CaseStudyCardType = {

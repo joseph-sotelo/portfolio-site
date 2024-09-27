@@ -72,5 +72,14 @@
             "Joey Sotelo",
             "Design Technologist"
         ]
+    },
+    "semiotic-clock": {
+        "header": "Semiotic Clock",
+        "hideTitleAtStart": true,
+        "subHeader": [
+            "Coding Challenge",
+            "3 days"
+        ],
+        "mainText": "A clock that uses life expectancy as a basis. Designed for space-travellers." 
     }
 }
