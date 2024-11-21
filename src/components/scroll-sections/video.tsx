@@ -5,6 +5,9 @@ export type VideoType = {
     mainText: string; 
     sources: string[]; 
     hostType: string;
+    isAutoPlay: boolean;
+    showControls: boolean;
+    isMuted: boolean;
 }
 
 export function Video({props}: {props: VideoType}){
@@ -23,7 +26,7 @@ export function Video({props}: {props: VideoType}){
                 ))
             ):(
                 props.sources.map((src, index) => (
-                    <video key='index' autoPlay loop muted className='rounded-sm mt-standard-gap' width="2000" height="1000">
+                    <video key='index' loop muted={props.isMuted} controls={props.showControls} autoPlay={props.isAutoPlay} className='rounded-sm mt-standard-gap' width="2000" height="1000">
                         <source src={src} type='video/mp4'/>
                     </video>
                 ))

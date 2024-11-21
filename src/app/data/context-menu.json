@@ -77,9 +77,18 @@
         "header": "Semiotic Clock",
         "hideTitleAtStart": true,
         "subHeader": [
-            "Coding Challenge",
+            "Academic Exercise",
             "3 days"
         ],
         "mainText": "A clock that uses life expectancy as a basis. Designed for space-travellers." 
+    },
+    "electric-spoons": {
+        "header": "Electric Spoons",
+        "hideTitleAtStart": false,
+        "subHeader": [
+            "Arduino/Processing Challenge",
+            "1 day"
+        ],
+        "mainText": "You know when you really want to practice spoons but it's 2am?" 
     }
 }

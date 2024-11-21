@@ -278,7 +278,10 @@
                 "sources": [
                     "https://www.youtube.com/embed/ZsmuhoPbTFE"
                 ],
-                "hostType": "iframe"
+                "hostType": "iframe",
+                "isAutoPlay": true,
+                "showControls": false,
+                "isMuted": true
             },
             {
                 "key": "reflection",
@@ -612,7 +615,10 @@
                 "sources": [
                     "/work/voxai/word-prediction-A.mp4"
                 ],
-                "hostType": "local"
+                "hostType": "local",
+                "isAutoPlay": true,
+                "showControls": false,
+                "isMuted": true
             },
             {
                 "key": "toneControl",
@@ -622,7 +628,10 @@
                 "sources": [
                     "/work/voxai/tones.mov"
                 ],
-                "hostType": "local"
+                "hostType": "local",
+                "isAutoPlay": true,
+                "showControls": false,
+                "isMuted": true
             },
             {   
                 "key": "rearScreen",
@@ -656,7 +665,10 @@
                     "/work/voxai/conversation-A.mov",
                     "/work/voxai/conversation-B.mov"
                 ],
-                "hostType": "local"
+                "hostType": "local",
+                "isAutoPlay": true,
+                "showControls": false,
+                "isMuted": true
             },
             {   
                 "key": "reflection",
@@ -944,6 +956,56 @@
                         "Four metrics"
                     ]
                 ]
+            }
+        ]
+    },
+    "electric-spoons": {
+        "caseStudyCardProps": {
+            "name": "Electric Spoons",
+            "image": "/work/electric-spoons/electric-spoons-cover.png",
+            "page": "/work/electric-spoons",
+            "labels": [
+                "processing",
+                "arduino"
+            ]
+        },
+        "sections": [
+            {
+                "key": "overview",
+                "componentType": "overview",
+                "header": "Electric Spoons",
+                "descriptiveList": [
+                    [
+                        "Mode: ",
+                        "These spoons are meant for live performance and practice sessions."
+                    ],
+                    [
+                        "Sound: ",
+                        "Currently, the spoons trigger a synthesized sound. However, future iterations may include a variety of samples."
+                    ],
+                    [
+                        "Visuals: ",
+                        "A red dot displays whenever sound is produced."
+                    ],
+                    [
+                        "Sensors: ",
+                        "The prototype has one sensor, a button that detects when the spoons are being 'clacked' together"
+                    ]
+                ],
+                "image": "/work/electric-spoons/electric-spoons-cover.png"
+            },
+            {
+                "key": "functional-prototype",
+                "componentType": "video",
+                "header": "Functional Prototype",
+                "mainText": "The below model protypes technical functionality. Created with Arduino and Adafruit hardware. Programmed in Processing.",
+                "sources": [
+                    "/work/electric-spoons/electric-spoons-demo.MOV"
+                ],
+                "hostType": "local",
+                "isAutoPlay": false,
+                "showControls": true,
+                "isMuted": false
             }
         ]
     }
