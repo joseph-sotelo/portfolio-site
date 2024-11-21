@@ -5,6 +5,9 @@ export type VideoType = {
     mainText: string; 
     sources: string[]; 
     hostType: string;
+    isAutoPlay: boolean;
+    showControls: boolean;
+    isMuted: boolean;
 }
 
 export function Video({props}: {props: VideoType}){
@@ -19,11 +22,11 @@ export function Video({props}: {props: VideoType}){
             </p>
             {props.hostType === 'iframe' ? (
                 props.sources.map((src, index) => (
-                    <iframe key='index' className='w-full aspect-video rounded-sm mt-standard-gap' src={src} title="Youtube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+                    <iframe key='index' className='w-full aspect-square rounded-sm mt-standard-gap' src={src} title="Youtube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
                 ))
             ):(
                 props.sources.map((src, index) => (
-                    <video key='index' autoPlay loop muted className='rounded-sm mt-standard-gap' width="2000" height="1000">
+                    <video key='index' loop muted={props.isMuted} controls={props.showControls} autoPlay={props.isAutoPlay} className='rounded-sm mt-standard-gap' width="2000" height="1000">
                         <source src={src} type='video/mp4'/>
                     </video>
                 ))

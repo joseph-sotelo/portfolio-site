@@ -6,6 +6,7 @@ import { Overview, OverviewType } from './overview';
 import { StandardScrollSection, StandardScrollSectionType } from './standard-scroll-section';
 import { BigText, BigTextType} from '@/components/scroll-sections/big-text';
 import { Billboard, BillboardType } from '@/components/scroll-sections/billboard';
+import { CodeFragmentBillBoard, CodeFragmentBillboardType } from './code-fragment-billboard';
 import { ChapterHeader, ChapterHeaderType} from '@/components/scroll-sections/chapter-header';
 import { Paragraph, ParagraphType } from './paragraph';
 import { Video, VideoType } from './video';
@@ -131,6 +132,14 @@ export default function ScrollSectionsFormatter() {
                         return (
                             <div key={index}>
                                     <Paragraph props={section as ParagraphType} />
+                                    <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
+                            </div>
+                        )
+                    break;
+                    case 'codeFragmentBillboard':
+                        return (
+                            <div key={index}>
+                                    <CodeFragmentBillBoard props={section as CodeFragmentBillboardType} />
                                     <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
                         )

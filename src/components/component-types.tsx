@@ -14,6 +14,10 @@ export type ScrollSectionType = {
     hostType?: string;
     sources?: string[];
     accordionSections?: string[][];
+    lines?: string[][];
+    isAutoPlay?: boolean;
+    showControls?: boolean;
+    isMuted?: boolean;
 }
 
 export type CaseStudyCardType = {
@@ -36,6 +40,6 @@ export type CaseStudyType = {
     sections: ScrollSectionType[];
 }
 
-export type CaseStudyPageKeyType = 'discover-olvera' | 'voxai' | 'slimbox' | 'other';
+export type CaseStudyPageKeyType = 'discover-olvera' | 'voxai' | 'slimbox' | 'other' | 'semiotic-clock' | 'electric-spoons';
 
-export type GlobalPageKeyType = 'discover-olvera' | 'voxai' | 'slimbox' | 'other' | '' | 'about';
+export type GlobalPageKeyType = 'discover-olvera' | 'voxai' | 'slimbox' | 'other' | '' | 'about' | 'semiotic-clock' | 'electric-spoons';
