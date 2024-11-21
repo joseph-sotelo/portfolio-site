@@ -10,9 +10,11 @@ import data from '../app/data/case-studies.json'
     return(
         <div className='grid gap-medium-gap xl:grid-cols-9'>
             {sections.map((section, index) => 
-              <div key={index} id='piece-card-wrapper' className='xl:col-span-4'>
+              index !== 3 && index !== 5 ? (
+                <div key={index} id='piece-card-wrapper' className='xl:col-span-4'>
                 <PieceCard {...section.caseStudyCardProps}/>
               </div>
+              ) : null
             )}
         </div>
     )
