@@ -12,8 +12,8 @@ import data from '../app/data/case-studies.json'
             {sections.map((section, index) => 
               index !== 3 && index !== 5 ? (
                 <div key={index} id='piece-card-wrapper' className='xl:col-span-4'>
-                <PieceCard {...section.caseStudyCardProps}/>
-              </div>
+                  <PieceCard {...section.caseStudyCardProps}/>
+                </div>
               ) : null
             )}
         </div>

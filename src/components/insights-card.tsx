@@ -16,7 +16,7 @@ export default function InsightsCard({props}: {props: string[]}){
                 {props.slice(1).map((newLine, index) =>
                     <CardDescription key={index} className='text-foreground'>
                         {index !== 0 && (
-                                <br />
+                            <br />
                         )}
                         {newLine}
                     </CardDescription>
