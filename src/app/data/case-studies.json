@@ -1012,7 +1012,7 @@
     "lfla": {
         "caseStudyCardProps": {
             "name": "Los Angeles Library Foundation",
-            "image": "",
+            "image": "/work/lfla/lfla-cover-cropped.png",
             "page": "/work/lfla",
             "labels": [
                 "service design",
@@ -1047,7 +1047,7 @@
                         "Ian Goldsten, Alison Paralles"
                     ]
                 ],
-                "image": "/work/electric-spoons/electric-spoons-cover.png"
+                "image": "/work/lfla/lfla-cover.png"
             },
             {   
                 "key": "research",
