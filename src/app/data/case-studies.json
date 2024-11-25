@@ -173,7 +173,7 @@
             },
             {
                 "key": "prototype-insights",
-                "componentType": "insights",
+                "componentType": "insightsScrollSection",
                 "header": "Insights",
                 "secondaryText": "Several usability tests of our paper prototype revealed these insights:",
                 "descriptiveList": [
@@ -689,7 +689,7 @@
                 ]
             },
             {
-                "key": "n ext-steps",
+                "key": "next-steps",
                 "componentType": "insightsScrollSection",
                 "header": "Next Steps",
                 "descriptiveList": [
@@ -1006,6 +1006,227 @@
                 "isAutoPlay": false,
                 "showControls": true,
                 "isMuted": false
+            }
+        ]
+    },
+    "lfla": {
+        "caseStudyCardProps": {
+            "name": "Los Angeles Library Foundation",
+            "image": "/work/lfla/lfla-cover-cropped.png",
+            "page": "/work/lfla",
+            "labels": [
+                "service design",
+                "motion graphics",
+                "ux research"
+            ]
+        },
+        "sections": [
+            {
+                "key": "overview",
+                "componentType": "overview",
+                "header": "LFLA Livestream Redesign",
+                "descriptiveList": [
+                    [
+                        "Client: ",
+                        "The LA Library Foundation (LFLA) and their sub-brand, Aloud. Aloud produces events in which authors, artists, and other thinkers discuss their ideas in front of in-person and virtual audiences."
+                    ],
+                    [
+                        "Challenge: ",
+                        "Help Aloud channel more of its audience to LFLA, the parent-brand. This could be measured by donations, library memberships, etc. Our class was siloed into many teams - mine focused on the livestream experience."
+                    ],
+                    [
+                        "Solution: ",
+                        "A new virtual event format that leverages YouTube’s chat features and displays branded visuals."
+                    ],
+                    [
+                        "Role: ",
+                        "UX Researcher, Motion Graphics Designer"
+                    ],
+                    [
+                        "Team: ",
+                        "Ian Goldsten, Alison Paralles"
+                    ]
+                ],
+                "image": "/work/lfla/lfla-cover.png"
+            },
+            {   
+                "key": "research",
+                "componentType": "chapterHeader",
+                "header": "Research"
+            },
+            {
+                "key": "stakeholder-kickoff",
+                "componentType": "standardScrollSection",
+                "header": "Meeting our Stakeholders",
+                "mainText": "We kicked off the project with a trip to the LA Central Library to discuss the project brief. Key insights included: ",
+                "bullets": [
+                    "Aloud events are live-streamed on YouTube with the chat closed.",
+                    "The viewers tend to tune in and out rather than stay for the duration of the presentation.",
+                    "The virtual audience tends to be people who would rather be there in-person.",
+                    "LFLA does not do any research or analytics on the virtual audience."
+                ],
+                "images": [
+                    [
+                        "/work/lfla/stakeholder-meeting.jpg",
+                        "The students meet with the stakeholders to discuss the project brief in the library.",
+                        "Discussing the project brief with our stakeholders."
+                    ],
+                    [
+                        "/work/lfla/tour.jpg",
+                        "The students stand around one of the stakeholders as she gives them a tour of central library.",
+                        "Stacy Lieberman, LFLA's president and CEO, gave us a tour of central library."           
+                    ]
+                ]
+            },
+            {
+                "key": "initial-research",
+                "componentType": "standardScrollSection",
+                "header": "Initial Research",
+                "mainText": "We started with informed design, secondary research, and a competetive analysis.",
+                "images": [
+                    [
+                        "/work/lfla/initial-research.jpg",
+                        "Three posters on a wall display the initial reseaerch findings.",
+                        "Our initial research findings stayed on the studio wall during the project."
+                    ]
+                ]
+            },
+            {
+                "key": "initial-research-insights",
+                "componentType": "insightsScrollSection",
+                "header": "Initial Research Insights",
+                "descriptiveList": [
+                    [
+                        "Virtual Q and A",
+                        "Several other organizations have demonstrated that a virtual audience can smoothly be included in the Q and A at hybrid events."
+                    ],
+                    [
+                        "Platform options",
+                        "Our analysis of streaming platforms would later lead us to stick with YouTube for its built in chat features and accessibility."
+                    ],
+                    [
+                        "Interaction and wiewership",
+                        "Streams that allow the viewers to co-create content with the presenters result in more repeat viewers."
+                    ],
+                    [
+                        "Interaction and watch-time",
+                        "Chat functionality increases watch time by 27%"
+                    ],
+                    [
+                        "Best practices",
+                        "71% of marketers use live polling/Q&A for engagement."
+                    ]
+                ]
+            },
+            {
+                "key": "field-research",
+                "componentType": "standardScrollSection",
+                "header": "Field Research",
+                "mainText": "On September 22nd, our class attended the Aloud event, ‘Aloud in Revue: Banned Books’. During which we connected the attendees with a survey we had composed. I also created a sign with a trackable QR code to test the hypothesis: “In-person attendees can help grow the inline audience.”",
+                "images": [
+                    [
+                        "/work/lfla/tiny-experiment.png",
+                        "Joey standing next to a sign reading Invite a friend to watch the livestream. The sign also features a large QR code.",
+                        "The QR code was not widely scanned, prompting different solutions from my team."
+                    ],
+                    [
+                        "/work/lfla/qual-data-analysis.png",
+                        "A collection of post-it notes on a wall that Joey used to analyze the survey results.",
+                        "Qualitative analysis of the survey results."
+                    ]
+                ]
+            },
+            {
+                "key": "field-research-insights",
+                "componentType": "insightsScrollSection",
+                "header": "Field Research Insights",
+                "descriptiveList": [
+                    [
+                        "Hypothesis disproved",
+                        "While the QR code had a total of 13 scans, these were entirely from fellow students and Aloud employees, proving the hypothesis false and somewhoat re-routing our project."
+                    ],
+                    [
+                        "Quantitative results",
+                        "30% of survey respondents knew little about Aloud and/or the topic before the event, emphasizing how important engagement tools are for awareness and retention."
+                    ],
+                    [
+                        "Qualitative results",
+                        "“In this program, the dialogue went very quickly. Sometimes I didn’t catch it all.”",
+                        "“Too short!!”"
+                    ]
+                ]
+            },
+            {
+                "key": "sme",
+                "componentType": "standardScrollSection",
+                "header": "Subject Matter Experts",
+                "mainText": "Our research also consisted of three interviews with subject matter experts. These included:",
+                "bullets": [
+                    "Corey Kachigan, Internal Communications at Stitch Fix",
+                    "FOunder and Producer of Live Talks Los Angeles",
+                    "Tiffany Colli-Moon, Program Producer at Aloud"
+                ],
+                "images": [
+                    [
+                        "/work/lfla/corey.jpeg",
+                        "Corey Kachigan, one of our subject matter experts",
+                        "Corey kachigan"
+                    ],
+                    [
+                        "/work/lfla/ted.jpeg",
+                        "Ted Habte-Gabr, one of our subject matter experts",
+                        "Ted Habte-Gabr"
+                    ],
+                    [
+                        "/work/lfla/tiffany-2.jpeg",
+                        "Tiffany Colli-Moon, one of our subject matter experts",
+                        "Tiffany Colli-Moon"
+                    ]
+                ]
+            },
+            {
+                "key": "sme-insights",
+                "componentType": "insightsScrollSection",
+                "header": "Subject Matter Expert Insights",
+                "descriptiveList": [
+                    [
+                        "Tell a story",
+                        "Corey taught us the importance of storytelling when trying to drive donations. Tell viewers the story of LFLA - the story that they would be participating in by donating."
+                    ],
+                    [
+                        "Use the chat for research",
+                        "Ted opened our eyes to several live-stream pro-tips, including putting a survey in the chat during the countdown for research. This made its way into our final design."
+                    ]
+                ]
+            },
+            {
+                "key": "corey-quote",
+                "componentType": "bigText",
+                "mainText": "“[storytelling] is about captivating people with the ‘why’ first and less about the ‘how’”",
+                "postScript": "- Corey Kachigan"
+            },
+            {   
+                "key": "design",
+                "componentType": "chapterHeader",
+                "header": "Design"
+            },
+            {
+                "key": "pitch",
+                "componentType": "billboard",
+                "header": "Stakeholder Pitch",
+                "mainText": "In week 9, we pitched these solutions to our stakeholders:",
+                "images": [
+                    [
+                        "/work/lfla/teen-volunteers.png",
+                        "A mockup of a YouTube video displaying a slide. The slide has pictures of teen volunteers and reads LFLA helped 1,270 teens impact their community in 2023.",
+                        "We repurposed some of pre-stream slides to tell the story of how LFLA is impacting the community. Photos of people and faces creates an emotional underscore to the story - inspiring donation."
+                    ],
+                    [
+                        "/work/lfla/upcoming-events-cropped.png",
+                        "A mockup of a YouTube video, overlayed with a small graphic reading view upcoming events at lfla.org/calendar.",
+                        "Another way to expose viewers to LFLA's brand is to supplement spoken content with info cards."
+                    ]
+                ]
             }
         ]
     }
