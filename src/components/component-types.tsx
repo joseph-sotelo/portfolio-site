@@ -5,6 +5,7 @@ export type ScrollSectionType = {
     header?: string;
     subheader?: string;
     secondaryText?: string;
+    postScript?: string;
     mainText?: string;
     bullets?: string[];
     images?: string[][];

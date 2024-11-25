@@ -90,5 +90,14 @@
             "1 day"
         ],
         "mainText": "You know when you really want to practice spoons but it's 2am?" 
+    },
+    "lfla": {
+        "header": "LFLA Livestream Redesign",
+        "hideTitleAtStart": true,
+        "subHeader": [
+            "Academic Project",
+            "Fall 2024 | 11 Weeks"
+        ],
+        "mainText": "Engaging LFLA's virtual audience through branded graphics and chat moderation." 
     }
 }
