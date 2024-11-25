@@ -22,7 +22,7 @@ export function Billboard({props}: {props: BillboardType}){
                     <>
                         <Image key={index} className={`mt-standard-gap w-full ${image[2] ? 'rounded-t-sm' : 'rounded-sm'} border border-border`} width="1200" height="1200" src={image[0]} alt={image[1]}/> 
                         {image[2] && (
-                            <p className='border border-border mt-[-1px] p-4 rounded-b-sm'>
+                            <p className={`border border-border mt-[-1px] p-4 rounded-b-sm ${index < props.images.length && 'mb-medium-gap'}`}>
                                 {image[2]}
                             </p>
                         )}
