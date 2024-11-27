@@ -1,45 +1,43 @@
 {
-    "discover-olvera": {
+    "lfla": {
         "caseStudyCardProps": {
-            "name": "Discover Olvera",
-            "image": "/work/discover-olvera/discover-olvera-cover.png",
-            "page": "/work/discover-olvera",
+            "name": "Los Angeles Library Foundation",
+            "image": "/work/lfla/lfla-cover-4.png",
+            "page": "/work/lfla",
             "labels": [
-                "ethnography",
-                "netnography",
-                "prototyping",
-                "user testing",
-                "animated logo"
+                "service design",
+                "motion graphics",
+                "ux research"
             ]
         },
         "sections": [
             {
                 "key": "overview",
                 "componentType": "overview",
-                "header": "Discover Olvera",
+                "header": "LFLA Livestream Redesign",
                 "descriptiveList": [
                     [
-                        "Problem: ",
-                        "Olvera Street's businesses are suffering due to a lingering, pandemic-enduced drop in foot traffic"
+                        "Client: ",
+                        "The LA Library Foundation (LFLA) and their sub-brand, Aloud. Aloud produces events in which authors, artists, and other thinkers discuss their ideas in front of in-person and virtual audiences."
                     ],
                     [
-                        "Process: ",
-                        "Ethnography, Netnography, Prototype, Test, Refine"
+                        "Challenge: ",
+                        "Help Aloud channel more of its audience to LFLA, the parent-brand. This could be measured by donations, library memberships, etc. Our class was siloed into many teams - mine focused on the livestream experience."
                     ],
                     [
                         "Solution: ",
-                        "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using augmented reality."
-                    ],
-                    [
-                        "Team: ",
-                        "Erick Olivares, Ian Goldstein, Tony Renoj, Myself"
+                        "A new virtual event format that leverages YouTube’s chat features and displays branded visuals."
                     ],
                     [
                         "Role: ",
-                        "Design Research, Branding, UX Design"
+                        "UX Researcher, Motion Graphics Designer"
+                    ],
+                    [
+                        "Team: ",
+                        "Ian Goldsten, Alison Paralles"
                     ]
                 ],
-                "image": "/work/discover-olvera/discover-olvera-cover.png"
+                "image": "/work/lfla/lfla-cover-4.png"
             },
             {   
                 "key": "research",
@@ -47,96 +45,170 @@
                 "header": "Research"
             },
             {
-                "key": "observations",
+                "key": "stakeholder-kickoff",
                 "componentType": "standardScrollSection",
-                "header": "Ethnography: Observations",
-                "mainText": "Our first form of research was to visit Olvera Street in person. The goal was to unearth problems through observation",
+                "header": "Meeting our Stakeholders",
+                "mainText": "We kicked off the project with a trip to the LA Central Library to discuss the project brief. Key insights included: ",
                 "bullets": [
-                    "Six shops and one popular resturant were closed down.",
-                    "There were many transient individuals within Olvera Street, and we witnessed an attempted theft - perhaps they feel emboldened to steal because of the low foot traffic.",
-                    "Olvera Street is part of a slightly larger area known as Placita Olvera, which houses five small museums. These Museums are under-promoted, gaining most visitors through outdoor signs, scheduled visits from guided tours, and seasonal events."
+                    "Aloud events are live-streamed on YouTube with the chat closed.",
+                    "The viewers tend to tune in and out rather than stay for the duration of the presentation.",
+                    "The virtual audience tends to be people who would rather be there in-person.",
+                    "LFLA does not do any research or analytics on the virtual audience."
                 ],
                 "images": [
                     [
-                        "/work/discover-olvera/firehouse-museum.png",
-                        "Exterior view of the Firehouse Museum. It is an old-fashioned brick building in a cobblestone plaza",
-                        "The Firehouse Museum, one of many hidden gems of Placita Olvera"
+                        "/work/lfla/stakeholder-meeting.jpg",
+                        "The students meet with the stakeholders to discuss the project brief in the library.",
+                        "Discussing the project brief with our stakeholders."
                     ],
                     [
-                        "/work/discover-olvera/olvera-empty.png",
-                        "Vacant shops at Olvera Street",
-                        "Vacant shops at Olvera Street"           
+                        "/work/lfla/stacy.jpg",
+                        "Stakeholder Stacy Lieberman, President and CEO of LFLA",
+                        "Stakeholder Stacy Lieberman, President and CEO of LFLA"
+                    ],
+                    [
+                        "/work/lfla/vy.webp",
+                        "Vy Pham, Director of Marketing and Communications at LFLA",
+                        "Vy Pham, Director of Marketing and Communications at LFLA"
+                    ],
+                    [
+                        "/work/lfla/jessica.jpeg",
+                        "Vy Pham, Director of Marketing and Communications at LFLA",
+                        "Jessica Strand, Senior Director of Programming and Strategic Engagement"
+                    ],
+                    [
+                        "/work/lfla/tour.jpg",
+                        "The students stand around one of the stakeholders as she gives them a tour of central library.",
+                        "Stacy gives us a tour of central library."           
                     ]
                 ]
             },
             {
-                "key": "interviews",
+                "key": "initial-research",
                 "componentType": "standardScrollSection",
-                "header": "Ethnography: Interviews",
-                "mainText": "In addition to observations, we interviewed 7 vendors, 5 visitors, and 2 museum clerks.",
-                "bullets": [
-                    "All vendors concurred that they have not recovered economically from Covid.",
-                    "The Museums have a lot to offer but are mainly promoted through entrance signage. They are hidden gems",            
-                    "Frequent visitors tend to naturally promote Olvera street to their friends and family."
-                ],
+                "header": "Initial Research",
+                "mainText": "We started with informed design, secondary research, and a competetive analysis.",
                 "images": [
                     [
-                        "/work/discover-olvera/mural-a.jpg",
-                        "The mural 'America Tropical' by David Alfaro Siquieros",
-                        "'America Tropical', a mural by David Alfaro Siquieros, lies right in the center of Olvera Street but can only be viewed from a one particular balcony"
-                    ],
-                    [
-                        "/work/discover-olvera/museum-of-social-justice.png",
-                        "Entrance to the Museum of Social Justice",
-                        "Another one of Placita Olvera's hidden gems"
+                        "/work/lfla/initial-research.jpg",
+                        "Three posters on a wall display the initial reseaerch findings.",
+                        "Our initial research findings stayed on the studio wall during the project."
                     ]
                 ]
             },
             {
-                "key": "netnography",
-                "componentType": "standardScrollSection",
-                "header": "Netnography",
-                "mainText": "Next, we took an in-depth look at the online presence of Olvera Street. We investigated what’s said about Olvera on Yelp, Tripadvisor, and in the news. We also looked what others have already done to solve similar challenges.",
-                "bullets": [
-                    "The Met used an AR app to enhance artwork and draw the crowds back after Covid. Should we use AR to increase foot traffic at Olvera?",
-                    "Placita Olvera has poor internet representation. For example, many shops are not represented on Google Maps",            
-                    "We found qualitative data that confirmed our ethnography, such as the fact that businesses are currently down 30-60%",
-                    "Journalist Javier Cabral suggests that leveraging social media could be a solution. How might this look in our project?"
-                ],
-                "images": [
+                "key": "initial-research-insights",
+                "componentType": "insightsScrollSection",
+                "header": "Initial Research Insights",
+                "descriptiveList": [
                     [
-                        "/work/discover-olvera/google-maps.png",
-                        "Screenshot of Olvera Street on Google maps",
-                        "Many businesses at Olvera are not displayed on Google and Apple maps."
+                        "Virtual Q-and-A",
+                        "Several other organizations have demonstrated that a virtual audience can smoothly be included in the Q-and-A at hybrid events."
                     ],
                     [
-                        "/work/discover-olvera/chroma.png",
-                        "Image of text reading 'Chroma: ancient sculpture in color' in front of a Sphinx sculpture",
-                        "Poster for Chroma AR by The MET"
+                        "Platform options",
+                        "Our analysis of streaming platforms would later lead us to stick with YouTube for its built in chat features and accessibility."
+                    ],
+                    [
+                        "Interaction and viewership",
+                        "Streams that allow the viewers to co-create content with the presenters result in more repeat viewers and less dropping off."
+                    ],
+                    [
+                        "Interaction and watch-time",
+                        "Chat functionality increases watch time by 27%"
+                    ],
+                    [
+                        "Best practices",
+                        "71% of marketers use live polling/Q&A for engagement."
                     ]
                 ]
             },
             {
-                "key": "how-might-we",
+                "key": "field-research",
+                "componentType": "standardScrollSection",
+                "header": "Field Research",
+                "mainText": "On September 22nd, our class attended the Aloud event, ‘Aloud in Revue: Banned Books’. During which we connected the attendees with a survey we had composed. I also created a sign with a trackable QR code to test the hypothesis: “In-person attendees can help grow the inline audience.”",
+                "images": [
+                    [
+                        "/work/lfla/tiny-experiment.png",
+                        "Joey standing next to a sign reading Invite a friend to watch the livestream. The sign also features a large QR code.",
+                        "The QR code was not widely scanned, prompting different solutions from my team."
+                    ],
+                    [
+                        "/work/lfla/qual-data-analysis.png",
+                        "A collection of post-it notes on a wall that Joey used to analyze the survey results.",
+                        "Qualitative analysis of the survey results."
+                    ]
+                ]
+            },
+            {
+                "key": "field-research-insights",
+                "componentType": "insightsScrollSection",
+                "header": "Field Research Insights",
+                "descriptiveList": [
+                    [
+                        "Hypothesis disproved",
+                        "While the QR code had a total of 13 scans, these were entirely from fellow students and Aloud employees, proving the hypothesis false and somewhoat re-routing our project."
+                    ],
+                    [
+                        "Quantitative results",
+                        "30% of survey respondents knew little about Aloud and/or the topic before the event, emphasizing how important engagement tools are for awareness and retention."
+                    ],
+                    [
+                        "Qualitative results",
+                        "“In this program, the dialogue went very quickly. Sometimes I didn’t catch it all.”",
+                        "“Too short!!”"
+                    ]
+                ]
+            },
+            {
+                "key": "sme",
+                "componentType": "standardScrollSection",
+                "header": "Subject Matter Experts",
+                "mainText": "Our research also consisted of three interviews with subject matter experts. These included:",
+                "bullets": [
+                    "Corey Kachigan, Internal Communications at Stitch Fix",
+                    "Ted Habte-Gabr, Founder and Producer of Live Talks Los Angeles",
+                    "Tiffany Colli-Moon, Program Producer at Aloud"
+                ],
+                "images": [
+                    [
+                        "/work/lfla/corey.jpeg",
+                        "Corey Kachigan, one of our subject matter experts",
+                        "Corey kachigan"
+                    ],
+                    [
+                        "/work/lfla/ted.jpeg",
+                        "Ted Habte-Gabr, one of our subject matter experts",
+                        "Ted Habte-Gabr"
+                    ],
+                    [
+                        "/work/lfla/tiffany-2.jpeg",
+                        "Tiffany Colli-Moon, one of our subject matter experts",
+                        "Tiffany Colli-Moon"
+                    ]
+                ]
+            },
+            {
+                "key": "sme-insights",
+                "componentType": "insightsScrollSection",
+                "header": "Subject Matter Expert Insights",
+                "descriptiveList": [
+                    [
+                        "Tell a story",
+                        "Corey taught us the importance of storytelling when trying to drive donations. Tell viewers the story of LFLA - the story that they would be participating in by donating."
+                    ],
+                    [
+                        "Use the chat for research",
+                        "Ted opened our eyes to several live-stream pro-tips, including putting a survey in the chat during the countdown for research. This made its way into our final design."
+                    ]
+                ]
+            },
+            {
+                "key": "corey-quote",
                 "componentType": "bigText",
-                "secondaryText": "After reviewing our data, a design direction emerged:",
-                "mainText": "How might we leverage Olvera's hidden museums and it's small yet loyal customer base to increase foot traffic at Olvera Street?"
-            },
-            {
-                "key": "persona",
-                "componentType": "standardScrollSection",
-                "header": "Persona",
-                "mainText": "We created a persona named Jessica based on the visitors that we interviewed. Our design, whatever it would end up being, would focus on bringing her pysically to Olvera Street.",
-                "images": [
-                    [
-                        "/work/discover-olvera/persona-left.png",
-                        "Screenshot of the Jessica Persona"
-                    ], 
-                    [
-                        "/work/discover-olvera/persona-right.png",
-                        "Screenshot of the Jessica Persona"
-                    ]
-                ]
+                "mainText": "“[storytelling] is about captivating people with the ‘why’ first and less about the ‘how’”",
+                "postScript": "- Corey Kachigan"
             },
             {   
                 "key": "design",
@@ -144,158 +216,169 @@
                 "header": "Design"
             },
             {
-                "key": "paper-prototype",
-                "componentType": "standardScrollSection",
-                "header": "Paper Prototype",
-                "mainText": "The first iteration of our solution was a system consisting of several digital and physical components.",
-                "bullets": [
-                    "App: An app with a detailed map of Olvera’s attractions, as well as AR experiences.",
-                    "Digital Displays: Users would have the opportunity to post photos of their experiences to digital displays on billboards in public.",            
-                    "QR Codes: QR codes at Olvera street would have to be scanned to download the app and activate the AR experiences."
-                ],
+                "key": "pitch",
+                "componentType": "billboard",
+                "header": "Stakeholder Pitch",
+                "mainText": "In week 9, we pitched these solutions to our stakeholders:",
                 "images": [
                     [
-                        "/work/discover-olvera/paper-prototype.png",
-                        "The app prototype, made of paper and lego",
-                        "Lego makes a great prototyping material!"
-                    ], 
-                    [
-                        "/work/discover-olvera/camera-sim.png",
-                        "The app prototype, made of paper and lego",
-                        "Simulating an AR-colorized mural"
+                        "/work/lfla/teen-volunteers.png",
+                        "A mockup of a YouTube video displaying a slide. The slide has pictures of teen volunteers and reads LFLA helped 1,270 teens impact their community in 2023.",
+                        "The stream always starts with a slideshow, so I repurposed some of the slides to tell the story of how LFLA is impacting the community. Photos of people and faces creates an emotional underscore to the story, inspiring donation."
                     ],
                     [
-                        "/work/discover-olvera/prototype-map.png",
-                        "The app prototype, made of paper and lego",
-                        "Simulating physical movement around the location"
+                        "/work/lfla/upcoming-events-cropped.png",
+                        "A mockup of a YouTube video, overlayed with a small graphic reading view upcoming events at lfla.org/calendar.",
+                        "Another way to expose viewers to LFLA's brand is to supplement spoken content with info cards."
+                    ],
+                    [
+                        "/work/lfla/polls.png",
+                        "Two screenshots demonstrating how polls work. The first shows the moderator clicking 'start poll', while the second shows a lst of polls and their results.",
+                        "Our solution inolved leveraging YouTube's live chat features. Above demonstrates how polls can be used to research the audience. We also planned to allow for general chat and Q-and-A participation. Our hope was to prevent drop-offs mid-stream."
                     ]
                 ]
             },
             {
-                "key": "prototype-insights",
+                "key": "stakeholder-feedback",
                 "componentType": "insightsScrollSection",
-                "header": "Insights",
-                "secondaryText": "Several usability tests of our paper prototype revealed these insights:",
+                "header": "Stakeholder Feedback",
+                "secondaryText": "Below is the feedback from our stakeholders, as well as adjustments we had to make in order to test our ideas live at the Aloud event, 'Where is our Democracy?' in Week 11.",
                 "descriptiveList": [
                     [
-                        "Comfort Levels",
-                        "All of our participants said that they would be uncomfortable sharing their photos to public displays and billboards."
+                        "Slides",
+                        "They asked me to add a QR code - linking to the donation page - to each of the slides I had designed."
                     ],
                     [
-                        "America Tropical",
-                        "We prototyped three AR experiences, and the most delightful was the one that displayed America Tropical, a white-washed mural, in its original colors."
+                        "Info-cards",
+                        "While they loved the info-cards, they said that they couldn't be implemented in time for the event because it would require additional 3rd party softare."
                     ],
                     [
-                        "Emphasize AR",
-                        "The user flow needs to culminate in sharing AR experiences, rather than just having them."
+                        "Polls",
+                        "Use polls to support the topic rather than research, which can distract. For research, we followed Ted's advice an put a survey at the end of the stream."
                     ]
                 ]
             },
             {
-                "key": "mid-fi-prototype",
+                "key": "testing",
                 "componentType": "standardScrollSection",
-                "header": "Mid-Fi Prototype",
-                "mainText": "We used our insights to design an interactive mid-fidelity prototype in Figma.",
-                "bullets": [
-                    "We discarded the idea of sharing photos to public digital displays. Instead, we aimed to provoke users to share their experiences on their own social media. This would be done by rewarding users with camera filters for participtation in AR experiences.",
-                    "We built out the AR mural feature to include a variety of interactions.",            
-                    "We made the AR more prominent from the very beginning of the user journey"
-                ],
+                "header": "Testing our Solutions",
+                "mainText": "In week 11, we teamed up with Aloud's production team to show my slides in the slideshow before the talk, and to moderate the chat.",
                 "images": [
                     [
-                        "/work/discover-olvera/broken-statues.png",
-                        "A screen from the app showing an AR enhanced mural.",
-                        "One of our new features for the mural was informative popovers."
-                    ] 
+                        "/work/lfla/moderating.jpg",
+                        "Alison and Joey sit in the audience at the event, with their laptops open, moderating the chat.",
+                        "Alison and I moderate the chat, post polls, and facilitate the Q-and-A session."
+                    ],
+                    [
+                        "/work/lfla/slide-in-person.png",
+                        "One of the slides Joey had designed, shown in front of the in-person audience.",
+                        "One of the slides I had designed, with text overlaid on top by Aloud's staff. The slideshow was shown to both the in-person and remote audiences."
+                    ],
+                    [
+                        "/work/lfla/chat.png",
+                        "A screenshot of the chat during the livestream.",
+                        "The chat and polls were lively."
+                    ]
                 ]
             },
             {
-                "key": "mid-fi-insights",
+                "key": "results",
                 "componentType": "insightsScrollSection",
-                "header": "Insights",
-                "secondaryText": "Several usability tests of our first Figma prototype revealed these insights:",
+                "header": "Results",
                 "descriptiveList": [
                     [
-                        "Tutorial",
-                        "Many of the participants in our digital usability tests suggested including some kind of tutorial or abundance of tooltips."            
+                        "60% engagement",
+                        "60% of viewers participated in the polls over the duration of the the stream, and two people freely commented about the topic. According to our secondary research, this kind of content co-creation prevents drop-offs and draws people back."
                     ],
                     [
-                        "Simplify",
-                        "Several participants mentioned that there were too many clicks in the map and the tutorial"            
+                        "No questions",
+                        "We gave the viewers the option to ask a question along with the in-person Q-and-A, but no one submitted anything."
                     ],
                     [
-                        "Delighted by AR",
-                        "Our participants cherished all of the new AR mural features, suggesting that this formula be applied to other muesum exhibits at Olvera."            
+                        "Survey",
+                        "One viewer responded to the survey we posted in the chat, demonstrating that this is a researchable audience."
                     ],
                     [
-                        "Be careful about Spanish phrases",
-                        "Our prototype had some phrases like 'Vamos!'. Some participants said they didn't understand what these phrases meant and that they would look for a way to switch to English."
-                    ]
-                ]
-            },
-            {   
-                "key": "branding",
-                "componentType": "standardScrollSection",
-                "header": "Branding",
-                "mainText": "I designed all aspects of the brand with feedback from my team. Like the structure and UI of the app, the branding went through a sustained iterative process.",
-                "bullets": [
-                    "The interviews with vendors had revealed that Dia de los Muertos, as well as the movie 'Coco' generated a lot of foot traffic. We chose a style that was reminiscent of these themes, using festive colors contrasted by dark backgrounds.",
-                    "Through Figma’s Material Theme Builder plugin, I was able to enter our colors and quickly customize a UI kit for our Hi-Fi wireframes."           
-                ],
-                "images": [
-                    [
-                        "/work/discover-olvera/discover-olvera-logo.png",
-                        "The final logo",
-                        "The final logo"
-                    ], 
-                    [
-                        "/work/discover-olvera/color-palette.png",
-                        "Discover Olvera color palette",
-                        "Color palette for the brand"
-                    ], 
-                    [
-                        "/work/discover-olvera/ui-colors.png",
-                        "Color palette for the UI",
-                        "Color palette for the app's UI"
-                    ],
-                    [
-                        "/work/discover-olvera/olvera-logo-thumbnails.png",
-                        "Thumbnail sketches for the logo",
-                        "An early set of logo ideas"
-                    ],
-                    [
-                        "/work/discover-olvera/figma-logo-ideation.png",
-                        "Digital logo ideas",
-                        "Later refinements of the wordmark"
+                        "0 scans",
+                        "I had made the QR codes on the slides to be trackable, and I found that nobody scanned them. We iterated on the design for further testing."
                     ]
                 ]
             },
             {
-                "key": "hi-fi-prototype",
+                "key": "final-presentation",
+                "componentType": "standardScrollSection",
+                "header": "Final Presentation",
+                "mainText": "In week 13, we presented to the stakeholders our testing results and recommended next steps.",
+                "images": [
+                    [
+                        "/work/lfla/presentation.png",
+                        "The team standing behind a podium, presenting to the stakeholders.",
+                        "The presentation was held at LA central library."
+                    ],
+                    [
+                        "/work/lfla/handout.jpg",
+                        "One of the team members passes out executive summaries to the stakeholders.",
+                        "Ian hands out executive summaries to the stakeholders."
+                    ],
+                    [
+                        "/work/lfla/feedback-2.jpg",
+                        "Jessica provides feedback.",
+                        "Jessica provides feedback."
+                    ]
+                ]
+            },
+            {
+                "key": "next-steps-slides",
                 "componentType": "video",
-                "header": "Hi-Fi Prototype and user story",
-                "mainText": "Below is our final deliverable - a video showcasing our hi-fi protoype through a user story. The animated infographics at the beginning were created by myself in After Effects.",
+                "header": "Next steps: slides",
+                "mainText": "Because the slides didn't get any scans, we recommended that the stakeholders keep iterating and testing the design. I kickstarted this process by creating these animated transitions - perhaps this will delight the viewers and build trust because it shows that LFLA cares about their experience.",
                 "sources": [
-                    "https://www.youtube.com/embed/ZsmuhoPbTFE"
+                    "/work/lfla/transition.mp4"
                 ],
-                "hostType": "iframe",
+                "hostType": "local",
                 "isAutoPlay": true,
                 "showControls": false,
                 "isMuted": true
             },
             {
+                "key": "next-steps-cards",
+                "componentType": "video",
+                "header": "Next steps: info-cards",
+                "mainText": "The info cards were not tested because Aloud wouldn't have been able to implement them in time, as they require a 3rd party streaming platform. I therefore presented some options of platforms, a demo of how it looks from the streamer's end, and detailed instructions on how to customize the info cards so that they can be tailored to the topic. Lastly, I animated the info cards.",
+                "sources": [
+                    "/work/lfla/info-card-demo.mp4"
+                ],
+                "hostType": "local",
+                "isAutoPlay": true,
+                "showControls": false,
+                "isMuted": true
+            },
+            {
+                "key": "next-steps-chat",
+                "componentType": "billboard",
+                "header": "Next steps: chat moderation",
+                "mainText": "Because the chat features were so engaging, we recommended that Aloud appoint someone to moderate the chat at all events. The stakeholders thought that this would be a great volunteering opportunity for employees of sponsoring corporations - a project they have been working on.",
+                "images": [
+                    [
+                        "/work/lfla/moderating-2.png",
+                        "Point of view of a chat moderator, with an open laptop in the foreground, and the speakers on stage in the background."
+                    ]
+                ]
+            },
+            {
                 "key": "reflection",
                 "componentType": "standardScrollSection",
                 "header": "Reflection",
-                "bullets": [
-                    "This was, by far, the most research-intensive project I’ve done so far. I got to practice familiar research methods and learn a new one - ethnography. I am more confident now in my ability to design a research program and execute it, tailored to the needs of the project.",
-                    "We made use of one another’s varied skillsets to share the load in a productive way. I will be looking for this kind of opportunity in future teams."
+                "mainText": "This project contained a lot of uncharted territory for me that grew me in several ways: ",
+                "bullets":[
+                    "I gained research design skills. Of all my class projects, this one gave us the most freedom to design our research program as we saw fit.",
+                    "This project was full of real-world restrictions that had to be navigated. For example, our testing opportunities were limited to the Aloud events calendar."
                 ],
                 "images": [
                     [
-                        "/work/discover-olvera/team-photo.png",
-                        "Team Photo",
-                        "Tony, Erick, and I Discovering Olvera"
+                        "/work/lfla/team-photo.jpg",
+                        "The team posing beneath a sign at the library reading Creativity Starts Here",
+                        "Yes. Yes it does."
                     ]
                 ]
             }
@@ -845,22 +928,6 @@
             }
         ]
     },
-    "other": {
-        "caseStudyCardProps": {
-            "name": "Other Stuff I Do",
-            "image": "/work/other/other-cover.png",
-            "page": "/work/other",
-            "labels": [
-                "typography",
-                "book illustration",
-                "digital art",
-                "analog art"
-            ]
-        },       
-        "sections": [
-        
-        ]
-    },
     "semiotic-clock": {
         "caseStudyCardProps": {
             "name": "Semiotic Clock",
@@ -933,7 +1000,7 @@
                 "key": "metricObject",
                 "componentType": "codeFragmentBillboard",
                 "header": "Metric Object",
-                "mainText": "Instead of hard-coding the coordinates for all the metrics and their segments, I designed a Metric class and a Segment class. They dynamically render the metric bars based on a simple object declaratioon in which the developer defines the resource type, the color, they quantity, and a numeric key. Voila!",
+                "mainText": "Instead of hard-coding the coordinates for all the metrics and their segments, I designed a Metric class and a Segment class. They dynamically render the metric bars based on a simple object declaration in which the developer defines the resource type, the color, they quantity, and a numeric key. Voila!",
                 "lines": [
                     [
                         "metrics.push(new Metric('water', 1,'blue', 5));",
@@ -943,7 +1010,7 @@
                         "metrics.push(new Metric('water', 1,'blue', 5));",
                         "metrics.push(new Metric('oxygen', 2,'teal', 7));",
                         "metrics.push(new Metric('food', 3,'green', 15));",
-                        "metrics.push(new Metric('food', 3,'green', 15));"
+                        "metrics.push(new Metric('power', 4,'yellow', 12));"
                     ]
                 ],
                 "images": [
@@ -1009,45 +1076,47 @@
             }
         ]
     },
-    "lfla": {
+    "discover-olvera": {
         "caseStudyCardProps": {
-            "name": "Los Angeles Library Foundation",
-            "image": "/work/lfla/lfla-cover-cropped.png",
-            "page": "/work/lfla",
+            "name": "Discover Olvera",
+            "image": "/work/discover-olvera/discover-olvera-cover.png",
+            "page": "/work/discover-olvera",
             "labels": [
-                "service design",
-                "motion graphics",
-                "ux research"
+                "ethnography",
+                "netnography",
+                "prototyping",
+                "user testing",
+                "animated logo"
             ]
         },
         "sections": [
             {
                 "key": "overview",
                 "componentType": "overview",
-                "header": "LFLA Livestream Redesign",
+                "header": "Discover Olvera",
                 "descriptiveList": [
                     [
-                        "Client: ",
-                        "The LA Library Foundation (LFLA) and their sub-brand, Aloud. Aloud produces events in which authors, artists, and other thinkers discuss their ideas in front of in-person and virtual audiences."
+                        "Problem: ",
+                        "Olvera Street's businesses are suffering due to a lingering, pandemic-enduced drop in foot traffic"
                     ],
                     [
-                        "Challenge: ",
-                        "Help Aloud channel more of its audience to LFLA, the parent-brand. This could be measured by donations, library memberships, etc. Our class was siloed into many teams - mine focused on the livestream experience."
+                        "Process: ",
+                        "Ethnography, Netnography, Prototype, Test, Refine"
                     ],
                     [
                         "Solution: ",
-                        "A new virtual event format that leverages YouTube’s chat features and displays branded visuals."
-                    ],
-                    [
-                        "Role: ",
-                        "UX Researcher, Motion Graphics Designer"
+                        "A mobile app that aims to increase foot traffic at Olvera street by gamifying the visitor experience using augmented reality."
                     ],
                     [
                         "Team: ",
-                        "Ian Goldsten, Alison Paralles"
+                        "Erick Olivares, Ian Goldstein, Tony Renoj, Myself"
+                    ],
+                    [
+                        "Role: ",
+                        "Design Research, Branding, UX Design"
                     ]
                 ],
-                "image": "/work/lfla/lfla-cover.png"
+                "image": "/work/discover-olvera/discover-olvera-cover.png"
             },
             {   
                 "key": "research",
@@ -1055,155 +1124,96 @@
                 "header": "Research"
             },
             {
-                "key": "stakeholder-kickoff",
+                "key": "observations",
                 "componentType": "standardScrollSection",
-                "header": "Meeting our Stakeholders",
-                "mainText": "We kicked off the project with a trip to the LA Central Library to discuss the project brief. Key insights included: ",
+                "header": "Ethnography: Observations",
+                "mainText": "Our first form of research was to visit Olvera Street in person. The goal was to unearth problems through observation",
                 "bullets": [
-                    "Aloud events are live-streamed on YouTube with the chat closed.",
-                    "The viewers tend to tune in and out rather than stay for the duration of the presentation.",
-                    "The virtual audience tends to be people who would rather be there in-person.",
-                    "LFLA does not do any research or analytics on the virtual audience."
+                    "Six shops and one popular resturant were closed down.",
+                    "There were many transient individuals within Olvera Street, and we witnessed an attempted theft - perhaps they feel emboldened to steal because of the low foot traffic.",
+                    "Olvera Street is part of a slightly larger area known as Placita Olvera, which houses five small museums. These Museums are under-promoted, gaining most visitors through outdoor signs, scheduled visits from guided tours, and seasonal events."
                 ],
                 "images": [
                     [
-                        "/work/lfla/stakeholder-meeting.jpg",
-                        "The students meet with the stakeholders to discuss the project brief in the library.",
-                        "Discussing the project brief with our stakeholders."
+                        "/work/discover-olvera/firehouse-museum.png",
+                        "Exterior view of the Firehouse Museum. It is an old-fashioned brick building in a cobblestone plaza",
+                        "The Firehouse Museum, one of many hidden gems of Placita Olvera"
                     ],
                     [
-                        "/work/lfla/tour.jpg",
-                        "The students stand around one of the stakeholders as she gives them a tour of central library.",
-                        "Stacy Lieberman, LFLA's president and CEO, gave us a tour of central library."           
+                        "/work/discover-olvera/olvera-empty.png",
+                        "Vacant shops at Olvera Street",
+                        "Vacant shops at Olvera Street"           
                     ]
                 ]
             },
             {
-                "key": "initial-research",
+                "key": "interviews",
                 "componentType": "standardScrollSection",
-                "header": "Initial Research",
-                "mainText": "We started with informed design, secondary research, and a competetive analysis.",
-                "images": [
-                    [
-                        "/work/lfla/initial-research.jpg",
-                        "Three posters on a wall display the initial reseaerch findings.",
-                        "Our initial research findings stayed on the studio wall during the project."
-                    ]
-                ]
-            },
-            {
-                "key": "initial-research-insights",
-                "componentType": "insightsScrollSection",
-                "header": "Initial Research Insights",
-                "descriptiveList": [
-                    [
-                        "Virtual Q and A",
-                        "Several other organizations have demonstrated that a virtual audience can smoothly be included in the Q and A at hybrid events."
-                    ],
-                    [
-                        "Platform options",
-                        "Our analysis of streaming platforms would later lead us to stick with YouTube for its built in chat features and accessibility."
-                    ],
-                    [
-                        "Interaction and wiewership",
-                        "Streams that allow the viewers to co-create content with the presenters result in more repeat viewers."
-                    ],
-                    [
-                        "Interaction and watch-time",
-                        "Chat functionality increases watch time by 27%"
-                    ],
-                    [
-                        "Best practices",
-                        "71% of marketers use live polling/Q&A for engagement."
-                    ]
-                ]
-            },
-            {
-                "key": "field-research",
-                "componentType": "standardScrollSection",
-                "header": "Field Research",
-                "mainText": "On September 22nd, our class attended the Aloud event, ‘Aloud in Revue: Banned Books’. During which we connected the attendees with a survey we had composed. I also created a sign with a trackable QR code to test the hypothesis: “In-person attendees can help grow the inline audience.”",
-                "images": [
-                    [
-                        "/work/lfla/tiny-experiment.png",
-                        "Joey standing next to a sign reading Invite a friend to watch the livestream. The sign also features a large QR code.",
-                        "The QR code was not widely scanned, prompting different solutions from my team."
-                    ],
-                    [
-                        "/work/lfla/qual-data-analysis.png",
-                        "A collection of post-it notes on a wall that Joey used to analyze the survey results.",
-                        "Qualitative analysis of the survey results."
-                    ]
-                ]
-            },
-            {
-                "key": "field-research-insights",
-                "componentType": "insightsScrollSection",
-                "header": "Field Research Insights",
-                "descriptiveList": [
-                    [
-                        "Hypothesis disproved",
-                        "While the QR code had a total of 13 scans, these were entirely from fellow students and Aloud employees, proving the hypothesis false and somewhoat re-routing our project."
-                    ],
-                    [
-                        "Quantitative results",
-                        "30% of survey respondents knew little about Aloud and/or the topic before the event, emphasizing how important engagement tools are for awareness and retention."
-                    ],
-                    [
-                        "Qualitative results",
-                        "“In this program, the dialogue went very quickly. Sometimes I didn’t catch it all.”",
-                        "“Too short!!”"
-                    ]
-                ]
-            },
-            {
-                "key": "sme",
-                "componentType": "standardScrollSection",
-                "header": "Subject Matter Experts",
-                "mainText": "Our research also consisted of three interviews with subject matter experts. These included:",
+                "header": "Ethnography: Interviews",
+                "mainText": "In addition to observations, we interviewed 7 vendors, 5 visitors, and 2 museum clerks.",
                 "bullets": [
-                    "Corey Kachigan, Internal Communications at Stitch Fix",
-                    "FOunder and Producer of Live Talks Los Angeles",
-                    "Tiffany Colli-Moon, Program Producer at Aloud"
+                    "All vendors concurred that they have not recovered economically from Covid.",
+                    "The Museums have a lot to offer but are mainly promoted through entrance signage. They are hidden gems",            
+                    "Frequent visitors tend to naturally promote Olvera street to their friends and family."
                 ],
                 "images": [
                     [
-                        "/work/lfla/corey.jpeg",
-                        "Corey Kachigan, one of our subject matter experts",
-                        "Corey kachigan"
+                        "/work/discover-olvera/mural-a.jpg",
+                        "The mural 'America Tropical' by David Alfaro Siquieros",
+                        "'America Tropical', a mural by David Alfaro Siquieros, lies right in the center of Olvera Street but can only be viewed from a one particular balcony"
                     ],
                     [
-                        "/work/lfla/ted.jpeg",
-                        "Ted Habte-Gabr, one of our subject matter experts",
-                        "Ted Habte-Gabr"
-                    ],
-                    [
-                        "/work/lfla/tiffany-2.jpeg",
-                        "Tiffany Colli-Moon, one of our subject matter experts",
-                        "Tiffany Colli-Moon"
+                        "/work/discover-olvera/museum-of-social-justice.png",
+                        "Entrance to the Museum of Social Justice",
+                        "Another one of Placita Olvera's hidden gems"
                     ]
                 ]
             },
             {
-                "key": "sme-insights",
-                "componentType": "insightsScrollSection",
-                "header": "Subject Matter Expert Insights",
-                "descriptiveList": [
+                "key": "netnography",
+                "componentType": "standardScrollSection",
+                "header": "Netnography",
+                "mainText": "Next, we took an in-depth look at the online presence of Olvera Street. We investigated what’s said about Olvera on Yelp, Tripadvisor, and in the news. We also looked what others have already done to solve similar challenges.",
+                "bullets": [
+                    "The Met used an AR app to enhance artwork and draw the crowds back after Covid. Should we use AR to increase foot traffic at Olvera?",
+                    "Placita Olvera has poor internet representation. For example, many shops are not represented on Google Maps",            
+                    "We found qualitative data that confirmed our ethnography, such as the fact that businesses are currently down 30-60%",
+                    "Journalist Javier Cabral suggests that leveraging social media could be a solution. How might this look in our project?"
+                ],
+                "images": [
                     [
-                        "Tell a story",
-                        "Corey taught us the importance of storytelling when trying to drive donations. Tell viewers the story of LFLA - the story that they would be participating in by donating."
+                        "/work/discover-olvera/google-maps.png",
+                        "Screenshot of Olvera Street on Google maps",
+                        "Many businesses at Olvera are not displayed on Google and Apple maps."
                     ],
                     [
-                        "Use the chat for research",
-                        "Ted opened our eyes to several live-stream pro-tips, including putting a survey in the chat during the countdown for research. This made its way into our final design."
+                        "/work/discover-olvera/chroma.png",
+                        "Image of text reading 'Chroma: ancient sculpture in color' in front of a Sphinx sculpture",
+                        "Poster for Chroma AR by The MET"
                     ]
                 ]
             },
             {
-                "key": "corey-quote",
+                "key": "how-might-we",
                 "componentType": "bigText",
-                "mainText": "“[storytelling] is about captivating people with the ‘why’ first and less about the ‘how’”",
-                "postScript": "- Corey Kachigan"
+                "secondaryText": "After reviewing our data, a design direction emerged:",
+                "mainText": "How might we leverage Olvera's hidden museums and it's small yet loyal customer base to increase foot traffic at Olvera Street?"
+            },
+            {
+                "key": "persona",
+                "componentType": "standardScrollSection",
+                "header": "Persona",
+                "mainText": "We created a persona named Jessica based on the visitors that we interviewed. Our design, whatever it would end up being, would focus on bringing her pysically to Olvera Street.",
+                "images": [
+                    [
+                        "/work/discover-olvera/persona-left.png",
+                        "Screenshot of the Jessica Persona"
+                    ], 
+                    [
+                        "/work/discover-olvera/persona-right.png",
+                        "Screenshot of the Jessica Persona"
+                    ]
+                ]
             },
             {   
                 "key": "design",
@@ -1211,23 +1221,177 @@
                 "header": "Design"
             },
             {
-                "key": "pitch",
-                "componentType": "billboard",
-                "header": "Stakeholder Pitch",
-                "mainText": "In week 9, we pitched these solutions to our stakeholders:",
+                "key": "paper-prototype",
+                "componentType": "standardScrollSection",
+                "header": "Paper Prototype",
+                "mainText": "The first iteration of our solution was a system consisting of several digital and physical components.",
+                "bullets": [
+                    "App: An app with a detailed map of Olvera’s attractions, as well as AR experiences.",
+                    "Digital Displays: Users would have the opportunity to post photos of their experiences to digital displays on billboards in public.",            
+                    "QR Codes: QR codes at Olvera street would have to be scanned to download the app and activate the AR experiences."
+                ],
                 "images": [
                     [
-                        "/work/lfla/teen-volunteers.png",
-                        "A mockup of a YouTube video displaying a slide. The slide has pictures of teen volunteers and reads LFLA helped 1,270 teens impact their community in 2023.",
-                        "We repurposed some of pre-stream slides to tell the story of how LFLA is impacting the community. Photos of people and faces creates an emotional underscore to the story - inspiring donation."
+                        "/work/discover-olvera/paper-prototype.png",
+                        "The app prototype, made of paper and lego",
+                        "Lego makes a great prototyping material!"
+                    ], 
+                    [
+                        "/work/discover-olvera/camera-sim.png",
+                        "The app prototype, made of paper and lego",
+                        "Simulating an AR-colorized mural"
                     ],
                     [
-                        "/work/lfla/upcoming-events-cropped.png",
-                        "A mockup of a YouTube video, overlayed with a small graphic reading view upcoming events at lfla.org/calendar.",
-                        "Another way to expose viewers to LFLA's brand is to supplement spoken content with info cards."
+                        "/work/discover-olvera/prototype-map.png",
+                        "The app prototype, made of paper and lego",
+                        "Simulating physical movement around the location"
+                    ]
+                ]
+            },
+            {
+                "key": "prototype-insights",
+                "componentType": "insightsScrollSection",
+                "header": "Insights",
+                "secondaryText": "Several usability tests of our paper prototype revealed these insights:",
+                "descriptiveList": [
+                    [
+                        "Comfort Levels",
+                        "All of our participants said that they would be uncomfortable sharing their photos to public displays and billboards."
+                    ],
+                    [
+                        "America Tropical",
+                        "We prototyped three AR experiences, and the most delightful was the one that displayed America Tropical, a white-washed mural, in its original colors."
+                    ],
+                    [
+                        "Emphasize AR",
+                        "The user flow needs to culminate in sharing AR experiences, rather than just having them."
+                    ]
+                ]
+            },
+            {
+                "key": "mid-fi-prototype",
+                "componentType": "standardScrollSection",
+                "header": "Mid-Fi Prototype",
+                "mainText": "We used our insights to design an interactive mid-fidelity prototype in Figma.",
+                "bullets": [
+                    "We discarded the idea of sharing photos to public digital displays. Instead, we aimed to provoke users to share their experiences on their own social media. This would be done by rewarding users with camera filters for participtation in AR experiences.",
+                    "We built out the AR mural feature to include a variety of interactions.",            
+                    "We made the AR more prominent from the very beginning of the user journey"
+                ],
+                "images": [
+                    [
+                        "/work/discover-olvera/broken-statues.png",
+                        "A screen from the app showing an AR enhanced mural.",
+                        "One of our new features for the mural was informative popovers."
+                    ] 
+                ]
+            },
+            {
+                "key": "mid-fi-insights",
+                "componentType": "insightsScrollSection",
+                "header": "Insights",
+                "secondaryText": "Several usability tests of our first Figma prototype revealed these insights:",
+                "descriptiveList": [
+                    [
+                        "Tutorial",
+                        "Many of the participants in our digital usability tests suggested including some kind of tutorial or abundance of tooltips."            
+                    ],
+                    [
+                        "Simplify",
+                        "Several participants mentioned that there were too many clicks in the map and the tutorial"            
+                    ],
+                    [
+                        "Delighted by AR",
+                        "Our participants cherished all of the new AR mural features, suggesting that this formula be applied to other muesum exhibits at Olvera."            
+                    ],
+                    [
+                        "Be careful about Spanish phrases",
+                        "Our prototype had some phrases like 'Vamos!'. Some participants said they didn't understand what these phrases meant and that they would look for a way to switch to English."
+                    ]
+                ]
+            },
+            {   
+                "key": "branding",
+                "componentType": "standardScrollSection",
+                "header": "Branding",
+                "mainText": "I designed all aspects of the brand with feedback from my team. Like the structure and UI of the app, the branding went through a sustained iterative process.",
+                "bullets": [
+                    "The interviews with vendors had revealed that Dia de los Muertos, as well as the movie 'Coco' generated a lot of foot traffic. We chose a style that was reminiscent of these themes, using festive colors contrasted by dark backgrounds.",
+                    "Through Figma’s Material Theme Builder plugin, I was able to enter our colors and quickly customize a UI kit for our Hi-Fi wireframes."           
+                ],
+                "images": [
+                    [
+                        "/work/discover-olvera/discover-olvera-logo.png",
+                        "The final logo",
+                        "The final logo"
+                    ], 
+                    [
+                        "/work/discover-olvera/color-palette.png",
+                        "Discover Olvera color palette",
+                        "Color palette for the brand"
+                    ], 
+                    [
+                        "/work/discover-olvera/ui-colors.png",
+                        "Color palette for the UI",
+                        "Color palette for the app's UI"
+                    ],
+                    [
+                        "/work/discover-olvera/olvera-logo-thumbnails.png",
+                        "Thumbnail sketches for the logo",
+                        "An early set of logo ideas"
+                    ],
+                    [
+                        "/work/discover-olvera/figma-logo-ideation.png",
+                        "Digital logo ideas",
+                        "Later refinements of the wordmark"
+                    ]
+                ]
+            },
+            {
+                "key": "hi-fi-prototype",
+                "componentType": "video",
+                "header": "Hi-Fi Prototype and user story",
+                "mainText": "Below is our final deliverable - a video showcasing our hi-fi protoype through a user story. The animated infographics at the beginning were created by myself in After Effects.",
+                "sources": [
+                    "https://www.youtube.com/embed/ZsmuhoPbTFE"
+                ],
+                "hostType": "iframe",
+                "isAutoPlay": true,
+                "showControls": false,
+                "isMuted": true
+            },
+            {
+                "key": "reflection",
+                "componentType": "standardScrollSection",
+                "header": "Reflection",
+                "bullets": [
+                    "This was, by far, the most research-intensive project I’ve done so far. I got to practice familiar research methods and learn a new one - ethnography. I am more confident now in my ability to design a research program and execute it, tailored to the needs of the project.",
+                    "We made use of one another’s varied skillsets to share the load in a productive way. I will be looking for this kind of opportunity in future teams."
+                ],
+                "images": [
+                    [
+                        "/work/discover-olvera/team-photo.png",
+                        "Team Photo",
+                        "Tony, Erick, and I Discovering Olvera"
                     ]
                 ]
             }
+        ]
+    },
+    "other": {
+        "caseStudyCardProps": {
+            "name": "Other Stuff I Do",
+            "image": "/work/other/other-cover.png",
+            "page": "/work/other",
+            "labels": [
+                "typography",
+                "book illustration",
+                "digital art",
+                "analog art"
+            ]
+        },       
+        "sections": [
+        
         ]
     }
 }
