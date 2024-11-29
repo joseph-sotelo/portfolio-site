@@ -6,9 +6,6 @@ export default function Page(){
     return(
         <MainLayout>
             <ScrollSectionsFormatter />
-            <h1 className='opacity-20 mt-[21vh] text-center w-full'>
-                Work in progress
-            </h1>
         </MainLayout>
     )
 }
