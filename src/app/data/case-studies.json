@@ -1393,5 +1393,219 @@
         "sections": [
         
         ]
+    },
+    "bird-feeder": {
+        "caseStudyCardProps": {
+            "name": "Bird Feeder",
+            "image": "/work/other/other-cover.png",
+            "page": "/work/bird-feeder",
+            "labels": [
+                "data viz",
+                "arduino",
+                "js"
+            ]
+        },       
+        "sections": [
+            {
+                "key": "overview",
+                "componentType": "overview",
+                "header": "Spying on Birds",
+                "descriptiveList": [
+                    [
+                        "Context: ",
+                        "This project was my final project for Tangible Interactions, a course focusing on programming and the IoT."
+                    ],
+                    [
+                        "Challenge: ",
+                        "Use digital sensors to collect data from my house for a day. Write a program that will process and visualize the data live."
+                    ],
+                    [
+                        "Submission: ",
+                        "I created a bird feeder that detects whenever a bird is feeding on it. I placed it in a large, walk-in bird cage. The data was then vizualized using a heatmap-style infographic created with javascript."
+                    ],
+                    [
+                        "Tools: ",
+                        "Adafruit hardware, Arduino, P5js"
+                    ]
+                ],
+                "image": "/work/bird-feeder/bird-feeder-cover.png"
+            },
+            {   
+                "key": "hardware",
+                "componentType": "chapterHeader",
+                "header": "Hardware"
+            },
+            {
+                "key": "piezo",
+                "componentType": "billboard",
+                "header": "Piezo Sensor",
+                "mainText": " I used a piezoelectric sensor to detect vibrations from birds using the feeder. The sensor sends analog data based on vibration, knocking, and other disturbances.",
+                "images": [
+                    [
+                        "/work/bird-feeder/piezo.png",
+                        "The piazo sensor, which looks like a copper disc with red and black wires attached."
+                    ]
+                ]
+            },
+            {
+                "key": "feeder-base",
+                "componentType": "billboard",
+                "header": "Feeder Base",
+                "mainText": "At the base of the feeder is where the sensor is housed. It’s attached to a tympanic membrane( a.k.a. The lid of a can), which is attached to four perches. The rocks serve as a ballast.",
+                "images": [
+                    [
+                        "/work/bird-feeder/feeder-base.png",
+                        "The base of the bird feeder, which is the bottom half of a water bottle, filled with rocks. Towards the top there are four prongs coming out, with a piazo sensor attached where the prongs intersect."
+                    ]
+                ]
+            },
+            {
+                "key": "feeder-cannister",
+                "componentType": "billboard",
+                "header": "Feeder Cannister",
+                "mainText": "A canister attaches to the base holds the bird food. The feeding holes are placed so that the birds will sit on the perches, triggering the sensor.",
+                "images": [
+                    [
+                        "/work/bird-feeder/feeder-cannister.png",
+                        "The feeder base, with the upper half of a water bottled attached on top, with holes for birds to access food."
+                    ]
+                ]
+            },
+            {
+                "key": "micro-and-battery",
+                "componentType": "billboard",
+                "header": "Microcontroller and Battery",
+                "mainText": "An ESP32 microcontroller and battery attached to the feeder by a wire. I couldn’t put them within the feeder because the feeder itself was going to be placed outside of wifi-range.",
+                "images": [
+                    [
+                        "/work/bird-feeder/micro.png",
+                        "A water bottle, with circuitry visible inside."
+                    ]
+                ]
+            },
+            {   
+                "key": "software",
+                "componentType": "chapterHeader",
+                "header": "software"
+            },
+            {
+                "key": "overview",
+                "componentType": "paragraph",
+                "header": "Overview",
+                "mainText": "The microcontroller sends the values via wifi to an Adafruit IO feed. The feed is accessed, processed, and displayed by my p5js program via API."
+            },
+            {
+                "key": "data-viz",
+                "componentType": "billboard",
+                "header": "Data Visualization",
+                "mainText": "The program displays the data as a heat map. Each rectangle corresponds to a timespan, and the intensity of the signals within each timespan affects the color.",
+                "images": [
+                    [
+                        "/work/bird-feeder/data-viz.png",
+                        "A heat-map stle infographic representing the bird feeding habits"
+                    ]
+                ]
+            },
+            {
+                "key": "granularity",
+                "componentType": "billboard",
+                "header": "Granularity",
+                "mainText": "The granularity of the data can be easily adjusted by changing one variable. This changes the amount of time represented by each bar.",
+                "images": [
+                    [
+                        "/work/bird-feeder/grain.png",
+                        "A heat-map stle infographic representing the bird feeding habits"
+                    ]
+                ]
+            },
+            {
+                "key": "more-feeders",
+                "componentType": "billboard",
+                "header": "More Feeders",
+                "mainText": "Multiple feeders can be placed in different locations and compared on the heatmap. This can be accomplished by simply adding a URL to the feederURLs array at the top of sketch.js",
+                "images": [
+                    [
+                        "/work/bird-feeder/bird-feeder-cover.png",
+                        "A heat-map stle infographic representing the bird feeding habits"
+                    ]
+                ]
+            },
+            {   
+                "key": "testing",
+                "componentType": "chapterHeader",
+                "header": "Testing"
+            },
+            {
+                "key": "lab-test",
+                "componentType": "video",
+                "header": "Lab Test",
+                "mainText": "I first tested that the sensor was active and sending data to the feed.",
+                "sources": [
+                    "/work/bird-feeder/lab-test.MOV"
+                ],
+                "hostType": "local",
+                "isAutoPlay": true,
+                "showControls": false,
+                "isMuted": true
+            },
+            {
+                "key": "field-test",
+                "componentType": "video",
+                "header": "Field Test",
+                "mainText": "I then set up all the hardware in one of my neighbor's bird large bird cages.",
+                "sources": [
+                    "/work/bird-feeder/field-test.MOV"
+                ],
+                "hostType": "local",
+                "isAutoPlay": true,
+                "showControls": false,
+                "isMuted": true
+            },
+            {
+                "key": "Setup",
+                "componentType": "billboard",
+                "header": "Setup",
+                "mainText": "I placed the feeder in the cage, with the microcontroller/battery unit around the corner for best wifi access. It ran for 22 hours.",
+                "images": [
+                    [
+                        "/work/bird-feeder/setup.png",
+                        "Exterior view of the bird cage, with the feeder inside, the microcontroller/battery unit outside, and a wire running through the cage connecting them both."
+                    ]
+                ]
+            },
+            {
+                "key": "results",
+                "componentType": "billboard",
+                "header": "Results",
+                "mainText": "While the device functioned properly, the birds didn’t use it! I had it running for 22 hours, I removed the other feeders, and I swept away any seeds on the ground, but they were still suspicious about this unfamiliar feeder.",
+                "images": [
+                    [
+                        "/work/bird-feeder/results.png",
+                        "The heatmap, displaying zero bird activity."
+                    ]
+                ]
+            },
+            {
+                "key": "insights",
+                "componentType": "insightsScrollSection",
+                "header": "Insights",
+                "descriptiveList": [
+                    [
+                        "Pagination",
+                        "Implement API pagination in order to display all of the data at once."
+                    ],
+                    [
+                        "Feeder design",
+                        "The owner of the birds recommended removing the canister and pouring seeds into the lower housing. This will make the feeder less scary-looking. Alternatively, I could place the try attaching piezo sensors to the existing feeders."
+                    ]
+                ]
+            },
+            {
+                "key": "how-might-we",
+                "componentType": "bigText",
+                "secondaryText": "View my code at:",
+                "mainText": "https://editor.p5js.org/jsotelo/sketches/RUI10B5l7"
+            }
+        ]
     }
 }
