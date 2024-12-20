@@ -1588,7 +1588,7 @@
             {
                 "key": "insights",
                 "componentType": "insightsScrollSection",
-                "header": "Insights",
+                "header": "Next Steps",
                 "descriptiveList": [
                     [
                         "Pagination",
