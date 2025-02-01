@@ -1,4 +1,92 @@
 {
+    "meander-sim": {
+        "caseStudyCardProps": {
+            "name": "Alluvial Geomorphology Simulator",
+            "image": "/work/meander-sim/meander-sim-cover.png",
+            "page": "/work/meander-sim",
+            "labels": [
+                "javascript",
+                "simulation",
+                "educational tool"
+            ]
+        },       
+        "sections": [
+            {
+                "key": "final-product",
+                "componentType": "iFrame",
+                "header": "Alluvial Geomorphology Simulator",
+                "mainText": "An academic tool used to demonstrate the science behind the meandering of rivers. Take it for a spin!",
+                "src": "https://editor.p5js.org/jsotelo/full/-_7CfZCbIR"
+            },
+            {   
+                "key": "process",
+                "componentType": "chapterHeader",
+                "header": "Process"
+            },
+            {
+                "key": "context",
+                "componentType": "standardScrollSection",
+                "header": "Context",
+                "mainText": "For some reason, I have an fascination with rivers and the variety of shapes they form - a.k.a. alluvial geomorphology. When, in a programming class, I was tasked with creating a simulation of any kind of process, I decided to simulate the meandering of a river.",
+                "images": [
+                    [
+                        "/work/meander-sim/braided-river.jpg",
+                        "An aerial view of a meandering river"
+                    ]
+                ]
+            },
+            {
+                "key": "code",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "Code"
+                    ],
+                    [
+                        "mainText",
+                        "I learned that in the 1950’s, a civil engineer named Emory Lane created this formula to explain the factors and interactions behind the meandering of a river:"
+                    ],
+                    [
+                        "bigText",
+                        "Q\u209B * D \u221D Q\u2095 * S"
+                    ],
+                    [
+                        "mainText",
+                        "...where Q\u209B is the sediment density of the water, D is the median size of the sediment, Q\u2095 is the discharge of water, and S is the slope of the terrain. Notice that this is not necessarily an equation. Rather, the sediment side of the formula is proportional to the water side. The more disproportional the sides are, the more extreme the meandering will be."
+                    ],
+                    [
+                        "mainText",
+                        "I structured my code around this formula. The variables would be exposed to the user, who could adjust them using sliders in the UI to see how the river would respond. Below is the code that outputs the sediment/water ratio based on the user's inputs."
+                    ],
+                    [
+                        "codeFragment",
+                        "sediment = loadSlider.value() * sizeSlider.value();",
+                        "water = dischargeSlider.value() * slopeSlider.value();",
+                        "ratio = Math.abs(sediment - water);"
+                    ],
+                    [
+                        "mainText",
+                        "The single ratio value would influence the intensity of the meandering. A ratio of 1 is a nearly straight river. The more the value deviates from 1, the more the river will meander."
+                    ],
+                    [
+                        "mainText",
+                        "For the visual, I created a flow-field. A flow-fieid is a common way to represent waves, wind, and other forces in computer graphics. It involves a grid of vectors whose angles are dictated by a three dimensional perlin noise grid. Each frame superimposes a ‘slice’ of the noise over the flowfield, controlling the angles of the vectors. Then the noise grid is moved in the z direction and the flowfield is re-defined."
+                    ],
+                    [
+                        "mainText",
+                        "The point of the flowfield was to create semi-random forces that would affect particle objects, representing the water. Furthermore, it allowed the diversity of the vector angles, and thus the intensity of the meandering, to be controlled by the one ratio value."
+                    ]
+                ]
+            },
+            {
+                "key": "code-link",
+                "componentType": "bigText",
+                "secondaryText": "View the rest of my code at:",
+                "mainText": "https://editor.p5js.org/jsotelo/sketches/-_7CfZCbIR"
+            }
+        ]
+    },
     "lfla": {
         "caseStudyCardProps": {
             "name": "Los Angeles Library Foundation",
@@ -206,7 +294,7 @@
             },
             {
                 "key": "corey-quote",
-                "componentType": "bigText",
+                "componentType": "mainText",
                 "mainText": "“[storytelling] is about captivating people with the ‘why’ first and less about the ‘how’”",
                 "postScript": "- Corey Kachigan"
             },
@@ -486,7 +574,7 @@
             },
             {
                 "key": "how-might-we",
-                "componentType": "bigText",
+                "componentType": "mainText",
                 "secondaryText": "Based on our research, we saw a clear design direction:",
                 "mainText": "How might we enhance the standard AAC model to help young adults with non-verbal autism communicate more swiftly, personally, independently, and versatilely?"
             },
@@ -827,7 +915,7 @@
             },
             {
                 "key": "project-brief",
-                "componentType": "bigText",
+                "componentType": "mainText",
                 "secondaryText": "Excerpt from the project brief:",
                 "mainText": "\"... redesign the micro-interactions users have with desktop email clients ... we will focus our attention on the ability or micro-interactions to make those digital chores easier, simpler, more enjoyable - and less noticeable.\""
             },
@@ -868,7 +956,7 @@
             },
             {
                 "key": "design-direction",
-                "componentType": "bigText",
+                "componentType": "mainText",
                 "secondaryText": "The S.W.O.T. analysis led me to adopt this design direction:",
                 "mainText": "How might I make the process of decluttering one's inbox more streamlined, easy, and delightful?"
             },
@@ -1195,7 +1283,7 @@
             },
             {
                 "key": "how-might-we",
-                "componentType": "bigText",
+                "componentType": "mainText",
                 "secondaryText": "After reviewing our data, a design direction emerged:",
                 "mainText": "How might we leverage Olvera's hidden museums and it's small yet loyal customer base to increase foot traffic at Olvera Street?"
             },
@@ -1486,7 +1574,7 @@
             {   
                 "key": "software",
                 "componentType": "chapterHeader",
-                "header": "software"
+                "header": "Software"
             },
             {
                 "key": "overview",
@@ -1562,7 +1650,7 @@
                 "isMuted": true
             },
             {
-                "key": "Setup",
+                "key": "setup",
                 "componentType": "billboard",
                 "header": "Setup",
                 "mainText": "I placed the feeder in the cage, with the microcontroller/battery unit around the corner for best wifi access. It ran for 22 hours.",
@@ -1601,7 +1689,7 @@
                 ]
             },
             {
-                "key": "how-might-we",
+                "key": "code-link",
                 "componentType": "bigText",
                 "secondaryText": "View my code at:",
                 "mainText": "https://editor.p5js.org/jsotelo/sketches/RUI10B5l7"

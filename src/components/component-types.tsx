@@ -19,6 +19,7 @@ export type ScrollSectionType = {
     isAutoPlay?: boolean;
     showControls?: boolean;
     isMuted?: boolean;
+    columnSections?: string[][];
 }
 
 export type CaseStudyCardType = {

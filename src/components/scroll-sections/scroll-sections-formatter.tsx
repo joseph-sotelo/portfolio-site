@@ -5,6 +5,7 @@ import { BigImage, BigImageType } from './big-image';
 import { Overview, OverviewType } from './overview';
 import { StandardScrollSection, StandardScrollSectionType } from './standard-scroll-section';
 import { BigText, BigTextType} from '@/components/scroll-sections/big-text';
+import { Column, ColumnType } from '@/components/scroll-sections/column';
 import { Billboard, BillboardType } from '@/components/scroll-sections/billboard';
 import { CodeFragmentBillBoard, CodeFragmentBillboardType } from './code-fragment-billboard';
 import { ChapterHeader, ChapterHeaderType} from '@/components/scroll-sections/chapter-header';
@@ -50,7 +51,7 @@ export default function ScrollSectionsFormatter() {
                 switch(section.componentType) {
                     case 'accordionScrollSection':
                         return (
-                            <div key={index}>
+                            <div key={index} {...(index === 0 ? {ref: overviewRef } : {})}>
                                 <AccordionScrollSection props={section as AccordionType}/>
                                 <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
@@ -58,7 +59,7 @@ export default function ScrollSectionsFormatter() {
                     break;
                     case 'bigImage':
                         return (
-                            <div key={index}>
+                            <div key={index} {...(index === 0 ? {ref: overviewRef } : {})}>
                                 <BigImage props={section as BigImageType}/>
                                 <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
@@ -66,7 +67,7 @@ export default function ScrollSectionsFormatter() {
                     break;
                     case 'bigText':
                         return (
-                            <div key={index}>
+                            <div key={index} {...(index === 0 ? {ref: overviewRef } : {})}>
                                 <BigText props={section as BigTextType}/>
                                 <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
@@ -74,7 +75,7 @@ export default function ScrollSectionsFormatter() {
                     break;
                     case 'overview':
                         return (
-                            <div key={index} ref={overviewRef}>
+                            <div key={index} {...(index === 0 ? {ref: overviewRef } : {})}>
                                     <Overview props={section as OverviewType}/>
                                     <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
@@ -82,7 +83,7 @@ export default function ScrollSectionsFormatter() {
                     break;
                     case 'standardScrollSection':
                         return (
-                            <div key={index}>
+                            <div key={index} {...(index === 0 ? {ref: overviewRef } : {})}>
                                 <StandardScrollSection props={section as StandardScrollSectionType}/>
                                 <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
@@ -90,7 +91,7 @@ export default function ScrollSectionsFormatter() {
                     break;
                     case 'video':
                         return (
-                            <div key={index}>
+                            <div key={index} {...(index === 0 ? {ref: overviewRef } : {})}>
                                 <Video props={section as VideoType}/>
                                 <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
@@ -98,7 +99,7 @@ export default function ScrollSectionsFormatter() {
                     break;
                     case 'insightsScrollSection':
                         return (
-                            <div key={index}>
+                            <div key={index} {...(index === 0 ? {ref: overviewRef } : {})}>
                                     <InsightsScrollSection props={section as InsightsScrollSectionType}/>
                                     <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
@@ -106,7 +107,7 @@ export default function ScrollSectionsFormatter() {
                     break;
                     case 'chapterHeader':
                         return (
-                            <div key={index}>
+                            <div key={index} {...(index === 0 ? {ref: overviewRef } : {})}>
                                     <ChapterHeader props={section as ChapterHeaderType}/>
                                     <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
@@ -114,7 +115,7 @@ export default function ScrollSectionsFormatter() {
                     break;
                     case 'billboard':
                         return (
-                            <div key={index}>
+                            <div key={index} {...(index === 0 ? {ref: overviewRef } : {})}>
                                     <Billboard props={section as BillboardType}/>
                                     <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
@@ -122,7 +123,7 @@ export default function ScrollSectionsFormatter() {
                     break;
                     case 'iFrame':
                         return (
-                            <div key={index}>
+                            <div key={index} {...(index === 0 ? {ref: overviewRef } : {})}>
                                     <IFrame props={section as IFrameType} />
                                     <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
@@ -130,15 +131,23 @@ export default function ScrollSectionsFormatter() {
                     break; 
                     case 'paragraph':
                         return (
-                            <div key={index}>
+                            <div key={index} {...(index === 0 ? {ref: overviewRef } : {})}>
                                     <Paragraph props={section as ParagraphType} />
+                                    <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
+                            </div>
+                        )
+                    break;
+                    case 'column':
+                        return (
+                            <div key={index} {...(index === 0 ? {ref: overviewRef } : {})}>
+                                    <Column props={section as ColumnType} />
                                     <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
                         )
                     break;
                     case 'codeFragmentBillboard':
                         return (
-                            <div key={index}>
+                            <div key={index} {...(index === 0 ? {ref: overviewRef } : {})}>
                                     <CodeFragmentBillBoard props={section as CodeFragmentBillboardType} />
                                     <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
