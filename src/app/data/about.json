@@ -10,22 +10,33 @@
     },
     "sections": [
         {
+            "key": "me-in-a-minute",
+            "componentType": "video",
+            "sources": [
+                "https://www.youtube.com/embed/Oa9eHHaoKTw?si=9U8mDBaGAcxhz8s1"
+            ],
+            "hostType": "iframe",
+            "isAutoPlay": true,
+            "showControls": true,
+            "isMuted": true
+        },
+        {
             "key": "accordion",
             "componentType": "accordionScrollSection",
             "header": "Hi!",
-            "subheader": "I’m a human-centered designer based out of Los Angeles. When I’m not in the zone, I enjoy reading, fidgeting with code, and inventing new games to play with my nieces and nephews.",
+            "subheader": "I’m a human-centered designer based out of Los Angeles. When I’m not in the zone, I enjoy reading, fidgeting with code, and anything involving my friends.",
             "accordionSections": [
                 [
                     "Art and I",
-                    "My earliest creative expression was illustration. I find myself constantly learning to appreciate new kinds of art. Today I have a well-developed eye for aesthetics that I use for my own art and for design."
+                    "My earliest creative expression was illustration. I find myself constantly learning to appreciate new kinds of art. Today I have a well-developed eye for aesthetics that I use for design."
                 ],
                 [
                     "Design and I",
-                    "In college I discovered the world of design - graphic, UX/UI, and IxD. I found it to be a beautiful blend of art and practicality. I love submitting my creative and technical skills to the parameters created by other people’s needs. This means that the most fundamental part of the design process is research. Without research, it’s just art."
+                    "In college I discovered the world of design - graphic, UX/UI, and industrial. I found it to be a beautiful blend of art and practicality. I love submitting my creative and technical skills to the parameters created by other people’s needs."
                 ],
                 [
                     "Code and I",
-                    "Ever since my first web design class I have been in love with code. From experimenting in Unity to building this website with Next.js, I make every effort to continuously grow in these skills. This is all done through self-learning, extracurricular classes, and the guidance of several mentor friends. I’m not an engineer, but I’m well-acquanited with what they do."
+                    "Ever since my first web design class I have been in love with code. From experimenting in Unity to building this website with React, I make every effort to continuously grow in these skills. This is all done through self-learning, extracurricular classes, and the guidance of several mentor friends. I’m able to collaborate with engineers and understand code-related restrictions to design."
                 ]
             ],
             "src": "/about/business_portrait_small.jpg",

@@ -7,7 +7,8 @@ export type ColumnType = {
 export function Column({props}: {props: ColumnType}){
 
     return(
-        <div>
+        <div className = "xl:grid xl:grid-cols-9">
+            <div className = "xl:col-span-4">
             {props.columnSections.map((columnSection, index) => {
                 switch(columnSection[0]){
                     case 'header':
@@ -26,7 +27,7 @@ export function Column({props}: {props: ColumnType}){
                     break;
                     case 'codeFragment':
                         return(
-                            <div key = {index} className = 'border border-border rounded-sm w-full p-standard-gap my-standard-gap'>
+                            <div key = {index} className = 'border border-border rounded-sm w-full p-standard-gap my-standard-gap p-small'>
                                 {columnSection.slice(1).map((line, lineIndex) => (
                                     <div key = {lineIndex + 1}>
                                         {line}
@@ -44,6 +45,7 @@ export function Column({props}: {props: ColumnType}){
                     break;
                 }
             })}
+            </div>
         </div>
     )
 }
