@@ -10,5 +10,8 @@ To create a new case study:
     - case-studies.json contains an array of caseStudy objects. Copy one of them and paste it to the end of the array, then start customizing the content.
 3. Add static menu content
     - open up context-menu.json
-    - copy/past the last item in the array to the end of the array
+    - copy/paste the last item in the array to the end of the array
     - replace content
+4. Create photo library
+    - inside of public/work create a folder for the case study
+    - any images or videos that will appear in the case study should be stored here

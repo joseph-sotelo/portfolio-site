@@ -108,5 +108,14 @@
             "Fall 2024 | 1 week"
         ],
         "mainText": "Using code and arduino to track and vizualize bird feeding habits." 
+    },
+    "meander-sim": {
+        "header": "Alluvial Geomorphology Simulator",
+        "hideTitleAtStart": true,
+        "subHeader": [
+            "Academic Exercise",
+            "Fall 2024 | 1 week"
+        ],
+        "mainText": "An academic tool used to demonstrate the science behind the meandering of rivers." 
     }
 }
