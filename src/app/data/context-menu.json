@@ -99,5 +99,23 @@
             "Fall 2024 | 13 Weeks"
         ],
         "mainText": "Engaging LFLA's virtual audience through branded graphics and chat moderation." 
+    },
+    "bird-feeder": {
+        "header": "Spying on Birds",
+        "hideTitleAtStart": true,
+        "subHeader": [
+            "Academic Project",
+            "Fall 2024 | 1 week"
+        ],
+        "mainText": "Using code and arduino to track and vizualize bird feeding habits." 
+    },
+    "meander-sim": {
+        "header": "Alluvial Geomorphology Simulator",
+        "hideTitleAtStart": true,
+        "subHeader": [
+            "Academic Exercise",
+            "Fall 2024 | 1 week"
+        ],
+        "mainText": "An academic tool used to demonstrate the science behind the meandering of rivers." 
     }
 }
