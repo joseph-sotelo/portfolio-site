@@ -37,7 +37,7 @@ export default function MainNav() {
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem className='opacity-60'>
-                    <Link href="/work" legacyBehavior passHref>
+                    <Link href="/" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                             Work
                         </NavigationMenuLink>
