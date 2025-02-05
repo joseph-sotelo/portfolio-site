@@ -76,14 +76,13 @@
                     [
                         "mainText",
                         "The point of the flowfield was to create semi-random forces that would affect particle objects, representing the water. Furthermore, it allowed the diversity of the vector angles, and thus the intensity of the meandering, to be controlled by the one ratio value."
+                    ],
+                    [
+                        "link",
+                        "https://editor.p5js.org/jsotelo/sketches/-_7CfZCbIR",
+                        "View the rest of my code"
                     ]
                 ]
-            },
-            {
-                "key": "code-link",
-                "componentType": "bigText",
-                "secondaryText": "View the rest of my code at:",
-                "mainText": "https://editor.p5js.org/jsotelo/sketches/-_7CfZCbIR"
             }
         ]
     },
@@ -1113,10 +1112,15 @@
                 ]
             },
             {
-                "key": "code-link",
-                "componentType": "bigText",
-                "secondaryText": "View the rest of my code at:",
-                "mainText": "https://editor.p5js.org/jsotelo/sketches/seEN0FM1T"
+                "key": "code",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "link",
+                        "https://editor.p5js.org/jsotelo/sketches/seEN0FM1T",
+                        "View the rest of my code"
+                    ]
+                ]
             }
         ]
     },
