@@ -1,5 +1,5 @@
 'use client'
-import Image from "next/image"
+import { useState, useEffect } from "react";
 
 export type IFrameType = {
     header: string;
@@ -8,6 +8,25 @@ export type IFrameType = {
 }
 
 export function IFrame({props}: {props: IFrameType}){
+
+    // below useState and useEffect , as well as style attribute in the iframe wrapper, is used to ensure that the iframe never overflows the height of the screen
+    const [isLandscape, setIsLandscape] = useState<boolean>(window.innerWidth > window.innerHeight)
+    const [windowHeight, setWindowHeight] = useState<number>(window.innerHeight)
+    const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth)
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsLandscape(window.innerWidth > window.innerHeight);
+            setWindowHeight(window.innerHeight);
+            setWindowWidth(window.innerWidth);
+            console.log(windowHeight + ', ' + window.innerWidth);
+        };
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize)
+    }, []);
 
     return(
         <div>
@@ -18,7 +37,7 @@ export function IFrame({props}: {props: IFrameType}){
                 {props.mainText}
             </p>
             <div className='w-full mt-standard-gap'>
-                <iframe className="w-full aspect-square border border-border rounded-sm" src={props.src} allowFullScreen></iframe>
+                <iframe style={{height: isLandscape ? `${windowHeight-100}px` : `${windowWidth}px` }} className='w-full border border-border rounded-sm' src={props.src} allowFullScreen></iframe>
             </div>
         </div>
     )
