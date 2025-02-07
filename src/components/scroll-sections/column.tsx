@@ -1,4 +1,5 @@
 'use client'
+import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 
 export type ColumnType = {
     columnSections: string[][];
@@ -41,6 +42,15 @@ export function Column({props}: {props: ColumnType}){
                             <h3 key = {index} className='my-standard-gap'>
                                 {columnSection[1]}
                             </h3>
+                        )
+                    break;
+                    case 'link':
+                        return (
+                            <div key={index} className='mt-[1.25rem] opacity-60 text-accent-foreground hover:opacity-100'>
+                                <a href={columnSection[1]} target = '_blank' className = 'a-large'>
+                                    {columnSection[2]}<ArrowTopRightIcon />
+                                </a>
+                            </div>
                         )
                     break;
                 }

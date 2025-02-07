@@ -76,14 +76,13 @@
                     [
                         "mainText",
                         "The point of the flowfield was to create semi-random forces that would affect particle objects, representing the water. Furthermore, it allowed the diversity of the vector angles, and thus the intensity of the meandering, to be controlled by the one ratio value."
+                    ],
+                    [
+                        "link",
+                        "https://editor.p5js.org/jsotelo/sketches/-_7CfZCbIR",
+                        "View the rest of my code"
                     ]
                 ]
-            },
-            {
-                "key": "code-link",
-                "componentType": "bigText",
-                "secondaryText": "View the rest of my code at:",
-                "mainText": "https://editor.p5js.org/jsotelo/sketches/-_7CfZCbIR"
             }
         ]
     },
@@ -294,7 +293,7 @@
             },
             {
                 "key": "corey-quote",
-                "componentType": "mainText",
+                "componentType": "bigText",
                 "mainText": "“[storytelling] is about captivating people with the ‘why’ first and less about the ‘how’”",
                 "postScript": "- Corey Kachigan"
             },
@@ -506,7 +505,7 @@
             },
             {
                 "key": "project-brief",
-                "componentType": "mainText",
+                "componentType": "bigText",
                 "secondaryText": "Excerpt from the project brief:",
                 "mainText": "\"... redesign the micro-interactions users have with desktop email clients ... we will focus our attention on the ability or micro-interactions to make those digital chores easier, simpler, more enjoyable - and less noticeable.\""
             },
@@ -547,7 +546,7 @@
             },
             {
                 "key": "design-direction",
-                "componentType": "mainText",
+                "componentType": "bigText",
                 "secondaryText": "The S.W.O.T. analysis led me to adopt this design direction:",
                 "mainText": "How might I make the process of decluttering one's inbox more streamlined, easy, and delightful?"
             },
@@ -610,7 +609,7 @@
     "voxai": {
         "caseStudyCardProps": {
             "name": "VoxAI",
-            "image": "/work/voxai/hi-fi-render.png",
+            "image": "/work/voxai/voxai-cover.png",
             "page": "/work/voxai",
             "labels": [
                 "UI for AI",
@@ -647,7 +646,7 @@
                         "Project Manager, Lead UI Designer"
                     ]
                 ],
-                "image": "/work/voxai/hi-fi-render.png"
+                "image": "/work/voxai/voxai-cover.png"
             },
             {   
                 "key": "research",
@@ -709,7 +708,7 @@
             },
             {
                 "key": "how-might-we",
-                "componentType": "mainText",
+                "componentType": "bigText",
                 "secondaryText": "Based on our research, we saw a clear design direction:",
                 "mainText": "How might we enhance the standard AAC model to help young adults with non-verbal autism communicate more swiftly, personally, independently, and versatilely?"
             },
@@ -1111,6 +1110,17 @@
                         "Four metrics"
                     ]
                 ]
+            },
+            {
+                "key": "code",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "link",
+                        "https://editor.p5js.org/jsotelo/sketches/seEN0FM1T",
+                        "View the rest of my code"
+                    ]
+                ]
             }
         ]
     },
@@ -1497,7 +1507,7 @@
             },
             {
                 "key": "how-might-we",
-                "componentType": "mainText",
+                "componentType": "bigText",
                 "secondaryText": "After reviewing our data, a design direction emerged:",
                 "mainText": "How might we leverage Olvera's hidden museums and it's small yet loyal customer base to increase foot traffic at Olvera Street?"
             },

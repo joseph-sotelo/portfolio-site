@@ -153,6 +153,10 @@ a {
   font-weight: 400;
 }
 
+.a-large {
+  font-size: .875rem;
+}
+
 .p-small {
   line-height: 1.25rem;
   font-size: .75rem;
