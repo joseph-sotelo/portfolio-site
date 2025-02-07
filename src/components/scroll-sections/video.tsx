@@ -1,5 +1,7 @@
 'use client'
 
+import { useState, useEffect } from 'react';
+
 export type VideoType = {
     header?: string;
     mainText?: string; 
@@ -12,7 +14,18 @@ export type VideoType = {
 
 export function Video({props}: {props: VideoType}){
 
-    const isMobile = window.innerWidth <= 768
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+        };
+
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     return(
         <div>

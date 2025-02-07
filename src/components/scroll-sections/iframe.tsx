@@ -10,9 +10,9 @@ export type IFrameType = {
 export function IFrame({props}: {props: IFrameType}){
 
     // below useState and useEffect , as well as style attribute in the iframe wrapper, is used to ensure that the iframe never overflows the height of the screen
-    const [isLandscape, setIsLandscape] = useState<boolean>(window.innerWidth > window.innerHeight)
-    const [windowHeight, setWindowHeight] = useState<number>(window.innerHeight)
-    const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth)
+    const [isLandscape, setIsLandscape] = useState(false)
+    const [windowHeight, setWindowHeight] = useState(0)
+    const [windowWidth, setWindowWidth] = useState(0)
 
     useEffect(() => {
         const handleResize = () => {
