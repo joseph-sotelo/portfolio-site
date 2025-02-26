@@ -1705,5 +1705,76 @@
         "sections": [
         
         ]
+    },
+    "future-archaeology": {
+        "caseStudyCardProps": {
+            "name": "Future Archaeology",
+            "image": "/work/meander-sim/meander-sim-cover.png",
+            "page": "/work/future-archaeology",
+            "labels": [
+                "javascript",
+                "simulation",
+                "educational tool"
+            ]
+        },       
+        "sections": [
+            {
+                "key": "Future Archaeology",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "Future Archaeology"
+                    ],
+                    [
+                        "mainText",
+                        "In my class, 'Design for the Future', I was tasked with imagining a future, and then designing an artifact from it."
+                    ]
+                ]
+            },
+            {
+                "key": "matrix",
+                "componentType": "billboard",
+                "header": "Conceptualizing the Future",
+                "mainText": "I used a two axis matrix to generate some ideas about what the future could look like. One axis defined the urban coverage of the planet, while the other axis defined the intensity of surveillance. The circle defines the future I chose to design for.",
+                "images": [
+                    [
+                        "/work/future-archaeology/matrix.png",
+                        "A two axis matrix used to generate ideas about the future"
+                    ]
+                ]
+            },
+            {
+                "key": "world description",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "mainText",
+                        "Within the circle drawn above, I defined three futures using the possible-plausible-propbable framework. The future I designed for is a future in which the conservation of natural spaces has become a high priotity for the world's governments. Their other big priority is surveillance."
+                    ],
+                    [
+                        "mainText",
+                        "They know everything about everyone ... even their thoughts. Citizens are not required to get brain chips, but they are 'incentivized' to do so. Only people with chips are allowed to buy and sell."
+                    ],
+                    [
+                        "mainText",
+                        "Because of this overwhelming level of surveillance, many people have formed hidden communities in the vast wildernesses. There you will find illegal activity, cheap services, and unregulated pursuits - only for those who have no chip."
+                    ]
+                ]
+            },
+            {
+                "key": "artifact",
+                "componentType": "billboard",
+                "header": "The Artifact",
+                "mainText": "In this future, self checkout machines scan brain chipts. Buyers use their heads like tap cards. I designed a self checkout machine that has a component where the user can place their head in order to authorize and complete a transaaction.",
+                "images": [
+                    [
+                        "/work/future-archaeology/draft-1.png",
+                        "A low-fidelity render of a self checkout machine with a projection in which the buyer can place their head.",
+                        "A rough draft."
+                    ]
+                ]
+            }
+        ]
     }
 }

@@ -117,5 +117,14 @@
             "Fall 2024 | 1 week"
         ],
         "mainText": "An academic tool used to demonstrate the science behind the meandering of rivers." 
+    },
+    "future-archaeology": {
+        "header": "Future Archaeology",
+        "hideTitleAtStart": true,
+        "subHeader": [
+            "Academic Exercise",
+            "Spring 2025 | 1 week"
+        ],
+        "mainText": "A self-checkout machine that scans the user's brain-chip. For quick, easy, surveilled shopping." 
     }
 }
