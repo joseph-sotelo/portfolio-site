@@ -1719,12 +1719,12 @@
         },       
         "sections": [
             {
-                "key": "Future Archaeology",
+                "key": "context",
                 "componentType": "column",
                 "columnSections": [
                     [
                         "header",
-                        "Future Archaeology"
+                        "Context"
                     ],
                     [
                         "mainText",
@@ -1772,6 +1772,15 @@
                         "/work/future-archaeology/draft-1.png",
                         "A low-fidelity render of a self checkout machine with a projection in which the buyer can place their head.",
                         "A rough draft."
+                    ],
+                    [
+                        "/work/future-archaeology/render-2.png",
+                        "A mid-fidelity render of the self-checkout. The scanner has now been lowered and rotated.",
+                        "I decided to move the scanner so that the could be used with a bowing motion. The earlier model wouldn't accomodate short users."
+                    ],
+                    [
+                        "/work/future-archaeology/render-1.png",
+                        "Three self checkouts are shown side-by-side in a retail environment"
                     ]
                 ]
             }

@@ -120,11 +120,11 @@
     },
     "future-archaeology": {
         "header": "Future Archaeology",
-        "hideTitleAtStart": true,
+        "hideTitleAtStart": false,
         "subHeader": [
             "Academic Exercise",
             "Spring 2025 | 1 week"
         ],
-        "mainText": "A self-checkout machine that scans the user's brain-chip. For quick, easy, surveilled shopping." 
+        "mainText": "A self-checkout machine that scans the user's brain-chip for quick, easy, and totally not surveilled shopping." 
     }
 }
