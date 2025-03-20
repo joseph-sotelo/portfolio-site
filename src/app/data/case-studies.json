@@ -1785,5 +1785,92 @@
                 ]
             }
         ]
+    },
+    "building-blocks": {
+        "caseStudyCardProps": {
+            "name": "Building Blocks",
+            "image": "/work/meander-sim/meander-sim-cover.png",
+            "page": "/work/building-blocks",
+            "labels": [
+                "C#",
+                "unity"
+            ]
+        },       
+        "sections": [
+            {
+                "key": "context",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "Context"
+                    ],
+                    [
+                        "mainText",
+                        "In my class, 'Design for the Future', I was tasked with creating a 3D interactive experience in Unity. I decided to create a building-block experience."
+                    ]
+                ]
+            },
+            {
+                "key": "building-video",
+                "componentType": "video",
+                "header": "Building",
+                "mainText": "For as long as humans have existed, we've been obsessed with putting things on top of other things.",
+                "sources": [
+                    "/work/building-blocks/building-A.mp4"
+                ],
+                "hostType": "local",
+                "isAutoPlay": true,
+                "showControls": false,
+                "isMuted": true
+            },
+            {
+                "key": "destroying-video",
+                "componentType": "video",
+                "header": "Destruction",
+                "mainText": "Our habit of destroying things almost outweighs our need to build. Almost.",
+                "sources": [
+                    "/work/building-blocks/destroy-A.mp4"
+                ],
+                "hostType": "local",
+                "isAutoPlay": true,
+                "showControls": false,
+                "isMuted": true
+            },
+            {
+                "key": "process",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "Process"
+                    ],
+                    [
+                        "mainText",
+                        "The building of the buiding-blocks interaction was quite challenging, despite being a simple concept. I began by setting up my scene with a plane, a light, and an imported FPS controller."
+                    ],
+                    [
+                        "mainText",
+                        "Most of the time on this project was spent trying to resolve the errors associated with this FPS controller. Then it dawned on me: 'use one of the other FPS controllers from the Unity Asset Store!' So that's what I did."
+                    ],
+                    [
+                        "mainText",
+                        "From there, all the pieces fell into place. I created a material for the ground, a prefab for the blocks, and a script to allow the user to place the block wherever they want. One new thing I learned about coding in C# is how to get the transform of a prefab:"
+                    ],
+                    [
+                        "codeFragment",
+                        "float prefabHeight = prefab.GetComponent<Collider>().bounds.size.y;"
+                    ],
+                    [
+                        "mainText",
+                        "This was used in order to make the blocks spawn with their lower face flush with the underlying surface. I simply subtracted half of the height of the block prefab from the y-position of the raycast hit. Otherwise, it would spawn half burried."
+                    ],
+                    [
+                        "mainText",
+                        "Overall, it was a rewarding learning experience, and an essential stepping stone to my dream of re-creating the Great Wall of China in Unity."
+                    ]
+                ]
+            }
+        ]
     }
 }
