@@ -135,5 +135,14 @@
             "Spring 2025 | 1 week"
         ],
         "mainText": "Do you ever get the urge to just build a brick wall? Or an igloo? This is for you." 
+    },
+    "chango": {
+        "header": "Chango Game",
+        "hideTitleAtStart": false,
+        "subHeader": [
+            "Academic Exercise",
+            "Spring 2025 | 1 week"
+        ],
+        "mainText": "A prototype of a VR horror game" 
     }
 }
