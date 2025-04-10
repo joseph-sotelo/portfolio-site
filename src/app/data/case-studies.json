@@ -1872,5 +1872,113 @@
                 ]
             }
         ]
+    },
+    "chango": {
+        "caseStudyCardProps": {
+            "name": "Chango",
+            "image": "/work/meander-sim/meander-sim-cover.png",
+            "page": "/work/chango",
+            "labels": [
+                "C#",
+                "unity",
+                "VR"
+            ]
+        },       
+        "sections": [
+            {
+                "key": "context",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "Context"
+                    ],
+                    [
+                        "mainText",
+                        "In my class, 'Design for the Future', I was tasked with creating a VR interactive experience in Unity. I decided to take the opportunity to start bringing a long-time game idea to life."
+                    ]
+                ]
+            },
+            {
+                "key": "demo-video",
+                "componentType": "video",
+                "header": "Demo",
+                "mainText": "My goal for this first step was to prototype the basic mechanic of the game. Shine the flashlight at chango, and he'll vanish. If you miss him, he'll get you. I used Unity's XR Interaction toolkit to simulate inputs from a VR device.",
+                "sources": [
+                    "/work/chango/chango.mp4"
+                ],
+                "hostType": "local",
+                "isAutoPlay": true,
+                "showControls": false,
+                "isMuted": true
+            },
+            {
+                "key": "process",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "Process"
+                    ],
+                    [
+                        "mainText",
+                        "At first I just kept running in to walls. I tried using the Meta XR, thinking that I would have access to a Meta Quest Headset. When I found out I didn't have that access, I tried using the Meta XR Simulator, but my machine wouldn't support that. I ended up using the Unity XR Interaction Toolkit, which has a good simulator."
+                    ],
+                    [
+                        "link",
+                        "https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@3.1/manual/index.html",
+                        "Unity XR toolkit docs"
+                    ],
+                    [
+                        "mainText",
+                        "Next, I created Chango in blender, then imported him into my scene as a prefab."
+                    ],
+                    [
+                        "mainText",
+                        "From there, I created three scripts. The first was used to make chango move towards the center of the map,where the player is. The second was to spawn Chango anywhere along a circle. The following excerpt shows how I got a random angle and used that to determine his starting position along the circle."
+                    ],
+                    [
+                        "codeFragment",
+                        "float angle = Random.Range(0f, 360f) * Mathf.Deg2Rad;",
+                        "Vector3 spawnPos = new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * spawnRadius;"
+                    ],
+                    [
+                        "mainText",
+                        "The third script I created was used to make the flashlight mechanic. I added a light component to the right hand of the XR Origin in the scene, then i attached the flashlight script to the light. The script calls Respawn() whenever the raycast detects chango."
+                    ]
+                ]
+            },
+            {
+                "key": "next-steps",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "Next Steps"
+                    ],
+                    [
+                        "mainText",
+                        "Now that I have the basic finctionality working, my next step is to set up the environment using this low poly plants asset pack by Bluewalk."
+                    ],
+                    [
+                        "link",
+                        "https://assetstore.unity.com/packages/3d/vegetation/plants/low-poly-plants-pack-3d-game-kit-262372",
+                        "Low Poly Plants Pack - 3D Game Kit"
+                    ],
+                    [
+                        "mainText",
+                        "Next, I need to spend some time playing around with the lighting until it is very spooky. I tried doing this and realized it will take some time."
+                    ],
+                    [
+                        "mainText",
+                        "Then, I want to create two mechanics. The first involved the flashlight running out of battery and needing to recharge. The second involves Chango's speed increasing everytime he respawns. Now it will be harder to survive. I'll add a timer to the screen so players can compete with eachother.l"
+                    ],
+                    [
+                        "mainText",
+                        "I could go on and on about what I want to add, but I think I'll keep things bite sized. Just like the player when Chango gets them."
+                    ]
+                ]
+            }
+        ]
     }
 }
