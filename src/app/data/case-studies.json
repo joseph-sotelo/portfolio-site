@@ -1,7 +1,7 @@
 {
     "meander-sim": {
         "caseStudyCardProps": {
-            "name": "Alluvial Geomorphology Simulator",
+            "name": "Meander Simulator",
             "image": "/work/meander-sim/meander-sim-cover.png",
             "page": "/work/meander-sim",
             "labels": [
@@ -14,7 +14,7 @@
             {
                 "key": "final-product",
                 "componentType": "iFrame",
-                "header": "Alluvial Geomorphology Simulator",
+                "header": "Meander Simulator",
                 "mainText": "An academic tool used to demonstrate the science behind the meandering of rivers. Take it for a spin!",
                 "src": "https://editor.p5js.org/jsotelo/full/-_7CfZCbIR"
             },
@@ -27,7 +27,7 @@
                 "key": "context",
                 "componentType": "standardScrollSection",
                 "header": "Context",
-                "mainText": "For some reason, I have an fascination with rivers and the variety of shapes they form - a.k.a. alluvial geomorphology. When, in a programming class, I was tasked with creating a simulation of any kind of process, I decided to simulate the meandering of a river.",
+                "mainText": "For some reason, I have an fascination with rivers and the variety of shapes they form. When, in a programming class, I was tasked with creating a simulation of any kind of process, I decided to simulate the meandering of a river.",
                 "images": [
                     [
                         "/work/meander-sim/braided-river.jpg",
@@ -1976,6 +1976,78 @@
                     [
                         "mainText",
                         "I could go on and on about what I want to add, but I think I'll keep things bite sized. Just like the player when Chango gets them."
+                    ]
+                ]
+            }
+        ]
+    },
+    "gen-ai-hive-five": {
+        "caseStudyCardProps": {
+            "name": "Gen AI Hive Five",
+            "image": "/work/meander-sim/meander-sim-cover.png",
+            "page": "/work/chango",
+            "labels": [
+                "C#",
+                "unity",
+                "VR"
+            ]
+        },       
+        "sections": [
+            {
+                "key": "intro",
+                "componentType": "paragraph",
+                "header": "How I use generative AI",
+                "mainText": "In Spring 2025, I created an app called HiveFive that aims to speed up large-scale beehive inspection operations. Here I outline two ways I used generative AI to help me."
+            },
+            {
+                "key": "storyboards",
+                "componentType": "billboard",
+                "header": "1. Storyboards",
+                "mainText": "I often use AI to generate storyboards of user journeys, but it was particularly essential for HiveFive. The app is very niche, catering to a small set of users who have knowledge of the pollination industry. This meant that presenting the concept to designers, professors, mentors, and the public would be challenging. How could I introduce them to the context and industry surrounding the app? How could I help them appreciate the app the way a beehive inspector would? ChatGPT helped me solve this problem by allowing me to quickly create detailed storyboard images for my presentations. Below are some examples ofthe images I created, along with their corresponding prompts.",
+                "images": [
+                    [
+                        "/work/gen-ai-hive-five/arrival.png",
+                        "A photorealistic image of two male beekeepers walking away from a pickup truck in an almond orchard. They are wearing full beekeeping suits, with brimmed hats and gloves. One of them has an ipad with a durable case. They have distinct body types.",
+                        "Prompt: 'Generate a photorealistic image of two male beekeepers walking away from a pickup truck in an almond orchard. They are wearing full beekeeping suits, with brimmed hats and gloves. One of them has an ipad with a durable case. They have distinct body types.'"
+                    ],
+                    [
+                        "/work/gen-ai-hive-five/finding-hivedrop.png",
+                        "A photorealistic image of the same two beekeepers walking up to a collection of beehive boxes.",
+                        "Prompt: 'Create an image of the same two beekeepers walking up to a collection of beehive boxes.' For this prompt, I supplied the image of the beehive boxes for ChatGPT to work with."
+                    ],
+                    [
+                        "/work/gen-ai-hive-five/inspecting-hivedrop.png",
+                        "A frontal image of the beekeepers inspecting a hive. One of them examines one of the hive's frames while the other enters data into an ipad with a case and a stylus.",
+                        "Prompt: 'Generate a new frontal image. The one on the right has removed the lid of the hive and is examining one of the frames. The other is entering data into the ipad with a stylus.'"
+                    ],
+                    [
+                        "/work/gen-ai-hive-five/farmer-on-phone.png",
+                        "A photorealistic image of a female farmer in an almond orchard, talking on the phone with a vexed expression on her face.",
+                        "Prompt: 'Generate an image of a female farmer in an almond orchard, talking on the phone with a vexed expression on her face.'"
+                    ]
+                ]
+            },
+            {
+                "key": "app-development",
+                "componentType": "insightsScrollSection",
+                "header": "2. App Development",
+                "secondaryText": "In addition to imagery, also used Claude for coding. For context, HiveFive is a Vite + React application. I used ArcGIS for the map components, and a customized version of shadcn for a lot of the other UI components. In addition to code completion, I used Claude for:",
+                "descriptiveList": [
+                    [
+                        "Bug fixes",
+                        "Example prompt: 'Why are these tailwind classnames being ignored?'"
+                    ],
+                    [
+                        "Breaking up monolithic components",
+                        "Example prompt: 'Split client-details.tsx up into smaller components for better maintainability and readability. Store the components in the components/clients/client-details directory. Follow similar patterns to those of the mobile-sheet and map components.'"
+                    ],
+                    [
+                        "Refactoring",
+                        "Example prompt: 'In inspection-section.tsx, there is some logic that dynamically renders the badge component. Extract the logic so that it can be reused elsewhere.'"
+                    ],
+                    [
+                        "Grunt tasks",
+                        "Example prompt: 'Translate this tailwind css into normal css'"
                     ]
                 ]
             }

@@ -110,7 +110,7 @@
         "mainText": "Using code and arduino to track and vizualize bird feeding habits." 
     },
     "meander-sim": {
-        "header": "Alluvial Geomorphology Simulator",
+        "header": "Meander Simulator",
         "hideTitleAtStart": true,
         "subHeader": [
             "Academic Exercise",
@@ -144,5 +144,14 @@
             "Spring 2025 | 1 week"
         ],
         "mainText": "A prototype of a VR horror game" 
+    },
+    "gen-ai-hive-five": {
+        "header": "HiveFive",
+        "hideTitleAtStart": true,
+        "subHeader": [
+            "Senior Thesis",
+            "Spring 2025 | 6 months"
+        ],
+        "mainText": "Explanation of how I used generative AI to support my work." 
     }
 }
