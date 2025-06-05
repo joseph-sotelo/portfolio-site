@@ -2031,7 +2031,7 @@
                 "key": "app-development",
                 "componentType": "insightsScrollSection",
                 "header": "2. App Development",
-                "secondaryText": "In addition to imagery, also used Claude for coding. For context, HiveFive is a Vite + React application. I used ArcGIS for the map components, and a customized version of shadcn for a lot of the other UI components. In addition to code completion, I used Claude for:",
+                "secondaryText": "In addition to imagery, I used Claude for coding. For context, HiveFive is a Vite + React application. I used ArcGIS for the map components, and a customized version of shadcn for a lot of the other UI components. In addition to code completion, I used Claude for:",
                 "descriptiveList": [
                     [
                         "Bug fixes",
