@@ -1,4 +1,197 @@
 {
+    "hive-five": {
+        "caseStudyCardProps": {
+            "name": "HiveFive",
+            "image": "/work/hive-five/cover.png",
+            "page": "/work/hive-five",
+            "labels": [
+                "ArcGIS",
+                "React",
+                "TypeScript",
+                "AgTech"
+            ]
+        },       
+        "sections": [
+            {
+                "key": "Hero",
+                "componentType": "video",
+                "header": "HiveFive",
+                "mainText": "HiveFive is a GIS app I designed and developed for my senior thesis. It aims to speed up large-scale beehive inspection operations. Below is an excerpt from my final presentation, which lasts 5 minutes.",
+                "sources": [
+                    "https://www.youtube.com/embed/2pG7iRIZj0E?si=z3P5A0SYQYMVXsOY&amp;start=15830"
+                ],
+                "hostType": "iframe",
+                "isAutoPlay": false,
+                "showControls": true,
+                "isMuted": false
+            },
+            {   
+                "key": "background",
+                "componentType": "chapterHeader",
+                "header": "Background"
+            },
+            {
+                "key": "why",
+                "componentType": "billboard",
+                "header": "Why HiveFive?",
+                "mainText": "I was looking for a project that would allow me to gain familiarity with GIS, specifically ArcGIS. I also always find myself drawn towards projects that are more utilitarian rather than hedonic, such as projects in AgTech, sustainability, and meeting basic human needs. I call these my impact areas. HiveFive was at the intersection of these two interests.",
+                "images": [
+                    [
+                        "/work/hive-five/why.png",
+                        "A graphic portraying two axes: one for GIS and one for impact areas. The intersection of the two is HiveFive."                    
+                    ]
+                ]
+            },
+            {
+                "key": "stakeholder",
+                "componentType": "standardScrollSection",
+                "header": "Stakeholder",
+                "mainText": "For this project, I worked with a stakeholder, Carl Demler. He runs a beehive inspection business in California’s Central Valley. For collecting data, he built a rudimentary GIS app that his workers use on an iPad when they are out in the field. However, the platform he used (he requested it to remain anonymous) has a many limitations that slow down operations. I offered to rebuild and redesign it as a standalone application.",
+                "images": [
+                    [
+                        "/work/hive-five/carl.png",
+                        "Carl Demler, owner of San Joaquin Beehive Inspection",
+                        "Carl Demler, owner of San Joaquin Beehive Inspection"
+                    ]
+                ]
+            },
+            {
+                "key": "how-might-i",
+                "componentType": "bigText",
+                "secondaryText": "I asked myself:",
+                "mainText": "How might I redesign and rebuild Carl’s app to speed up his beehive inspection operations?"
+            },
+            {   
+                "key": "research",
+                "componentType": "chapterHeader",
+                "header": "Research"
+            },
+            {
+                "key": "methods",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "bigText",
+                        "Methods used:"
+                    ],
+                    [
+                        "mainText",
+                        "1. Interviews"
+                    ],
+                    [
+                        "mainText",
+                        "2. Heuristic Evaluation"
+                    ],
+                    [
+                        "mainText",
+                        "3. Competitive Analysis"
+                    ],
+                    [
+                        "mainText",
+                        "4. Literature Review"
+                    ],
+                    [
+                        "mainText",
+                        "5. Usability Testing"
+                    ]                   
+                ]
+            },
+            {
+                "key": "interviews",
+                "componentType": "standardScrollSection",
+                "header": "1. Interviews",
+                "mainText": "I began by interviewing Carl and his workers in order to immerse myself in their world and needs. Below are my main insights.",
+                "images": [
+                    [
+                        "/work/hive-five/interview.png",
+                        "A screenshot of a zoom interview between Joey and Carl."             
+                    ]
+                ]
+            },
+            {
+                "key": "carl-quote",
+                "componentType": "bigText",
+                "mainText": "“The California almond crop needs 3 million hives per year. That’s 600 million dollars going back and forth.”",
+                "postScript": "- Carl"
+            },
+            {
+                "key": "insight-context",
+                "componentType": "billboard",
+                "header": "Insight: Context",
+                "mainText": "I gained insight into the almond industry in which the hive inspection business is nested. California produces 80% of the world's almonds, and growers rent hives from beekeepers to pollinate their crops. Because a hive's population can fluctuate, growers also hire beehive inspectors to expose low population hives that need to be replaced. In alignment with the pollination season, inspectors have only one month to inspect 70,000+ acres or orchards. This is frantic work.",
+                "images": [
+                    [
+                        "/work/hive-five/central-valley.png",
+                        "A map highlighting California's Central Valley.",
+                        "California's Central Valley, home of the almond."
+                    ]
+                ]
+            },            
+            {
+                "key": "additional-insights",
+                "componentType": "insightsScrollSection",
+                "header": "Additional Insights",
+                "descriptiveList": [
+                    [
+                        "Pain Points",
+                        "I learned about the pain points that Carl and his workers face while using the pre-existing in the field. These are covered in detail in the in the 'Final Product' section of the case study."
+                    ],
+                    [
+                        "Inspector’s POV",
+                        "I familiarized myself with terminology and artifacts from a beehive inspector’s experience."
+                    ]
+                ]
+            },
+            {
+                "key": "heuristic-evaluation",
+                "componentType": "billboard",
+                "header": "2. Heuristic Evaluation",
+                "mainText": "Carl gave me the opportunity to explore and use the pre-existing app. I evaluated it against Nielsen Norman's 10 usability heuristics. Combining these with the interview findings, I was able to identify areas of improvement. Below are two of the heuristics that the app didn't achieve.",
+                "images": [
+                    [
+                        "/work/hive-five/heuristic-2.png",
+                        "Diagrams of the pre-existing app's interface.",
+                        "In many ways there was a mismatch between the app's terms and the terms I learned about in my interview. Perhaps fixing this would enable contractors to learn the app faster."
+                    ],
+                    [
+                        "/work/hive-five/heuristic-8.png",
+                        "Diagrams of the pre-existing app's interface."                     
+                    ]
+                ]
+            },
+            {
+                "key": "literature-review",
+                "componentType": "standardScrollSection",
+                "header": "Literature Review",
+                "mainText": "Once I understood that my solution would involve data visualization, I re-read the chapter 'Vizualize' from 'Form and Code' by Casey Reas, Chandler McWilliams, and LUST. The reading would later help me avoid creating charts that were misleading when viewed together. See 'Final Product' for more details.",
+                "images": [
+                    [
+                        "/work/hive-five/form-and-code.png",
+                        "A screenshot of 'Form and Code' by Casey Reas, Chandler McWilliams, and LUST."
+                    ]
+                ]
+            },
+            {
+                "key": "book-quote",
+                "componentType": "bigText",
+                "mainText": "“Visualizations can mislead as well as enlighten.”",
+                "postScript": "Page 121"
+            },
+            {
+                "key": "competitive-analysis",
+                "componentType": "standardScrollSection",
+                "header": "Competitive Analysis",
+                "mainText": "I compared Carl's business to two main competitors in order to verify that my solution would be marketable. BeeHero sells hives that are outfitted with sensors, and BeeWise sells robotic beehives. Both aim to eliminate the need for human inspectors. However, they are not affordable in large numbers, so many farmers will still opt for traditional beehives plus human inspectors.",
+                "images": [
+                    [
+                        "/work/hive-five/inspector.png",
+                        "An inspector examines a hive.",
+                        "Hands-on beehive inspection is the most affordable for many almond growers."
+                    ]
+                ]
+            }
+        ]
+    },
     "meander-sim": {
         "caseStudyCardProps": {
             "name": "Meander Simulator",
@@ -477,7 +670,7 @@
             "image": "/work/slimbox/swot.png",
             "page": "/work/slimbox",
             "labels": [
-                "S.W.O.T.",
+                "swot",
                 "micro-interactions",
                 "precedent exploration"
             ]
@@ -1123,7 +1316,7 @@
                 ]
             }
         ]
-    },
+    },    
     "bird-feeder": {
         "caseStudyCardProps": {
             "name": "Bird Feeder",
@@ -2052,5 +2245,5 @@
                 ]
             }
         ]
-    }
+    }    
 }

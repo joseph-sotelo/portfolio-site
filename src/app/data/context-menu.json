@@ -118,6 +118,15 @@
         ],
         "mainText": "An academic tool used to demonstrate the science behind the meandering of rivers." 
     },
+    "hive-five": {
+        "header": "HiveFive",
+        "hideTitleAtStart": true,
+        "subHeader": [
+            "Senior Thesis",
+            "Spring 2025 | 16 weeks"
+        ],
+        "mainText": "A GIS app that speeds up large-scale beehive inspection operations." 
+    },
     "future-archaeology": {
         "header": "Future Archaeology",
         "hideTitleAtStart": false,
@@ -146,11 +155,11 @@
         "mainText": "A prototype of a VR horror game" 
     },
     "gen-ai-hive-five": {
-        "header": "HiveFive",
+        "header": "HiveFive AI",
         "hideTitleAtStart": true,
         "subHeader": [
             "Support for Senior Thesis",
-            "Spring 2025 | 6 months"
+            "Spring 2025 | 16 weeks"
         ],
         "mainText": "Explanation of how I used generative AI to support my senior thesis." 
     }
