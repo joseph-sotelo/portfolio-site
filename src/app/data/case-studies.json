@@ -16,7 +16,7 @@
                 "key": "Hero",
                 "componentType": "video",
                 "header": "HiveFive",
-                "mainText": "HiveFive is a GIS app I designed and developed for my senior thesis. It aims to speed up large-scale beehive inspection operations. Below is an excerpt from my final presentation, which lasts 5 minutes.",
+                "mainText": "HiveFive is a ArcGIS app I designed and developed for my senior thesis. It aims to speed up large-scale beehive inspection operations. Below is an excerpt from my final presentation, which lasts 5 minutes.",
                 "sources": [
                     "https://www.youtube.com/embed/2pG7iRIZj0E?si=z3P5A0SYQYMVXsOY&amp;start=15830"
                 ],
@@ -134,7 +134,7 @@
                 "descriptiveList": [
                     [
                         "Pain Points",
-                        "I learned about the pain points that Carl and his workers face while using the pre-existing in the field. These are covered in detail in the in the 'Final Product' section of the case study."
+                        "I learned about the pain points that Carl and his workers face while using the pre-existing app in the field. These are covered in detail in the 'Final Product' section of the case study."
                     ],
                     [
                         "Inspector’s POV",
@@ -186,7 +186,7 @@
                     [
                         "/work/hive-five/inspector.png",
                         "An inspector examines a hive.",
-                        "Hands-on beehive inspection is the most affordable for many almond growers."
+                        "Hands-on beehive inspection is the most affordable option for many almond growers."
                     ]
                 ]
             },
@@ -241,15 +241,15 @@
                 "mainText": "Before coding the app with TypeScript, I created a sitemap as well as component diagrams for various pages. This helped me plan the most ideal component tree for top-down state management. It also helped me decide when and where to use context providers.",
                 "images": [
                     [
-                        "/work/hive-five/arcgis-diagram.png",
-                        "Diagram of the map creation page.",
-                        "This diagram shows the steps that go into assembling the main ArcGIS map."                        
-                    ],
-                    [
                         "/work/hive-five/client-page-diagram.png",
                         "Diagram of the client reports page.",
                         "I used context providers to populate all of the client page's components with consistent data in a simple and maintainable way."                        
-                    ]
+                    ],
+                    [
+                        "/work/hive-five/arcgis-diagram.png",
+                        "Diagram of the map creation page.",
+                        "This diagram shows the steps that go into assembling the main ArcGIS map."                        
+                    ]                    
                 ]
             },
             {
@@ -294,7 +294,7 @@
                     ],
                     [
                         "mainText",
-                        "For the UI, I customized Shadcn components to include the branding, color coding, and to be more visible outside through larger fonts and buttons. I originally tried to use Calcite design system, which is made for use with ArcGIS, but it proved too rigid in terms of styling."
+                        "For the UI, I customized Shadcn components to include the branding, color coding, and to be more visible outdoors. I originally tried to use Calcite design system, which is made for use with ArcGIS, but it proved too rigid in terms of styling."
                     ],
                     [
                         "bigText",
@@ -302,7 +302,7 @@
                     ],
                     [
                         "mainText",
-                        "Below is an example of how I used ArcGIS components to create a map that displays the data I had stored in my ArcGIS developer account. Firstly, feature layers are created ny passing unique definition expressions (from constants) to hooks."
+                        "Below is an example of how I used ArcGIS components to create a map that displays the data I had stored in my ArcGIS developer account. Firstly, feature layers are created by passing unique definition expressions (from constants) to hooks."
                     ],
                     [
                         "codeFragment",
@@ -324,7 +324,7 @@
                     ],
                     [
                         "mainText",
-                        "MapView turns the ArcGISMap into a viewable tsx component."
+                        "A MapView turns the ArcGISMap into a viewable tsx component."
                     ],
                     [
                         "codeFragment",                                                
@@ -375,6 +375,101 @@
                         "link",
                         "linkedin.com/in/judah-almanzor-7a8b8a344",
                         "Judah's LinkedIn"
+                    ]
+                ]
+            },
+            {   
+                "key": "final-product",
+                "componentType": "chapterHeader",
+                "header": "Final Product"
+            },
+            {
+                "key": "orientation",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "mainText",
+                        "It is difficult to appreciate the app's features without understanding the pain-points they resolve, so I've included a pain-point story for each feature."
+                    ]
+                ]
+            },
+            {
+                "key": "pain-point-1",
+                "componentType": "billboard",
+                "header": "Pain-point 1: Uninformed Sampling",
+                "mainText": "This story came from an interview with Carl.",
+                "images": [
+                    [
+                        "/work/gen-ai-hive-five/arrival.png",
+                        "AI generated image of two beehive inspectors arriving at an almond orchard. One of the has an iPad",
+                        "Sean and Mike, a team of two beehive inspectors, arrive at an almond orchard to begin inspecting its hives."
+                    ],
+                    [
+                        "/work/hive-five/inspection.png",
+                        "AI generated image of two beehive inspectors examining a beehive. One of the enters data into a hive.",
+                        "They find a “hive drop” - a collection of hives. Sean grades one of the hives by examining its frames. A frame is a cross section of a hive. They have found that 8 out of 10 frames are covered in bees. Mike logs this into the app. They repeat the process until they have graded 10% of the hives in the orchard."
+                    ],
+                    [
+                        "/work/hive-five/carl-hispanic-perplexed.png",
+                        "AI generated image of a perplexed man at a computer in his home office.",
+                        "Later, their boss goes over the data and finds that the variation from hive to hive is unusually high, and therefore, a greater amount of the hives needs to be inspected in order to have trustworthy data. Either he or his workers have to return to the field to gather more data.His employees, who are seasonal contractors, don’t have the statistics knowledge to make these kinds of calculations and decisions."
+                    ]
+                ]
+            },
+            {
+                "key": "feature-1",
+                "componentType": "video",
+                "header": "Feature 1: Informed Sampling",                
+                "sources": [
+                    "/work/hive-five/sampling-demo.mov"
+                ],
+                "hostType": "local",
+                "isAutoPlay": true,
+                "showControls": false,
+                "isMuted": true
+            },
+            {
+                "key": "pain-point-2",
+                "componentType": "billboard",
+                "header": "Pain-point 2: Map-based Blunders",
+                "mainText": "This story came from an interview with Carl.",
+                "images": [
+                    [
+                        "/work/gen-ai-hive-five/arrival.png",
+                        "AI generated image of two beehive inspectors arriving at an almond orchard. One of the has an iPad",
+                        "Sean and Mike, a team of two beehive inspectors, arrive at an almond orchard to begin inspecting its hives."
+                    ],
+                    [
+                        "/work/hive-five/inspection.png",
+                        "AI generated image of two beehive inspectors examining a beehive. One of the enters data into a hive.",
+                        "They find a “hive drop” - a collection of hives. Sean grades one of the hives by examining its frames. A frame is a cross section of a hive. They have found that 8 out of 10 frames are covered in bees. Mike logs this into the app. They repeat the process until they have graded 10% of the hives in the orchard."
+                    ],
+                    [
+                        "/work/hive-five/carl-hispanic-perplexed.png",
+                        "AI generated image of a perplexed man at a computer in his home office.",
+                        "Later, their boss goes over the data and finds that the variation from hive to hive is unusually high, and therefore, a greater amount of the hives needs to be inspected in order to have trustworthy data. Either he or his workers have to return to the field to gather more data.His employees, who are seasonal contractors, don’t have the statistics knowledge to make these kinds of calculations and decisions."
+                    ]
+                ]
+            },
+            {
+                "key": "feature-three",
+                "componentType": "billboard",
+                "header": "Feature: Geofencing",
+                "images": [
+                    [
+                        "/work/hive-five/why.png",
+                        "A graphic portraying two axes: one for GIS and one for impact areas. The intersection of the two is HiveFive."                    
+                    ]
+                ]
+            },
+            {
+                "key": "feature-four",
+                "componentType": "billboard",
+                "header": "Feature: Client Reports",
+                "images": [
+                    [
+                        "/work/hive-five/why.png",
+                        "A graphic portraying two axes: one for GIS and one for impact areas. The intersection of the two is HiveFive."                    
                     ]
                 ]
             },
@@ -919,7 +1014,7 @@
             "image": "/work/slimbox/swot.png",
             "page": "/work/slimbox",
             "labels": [
-                "S.W.O.T.",
+                "swot",
                 "micro-interactions",
                 "precedent exploration"
             ]
