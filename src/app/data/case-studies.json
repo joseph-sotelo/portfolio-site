@@ -419,7 +419,8 @@
             {
                 "key": "feature-1",
                 "componentType": "video",
-                "header": "Feature 1: Informed Sampling",                
+                "header": "Feature 1: Informed Sampling",  
+                "mainText": "HiveFive transfers the decision-making into the inspectors hands. As the user inputs data, greater variation causes the progress bar to ask them to inspect more hives. Less variation causes the progress bar to ask for fewer hives to be inspected. This saves time by preventing the user from inspecting more hives while still getting trustworthy sample size.",
                 "sources": [
                     "/work/hive-five/sampling-demo.mov"
                 ],
@@ -432,33 +433,47 @@
                 "key": "pain-point-2",
                 "componentType": "billboard",
                 "header": "Pain-point 2: Map-based Blunders",
-                "mainText": "This story came from an interview with Carl.",
+                "mainText": "This story came from an interview with Paul, one of Carl's workers.",
                 "images": [
                     [
                         "/work/gen-ai-hive-five/arrival.png",
                         "AI generated image of two beehive inspectors arriving at an almond orchard. One of the has an iPad",
-                        "Sean and Mike, a team of two beehive inspectors, arrive at an almond orchard to begin inspecting its hives."
+                        "Sean and Mike arrive at the next orchard."
                     ],
                     [
-                        "/work/hive-five/inspection.png",
+                        "/work/hive-five/blunder.png",
                         "AI generated image of two beehive inspectors examining a beehive. One of the enters data into a hive.",
-                        "They find a “hive drop” - a collection of hives. Sean grades one of the hives by examining its frames. A frame is a cross section of a hive. They have found that 8 out of 10 frames are covered in bees. Mike logs this into the app. They repeat the process until they have graded 10% of the hives in the orchard."
+                        "They tap on the orchard’s icon on the map in order to enter data into it, but they accidentally selected the wrong orchard. This might seem easy to avoid, but I learned from Paul that this happens 10-15 times a season."
                     ],
                     [
-                        "/work/hive-five/carl-hispanic-perplexed.png",
+                        "/work/hive-five/fixing-data.png",
                         "AI generated image of a perplexed man at a computer in his home office.",
-                        "Later, their boss goes over the data and finds that the variation from hive to hive is unusually high, and therefore, a greater amount of the hives needs to be inspected in order to have trustworthy data. Either he or his workers have to return to the field to gather more data.His employees, who are seasonal contractors, don’t have the statistics knowledge to make these kinds of calculations and decisions."
+                        "The data later has to be cut and pasted from the wrong orchard to the right one, which is a time-consuming process."
+                    ]
+                ]
+            },            
+            {
+                "key": "feature-2",
+                "componentType": "billboard",
+                "header": "Feature 2: Geo-fencing",
+                "mainText": "Hivefive comes equipped with a guardrail called geo-fencing to prevent this from happening. The user can only input data if they are within its perimeter.",
+                "images": [
+                    [
+                        "/work/hive-five/geofencing.png",
+                        "A screenshot of the geo-fencing feature."                       
                     ]
                 ]
             },
             {
-                "key": "feature-three",
+                "key": "pain-point-3",
                 "componentType": "billboard",
-                "header": "Feature: Geofencing",
+                "header": "Pain-point 3: Manual Data Viz",
+                "mainText": "This story came from an interview with Carl.",
                 "images": [
                     [
-                        "/work/hive-five/why.png",
-                        "A graphic portraying two axes: one for GIS and one for impact areas. The intersection of the two is HiveFive."                    
+                        "/work/hive-five/client-call.png",
+                        "An AI generated image of a man and woman on a phone call.",
+                        "A client calls, expressing doubt that their hives performed well-enough. The client is thinking about suing the beekeeper from whom she rented the hives."
                     ]
                 ]
             },
