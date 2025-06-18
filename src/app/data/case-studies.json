@@ -59,7 +59,7 @@
                 "key": "how-might-i",
                 "componentType": "bigText",
                 "secondaryText": "I asked myself:",
-                "mainText": "How might I redesign and rebuild Carl’s app to speed up his beehive inspection operations?"
+                "mainText": "How might I redesign and rebuild Carl’s app to speed up his beehive inspection operations without having to hire more workers?"
             },
             {   
                 "key": "research",
@@ -324,32 +324,121 @@
                     ],
                     [
                         "mainText",
-                        "Lastly, a MapView is created with the previus ArcGISMap as well as two UI components-- a zoom and a track widget."
+                        "MapView turns the ArcGISMap into a viewable tsx component."
                     ],
                     [
-                        "codeFragment",                        
-                        "// Create map view",
+                        "codeFragment",                                                
                         "const view = new MapView({",
                         "  container: 'viewDiv',",
                         "  map: map,",
                         "  center: MAP_CONFIG.DEFAULT_CENTER,",
                         "  zoom: MAP_CONFIG.DEFAULT_ZOOM,",
-                        "});",                        
-                        "view.ui.move('zoom', 'bottom-right');",                        
-                        "// Add GPS tracking widget",
+                        "});"
+                    ],
+                    [
+                        "mainText",
+                        "Lastly, the MapView's UI is customized by moving the zoom widget and adding a track widget."
+                    ],
+                    [
+                        "codeFragment",                                               
+                        "view.ui.move('zoom', 'bottom-right');",                                                
                         "const track = new Track({",
                         "  view: view",
                         "});",
                         "view.ui.add(track, 'bottom-right');",                        
                         "track.start();"    
+                    ],                    
+                    [
+                        "link",
+                        "https://github.com/joseph-sotelo/hive-inspection-tool-react",
+                        "View the rest of the code on my GitHub"
                     ],
                     [
                         "link",
-                        "https://editor.p5js.org/jsotelo/sketches/-_7CfZCbIR",
-                        "View the rest of my code"
+                        "https://joseph-sotelo-portfolio.vercel.app/work/gen-ai-hive-five",
+                        "How I did (and did not) use AI for coding"
+                    ],
+                    [
+                        "bigText",
+                        "Acknowledgements"
+                    ],
+                    [
+                        "mainText",
+                        "Special shoutout to my two code reviewers, Caleb Sotelo and Judah Almanzor."
+                    ],
+                    [
+                        "link",
+                        "linkedin.com/in/calebsotelo",
+                        "Caleb's LinkedIn"
+                    ],
+                    [
+                        "link",
+                        "linkedin.com/in/judah-almanzor-7a8b8a344",
+                        "Judah's LinkedIn"
                     ]
                 ]
-            }
+            },
+            {   
+                "key": "outcomes",
+                "componentType": "chapterHeader",
+                "header": "Outcomes"
+            },
+            {
+                "key": "result",
+                "componentType": "bigText",
+                "secondaryText": "While I will have to wait until the next pollination season to gather true results on the effectiveness of HiveFive, my stakeholder did have positive expectations:",
+                "mainText": "“The way the app gives our inspectors more independence in the field, I could see us inspecting something like five percent more hives overall.”",
+                "postScript": "- Carl"
+            },
+            {
+                "key": "feedback",
+                "componentType": "bigText",
+                "secondaryText": "After my presentation, Rana Chakrabarti from SAP gave me some constructive criticism that made a deep impression on me. He essentially said the problem I solved is just one layer in a bigger problem space, and I probably should have solved for more overarching issues. I believe this is the mark of a mature designer and I intend to apply this advice to future projects.",
+                "mainText": "“As a designer I would expect that you’ve understood the ecosystem in which this thing operates and, is it making things better or worse? ...why are we renting bees from across the country into California and what should we do about it?”",
+                "postScript": "- Rana"
+            },
+            {
+                "key": "next-steps",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "Next Steps"
+                    ],
+                    [
+                        "mainText",
+                        "If I have the time to contunie the project, I could move in two alternative directions:"
+                    ],
+                    [
+                        "bigText",
+                        "1. Take Rana's advice"
+                    ],
+                    [
+                        "mainText",
+                        "I would ask myself, "
+                    ],
+                    [
+                        "mainText",
+                        "“How can Carl’s business be adjusted to solve for California’s almond overproduction problem?”"
+                    ],     
+                    [
+                        "bigText",
+                        "2. Maintain the current solution"
+                    ],               
+                    [
+                        "mainText",
+                        "Step 1: Hire an engineer to review and finalize the app."
+                    ],
+                    [
+                        "mainText",
+                        "Step 2: Test the app in the field."
+                    ],
+                    [
+                        "mainText",
+                        "Step 3: Pilot test during the next pollination season in February 2026."
+                    ]                                
+                ]
+            }        
         ]
     },
     "meander-sim": {
