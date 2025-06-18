@@ -84,12 +84,12 @@
                     ],
                     [
                         "mainText",
-                        "3. Competitive Analysis"
+                        "3. Literature Review"
                     ],
                     [
                         "mainText",
-                        "4. Literature Review"
-                    ],
+                        "4. Competitive Analysis"
+                    ],                    
                     [
                         "mainText",
                         "5. Usability Testing"
@@ -187,6 +187,166 @@
                         "/work/hive-five/inspector.png",
                         "An inspector examines a hive.",
                         "Hands-on beehive inspection is the most affordable for many almond growers."
+                    ]
+                ]
+            },
+            {
+                "key": "testing",
+                "componentType": "billboard",
+                "header": "Usability Testing",
+                "mainText": "As I developed Figma prototypes of the new app, I conducted two remote usability tests with my stakeholder.",
+                "images": [
+                    [
+                        "/work/hive-five/usability-test.png",
+                        "A screenshot of Joey and Carl in a remote call conducting a usability test."                        
+                    ]
+                ]
+            },
+            {
+                "key": "testing-insights",
+                "componentType": "insightsScrollSection",
+                "header": "Usability Testing Insights",                
+                "descriptiveList": [
+                    [
+                        "User control and freedom",
+                        "It was exposed that the process of entering data into the app is very one-way, meaning there was little ability for the user to cancel or edit their entries."
+                    ],
+                    [
+                        "System feedback",
+                        "Carl lost track of how many hives he had graded, so I adjusted the UI to display this number to the user."
+                    ]
+                ]
+            },
+            {   
+                "key": "design",
+                "componentType": "chapterHeader",
+                "header": "Design"
+            },
+            {
+                "key": "prototyping",
+                "componentType": "billboard",
+                "header": "Prototyping",
+                "mainText": "I used Figma to create low, mid, and high fidelity prototypes which were refined with the usability tests. Rather than starting from scratch, I used customized versions of Shadcn UI components. I did this beacause they are accessible both as Figma componenens and actual React components, which would prove useful later. I also value designing by 'progressive truthfulness', in which the designer starts with a consistent UI and then customizes only what is necessary. This lets me avoid re-inventing the wheel.",
+                "images": [
+                    [
+                        "/work/hive-five/prototyping.png",
+                        "Mid and high fidelity prototypes of the app."                        
+                    ]
+                ]
+            },
+            {
+                "key": "diagramming",
+                "componentType": "billboard",
+                "header": "Diagramming",
+                "mainText": "Before coding the app with TypeScript, I created a sitemap as well as component diagrams for various pages. This helped me plan the most ideal component tree for top-down state management. It also helped me decide when and where to use context providers.",
+                "images": [
+                    [
+                        "/work/hive-five/arcgis-diagram.png",
+                        "Diagram of the map creation page.",
+                        "This diagram shows the steps that go into assembling the main ArcGIS map."                        
+                    ],
+                    [
+                        "/work/hive-five/client-page-diagram.png",
+                        "Diagram of the client reports page.",
+                        "I used context providers to populate all of the client page's components with consistent data in a simple and maintainable way."                        
+                    ]
+                ]
+            },
+            {
+                "key": "Coding",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "Coding"
+                    ],
+                    [
+                        "bigText",
+                        "Best Practices"
+                    ],
+                    [
+                        "mainText",
+                        "When it came to coding the app, I followed React/TypeScript best practices such as: "
+                    ],
+                    [
+                        "mainText",
+                        "• Using constants"
+                    ],
+                    [
+                        "mainText",
+                        "• Creating a top-down data flow"
+                    ],
+                    [
+                        "mainText",
+                        "• Avoiding prop drilling through too many layers"
+                    ],
+                    [
+                        "mainText",
+                        "• Reusability of components and hooks"
+                    ],
+                    [
+                        "bigText",
+                        "Modules"
+                    ],
+                    [
+                        "mainText",
+                        "All of the map components and functionalities were made using ArcGIS components. I also stored all of the geojson as items in my ArcGIS developer account."
+                    ],
+                    [
+                        "mainText",
+                        "For the UI, I customized Shadcn components to include the branding, color coding, and to be more visible outside through larger fonts and buttons. I originally tried to use Calcite design system, which is made for use with ArcGIS, but it proved too rigid in terms of styling."
+                    ],
+                    [
+                        "bigText",
+                        "Example"
+                    ],
+                    [
+                        "mainText",
+                        "Below is an example of how I used ArcGIS components to create a map that displays the data I had stored in my ArcGIS developer account. Firstly, feature layers are created ny passing unique definition expressions (from constants) to hooks."
+                    ],
+                    [
+                        "codeFragment",
+                        "const orchardLayer = createOrchardsLayer(LAYER_EXPRESSIONS.SHOW_ALL);",
+                        "const hiveDropsLayer = createHiveDropsLayer();",
+                        "const perimitersLayer = createPerimitersLayer(LAYER_EXPRESSIONS.HIDE_ALL);",
+                        "hiveDropsLayerRef.current = hiveDropsLayer;"  
+                    ],
+                    [
+                        "mainText",
+                        "Next, an ArcGISMap component is created with the previously created layers as well as a basemap."
+                    ],
+                    [    
+                        "codeFragment",
+                        "const map = new ArcGISMap({",
+                        "  layers: [perimitersLayer, orchardLayer, hiveDropsLayer],",
+                        "  basemap: 'arcgis/imagery'",      
+                        "});" 
+                    ],
+                    [
+                        "mainText",
+                        "Lastly, a MapView is created with the previus ArcGISMap as well as two UI components-- a zoom and a track widget."
+                    ],
+                    [
+                        "codeFragment",                        
+                        "// Create map view",
+                        "const view = new MapView({",
+                        "  container: 'viewDiv',",
+                        "  map: map,",
+                        "  center: MAP_CONFIG.DEFAULT_CENTER,",
+                        "  zoom: MAP_CONFIG.DEFAULT_ZOOM,",
+                        "});",                        
+                        "view.ui.move('zoom', 'bottom-right');",                        
+                        "// Add GPS tracking widget",
+                        "const track = new Track({",
+                        "  view: view",
+                        "});",
+                        "view.ui.add(track, 'bottom-right');",                        
+                        "track.start();"    
+                    ],
+                    [
+                        "link",
+                        "https://editor.p5js.org/jsotelo/sketches/-_7CfZCbIR",
+                        "View the rest of my code"
                     ]
                 ]
             }
@@ -670,7 +830,7 @@
             "image": "/work/slimbox/swot.png",
             "page": "/work/slimbox",
             "labels": [
-                "swot",
+                "S.W.O.T.",
                 "micro-interactions",
                 "precedent exploration"
             ]
@@ -1316,7 +1476,7 @@
                 ]
             }
         ]
-    },    
+    },
     "bird-feeder": {
         "caseStudyCardProps": {
             "name": "Bird Feeder",
@@ -2188,9 +2348,29 @@
         "sections": [
             {
                 "key": "intro",
-                "componentType": "paragraph",
-                "header": "How I use generative AI",
-                "mainText": "In Spring 2025, I created an app called HiveFive that aims to speed up large-scale beehive inspection operations. Here I outline two ways I used generative AI to help me."
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "How I use generative AI"
+                    ],
+                    [
+                        "mainText",
+                        "In Spring 2025, I created an app called HiveFive that aims to speed up large-scale beehive inspection operations. Here I outline two ways I used generative AI to help me."
+                    ],
+                    [
+                        "bigText",
+                        "1. Storyboards"  
+                    ],
+                    [
+                        "mainText",
+                        "I often use AI to generate storyboards of user journeys, but it was particularly essential for HiveFive. The app is very niche, catering to a small set of users who have knowledge of the pollination industry. This meant that presenting the concept to designers, professors, mentors, and the public would be challenging."
+                    ],
+                    [
+                        "mainText",
+                        "How could I introduce them to the context and industry surrounding the app? How could I help them appreciate the app the way a beehive inspector would? ChatGPT helped me solve this problem by allowing me to quickly create detailed storyboard images for my presentations. Below are some examples ofthe images I created, along with their corresponding prompts."
+                    ]
+                ]
             },
             {
                 "key": "storyboards",
@@ -2201,49 +2381,20 @@
                     [
                         "/work/gen-ai-hive-five/arrival.png",
                         "A photorealistic image of two male beekeepers walking away from a pickup truck in an almond orchard. They are wearing full beekeeping suits, with brimmed hats and gloves. One of them has an ipad with a durable case. They have distinct body types.",
-                        "Prompt: 'Generate a photorealistic image of two male beekeepers walking away from a pickup truck in an almond orchard. They are wearing full beekeeping suits, with brimmed hats and gloves. One of them has an ipad with a durable case. They have distinct body types.'"
+                        "Generate a photorealistic image of two male beekeepers walking away from a pickup truck in an almond orchard. They are wearing full beekeeping suits, with brimmed hats and gloves. One of them has an ipad with a durable case. They have distinct body types."
                     ],
                     [
-                        "/work/gen-ai-hive-five/finding-hivedrop.png",
-                        "A photorealistic image of the same two beekeepers walking up to a collection of beehive boxes.",
-                        "Prompt: 'Create an image of the same two beekeepers walking up to a collection of beehive boxes.' For this prompt, I supplied the image of the beehive boxes for ChatGPT to work with."
+                        "/work/lfla/upcoming-events-cropped.png",
+                        "A mockup of a YouTube video, overlayed with a small graphic reading view upcoming events at lfla.org/calendar.",
+                        "Another way to expose viewers to LFLA's brand is to supplement spoken content with info cards."
                     ],
                     [
-                        "/work/gen-ai-hive-five/inspecting-hivedrop.png",
-                        "A frontal image of the beekeepers inspecting a hive. One of them examines one of the hive's frames while the other enters data into an ipad with a case and a stylus.",
-                        "Prompt: 'Generate a new frontal image. The one on the right has removed the lid of the hive and is examining one of the frames. The other is entering data into the ipad with a stylus.'"
-                    ],
-                    [
-                        "/work/gen-ai-hive-five/farmer-on-phone.png",
-                        "A photorealistic image of a female farmer in an almond orchard, talking on the phone with a vexed expression on her face.",
-                        "Prompt: 'Generate an image of a female farmer in an almond orchard, talking on the phone with a vexed expression on her face.'"
-                    ]
-                ]
-            },
-            {
-                "key": "app-development",
-                "componentType": "insightsScrollSection",
-                "header": "2. App Development",
-                "secondaryText": "In addition to imagery, I used Claude for coding. For context, HiveFive is a Vite + React application. I used ArcGIS for the map components, and a customized version of shadcn for a lot of the other UI components. In addition to code completion, I used Claude for:",
-                "descriptiveList": [
-                    [
-                        "Bug fixes",
-                        "Example prompt: 'Why are these tailwind classnames being ignored?'"
-                    ],
-                    [
-                        "Breaking up monolithic components",
-                        "Example prompt: 'Split client-details.tsx up into smaller components for better maintainability and readability. Store the components in the components/clients/client-details directory. Follow similar patterns to those of the mobile-sheet and map components.'"
-                    ],
-                    [
-                        "Refactoring",
-                        "Example prompt: 'In inspection-section.tsx, there is some logic that dynamically renders the badge component. Extract the logic so that it can be reused elsewhere.'"
-                    ],
-                    [
-                        "Grunt tasks",
-                        "Example prompt: 'Translate this tailwind css into normal css'"
+                        "/work/lfla/polls.png",
+                        "Two screenshots demonstrating how polls work. The first shows the moderator clicking 'start poll', while the second shows a lst of polls and their results.",
+                        "Our solution inolved leveraging YouTube's live chat features. Above demonstrates how polls can be used to research the audience. We also planned to allow for general chat and Q-and-A participation. Our hope was to prevent drop-offs mid-stream."
                     ]
                 ]
             }
         ]
-    }    
+    }
 }
