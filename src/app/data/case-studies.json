@@ -16,7 +16,7 @@
                 "key": "Hero",
                 "componentType": "video",
                 "header": "HiveFive",
-                "mainText": "HiveFive is a GIS app I designed and developed for my senior thesis. It aims to speed up large-scale beehive inspection operations. Below is an excerpt from my final presentation, which lasts 5 minutes.",
+                "mainText": "HiveFive is a ArcGIS app I designed and developed for my senior thesis. It aims to speed up large-scale beehive inspection operations. Below is an excerpt from my final presentation, which lasts 5 minutes.",
                 "sources": [
                     "https://www.youtube.com/embed/2pG7iRIZj0E?si=z3P5A0SYQYMVXsOY&amp;start=15830"
                 ],
@@ -24,6 +24,21 @@
                 "isAutoPlay": false,
                 "showControls": true,
                 "isMuted": false
+            },
+            {
+                "key": "feature-3",
+                "componentType": "billboard",
+                "header": "",
+                "images": [
+                    [
+                        "/work/hive-five/hero.png",
+                        "Pages from a client report, with a map and infographics"                        
+                    ],
+                    [
+                        "/work/hive-five/usage.png",
+                        "Pages from a client report, with a map and infographics"                        
+                    ]
+                ]
             },
             {   
                 "key": "background",
@@ -59,7 +74,7 @@
                 "key": "how-might-i",
                 "componentType": "bigText",
                 "secondaryText": "I asked myself:",
-                "mainText": "How might I redesign and rebuild Carl’s app to speed up his beehive inspection operations?"
+                "mainText": "How might I redesign and rebuild Carl’s app to speed up his beehive inspection operations without having to hire more workers?"
             },
             {   
                 "key": "research",
@@ -84,12 +99,12 @@
                     ],
                     [
                         "mainText",
-                        "3. Competitive Analysis"
+                        "3. Literature Review"
                     ],
                     [
                         "mainText",
-                        "4. Literature Review"
-                    ],
+                        "4. Competitive Analysis"
+                    ],                    
                     [
                         "mainText",
                         "5. Usability Testing"
@@ -134,7 +149,7 @@
                 "descriptiveList": [
                     [
                         "Pain Points",
-                        "I learned about the pain points that Carl and his workers face while using the pre-existing in the field. These are covered in detail in the in the 'Final Product' section of the case study."
+                        "I learned about the pain points that Carl and his workers face while using the pre-existing app in the field. These are covered in detail in the 'Final Product' section of the case study."
                     ],
                     [
                         "Inspector’s POV",
@@ -186,10 +201,375 @@
                     [
                         "/work/hive-five/inspector.png",
                         "An inspector examines a hive.",
-                        "Hands-on beehive inspection is the most affordable for many almond growers."
+                        "Hands-on beehive inspection is the most affordable option for many almond growers."
                     ]
                 ]
-            }
+            },
+            {
+                "key": "testing",
+                "componentType": "billboard",
+                "header": "Usability Testing",
+                "mainText": "As I developed Figma prototypes of the new app, I conducted two remote usability tests with my stakeholder.",
+                "images": [
+                    [
+                        "/work/hive-five/usability-test.png",
+                        "A screenshot of Joey and Carl in a remote call conducting a usability test."                        
+                    ]
+                ]
+            },
+            {
+                "key": "testing-insights",
+                "componentType": "insightsScrollSection",
+                "header": "Usability Testing Insights",                
+                "descriptiveList": [
+                    [
+                        "User control and freedom",
+                        "It was exposed that the process of entering data into the app is very one-way, meaning there was little ability for the user to cancel or edit their entries."
+                    ],
+                    [
+                        "System feedback",
+                        "Carl lost track of how many hives he had graded, so I adjusted the UI to display this number to the user."
+                    ]
+                ]
+            },
+            {   
+                "key": "design",
+                "componentType": "chapterHeader",
+                "header": "Design"
+            },
+            {
+                "key": "prototyping",
+                "componentType": "billboard",
+                "header": "Prototyping",
+                "mainText": "I used Figma to create low, mid, and high fidelity prototypes which were refined with the usability tests. Rather than starting from scratch, I used customized versions of Shadcn UI components. I did this beacause they are accessible both as Figma componenens and actual React components, which would prove useful later. I also value designing by 'progressive truthfulness', in which the designer starts with a consistent UI and then customizes only what is necessary. This lets me avoid re-inventing the wheel.",
+                "images": [
+                    [
+                        "/work/hive-five/prototyping.png",
+                        "Mid and high fidelity prototypes of the app."                        
+                    ]
+                ]
+            },
+            {
+                "key": "diagramming",
+                "componentType": "billboard",
+                "header": "Diagramming",
+                "mainText": "Before coding the app with TypeScript, I created a sitemap as well as component diagrams for various pages. This helped me plan the most ideal component tree for top-down state management. It also helped me decide when and where to use context providers.",
+                "images": [
+                    [
+                        "/work/hive-five/client-page-diagram.png",
+                        "Diagram of the client reports page.",
+                        "I used context providers to populate all of the client page's components with consistent data in a simple and maintainable way."                        
+                    ],
+                    [
+                        "/work/hive-five/arcgis-diagram.png",
+                        "Diagram of the map creation page.",
+                        "This diagram shows the steps that go into assembling the main ArcGIS map."                        
+                    ]                    
+                ]
+            },
+            {
+                "key": "Coding",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "Coding"
+                    ],
+                    [
+                        "bigText",
+                        "Best Practices"
+                    ],
+                    [
+                        "mainText",
+                        "When it came to coding the app, I followed React/TypeScript best practices such as: "
+                    ],
+                    [
+                        "mainText",
+                        "• Using constants"
+                    ],
+                    [
+                        "mainText",
+                        "• Creating a top-down data flow"
+                    ],
+                    [
+                        "mainText",
+                        "• Avoiding prop drilling through too many layers"
+                    ],
+                    [
+                        "mainText",
+                        "• Reusability of components and hooks"
+                    ],
+                    [
+                        "bigText",
+                        "Modules"
+                    ],
+                    [
+                        "mainText",
+                        "All of the map components and functionalities were made using ArcGIS components. I also stored all of the geojson as items in my ArcGIS developer account."
+                    ],
+                    [
+                        "mainText",
+                        "For the UI, I customized Shadcn components to include the branding, color coding, and to be more visible outdoors. I originally tried to use Calcite design system, which is made for use with ArcGIS, but it proved too rigid in terms of styling."
+                    ],
+                    [
+                        "bigText",
+                        "Example"
+                    ],
+                    [
+                        "mainText",
+                        "Below is an example of how I used ArcGIS components to create a map that displays the data I had stored in my ArcGIS developer account. Firstly, feature layers are created by passing unique definition expressions (from constants) to hooks."
+                    ],
+                    [
+                        "codeFragment",
+                        "const orchardLayer = createOrchardsLayer(LAYER_EXPRESSIONS.SHOW_ALL);",
+                        "const hiveDropsLayer = createHiveDropsLayer();",
+                        "const perimitersLayer = createPerimitersLayer(LAYER_EXPRESSIONS.HIDE_ALL);",
+                        "hiveDropsLayerRef.current = hiveDropsLayer;"  
+                    ],
+                    [
+                        "mainText",
+                        "Next, an ArcGISMap component is created with the previously created layers as well as a basemap."
+                    ],
+                    [    
+                        "codeFragment",
+                        "const map = new ArcGISMap({",
+                        "  layers: [perimitersLayer, orchardLayer, hiveDropsLayer],",
+                        "  basemap: 'arcgis/imagery'",      
+                        "});" 
+                    ],
+                    [
+                        "mainText",
+                        "A MapView turns the ArcGISMap into a viewable tsx component."
+                    ],
+                    [
+                        "codeFragment",                                                
+                        "const view = new MapView({",
+                        "  container: 'viewDiv',",
+                        "  map: map,",
+                        "  center: MAP_CONFIG.DEFAULT_CENTER,",
+                        "  zoom: MAP_CONFIG.DEFAULT_ZOOM,",
+                        "});"
+                    ],
+                    [
+                        "mainText",
+                        "Lastly, the MapView's UI is customized by moving the zoom widget and adding a track widget."
+                    ],
+                    [
+                        "codeFragment",                                               
+                        "view.ui.move('zoom', 'bottom-right');",                                                
+                        "const track = new Track({",
+                        "  view: view",
+                        "});",
+                        "view.ui.add(track, 'bottom-right');",                        
+                        "track.start();"    
+                    ],                    
+                    [
+                        "link",
+                        "https://github.com/joseph-sotelo/hive-inspection-tool-react",
+                        "View the rest of the code on my GitHub"
+                    ],
+                    [
+                        "link",
+                        "https://joseph-sotelo-portfolio.vercel.app/work/gen-ai-hive-five",
+                        "How I did (and did not) use AI for coding"
+                    ],
+                    [
+                        "bigText",
+                        "Acknowledgements"
+                    ],
+                    [
+                        "mainText",
+                        "Special shoutout to my two code reviewers, Caleb Sotelo and Judah Almanzor."
+                    ],
+                    [
+                        "link",
+                        "linkedin.com/in/calebsotelo",
+                        "Caleb's LinkedIn"
+                    ],
+                    [
+                        "link",
+                        "linkedin.com/in/judah-almanzor-7a8b8a344",
+                        "Judah's LinkedIn"
+                    ]
+                ]
+            },
+            {   
+                "key": "final-product",
+                "componentType": "chapterHeader",
+                "header": "Final Product"
+            },
+            {
+                "key": "orientation",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "mainText",
+                        "It is difficult to appreciate the app's features without understanding the pain-points they resolve, so I've included a pain-point story for each feature."
+                    ]
+                ]
+            },
+            {
+                "key": "pain-point-1",
+                "componentType": "billboard",
+                "header": "Pain-point 1: Uninformed Sampling",
+                "mainText": "This story came from an interview with Carl.",
+                "images": [
+                    [
+                        "/work/gen-ai-hive-five/arrival.png",
+                        "AI generated image of two beehive inspectors arriving at an almond orchard. One of the has an iPad",
+                        "Sean and Mike, a team of two beehive inspectors, arrive at an almond orchard to begin inspecting its hives."
+                    ],
+                    [
+                        "/work/hive-five/inspection.png",
+                        "AI generated image of two beehive inspectors examining a beehive. One of the enters data into a hive.",
+                        "They find a “hive drop” - a collection of hives. Sean grades one of the hives by examining its frames. A frame is a cross section of a hive. They have found that 8 out of 10 frames are covered in bees. Mike logs this into the app. They repeat the process until they have graded 10% of the hives in the orchard."
+                    ],
+                    [
+                        "/work/hive-five/carl-hispanic-perplexed.png",
+                        "AI generated image of a perplexed man at a computer in his home office.",
+                        "Later, their boss goes over the data and finds that the variation from hive to hive is unusually high, and therefore, a greater amount of the hives needs to be inspected in order to have trustworthy data. Either he or his workers have to return to the field to gather more data.His employees, who are seasonal contractors, don’t have the statistics knowledge to make these kinds of calculations and decisions."
+                    ]
+                ]
+            },
+            {
+                "key": "feature-1",
+                "componentType": "video",
+                "header": "Feature 1: Informed Sampling",  
+                "mainText": "HiveFive transfers the decision-making into the inspectors hands. As the user inputs data, greater variation causes the progress bar to ask them to inspect more hives. Less variation causes the progress bar to ask for fewer hives to be inspected. This saves time by preventing the user from inspecting more hives while still getting trustworthy sample size.",
+                "sources": [
+                    "/work/hive-five/sampling-demo.mov"
+                ],
+                "hostType": "local",
+                "isAutoPlay": true,
+                "showControls": false,
+                "isMuted": true
+            },
+            {
+                "key": "pain-point-2",
+                "componentType": "billboard",
+                "header": "Pain-point 2: Map-based Blunders",
+                "mainText": "This story came from an interview with Paul, one of Carl's workers.",
+                "images": [
+                    [
+                        "/work/gen-ai-hive-five/arrival.png",
+                        "AI generated image of two beehive inspectors arriving at an almond orchard. One of the has an iPad",
+                        "Sean and Mike arrive at the next orchard."
+                    ],
+                    [
+                        "/work/hive-five/blunder.png",
+                        "AI generated image of two beehive inspectors examining a beehive. One of the enters data into a hive.",
+                        "They tap on the orchard’s icon on the map in order to enter data into it, but they accidentally selected the wrong orchard. This might seem easy to avoid, but I learned from Paul that this happens 10-15 times a season."
+                    ],
+                    [
+                        "/work/hive-five/fixing-data.png",
+                        "AI generated image of a perplexed man at a computer in his home office.",
+                        "The data later has to be cut and pasted from the wrong orchard to the right one, which is a time-consuming process."
+                    ]
+                ]
+            },            
+            {
+                "key": "feature-2",
+                "componentType": "billboard",
+                "header": "Feature 2: Geo-fencing",
+                "mainText": "Hivefive comes equipped with a guardrail called geo-fencing to prevent this from happening. The user can only input data if they are within its perimeter.",
+                "images": [
+                    [
+                        "/work/hive-five/geofencing.png",
+                        "A screenshot of the geo-fencing feature."                       
+                    ]
+                ]
+            },
+            {
+                "key": "pain-point-3",
+                "componentType": "billboard",
+                "header": "Pain-point 3: Manual Data Viz",
+                "mainText": "This story came from an interview with Carl.",
+                "images": [
+                    [
+                        "/work/hive-five/client-call.png",
+                        "An AI generated image of a man and woman on a phone call.",
+                        "A client calls, expressing doubt that their hives performed well-enough. The client is thinking about suing the beekeeper from whom she rented the hives."
+                    ],
+                    [
+                        "/work/hive-five/old-report.png",
+                        "A bar chart comparing the performance of an orchard with expected performance.",
+                        "In order to assure her that the field was successful, carl exports the data from the app into excel, where he crafts an infographic showing how the orchard performed relative to all other orchards. The client is satisfied."
+                    ]
+                ]
+            },
+            {
+                "key": "feature-3",
+                "componentType": "billboard",
+                "header": "Feature 3: Client Reports",
+                "images": [
+                    [
+                        "/work/hive-five/reports.png",
+                        "Pages from a client report, with a map and infographics",
+                        "HiveFive removes all of these extra steps by auto-generating reports with meaningful infographics— all with one click."
+                    ]
+                ]
+            },
+            {   
+                "key": "outcomes",
+                "componentType": "chapterHeader",
+                "header": "Outcomes"
+            },
+            {
+                "key": "result",
+                "componentType": "bigText",
+                "secondaryText": "While I will have to wait until the next pollination season to gather true results on the effectiveness of HiveFive, my stakeholder did have positive expectations:",
+                "mainText": "“The way the app gives our inspectors more independence in the field, I could see us inspecting something like five percent more hives overall.”",
+                "postScript": "- Carl"
+            },
+            {
+                "key": "feedback",
+                "componentType": "bigText",
+                "secondaryText": "After my presentation, Rana Chakrabarti from SAP gave me some constructive criticism that made a deep impression on me. He essentially said the problem I solved is just one layer in a bigger problem space, and I probably should have solved for more overarching issues. I believe this is the mark of a mature designer and I intend to apply this advice to future projects.",
+                "mainText": "“As a designer I would expect that you’ve understood the ecosystem in which this thing operates and, is it making things better or worse? ...why are we renting bees from across the country into California and what should we do about it?”",
+                "postScript": "- Rana"
+            },
+            {
+                "key": "next-steps",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "Next Steps"
+                    ],
+                    [
+                        "mainText",
+                        "If I have the time to contunie the project, I could move in two alternative directions:"
+                    ],
+                    [
+                        "bigText",
+                        "1. Take Rana's advice"
+                    ],
+                    [
+                        "mainText",
+                        "I would ask myself, "
+                    ],
+                    [
+                        "mainText",
+                        "“How can Carl’s business be adjusted to solve for California’s almond overproduction problem?”"
+                    ],     
+                    [
+                        "bigText",
+                        "2. Maintain the current solution"
+                    ],               
+                    [
+                        "mainText",
+                        "Step 1: Hire an engineer to review and finalize the app."
+                    ],
+                    [
+                        "mainText",
+                        "Step 2: Test the app in the field."
+                    ],
+                    [
+                        "mainText",
+                        "Step 3: Pilot test during the next pollination season in February 2026."
+                    ]                                
+                ]
+            }        
         ]
     },
     "meander-sim": {
@@ -1316,7 +1696,7 @@
                 ]
             }
         ]
-    },    
+    },
     "bird-feeder": {
         "caseStudyCardProps": {
             "name": "Bird Feeder",
@@ -2227,7 +2607,7 @@
                 "secondaryText": "In addition to imagery, I used Claude for coding. For context, HiveFive is a Vite + React application. I used ArcGIS for the map components, and a customized version of shadcn for a lot of the other UI components. In addition to code completion, I used Claude for:",
                 "descriptiveList": [
                     [
-                        "Bug fixes",
+                        "Minor Bug fixes",
                         "Example prompt: 'Why are these tailwind classnames being ignored?'"
                     ],
                     [
@@ -2243,7 +2623,35 @@
                         "Example prompt: 'Translate this tailwind css into normal css'"
                     ]
                 ]
+            },
+            {
+                "key": "pitfalls",
+                "componentType": "insightsScrollSection",
+                "header": "Pitfalls",
+                "secondaryText": "There are many pitfalls to using AI for coding. Here are some of the things for which I did not use AI:",
+                "descriptiveList": [
+                    [
+                        "Major Bug fixes",
+                        "I found that some bugs could only be solved by MOI (My Own Intelligence)."
+                    ],
+                    [
+                        "When there was better help",
+                        "I often opted to use solutions from documentation or Stack Overflow."
+                    ],
+                    [
+                        "UX and UI",
+                        "All of my UX and UI decisions were answered by my research, not Claude."
+                    ],
+                    [
+                        "Styling",
+                        "MOI wins."
+                    ],
+                    [
+                        "Platform Architecture (usually)",
+                        "Whenever I had a specific way I wanted to setup my component tree and data flow, which was often, I didn't use AI."
+                    ]
+                ]
             }
         ]
-    }    
+    }
 }
