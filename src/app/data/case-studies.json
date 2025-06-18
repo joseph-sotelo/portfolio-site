@@ -1,4 +1,83 @@
 {
+    "wheelie": {
+        "caseStudyCardProps": {
+            "name": "Wheelie",
+            "image": "/work/wheelie/wheelie-thumbnail-image.png",
+            "page": "/work/wheelie",
+            "labels": [
+                "ethnography",
+                "usabilityTesting",
+                "accessibility"
+            ]
+        },
+        "sections": [
+            {
+                "key": "overview",
+                "componentType": "overview",
+                "header": "Wheelie",
+                "descriptiveList": [
+                    [
+                        "Context: ",
+                        "Santa Monica College and BMW Designworks collab."
+                    ],
+                    [
+                        "Challenge: ",
+                        "Design an intuitive and appealing on-demand autonomous mobility experience for a user group that is typically not able to drive."
+                    ],
+                    [
+                        "Solution: ",
+                        "An autonomous ride-hailing application that brings independence to the elderly."
+                    ],
+                    [
+                        "Role: ",
+                        "UX Researcher, UI Designer"
+                    ],
+                    [
+                        "Team: ",
+                        "Ian Goldsten, Erick Olivares, Gio Tandera, self"
+                    ]
+                ],
+                "image": "/work/wheelie/wheelie-hero-image.png"
+            },
+            {
+                "key": "video",
+                "componentType": "video",
+                "header": "Final Product",
+                "mainText": "Video produced by Ian Goldstein",
+                "sources": [
+                    "https://www.youtube.com/embed/SsSqIaAr6QU?si=_k5L2nlIgjI_q3Kn"
+                ],
+                "hostType": "iframe",
+                "isAutoPlay": false,
+                "showControls": true,
+                "isMuted": false
+            },
+            {   
+                "key": "background",
+                "componentType": "chapterHeader",
+                "header": "Background"
+            },
+            {
+                "key": "collab",
+                "componentType": "billboard",
+                "header": "SMC + BMW Designworks Collab",
+                "mainText": "During the Spring 2025 semester, my Bachelor’s program collaborated with BMW Design Works for a mobility project. With the recent emergence of Waymo and autonomous vehicles, BMW asked us to explore ways this new technology can solve problems.",
+                "images": [
+                    [
+                        "/work/wheelie/bmw-visit.avif",
+                        "SMC Interaction DEsign students pose with members of BMW Design Works at their office.",
+                        "Visiting BMW Designworks at their office."                        
+                    ]
+                ]
+            },
+            {
+                "key": "brief",
+                "componentType": "bigText",
+                "secondaryText": "BMW gave us the following brief:",
+                "mainText": "Design an intuitive and appealing on-demand autonomous mobility experience for a user group that is typically not able to drive."
+            }
+        ]
+    },
     "hive-five": {
         "caseStudyCardProps": {
             "name": "HiveFive",
@@ -6,9 +85,9 @@
             "page": "/work/hive-five",
             "labels": [
                 "ArcGIS",
-                "React",
-                "TypeScript",
-                "AgTech"
+                "react",
+                "ethnography",
+                "agTech"
             ]
         },       
         "sections": [
@@ -404,7 +483,7 @@
                 "columnSections": [
                     [
                         "mainText",
-                        "It is difficult to appreciate the app's features without understanding the pain-points they resolve, so I've included a pain-point story for each feature."
+                        "It is difficult to appreciate the app's features without understanding the pain-points they resolve, so I've included a pain-point story for each of the following three features."
                     ]
                 ]
             },
@@ -518,7 +597,7 @@
                 "key": "result",
                 "componentType": "bigText",
                 "secondaryText": "While I will have to wait until the next pollination season to gather true results on the effectiveness of HiveFive, my stakeholder did have positive expectations:",
-                "mainText": "“The way the app gives our inspectors more independence in the field, I could see us inspecting something like five percent more hives overall.”",
+                "mainText": "“The way the app gives our inspectors more independence in the field, I could see us inspecting something like 5% more hives overall.”",
                 "postScript": "- Carl"
             },
             {
@@ -542,7 +621,7 @@
                     ],
                     [
                         "bigText",
-                        "1. Take Rana's advice"
+                        "A. Take Rana's advice"
                     ],
                     [
                         "mainText",
@@ -554,7 +633,7 @@
                     ],     
                     [
                         "bigText",
-                        "2. Maintain the current solution"
+                        "B. Maintain the current solution"
                     ],               
                     [
                         "mainText",
@@ -571,7 +650,7 @@
                 ]
             }        
         ]
-    },
+    },    
     "meander-sim": {
         "caseStudyCardProps": {
             "name": "Meander Simulator",
@@ -580,7 +659,7 @@
             "labels": [
                 "javascript",
                 "simulation",
-                "educational tool"
+                "educationalTool"
             ]
         },       
         "sections": [
@@ -665,9 +744,9 @@
             "image": "/work/lfla/lfla-cover-4.png",
             "page": "/work/lfla",
             "labels": [
-                "service design",
-                "motion graphics",
-                "ux research"
+                "serviceDesign",
+                "motionGraphics",
+                "uxResearch"
             ]
         },
         "sections": [
@@ -1051,8 +1130,8 @@
             "page": "/work/slimbox",
             "labels": [
                 "swot",
-                "micro-interactions",
-                "precedent exploration"
+                "microInteractions",
+                "precedentExploration"
             ]
         },
         "sections": [
@@ -1185,10 +1264,10 @@
             "image": "/work/voxai/voxai-cover.png",
             "page": "/work/voxai",
             "labels": [
-                "UI for AI",
+                "uiForAI",
                 "heuristics",
-                "insight sorting",
-                "project management",
+                "insightSorting",
+                "projectManagement",
                 "accessibility"
             ]
         },
@@ -1596,7 +1675,7 @@
             "labels": [
                 "processing",
                 "p5js",
-                "O.O.P."
+                "OOP."
             ]
         },
         "sections": [
@@ -1703,7 +1782,7 @@
             "image": "/work/bird-feeder/bird-feeder-cover.png",
             "page": "/work/bird-feeder",
             "labels": [
-                "data viz",
+                "dataViz",
                 "arduino",
                 "js"
             ]
@@ -1970,8 +2049,8 @@
                 "ethnography",
                 "netnography",
                 "prototyping",
-                "user testing",
-                "animated logo"
+                "userTesting",
+                "animatedLogo"
             ]
         },
         "sections": [
@@ -2270,9 +2349,9 @@
             "page": "/work/other",
             "labels": [
                 "typography",
-                "book illustration",
-                "digital art",
-                "analog art"
+                "bookIllustration",
+                "digitalArt",
+                "analogArt"
             ]
         },       
         "sections": [
@@ -2287,7 +2366,7 @@
             "labels": [
                 "javascript",
                 "simulation",
-                "educational tool"
+                "educationalTool"
             ]
         },       
         "sections": [
