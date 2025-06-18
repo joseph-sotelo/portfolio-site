@@ -39,9 +39,9 @@ export function Column({props}: {props: ColumnType}){
                     break;
                     case 'bigText':
                         return(
-                            <h3 key = {index} className='my-standard-gap'>
+                            <h5 key = {index} className='my-standard-gap'>
                                 {columnSection[1]}
-                            </h3>
+                            </h5>
                         )
                     break;
                     case 'link':

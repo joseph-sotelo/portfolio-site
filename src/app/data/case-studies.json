@@ -25,6 +25,21 @@
                 "showControls": true,
                 "isMuted": false
             },
+            {
+                "key": "feature-3",
+                "componentType": "billboard",
+                "header": "",
+                "images": [
+                    [
+                        "/work/hive-five/hero.png",
+                        "Pages from a client report, with a map and infographics"                        
+                    ],
+                    [
+                        "/work/hive-five/usage.png",
+                        "Pages from a client report, with a map and infographics"                        
+                    ]
+                ]
+            },
             {   
                 "key": "background",
                 "componentType": "chapterHeader",
@@ -474,17 +489,23 @@
                         "/work/hive-five/client-call.png",
                         "An AI generated image of a man and woman on a phone call.",
                         "A client calls, expressing doubt that their hives performed well-enough. The client is thinking about suing the beekeeper from whom she rented the hives."
+                    ],
+                    [
+                        "/work/hive-five/old-report.png",
+                        "A bar chart comparing the performance of an orchard with expected performance.",
+                        "In order to assure her that the field was successful, carl exports the data from the app into excel, where he crafts an infographic showing how the orchard performed relative to all other orchards. The client is satisfied."
                     ]
                 ]
             },
             {
-                "key": "feature-four",
+                "key": "feature-3",
                 "componentType": "billboard",
-                "header": "Feature: Client Reports",
+                "header": "Feature 3: Client Reports",
                 "images": [
                     [
-                        "/work/hive-five/why.png",
-                        "A graphic portraying two axes: one for GIS and one for impact areas. The intersection of the two is HiveFive."                    
+                        "/work/hive-five/reports.png",
+                        "Pages from a client report, with a map and infographics",
+                        "HiveFive removes all of these extra steps by auto-generating reports with meaningful infographics— all with one click."
                     ]
                 ]
             },
@@ -2547,29 +2568,9 @@
         "sections": [
             {
                 "key": "intro",
-                "componentType": "column",
-                "columnSections": [
-                    [
-                        "header",
-                        "How I use generative AI"
-                    ],
-                    [
-                        "mainText",
-                        "In Spring 2025, I created an app called HiveFive that aims to speed up large-scale beehive inspection operations. Here I outline two ways I used generative AI to help me."
-                    ],
-                    [
-                        "bigText",
-                        "1. Storyboards"  
-                    ],
-                    [
-                        "mainText",
-                        "I often use AI to generate storyboards of user journeys, but it was particularly essential for HiveFive. The app is very niche, catering to a small set of users who have knowledge of the pollination industry. This meant that presenting the concept to designers, professors, mentors, and the public would be challenging."
-                    ],
-                    [
-                        "mainText",
-                        "How could I introduce them to the context and industry surrounding the app? How could I help them appreciate the app the way a beehive inspector would? ChatGPT helped me solve this problem by allowing me to quickly create detailed storyboard images for my presentations. Below are some examples ofthe images I created, along with their corresponding prompts."
-                    ]
-                ]
+                "componentType": "paragraph",
+                "header": "How I use generative AI",
+                "mainText": "In Spring 2025, I created an app called HiveFive that aims to speed up large-scale beehive inspection operations. Here I outline two ways I used generative AI to help me."
             },
             {
                 "key": "storyboards",
@@ -2580,17 +2581,74 @@
                     [
                         "/work/gen-ai-hive-five/arrival.png",
                         "A photorealistic image of two male beekeepers walking away from a pickup truck in an almond orchard. They are wearing full beekeeping suits, with brimmed hats and gloves. One of them has an ipad with a durable case. They have distinct body types.",
-                        "Generate a photorealistic image of two male beekeepers walking away from a pickup truck in an almond orchard. They are wearing full beekeeping suits, with brimmed hats and gloves. One of them has an ipad with a durable case. They have distinct body types."
+                        "Prompt: 'Generate a photorealistic image of two male beekeepers walking away from a pickup truck in an almond orchard. They are wearing full beekeeping suits, with brimmed hats and gloves. One of them has an ipad with a durable case. They have distinct body types.'"
                     ],
                     [
-                        "/work/lfla/upcoming-events-cropped.png",
-                        "A mockup of a YouTube video, overlayed with a small graphic reading view upcoming events at lfla.org/calendar.",
-                        "Another way to expose viewers to LFLA's brand is to supplement spoken content with info cards."
+                        "/work/gen-ai-hive-five/finding-hivedrop.png",
+                        "A photorealistic image of the same two beekeepers walking up to a collection of beehive boxes.",
+                        "Prompt: 'Create an image of the same two beekeepers walking up to a collection of beehive boxes.' For this prompt, I supplied the image of the beehive boxes for ChatGPT to work with."
                     ],
                     [
-                        "/work/lfla/polls.png",
-                        "Two screenshots demonstrating how polls work. The first shows the moderator clicking 'start poll', while the second shows a lst of polls and their results.",
-                        "Our solution inolved leveraging YouTube's live chat features. Above demonstrates how polls can be used to research the audience. We also planned to allow for general chat and Q-and-A participation. Our hope was to prevent drop-offs mid-stream."
+                        "/work/gen-ai-hive-five/inspecting-hivedrop.png",
+                        "A frontal image of the beekeepers inspecting a hive. One of them examines one of the hive's frames while the other enters data into an ipad with a case and a stylus.",
+                        "Prompt: 'Generate a new frontal image. The one on the right has removed the lid of the hive and is examining one of the frames. The other is entering data into the ipad with a stylus.'"
+                    ],
+                    [
+                        "/work/gen-ai-hive-five/farmer-on-phone.png",
+                        "A photorealistic image of a female farmer in an almond orchard, talking on the phone with a vexed expression on her face.",
+                        "Prompt: 'Generate an image of a female farmer in an almond orchard, talking on the phone with a vexed expression on her face.'"
+                    ]
+                ]
+            },
+            {
+                "key": "app-development",
+                "componentType": "insightsScrollSection",
+                "header": "2. App Development",
+                "secondaryText": "In addition to imagery, I used Claude for coding. For context, HiveFive is a Vite + React application. I used ArcGIS for the map components, and a customized version of shadcn for a lot of the other UI components. In addition to code completion, I used Claude for:",
+                "descriptiveList": [
+                    [
+                        "Minor Bug fixes",
+                        "Example prompt: 'Why are these tailwind classnames being ignored?'"
+                    ],
+                    [
+                        "Breaking up monolithic components",
+                        "Example prompt: 'Split client-details.tsx up into smaller components for better maintainability and readability. Store the components in the components/clients/client-details directory. Follow similar patterns to those of the mobile-sheet and map components.'"
+                    ],
+                    [
+                        "Refactoring",
+                        "Example prompt: 'In inspection-section.tsx, there is some logic that dynamically renders the badge component. Extract the logic so that it can be reused elsewhere.'"
+                    ],
+                    [
+                        "Grunt tasks",
+                        "Example prompt: 'Translate this tailwind css into normal css'"
+                    ]
+                ]
+            },
+            {
+                "key": "pitfalls",
+                "componentType": "insightsScrollSection",
+                "header": "Pitfalls",
+                "secondaryText": "There are many pitfalls to using AI for coding. Here are some of the things for which I did not use AI:",
+                "descriptiveList": [
+                    [
+                        "Major Bug fixes",
+                        "I found that some bugs could only be solved by MOI (My Own Intelligence)."
+                    ],
+                    [
+                        "When there was better help",
+                        "I often opted to use solutions from documentation or Stack Overflow."
+                    ],
+                    [
+                        "UX and UI",
+                        "All of my UX and UI decisions were answered by my research, not Claude."
+                    ],
+                    [
+                        "Styling",
+                        "MOI wins."
+                    ],
+                    [
+                        "Platform Architecture (usually)",
+                        "Whenever I had a specific way I wanted to setup my component tree and data flow, which was often, I didn't use AI."
                     ]
                 ]
             }
