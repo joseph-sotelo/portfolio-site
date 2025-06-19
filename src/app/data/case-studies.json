@@ -26,7 +26,7 @@
                     ],
                     [
                         "Solution: ",
-                        "An autonomous ride-hailing application that brings independence to the elderly."
+                        "A service that empowers elderly riders to rediscover their independence through AI-assisted mobility. The experience is tailored — with bespoke route planning, shared trip visibility for caregivers, and thoughtful features like large-font UIs and a “snooze” button that respects user autonomy."
                     ],
                     [
                         "Role: ",
@@ -34,7 +34,7 @@
                     ],
                     [
                         "Team: ",
-                        "Ian Goldsten, Erick Olivares, Gio Tandera, self"
+                        "Ian Goldsten, Erick Olivares, Giorgio Tandera, self"
                     ]
                 ],
                 "image": "/work/wheelie/wheelie-hero-image.png"
@@ -236,7 +236,7 @@
                 "key": "collaboration",
                 "componentType": "standardScrollSection",
                 "header": "Collaboration",
-                "mainText": "We presented three concepts to BMW and collaboratively selected one to refine and develop. We chose Wheelie, an autonomous vehicle ride-hailing app.",
+                "mainText": "We presented three concepts to BMW and collaboratively selected one to refine and develop. After discussion, we settled on Wheelie, an autonomous vehicle ride-hailing service. Our designs would focus on the mobile application.",
                 "images": [
                     [
                         "/work/wheelie/ideation-1.png",
@@ -284,7 +284,7 @@
                 ]
             },
             {
-                "key": "netntesting-insights",
+                "key": "testing-insights",
                 "componentType": "insightsScrollSection",
                 "header": "Usability Testing Insights",
                 "descriptiveList": [
@@ -300,6 +300,118 @@
                         "Simplify",
                         "“It’s getting really complicated, especially for elderly. Try to simplify the presentation and remove options. What comes intuitively to us, don’t assume it’s intuitive to an elderly person.”",
                         "-Steve Pacheco, UI Lead Designer at BMW Designworks"
+                    ]
+                ]
+            },
+            {
+                "key": "hi-fi-design",
+                "componentType": "billboard",
+                "header": "High Fidelity Design",
+                "mainText": "I was responsible for creating the high fidelity UI. I extended Shadcn to created re-usable components that would reflect the react component tree. I also made it elderly -friendly through large type, large buttons, and high contrast.",
+                "images": [
+                    [
+                        "/work/wheelie/components.png",
+                        "UI components in a figma file"
+                    ]
+                ]
+            },
+            {   
+                "key": "final-product",
+                "componentType": "chapterHeader",
+                "header": "Final Product"
+            },
+            {
+                "key": "final-screen",
+                "componentType": "billboard",
+                "header": "High Fidelity Prototype",                
+                "images": [
+                    [
+                        "/work/wheelie/hi-fi-1.png",
+                        "A mockup of the itinerary booking screen",
+                        "The user can use voice interaction to book an itinerary."
+                    ],
+                    [
+                        "/work/wheelie/hi-fi-2.png",
+                        "A mockup of the status screen",
+                        "The user can manipulate their itinerary throughout their day. If they scheduled a specific time for one of their stops, they can hit the 'snooze button' to delay the pickup. When their next stop had no designated pickup time, they summon the wheelie car by tapping 'Next Stop'."
+                    ],
+                    [
+                        "/work/wheelie/hi-fi-3.png",
+                        "A mockup of the sharing screen",
+                        "The user can share their itinerary with their caregiver. The caregiver is then able to monitor their parent's status without having to be present."
+                    ]
+                ]
+            },
+            {
+                "key": "presentation",
+                "componentType": "billboard",
+                "header": "Final Presentation", 
+                "mainText": "To conclude the project, we presented Wheelie to BMW Designworks at their office in Santa Monica",               
+                "images": [
+                    [
+                        "/work/wheelie/presentation.png",
+                        "A mockup of the itinerary booking screen"
+                    ]
+                ]
+            },
+            {
+                "key": "feedback",
+                "componentType": "insightsScrollSection",
+                "header": "Feedback",
+                "descriptiveList": [
+                    [
+                        "Everyone Benefits",
+                        "“Designing for older adults is so often treated as an afterthought. What this team showed is that accessibility isn’t a niche — it’s a design multiplier. When we build for inclusion, everyone benefits.”",
+                        "- Julia de Bono, CEO, Designworks"         
+                    ],
+                    [
+                        "Presentation Clarity",
+                        "“The pitch stood out not just for its clarity, but for how it used AI creatively to tell a human story. Their animated narrative brought the user journey to life in a way that felt both strategic and emotionally engaging — like something you’d expect from a seasoned design team.”",
+                        "- Designworks Team"                         
+                    ]
+                ]
+            },
+            {
+                "key": "final-quote",
+                "componentType": "bigText",
+                "mainText": "“What this team showed is that accessibility isn’t a niche — it’s a design multiplier. When we build for inclusion, everyone benefits.”",
+                "postScript": "- Julia de Bono, CEO, Designworks"
+            },
+            {
+                "key": "methods",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "bigText",
+                        "Appendix"
+                    ],
+                    [
+                        "mainText",
+                        "Press:"
+                    ],
+                    [
+                        "link",
+                        "https://www.bmwgroupdesignworks.com/articles/right-here-right-now-shaping-the-future-of-inclusive-mobility-with-santa-monica-college/",
+                        "BMW's blog publication about the project"
+                    ],
+                    [
+                        "mainText",
+                        "Team members:"
+                    ],
+                    [
+                        "link",
+                        "linkedin.com/in/erickolivares319",
+                        "Erick Olivares"
+                    ],
+                    [
+                        "link",
+                        "linkedin.com/in/giotandera",
+                        "Giorgio Tandera"
+                    ],
+                    [
+                        "link",
+                        "linkedin.com/in/ian-goldstein-design",
+                        "Ian Goldstein"
                     ]
                 ]
             }

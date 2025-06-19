@@ -6,9 +6,6 @@ export default function Page(){
     return(
         <MainLayout>
             <ScrollSectionsFormatter />
-            <div className="flex flex-col items-center justify-center h-36">
-                Case study in progress
-            </div>
         </MainLayout>
     )
 }
