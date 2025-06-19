@@ -5,7 +5,9 @@ export default function Page(){
 
     return(
         <MainLayout>
-            <ScrollSectionsFormatter />
+            <div className="-mt-6">
+                <ScrollSectionsFormatter />
+            </div>
         </MainLayout>
     )
 }
