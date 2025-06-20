@@ -6,17 +6,31 @@
             "page": "/work/hive-five",
             "labels": [
                 "ArcGIS",
-                "React",
-                "TypeScript",
-                "AgTech"
+                "react",
+                "ethnography",
+                "agTech"
             ]
-        },       
+        },
         "sections": [
             {
-                "key": "Hero",
+                "key": "hero",
+                "componentType": "billboard",
+                "header": "",
+                "images": [
+                    [
+                        "/work/hive-five/hero.png",
+                        "Hero image featuring the HiveFive logo and app mockups"                        
+                    ],
+                    [
+                        "/work/hive-five/usage.png",
+                        "A beehive inspector holds an iPad in an almond orchard."                        
+                    ]
+                ]
+            },
+            {
+                "key": "vision-video",
                 "componentType": "video",
-                "header": "HiveFive",
-                "mainText": "HiveFive is a ArcGIS app I designed and developed for my senior thesis. It aims to speed up large-scale beehive inspection operations. Below is an excerpt from my final presentation, which lasts 5 minutes.",
+                "mainText": "HiveFive is a ArcGIS app I designed and developed for my senior thesis. It aims to speed up large-scale beehive inspection operations through GIS technology, thoughful data visualization, and informed data collection. Below is an excerpt from my final presentation, which lasts 5 minutes.",
                 "sources": [
                     "https://www.youtube.com/embed/2pG7iRIZj0E?si=z3P5A0SYQYMVXsOY&amp;start=15830"
                 ],
@@ -24,21 +38,6 @@
                 "isAutoPlay": false,
                 "showControls": true,
                 "isMuted": false
-            },
-            {
-                "key": "feature-3",
-                "componentType": "billboard",
-                "header": "",
-                "images": [
-                    [
-                        "/work/hive-five/hero.png",
-                        "Pages from a client report, with a map and infographics"                        
-                    ],
-                    [
-                        "/work/hive-five/usage.png",
-                        "Pages from a client report, with a map and infographics"                        
-                    ]
-                ]
             },
             {   
                 "key": "background",
@@ -404,7 +403,7 @@
                 "columnSections": [
                     [
                         "mainText",
-                        "It is difficult to appreciate the app's features without understanding the pain-points they resolve, so I've included a pain-point story for each feature."
+                        "It is difficult to appreciate the app's features without understanding the pain-points they resolve, so I've included a pain-point story for each of the following three features."
                     ]
                 ]
             },
@@ -518,7 +517,7 @@
                 "key": "result",
                 "componentType": "bigText",
                 "secondaryText": "While I will have to wait until the next pollination season to gather true results on the effectiveness of HiveFive, my stakeholder did have positive expectations:",
-                "mainText": "“The way the app gives our inspectors more independence in the field, I could see us inspecting something like five percent more hives overall.”",
+                "mainText": "“The way the app gives our inspectors more independence in the field, I could see us inspecting something like 5% more hives overall.”",
                 "postScript": "- Carl"
             },
             {
@@ -542,7 +541,7 @@
                     ],
                     [
                         "bigText",
-                        "1. Take Rana's advice"
+                        "A. Take Rana's advice"
                     ],
                     [
                         "mainText",
@@ -554,7 +553,7 @@
                     ],     
                     [
                         "bigText",
-                        "2. Maintain the current solution"
+                        "B. Maintain the current solution"
                     ],               
                     [
                         "mainText",
@@ -571,6 +570,424 @@
                 ]
             }        
         ]
+    },    
+    "wheelie": {
+        "caseStudyCardProps": {
+            "name": "Wheelie",
+            "image": "/work/wheelie/wheelie-hero-image.png",
+            "page": "/work/wheelie",
+            "labels": [
+                "ethnography",
+                "usabilityTesting",
+                "accessibility"
+            ]
+        },
+        "sections": [
+            {
+                "key": "overview",
+                "componentType": "overview",
+                "header": "Wheelie",
+                "descriptiveList": [
+                    [
+                        "Context: ",
+                        "Santa Monica College and BMW Designworks collaboration."
+                    ],
+                    [
+                        "Challenge: ",
+                        "Design an intuitive and appealing on-demand autonomous mobility experience for a user group that is typically not able to drive."
+                    ],
+                    [
+                        "Solution: ",
+                        "A service that empowers elderly riders to rediscover their independence through AI-assisted mobility. The experience is tailored — with bespoke route planning, shared trip visibility for caregivers, and thoughtful features like large-font UIs and a “snooze” button that respects user autonomy."
+                    ],
+                    [
+                        "Role: ",
+                        "UX Researcher, UI Designer"
+                    ],
+                    [
+                        "Team: ",
+                        "Ian Goldsten, Erick Olivares, Giorgio Tandera, self"
+                    ]
+                ],
+                "image": "/work/wheelie/wheelie-hero-image.png"
+            },
+            {
+                "key": "video",
+                "componentType": "video",
+                "header": "Final Product",
+                "mainText": "Video produced by Ian Goldstein",
+                "sources": [
+                    "https://www.youtube.com/embed/SsSqIaAr6QU?si=_k5L2nlIgjI_q3Kn"
+                ],
+                "hostType": "iframe",
+                "isAutoPlay": false,
+                "showControls": true,
+                "isMuted": false
+            },
+            {   
+                "key": "background",
+                "componentType": "chapterHeader",
+                "header": "Background"
+            },
+            {
+                "key": "collab",
+                "componentType": "billboard",
+                "header": "SMC + BMW Designworks Collab",
+                "mainText": "During the Spring 2025 semester, my Bachelor’s program collaborated with BMW Design Works for a mobility project. With the recent emergence of Waymo and autonomous vehicles, BMW asked us to explore ways this new technology can solve problems.",
+                "images": [
+                    [
+                        "/work/wheelie/bmw-visit.avif",
+                        "SMC Interaction DEsign students pose with members of BMW Design Works at their office.",
+                        "Visiting BMW Designworks at their office."                        
+                    ]
+                ]
+            },
+            {
+                "key": "brief",
+                "componentType": "bigText",
+                "secondaryText": "BMW gave us the following brief:",
+                "mainText": "Design an intuitive and appealing on-demand autonomous mobility experience for a user group that is typically not able to drive."
+            },
+            {   
+                "key": "research",
+                "componentType": "chapterHeader",
+                "header": "Research"
+            },
+            {
+                "key": "methods",
+                "componentType": "column",
+                "columnSections": [                    
+                    [
+                        "mainText",
+                        "My team selected the elderly as our user group. Our research began very open ended. We sought to test the following hypothesis:"
+                    ],
+                    [
+                        "bigText",
+                        "Elderly individuals are distrustful of autonomous vehicles."
+                    ],
+                    [
+                        "mainText",
+                        "As a team, we assigned eachother different research methods. I was assigned:"
+                    ],
+                    [
+                        "mainText",
+                        "1. Fieldwork"
+                    ],
+                    [
+                        "mainText",
+                        "2. Netnography"
+                    ]
+                ]
+            },
+            {
+                "key": "fieldwork",
+                "componentType": "standardScrollSection",
+                "header": "1. Fieldwork",
+                "mainText": "In order to test our hypothesis, I conducted two ride-alongs with Lucia and Selvin, who are both in their sixties.",
+                "images": [
+                    [
+                        "/work/wheelie/selvin.png",
+                        "An elderly man sits inside of a Waymo."
+                    ]
+                ]
+            },
+            {
+                "key": "pre-ride-insights",
+                "componentType": "insightsScrollSection",
+                "header": "Pre-ride Insights",
+                "secondaryText": "I found that both Lucia and Selvin had preconceptions and doubts about the safety of autonomous vehicles.",
+                "descriptiveList": [
+                    [
+                        "Skepticism",
+                        "Lucia shared a story about how she intentionally stood in front of a Waymo to see if it would stop; instead it went around her. In her opinion, this was unacceptable and diminished her trust in Waymo."
+                    ],
+                    [
+                        "Distrust",
+                        "Lucia showed me an article from her friend that recounted ten mishaps involving Waymo. This might show what how the elderly talk about waymo."
+                    ],
+                    [
+                        "Fear",
+                        "“Let me write my will first.”",
+                        "-Lucia, before riding"
+                    ],
+                    [
+                        "Anxiety",
+                        "“You just know that this thing can't be trusted. Something's gonna go wrong.”",
+                        "-Selvin"
+                    ]
+                ]
+            },
+            {
+                "key": "post-ride-insights",
+                "componentType": "insightsScrollSection",
+                "header": "Post-ride Insights",
+                "secondaryText": "I found that both Lucia and Selvin's distrust turned into confidence over the course of the ride.",
+                "descriptiveList": [
+                    [
+                        "Recommendable",
+                        "“It’s definitely good for older people”",
+                        "-Lucia"
+                    ],
+                    [
+                        "Hooked",
+                        "“I’d probably get the app at some point if there’s a need.”",
+                        "-Lucia"
+                    ],
+                    [
+                        "Impressive",
+                        "“I am impressed, though.”",
+                        "-Selvin"
+                    ]
+                ]
+            },
+            {
+                "key": "digging-deeper",
+                "componentType": "billboard",
+                "header": "Digging Deeper",
+                "mainText": "After the ride, I asked Lucia to fill out this diagram that would represent how her mindset changed over the course of the experience. It revealed that witnessing the technology for herself was the main confidence-booster.",
+                "images": [
+                    [
+                        "/work/wheelie/confidence-map.png",
+                        "A diagram with two axes: confidence and time. The plot moves gradually upwards, indicating am increase in confidence over time."
+                    ]
+                ]
+            },
+            {
+                "key": "main-insight",
+                "componentType": "bigText",                
+                "mainText": "Witnessing the technology firsthand was the main confidence booster."
+            },
+            {
+                "key": "netnography",
+                "componentType": "insightsScrollSection",
+                "header": "2. Netnography",
+                "secondaryText": "In order to narrow our focus, I sought to understand what specific problems autonomous transportation can solve for the elderly. I explored internet forums, social media, and other spaces. The most useful insights came from Quora:",
+                "descriptiveList": [
+                    [
+                        "Schedule conflicts",
+                        "“If you are looked after by family and friends, you have to compromuise.”",
+                        "-Quora user"
+                    ],
+                    [
+                        "Relying on nursing homes",
+                        "Inability to drive and inability to keep up with medical appointments is a common reaon why elderly get sent to nursing homes",
+                        "How might autonomous vehicles help elderly avoid needing to live in a nursing home?"                        
+                    ],
+                    [
+                        "Burdening child caregivers",
+                        "One elderly user said,",
+                        "“I hope to never put my child through that burden.”",
+                        "How might autonomous vehicles lift the burden off of people who care for their elderly parents?"
+                    ]
+                ]
+            },
+            {
+                "key": "how-might-we",
+                "componentType": "bigText",
+                "secondaryText": "After our initial research, we asked ourselves:",
+                "mainText": "How might we use autonomous vehicles to help elderly individuals become more independent of their caregivers?"
+            },
+            {   
+                "key": "design",
+                "componentType": "chapterHeader",
+                "header": "Design"
+            },
+            {
+                "key": "ideation",
+                "componentType": "standardScrollSection",
+                "header": "Ideation",
+                "mainText": "We synthesized our research by creating an empathy map for a fictional user named Jamal.",
+                "images": [
+                    [
+                        "/work/wheelie/empathy-map.png",
+                        "A board or sticky notes displaying different attributes of Jamal, the design persona."
+                    ]
+                ]
+            },
+            {
+                "key": "collaboration",
+                "componentType": "standardScrollSection",
+                "header": "Collaboration",
+                "mainText": "We presented three concepts to BMW and collaboratively selected one to refine and develop. After discussion, we settled on Wheelie, an autonomous vehicle ride-hailing service. Our designs would focus on the mobile application.",
+                "images": [
+                    [
+                        "/work/wheelie/ideation-1.png",
+                        "Joey and a team member present their concepts in a studio.",
+                        "Gio and I present our concepts to BMW."                        
+                    ],
+                    [
+                        "/work/wheelie/ideation-2.png",
+                        "BMW stakeholders provide feedback.",
+                        "BMW stakeholders provide feedback."                        
+                    ]
+                ]
+            },
+            {
+                "key": "initial-features",
+                "componentType": "billboard",
+                "header": "Initial Features",
+                "images": [
+                    [
+                        "/work/wheelie/feature-1.png",
+                        "Three mid-fidelity mobile screens.",
+                        "Users would have the option to use an AI chatbot to book rides verbally. Not only would this make the interface easier for the elderly, but it would frontload exposure to the impressive technology and build trust early in the experience."
+                    ],
+                    [
+                        "/work/wheelie/feature-2.png",
+                        "Two low-fidelity mobile screens.",
+                        "Users would be able to book an entire itinerary for the day, which could be shared with their caregivers. This would grant independence to users by allowing the caregivers to monitor their parents without needing to be present. Fruthermore, they would be able to save and repeat the itinerary to help them keep up with things like medical appointments."
+                    ]
+                ]
+            },
+            {
+                "key": "usability-testing",
+                "componentType": "billboard",
+                "header": "Usability Testing",
+                "mainText": "Our team conducted five rounds of usability tests with BMW once per week. ",
+                "images": [
+                    [
+                        "/work/wheelie/testing-1.png",
+                        "Designers conduct a mobile usabily test with a stakeholder in a conference room."
+                    ],
+                    [
+                        "/work/wheelie/testing-2.png",
+                        "Closeup of a stakeholder participating in a usability test on a mobile device."
+                    ]
+                ]
+            },
+            {
+                "key": "testing-insights",
+                "componentType": "insightsScrollSection",
+                "header": "Usability Testing Insights",
+                "descriptiveList": [
+                    [
+                        "User control and freedom",
+                        "It's too much to ask a user to come up with an itinerary at the beginning of the day and then stick to it. How dwould we make it more flexible? How would we accommodate unexpected delays?"                        
+                    ],
+                    [
+                        "Snooze button",
+                        "Matthew Potter, Director of Interaction Design at BMW Designworks, recommended a 'snooze button' that delays pickup at any point in the itinerary. This would bring more freedom to the experience."
+                    ],
+                    [
+                        "Simplify",
+                        "“It’s getting really complicated, especially for elderly. Try to simplify the presentation and remove options. What comes intuitively to us, don’t assume it’s intuitive to an elderly person.”",
+                        "-Steve Pacheco, UI Lead Designer at BMW Designworks"
+                    ]
+                ]
+            },
+            {
+                "key": "hi-fi-design",
+                "componentType": "billboard",
+                "header": "High Fidelity Design",
+                "mainText": "I was responsible for creating the high fidelity UI. I extended Shadcn to create re-usable components that would reflect a theoretical React component tree. I also made it elderly-friendly through large type, large buttons, and high contrast.",
+                "images": [
+                    [
+                        "/work/wheelie/components.png",
+                        "UI components in a figma file"
+                    ]
+                ]
+            },
+            {   
+                "key": "final-product",
+                "componentType": "chapterHeader",
+                "header": "Final Product"
+            },
+            {
+                "key": "final-screen",
+                "componentType": "billboard",
+                "header": "High Fidelity Prototype",                
+                "images": [
+                    [
+                        "/work/wheelie/hi-fi-1.png",
+                        "A mockup of the itinerary booking screen",
+                        "The user can use voice interaction to book an itinerary."
+                    ],
+                    [
+                        "/work/wheelie/hi-fi-2.png",
+                        "A mockup of the status screen",
+                        "The user can manipulate their itinerary throughout their day. If they scheduled a specific time for one of their stops, they can hit the 'snooze button' to delay the pickup. When their next stop had no designated pickup time, they can summon the wheelie car by tapping 'Next Stop'."
+                    ],
+                    [
+                        "/work/wheelie/hi-fi-3.png",
+                        "A mockup of the sharing screen",
+                        "The user can share their itinerary with their caregiver. The caregiver is then able to monitor their parent's status without having to be present."
+                    ]
+                ]
+            },
+            {
+                "key": "presentation",
+                "componentType": "billboard",
+                "header": "Final Presentation", 
+                "mainText": "To conclude the project, we presented Wheelie to BMW Designworks at their office in Santa Monica",               
+                "images": [
+                    [
+                        "/work/wheelie/presentation.png",
+                        "A mockup of the itinerary booking screen"
+                    ]
+                ]
+            },
+            {
+                "key": "feedback",
+                "componentType": "insightsScrollSection",
+                "header": "Feedback",
+                "descriptiveList": [
+                    [
+                        "Everyone Benefits",
+                        "“Designing for older adults is so often treated as an afterthought. What this team showed is that accessibility isn’t a niche — it’s a design multiplier. When we build for inclusion, everyone benefits.”",
+                        "- Julia de Bono, CEO, Designworks"         
+                    ],
+                    [
+                        "Presentation Clarity",
+                        "“The pitch stood out not just for its clarity, but for how it used AI creatively to tell a human story. Their animated narrative brought the user journey to life in a way that felt both strategic and emotionally engaging — like something you’d expect from a seasoned design team.”",
+                        "- Designworks Team"                         
+                    ]
+                ]
+            },
+            {
+                "key": "final-quote",
+                "componentType": "bigText",
+                "mainText": "“What this team showed is that accessibility isn’t a niche — it’s a design multiplier. When we build for inclusion, everyone benefits.”",
+                "postScript": "- Julia de Bono, CEO, Designworks"
+            },
+            {
+                "key": "methods",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "bigText",
+                        "Appendix"
+                    ],
+                    [
+                        "mainText",
+                        "Press:"
+                    ],
+                    [
+                        "link",
+                        "https://www.bmwgroupdesignworks.com/articles/right-here-right-now-shaping-the-future-of-inclusive-mobility-with-santa-monica-college/",
+                        "BMW's blog publication about the project"
+                    ],
+                    [
+                        "mainText",
+                        "Team members:"
+                    ],
+                    [
+                        "link",
+                        "linkedin.com/in/erickolivares319",
+                        "Erick Olivares"
+                    ],
+                    [
+                        "link",
+                        "linkedin.com/in/giotandera",
+                        "Giorgio Tandera"
+                    ],
+                    [
+                        "link",
+                        "linkedin.com/in/ian-goldstein-design",
+                        "Ian Goldstein"
+                    ]
+                ]
+            }
+        ]
     },
     "meander-sim": {
         "caseStudyCardProps": {
@@ -580,7 +997,7 @@
             "labels": [
                 "javascript",
                 "simulation",
-                "educational tool"
+                "educationalTool"
             ]
         },       
         "sections": [
@@ -661,13 +1078,13 @@
     },
     "lfla": {
         "caseStudyCardProps": {
-            "name": "Los Angeles Library Foundation",
+            "name": "LA Library Foundation",
             "image": "/work/lfla/lfla-cover-4.png",
             "page": "/work/lfla",
             "labels": [
-                "service design",
-                "motion graphics",
-                "ux research"
+                "serviceDesign",
+                "motionGraphics",
+                "uxResearch"
             ]
         },
         "sections": [
@@ -1051,8 +1468,8 @@
             "page": "/work/slimbox",
             "labels": [
                 "swot",
-                "micro-interactions",
-                "precedent exploration"
+                "microInteractions",
+                "precedentExploration"
             ]
         },
         "sections": [
@@ -1185,10 +1602,10 @@
             "image": "/work/voxai/voxai-cover.png",
             "page": "/work/voxai",
             "labels": [
-                "UI for AI",
+                "uiForAI",
                 "heuristics",
-                "insight sorting",
-                "project management",
+                "insightSorting",
+                "projectManagement",
                 "accessibility"
             ]
         },
@@ -1596,7 +2013,7 @@
             "labels": [
                 "processing",
                 "p5js",
-                "O.O.P."
+                "OOP."
             ]
         },
         "sections": [
@@ -1703,7 +2120,7 @@
             "image": "/work/bird-feeder/bird-feeder-cover.png",
             "page": "/work/bird-feeder",
             "labels": [
-                "data viz",
+                "dataViz",
                 "arduino",
                 "js"
             ]
@@ -1970,8 +2387,8 @@
                 "ethnography",
                 "netnography",
                 "prototyping",
-                "user testing",
-                "animated logo"
+                "userTesting",
+                "animatedLogo"
             ]
         },
         "sections": [
@@ -2270,9 +2687,9 @@
             "page": "/work/other",
             "labels": [
                 "typography",
-                "book illustration",
-                "digital art",
-                "analog art"
+                "bookIllustration",
+                "digitalArt",
+                "analogArt"
             ]
         },       
         "sections": [
@@ -2287,7 +2704,7 @@
             "labels": [
                 "javascript",
                 "simulation",
-                "educational tool"
+                "educationalTool"
             ]
         },       
         "sections": [

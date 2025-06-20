@@ -4,7 +4,7 @@
         "hideTitleAtStart": false,
         "subHeader": [
             "Joey Sotelo",
-            "Design Technologist"
+            "Product Designer"
         ]
     },
     "about": {
@@ -12,7 +12,7 @@
         "hideTitleAtStart": false,
         "subHeader": [
             "Joey Sotelo",
-            "Design Technologist"
+            "Product Designer"
         ],
         "links": [
             [
@@ -25,7 +25,7 @@
             ],
             [
                 "Resume",
-                "https://drive.google.com/file/d/19wNv_dXcSqxfyWzAl3tIVcNRHNigoHmX/view?usp=sharing"
+                "https://drive.google.com/file/d/1WJeJn9DNtQn1kyYEvFhNS3bwy8dpJdu1/view?usp=sharing"
             ]
         ]
     },
@@ -34,7 +34,7 @@
         "hideTitleAtStart": false,
         "subHeader": [
             "Joey Sotelo",
-            "Design Technologist"
+            "Product Designer"
         ],
         "mainText": "I write to help me process new information about design, but hey - maybe someone actually reads these too."
     },
@@ -162,5 +162,14 @@
             "Spring 2025 | 16 weeks"
         ],
         "mainText": "Explanation of how I used generative AI to support my senior thesis." 
+    },
+    "wheelie": {
+        "header": "Wheelie",
+        "hideTitleAtStart": true,
+        "subHeader": [
+            "Academic Project",            
+            "Spring 2025 | 8 weeks"
+        ],
+        "mainText": "An autonomous ride-hailing application that brings independence to the elderly." 
     }
 }
