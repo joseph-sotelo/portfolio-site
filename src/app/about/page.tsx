@@ -16,13 +16,13 @@ export default function Page(){
 
     return(
         <MainLayout >
-            <>
+            <div className="-mt-6">
                 <Video props={videoData}/>
                 <ScrollSectionDivider sectionsCount={0} index={1}/>
                 <AccordionScrollSection props={accordionData} />
                 <ScrollSectionDivider sectionsCount={0} index={1}/>
                 <BigImage props={bigImageData} />
-            </>
+            </div>
         </MainLayout>
     )
 }
