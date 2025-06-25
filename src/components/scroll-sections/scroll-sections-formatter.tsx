@@ -60,7 +60,7 @@ export default function ScrollSectionsFormatter() {
                     case 'bigImage':
                         return (
                             <div key={index} {...(index === 0 ? {ref: overviewRef } : {})}>
-                                <BigImage props={section as BigImageType}/>
+                                <BigImage props={section as BigImageType} />
                                 <ScrollSectionDivider index={index} sectionsCount={sectionsCount}/>
                             </div>
                         )
