@@ -31,8 +31,8 @@ export function Overview({props}: {props: OverviewType}){
                     )}
                 </ul>
              </div>
-             <div id='right' className='xl:col-span-5'>
-                <Image src={props.image} alt={`High fidelity mockups from the ${props.header} project`} width='600' height='600' className='border border-border w-full rounded-sm'/>
+             <div id='right' className='xl:col-span-5 overflow-hidden border border-border rounded-sm'>
+                <Image src={props.image} alt={`High fidelity mockups from the ${props.header} project`} width='600' height='600' className='scale-[101%]'/>
             </div>
         </div>
     )
