@@ -21,9 +21,9 @@ export function Billboard({props}: {props: BillboardType}){
             </p>
             {props.images.map((image, index) => (
                 image[0] !== undefined && (
-                    <div className={`overflow-hidden mt-standard-gap w-full border border-border rounded-sm relative ${index < props.images.length && 'mb-medium-gap'}`}>
+                    <div key={index} className={`overflow-hidden mt-standard-gap w-full border border-border rounded-sm relative ${index < props.images.length && 'mb-medium-gap'}`}>
                         <Skeleton className="absolute"/>
-                        <Image key={index} className='scale-[101%] -ml-[1px] border-b border-border' width="1200" height="1200" src={image[0]} alt={image[1]}/> 
+                        <Image className='scale-[101%] -ml-[1px] border-b border-border' width="1200" height="1200" src={image[0]} alt={image[1]}/> 
                         {image[2] && (
                             <div className="px-4 pb-4 pt-5">
                                 <p>
