@@ -1,10 +1,12 @@
 'use client'
 import Image from "next/image";
+import { Skeleton } from "./skeleton";
 
 export default function ImageAndCaption({props}: {props: string[]}){
     return(
         <div id='image-wrapper' className='rounded-sm'>
             <div className={`aspect-square border border-border overflow-hidden bg-card relative ${props[2] ? 'rounded-t-sm': 'rounded-sm'}`}>
+                <Skeleton className="absolute"/>
                 <Image 
                     src={props[0]} 
                     alt={props[1]} 
