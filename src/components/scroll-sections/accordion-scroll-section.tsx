@@ -57,7 +57,7 @@ export function AccordionScrollSection({props}: {props: AccordionType}){
                                     B.S. Interaction Design
                                 </p>
                                 <span className='font-light'>
-                                    Anticipated Spring 2025
+                                    Earned Spring 2025
                                 </span>  
                                 <br />
                                 <span className='font-light'>
@@ -69,7 +69,7 @@ export function AccordionScrollSection({props}: {props: AccordionType}){
                                     A.S. Graphic Design
                                 </p>
                                 <span className='font-light'>
-                                    Completed Spring 2023
+                                    Earned Spring 2023
                                 </span>
                                 <br />
                                 <span className='font-light'>

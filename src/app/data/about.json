@@ -13,7 +13,7 @@
             "key": "me-in-a-minute",
             "componentType": "video",
             "sources": [
-                "https://www.youtube.com/embed/Oa9eHHaoKTw?si=9U8mDBaGAcxhz8s1"
+                "https://www.youtube.com/embed/EmL5V5V_Jiw?si=fB6yHYmonGZPAws-"
             ],
             "hostType": "iframe",
             "isAutoPlay": true,
@@ -24,7 +24,7 @@
             "key": "accordion",
             "componentType": "accordionScrollSection",
             "header": "Hi!",
-            "subheader": "I’m a human-centered designer based out of Los Angeles. When I’m not in the zone, I enjoy reading, fidgeting with code, and anything involving my friends.",
+            "subheader": "I’m a human-centered designer based out of Los Angeles. When I’m not in the zone, I enjoy reading, fidgeting with code, and anything involving my friends and family.",
             "accordionSections": [
                 [
                     "Art and I",
@@ -36,7 +36,7 @@
                 ],
                 [
                     "Code and I",
-                    "Ever since my first web design class I have been in love with code. From experimenting in Unity to building this website with React, I make every effort to continuously grow in these skills. This is all done through self-learning, extracurricular classes, and the guidance of several mentor friends. I’m able to collaborate with engineers and understand code-related restrictions to design."
+                    "Ever since my first web design class I have been in love with code. From experimenting in Unity to building this website with React, I make every effort to continuously grow in these skills. I’m able to collaborate with engineers and understand what is and is not possible for a design."
                 ]
             ],
             "src": "/about/business_portrait_small.jpg",

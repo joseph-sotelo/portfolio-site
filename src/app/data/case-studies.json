@@ -1,20 +1,1010 @@
 {
+    "hive-five": {
+        "caseStudyCardProps": {
+            "name": "HiveFive",
+            "image": "/work/hive-five/cover.png",
+            "page": "/work/hive-five",
+            "labels": [
+                "ArcGIS",
+                "react",
+                "ethnography",
+                "agTech"
+            ]
+        },
+        "sections": [
+            {
+                "key": "hero",
+                "componentType": "billboard",
+                "header": "",
+                "images": [
+                    [
+                        "/work/hive-five/hero.png",
+                        "Hero image featuring the HiveFive logo and app mockups"                        
+                    ],
+                    [
+                        "/work/hive-five/usage.png",
+                        "A beehive inspector holds an iPad in an almond orchard."                        
+                    ]
+                ]
+            },
+            {
+                "key": "vision-video",
+                "componentType": "video",
+                "mainText": "HiveFive is a ArcGIS app I designed and developed for my senior thesis. It aims to speed up large-scale beehive inspection operations through GIS technology, thoughful data visualization, and informed data collection. Below is an excerpt from my final presentation, which lasts 5 minutes.",
+                "sources": [
+                    "https://www.youtube.com/embed/2pG7iRIZj0E?si=z3P5A0SYQYMVXsOY&amp;start=15830"
+                ],
+                "hostType": "iframe",
+                "isAutoPlay": false,
+                "showControls": true,
+                "isMuted": false
+            },
+            {   
+                "key": "background",
+                "componentType": "chapterHeader",
+                "header": "Background"
+            },
+            {
+                "key": "why",
+                "componentType": "billboard",
+                "header": "Why HiveFive?",
+                "mainText": "I was looking for a project that would allow me to gain familiarity with GIS, specifically ArcGIS. I also always find myself drawn towards projects that are more utilitarian rather than hedonic, such as projects in AgTech, sustainability, and meeting basic human needs. I call these my impact areas. HiveFive was at the intersection of these two interests.",
+                "images": [
+                    [
+                        "/work/hive-five/why.png",
+                        "A graphic portraying two axes: one for GIS and one for impact areas. The intersection of the two is HiveFive."                    
+                    ]
+                ]
+            },
+            {
+                "key": "stakeholder",
+                "componentType": "standardScrollSection",
+                "header": "Stakeholder",
+                "mainText": "For this project, I worked with a stakeholder, Carl Demler. He runs a beehive inspection business in California’s Central Valley. For collecting data, he built a rudimentary GIS app that his workers use on an iPad when they are out in the field. However, the platform he used (he requested it to remain anonymous) has a many limitations that slow down operations. I offered to rebuild and redesign it as a standalone application.",
+                "images": [
+                    [
+                        "/work/hive-five/carl.png",
+                        "Carl Demler, owner of San Joaquin Beehive Inspection",
+                        "Carl Demler, owner of San Joaquin Beehive Inspection"
+                    ]
+                ]
+            },
+            {
+                "key": "how-might-i",
+                "componentType": "bigText",
+                "secondaryText": "I asked myself:",
+                "mainText": "How might I redesign and rebuild Carl’s app to speed up his beehive inspection operations without having to hire more workers?"
+            },
+            {   
+                "key": "research",
+                "componentType": "chapterHeader",
+                "header": "Research"
+            },
+            {
+                "key": "methods",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "bigText",
+                        "Methods used:"
+                    ],
+                    [
+                        "mainText",
+                        "1. Interviews"
+                    ],
+                    [
+                        "mainText",
+                        "2. Heuristic Evaluation"
+                    ],
+                    [
+                        "mainText",
+                        "3. Literature Review"
+                    ],
+                    [
+                        "mainText",
+                        "4. Competitive Analysis"
+                    ],                    
+                    [
+                        "mainText",
+                        "5. Usability Testing"
+                    ]                   
+                ]
+            },
+            {
+                "key": "interviews",
+                "componentType": "standardScrollSection",
+                "header": "1. Interviews",
+                "mainText": "I began by interviewing Carl and his workers in order to immerse myself in their world and needs. Below are my main insights.",
+                "images": [
+                    [
+                        "/work/hive-five/interview.png",
+                        "A screenshot of a zoom interview between Joey and Carl."             
+                    ]
+                ]
+            },
+            {
+                "key": "carl-quote",
+                "componentType": "bigText",
+                "mainText": "“The California almond crop needs 3 million hives per year. That’s 600 million dollars going back and forth.”",
+                "postScript": "- Carl"
+            },
+            {
+                "key": "insight-context",
+                "componentType": "billboard",
+                "header": "Insight: Context",
+                "mainText": "I gained insight into the almond industry in which the hive inspection business is nested. California produces 80% of the world's almonds, and growers rent hives from beekeepers to pollinate their crops. Because a hive's population can fluctuate, growers also hire beehive inspectors to expose low population hives that need to be replaced. In alignment with the pollination season, inspectors have only one month to inspect 70,000+ acres or orchards. This is frantic work.",
+                "images": [
+                    [
+                        "/work/hive-five/central-valley.png",
+                        "A map highlighting California's Central Valley.",
+                        "California's Central Valley, home of the almond."
+                    ]
+                ]
+            },            
+            {
+                "key": "additional-insights",
+                "componentType": "insightsScrollSection",
+                "header": "Additional Insights",
+                "descriptiveList": [
+                    [
+                        "Pain Points",
+                        "I learned about the pain points that Carl and his workers face while using the pre-existing app in the field. These are covered in detail in the 'Final Product' section of the case study."
+                    ],
+                    [
+                        "Inspector’s POV",
+                        "I familiarized myself with terminology and artifacts from a beehive inspector’s experience."
+                    ]
+                ]
+            },
+            {
+                "key": "heuristic-evaluation",
+                "componentType": "billboard",
+                "header": "2. Heuristic Evaluation",
+                "mainText": "Carl gave me the opportunity to explore and use the pre-existing app. I evaluated it against Nielsen Norman's 10 usability heuristics. Combining these with the interview findings, I was able to identify areas of improvement. Below are two of the heuristics that the app didn't achieve.",
+                "images": [
+                    [
+                        "/work/hive-five/heuristic-2.png",
+                        "Diagrams of the pre-existing app's interface.",
+                        "In many ways there was a mismatch between the app's terms and the terms I learned about in my interview. Perhaps fixing this would enable contractors to learn the app faster."
+                    ],
+                    [
+                        "/work/hive-five/heuristic-8.png",
+                        "Diagrams of the pre-existing app's interface."                     
+                    ]
+                ]
+            },
+            {
+                "key": "literature-review",
+                "componentType": "standardScrollSection",
+                "header": "Literature Review",
+                "mainText": "Once I understood that my solution would involve data visualization, I re-read the chapter 'Vizualize' from 'Form and Code' by Casey Reas, Chandler McWilliams, and LUST. The reading would later help me avoid creating charts that were misleading when viewed together. See 'Final Product' for more details.",
+                "images": [
+                    [
+                        "/work/hive-five/form-and-code.png",
+                        "A screenshot of 'Form and Code' by Casey Reas, Chandler McWilliams, and LUST."
+                    ]
+                ]
+            },
+            {
+                "key": "book-quote",
+                "componentType": "bigText",
+                "mainText": "“Visualizations can mislead as well as enlighten.”",
+                "postScript": "Page 121"
+            },
+            {
+                "key": "competitive-analysis",
+                "componentType": "standardScrollSection",
+                "header": "Competitive Analysis",
+                "mainText": "I compared Carl's business to two main competitors in order to verify that my solution would be marketable. BeeHero sells hives that are outfitted with sensors, and BeeWise sells robotic beehives. Both aim to eliminate the need for human inspectors. However, they are not affordable in large numbers, so many farmers will still opt for traditional beehives plus human inspectors.",
+                "images": [
+                    [
+                        "/work/hive-five/inspector.png",
+                        "An inspector examines a hive.",
+                        "Hands-on beehive inspection is the most affordable option for many almond growers."
+                    ]
+                ]
+            },
+            {
+                "key": "testing",
+                "componentType": "billboard",
+                "header": "Usability Testing",
+                "mainText": "As I developed Figma prototypes of the new app, I conducted two remote usability tests with my stakeholder.",
+                "images": [
+                    [
+                        "/work/hive-five/usability-test.png",
+                        "A screenshot of Joey and Carl in a remote call conducting a usability test."                        
+                    ]
+                ]
+            },
+            {
+                "key": "testing-insights",
+                "componentType": "insightsScrollSection",
+                "header": "Usability Testing Insights",                
+                "descriptiveList": [
+                    [
+                        "User control and freedom",
+                        "It was exposed that the process of entering data into the app is very one-way, meaning there was little ability for the user to cancel or edit their entries."
+                    ],
+                    [
+                        "System feedback",
+                        "Carl lost track of how many hives he had graded, so I adjusted the UI to display this number to the user."
+                    ]
+                ]
+            },
+            {   
+                "key": "design",
+                "componentType": "chapterHeader",
+                "header": "Design"
+            },
+            {
+                "key": "prototyping",
+                "componentType": "billboard",
+                "header": "Prototyping",
+                "mainText": "I used Figma to create low, mid, and high fidelity prototypes which were refined with the usability tests. Rather than starting from scratch, I used customized versions of Shadcn UI components. I did this beacause they are accessible both as Figma componenens and actual React components, which would prove useful later. I also value designing by 'progressive truthfulness', in which the designer starts with a consistent UI and then customizes only what is necessary. This lets me avoid re-inventing the wheel.",
+                "images": [
+                    [
+                        "/work/hive-five/prototyping.png",
+                        "Mid and high fidelity prototypes of the app."                        
+                    ]
+                ]
+            },
+            {
+                "key": "diagramming",
+                "componentType": "billboard",
+                "header": "Diagramming",
+                "mainText": "Before coding the app with TypeScript, I created a sitemap as well as component diagrams for various pages. This helped me plan the most ideal component tree for top-down state management. It also helped me decide when and where to use context providers.",
+                "images": [
+                    [
+                        "/work/hive-five/client-page-diagram.png",
+                        "Diagram of the client reports page.",
+                        "I used context providers to populate all of the client page's components with consistent data in a simple and maintainable way."                        
+                    ],
+                    [
+                        "/work/hive-five/arcgis-diagram.png",
+                        "Diagram of the map creation page.",
+                        "This diagram shows the steps that go into assembling the main ArcGIS map."                        
+                    ]                    
+                ]
+            },
+            {
+                "key": "Coding",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "Coding"
+                    ],
+                    [
+                        "bigText",
+                        "Best Practices"
+                    ],
+                    [
+                        "mainText",
+                        "When it came to coding the app, I followed React/TypeScript best practices such as: "
+                    ],
+                    [
+                        "mainText",
+                        "• Using constants"
+                    ],
+                    [
+                        "mainText",
+                        "• Creating a top-down data flow"
+                    ],
+                    [
+                        "mainText",
+                        "• Avoiding prop drilling through too many layers"
+                    ],
+                    [
+                        "mainText",
+                        "• Reusability of components and hooks"
+                    ],
+                    [
+                        "bigText",
+                        "Modules"
+                    ],
+                    [
+                        "mainText",
+                        "All of the map components and functionalities were made using ArcGIS components. I also stored all of the geojson as items in my ArcGIS developer account."
+                    ],
+                    [
+                        "mainText",
+                        "For the UI, I customized Shadcn components to include the branding, color coding, and to be more visible outdoors. I originally tried to use Calcite design system, which is made for use with ArcGIS, but it proved too rigid in terms of styling."
+                    ],
+                    [
+                        "bigText",
+                        "Example"
+                    ],
+                    [
+                        "mainText",
+                        "Below is an example of how I used ArcGIS components to create a map that displays the data I had stored in my ArcGIS developer account. Firstly, feature layers are created by passing unique definition expressions (from constants) to hooks."
+                    ],
+                    [
+                        "codeFragment",
+                        "const orchardLayer = createOrchardsLayer(LAYER_EXPRESSIONS.SHOW_ALL);",
+                        "const hiveDropsLayer = createHiveDropsLayer();",
+                        "const perimitersLayer = createPerimitersLayer(LAYER_EXPRESSIONS.HIDE_ALL);",
+                        "hiveDropsLayerRef.current = hiveDropsLayer;"  
+                    ],
+                    [
+                        "mainText",
+                        "Next, an ArcGISMap component is created with the previously created layers as well as a basemap."
+                    ],
+                    [    
+                        "codeFragment",
+                        "const map = new ArcGISMap({",
+                        "  layers: [perimitersLayer, orchardLayer, hiveDropsLayer],",
+                        "  basemap: 'arcgis/imagery'",      
+                        "});" 
+                    ],
+                    [
+                        "mainText",
+                        "A MapView turns the ArcGISMap into a viewable tsx component."
+                    ],
+                    [
+                        "codeFragment",                                                
+                        "const view = new MapView({",
+                        "  container: 'viewDiv',",
+                        "  map: map,",
+                        "  center: MAP_CONFIG.DEFAULT_CENTER,",
+                        "  zoom: MAP_CONFIG.DEFAULT_ZOOM,",
+                        "});"
+                    ],
+                    [
+                        "mainText",
+                        "Lastly, the MapView's UI is customized by moving the zoom widget and adding a track widget."
+                    ],
+                    [
+                        "codeFragment",                                               
+                        "view.ui.move('zoom', 'bottom-right');",                                                
+                        "const track = new Track({",
+                        "  view: view",
+                        "});",
+                        "view.ui.add(track, 'bottom-right');",                        
+                        "track.start();"    
+                    ],                    
+                    [
+                        "link",
+                        "https://github.com/joseph-sotelo/hive-inspection-tool-react",
+                        "View the rest of the code on my GitHub"
+                    ],
+                    [
+                        "link",
+                        "https://joseph-sotelo-portfolio.vercel.app/work/gen-ai-hive-five",
+                        "How I did (and did not) use AI for coding"
+                    ],
+                    [
+                        "bigText",
+                        "Acknowledgements"
+                    ],
+                    [
+                        "mainText",
+                        "Special shoutout to my two code reviewers, Caleb Sotelo and Judah Almanzor."
+                    ],
+                    [
+                        "link",
+                        "linkedin.com/in/calebsotelo",
+                        "Caleb's LinkedIn"
+                    ],
+                    [
+                        "link",
+                        "linkedin.com/in/judah-almanzor-7a8b8a344",
+                        "Judah's LinkedIn"
+                    ]
+                ]
+            },
+            {   
+                "key": "final-product",
+                "componentType": "chapterHeader",
+                "header": "Final Product"
+            },
+            {
+                "key": "orientation",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "mainText",
+                        "It is difficult to appreciate the app's features without understanding the pain-points they resolve, so I've included a pain-point story for each of the following three features."
+                    ]
+                ]
+            },
+            {
+                "key": "pain-point-1",
+                "componentType": "billboard",
+                "header": "Pain-point 1: Uninformed Sampling",
+                "mainText": "This story came from an interview with Carl.",
+                "images": [
+                    [
+                        "/work/gen-ai-hive-five/arrival.png",
+                        "AI generated image of two beehive inspectors arriving at an almond orchard. One of the has an iPad",
+                        "Sean and Mike, a team of two beehive inspectors, arrive at an almond orchard to begin inspecting its hives."
+                    ],
+                    [
+                        "/work/hive-five/inspection.png",
+                        "AI generated image of two beehive inspectors examining a beehive. One of the enters data into a hive.",
+                        "They find a “hive drop” - a collection of hives. Sean grades one of the hives by examining its frames. A frame is a cross section of a hive. They have found that 8 out of 10 frames are covered in bees. Mike logs this into the app. They repeat the process until they have graded 10% of the hives in the orchard."
+                    ],
+                    [
+                        "/work/hive-five/carl-hispanic-perplexed.png",
+                        "AI generated image of a perplexed man at a computer in his home office.",
+                        "Later, their boss goes over the data and finds that the variation from hive to hive is unusually high, and therefore, a greater amount of the hives needs to be inspected in order to have trustworthy data. Either he or his workers have to return to the field to gather more data.His employees, who are seasonal contractors, don’t have the statistics knowledge to make these kinds of calculations and decisions."
+                    ]
+                ]
+            },
+            {
+                "key": "feature-1",
+                "componentType": "video",
+                "header": "Feature 1: Informed Sampling",  
+                "mainText": "HiveFive transfers the decision-making into the inspectors hands. As the user inputs data, greater variation causes the progress bar to ask them to inspect more hives. Less variation causes the progress bar to ask for fewer hives to be inspected. This saves time by preventing the user from inspecting more hives while still getting trustworthy sample size.",
+                "sources": [
+                    "/work/hive-five/sampling-demo.mov"
+                ],
+                "hostType": "local",
+                "isAutoPlay": true,
+                "showControls": false,
+                "isMuted": true
+            },
+            {
+                "key": "pain-point-2",
+                "componentType": "billboard",
+                "header": "Pain-point 2: Map-based Blunders",
+                "mainText": "This story came from an interview with Paul, one of Carl's workers.",
+                "images": [
+                    [
+                        "/work/gen-ai-hive-five/arrival.png",
+                        "AI generated image of two beehive inspectors arriving at an almond orchard. One of the has an iPad",
+                        "Sean and Mike arrive at the next orchard."
+                    ],
+                    [
+                        "/work/hive-five/blunder.png",
+                        "AI generated image of two beehive inspectors examining a beehive. One of the enters data into a hive.",
+                        "They tap on the orchard’s icon on the map in order to enter data into it, but they accidentally selected the wrong orchard. This might seem easy to avoid, but I learned from Paul that this happens 10-15 times a season."
+                    ],
+                    [
+                        "/work/hive-five/fixing-data.png",
+                        "AI generated image of a perplexed man at a computer in his home office.",
+                        "The data later has to be cut and pasted from the wrong orchard to the right one, which is a time-consuming process."
+                    ]
+                ]
+            },            
+            {
+                "key": "feature-2",
+                "componentType": "billboard",
+                "header": "Feature 2: Geo-fencing",
+                "mainText": "Hivefive comes equipped with a guardrail called geo-fencing to prevent this from happening. The user can only input data if they are within its perimeter.",
+                "images": [
+                    [
+                        "/work/hive-five/geofencing.png",
+                        "A screenshot of the geo-fencing feature."                       
+                    ]
+                ]
+            },
+            {
+                "key": "pain-point-3",
+                "componentType": "billboard",
+                "header": "Pain-point 3: Manual Data Viz",
+                "mainText": "This story came from an interview with Carl.",
+                "images": [
+                    [
+                        "/work/hive-five/client-call.png",
+                        "An AI generated image of a man and woman on a phone call.",
+                        "A client calls, expressing doubt that their hives performed well-enough. The client is thinking about suing the beekeeper from whom she rented the hives."
+                    ],
+                    [
+                        "/work/hive-five/old-report.png",
+                        "A bar chart comparing the performance of an orchard with expected performance.",
+                        "In order to assure her that the field was successful, carl exports the data from the app into excel, where he crafts an infographic showing how the orchard performed relative to all other orchards. The client is satisfied."
+                    ]
+                ]
+            },
+            {
+                "key": "feature-3",
+                "componentType": "billboard",
+                "header": "Feature 3: Client Reports",
+                "images": [
+                    [
+                        "/work/hive-five/reports.png",
+                        "Pages from a client report, with a map and infographics",
+                        "HiveFive removes all of these extra steps by auto-generating reports with meaningful infographics— all with one click."
+                    ]
+                ]
+            },
+            {   
+                "key": "outcomes",
+                "componentType": "chapterHeader",
+                "header": "Outcomes"
+            },
+            {
+                "key": "result",
+                "componentType": "bigText",
+                "secondaryText": "While I will have to wait until the next pollination season to gather true results on the effectiveness of HiveFive, my stakeholder did have positive expectations:",
+                "mainText": "“The way the app gives our inspectors more independence in the field, I could see us inspecting something like 5% more hives overall.”",
+                "postScript": "- Carl"
+            },
+            {
+                "key": "feedback",
+                "componentType": "bigText",
+                "secondaryText": "After my presentation, Rana Chakrabarti from SAP gave me some constructive criticism that made a deep impression on me. He essentially said the problem I solved is just one layer in a bigger problem space, and I probably should have solved for more overarching issues. I believe this is the mark of a mature designer and I intend to apply this advice to future projects.",
+                "mainText": "“As a designer I would expect that you’ve understood the ecosystem in which this thing operates and, is it making things better or worse? ...why are we renting bees from across the country into California and what should we do about it?”",
+                "postScript": "- Rana"
+            },
+            {
+                "key": "next-steps",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "Next Steps"
+                    ],
+                    [
+                        "mainText",
+                        "If I have the time to contunie the project, I could move in two alternative directions:"
+                    ],
+                    [
+                        "bigText",
+                        "A. Take Rana's advice"
+                    ],
+                    [
+                        "mainText",
+                        "I would ask myself, "
+                    ],
+                    [
+                        "mainText",
+                        "“How can Carl’s business be adjusted to solve for California’s almond overproduction problem?”"
+                    ],     
+                    [
+                        "bigText",
+                        "B. Maintain the current solution"
+                    ],               
+                    [
+                        "mainText",
+                        "Step 1: Hire an engineer to review and finalize the app."
+                    ],
+                    [
+                        "mainText",
+                        "Step 2: Test the app in the field."
+                    ],
+                    [
+                        "mainText",
+                        "Step 3: Pilot test during the next pollination season in February 2026."
+                    ]                                
+                ]
+            }        
+        ]
+    },    
+    "wheelie": {
+        "caseStudyCardProps": {
+            "name": "Wheelie",
+            "image": "/work/wheelie/wheelie-hero-image.png",
+            "page": "/work/wheelie",
+            "labels": [
+                "ethnography",
+                "usabilityTesting",
+                "accessibility"
+            ]
+        },
+        "sections": [
+            {
+                "key": "overview",
+                "componentType": "overview",
+                "header": "Wheelie",
+                "descriptiveList": [
+                    [
+                        "Context: ",
+                        "Santa Monica College and BMW Designworks collaboration."
+                    ],
+                    [
+                        "Challenge: ",
+                        "Design an intuitive and appealing on-demand autonomous mobility experience for a user group that is typically not able to drive."
+                    ],
+                    [
+                        "Solution: ",
+                        "A service that empowers elderly riders to rediscover their independence through AI-assisted mobility. The experience is tailored — with bespoke route planning, shared trip visibility for caregivers, and thoughtful features like large-font UIs and a “snooze” button that respects user autonomy."
+                    ],
+                    [
+                        "Role: ",
+                        "UX Researcher, UI Designer"
+                    ],
+                    [
+                        "Team: ",
+                        "Ian Goldsten, Erick Olivares, Giorgio Tandera, self"
+                    ]
+                ],
+                "image": "/work/wheelie/wheelie-hero-image.png"
+            },
+            {
+                "key": "video",
+                "componentType": "video",
+                "header": "Final Product",
+                "mainText": "Video produced by Ian Goldstein",
+                "sources": [
+                    "https://www.youtube.com/embed/SsSqIaAr6QU?si=_k5L2nlIgjI_q3Kn"
+                ],
+                "hostType": "iframe",
+                "isAutoPlay": false,
+                "showControls": true,
+                "isMuted": false
+            },
+            {   
+                "key": "background",
+                "componentType": "chapterHeader",
+                "header": "Background"
+            },
+            {
+                "key": "collab",
+                "componentType": "billboard",
+                "header": "SMC + BMW Designworks Collab",
+                "mainText": "During the Spring 2025 semester, my Bachelor’s program collaborated with BMW Design Works for a mobility project. With the recent emergence of Waymo and autonomous vehicles, BMW asked us to explore ways this new technology can solve problems.",
+                "images": [
+                    [
+                        "/work/wheelie/bmw-visit.avif",
+                        "SMC Interaction DEsign students pose with members of BMW Design Works at their office.",
+                        "Visiting BMW Designworks at their office."                        
+                    ]
+                ]
+            },
+            {
+                "key": "brief",
+                "componentType": "bigText",
+                "secondaryText": "BMW gave us the following brief:",
+                "mainText": "Design an intuitive and appealing on-demand autonomous mobility experience for a user group that is typically not able to drive."
+            },
+            {   
+                "key": "research",
+                "componentType": "chapterHeader",
+                "header": "Research"
+            },
+            {
+                "key": "methods",
+                "componentType": "column",
+                "columnSections": [                    
+                    [
+                        "mainText",
+                        "My team selected the elderly as our user group. Our research began very open ended. We sought to test the following hypothesis:"
+                    ],
+                    [
+                        "bigText",
+                        "Elderly individuals are distrustful of autonomous vehicles."
+                    ],
+                    [
+                        "mainText",
+                        "As a team, we assigned eachother different research methods. I was assigned:"
+                    ],
+                    [
+                        "mainText",
+                        "1. Fieldwork"
+                    ],
+                    [
+                        "mainText",
+                        "2. Netnography"
+                    ]
+                ]
+            },
+            {
+                "key": "fieldwork",
+                "componentType": "standardScrollSection",
+                "header": "1. Fieldwork",
+                "mainText": "In order to test our hypothesis, I conducted two ride-alongs with Lucia and Selvin, who are both in their sixties.",
+                "images": [
+                    [
+                        "/work/wheelie/selvin.png",
+                        "An elderly man sits inside of a Waymo."
+                    ]
+                ]
+            },
+            {
+                "key": "pre-ride-insights",
+                "componentType": "insightsScrollSection",
+                "header": "Pre-ride Insights",
+                "secondaryText": "I found that both Lucia and Selvin had preconceptions and doubts about the safety of autonomous vehicles.",
+                "descriptiveList": [
+                    [
+                        "Skepticism",
+                        "Lucia shared a story about how she intentionally stood in front of a Waymo to see if it would stop; instead it went around her. In her opinion, this was unacceptable and diminished her trust in Waymo."
+                    ],
+                    [
+                        "Distrust",
+                        "Lucia showed me an article from her friend that recounted ten mishaps involving Waymo. This might show what how the elderly talk about waymo."
+                    ],
+                    [
+                        "Fear",
+                        "“Let me write my will first.”",
+                        "-Lucia, before riding"
+                    ],
+                    [
+                        "Anxiety",
+                        "“You just know that this thing can't be trusted. Something's gonna go wrong.”",
+                        "-Selvin"
+                    ]
+                ]
+            },
+            {
+                "key": "post-ride-insights",
+                "componentType": "insightsScrollSection",
+                "header": "Post-ride Insights",
+                "secondaryText": "I found that both Lucia and Selvin's distrust turned into confidence over the course of the ride.",
+                "descriptiveList": [
+                    [
+                        "Recommendable",
+                        "“It’s definitely good for older people”",
+                        "-Lucia"
+                    ],
+                    [
+                        "Hooked",
+                        "“I’d probably get the app at some point if there’s a need.”",
+                        "-Lucia"
+                    ],
+                    [
+                        "Impressive",
+                        "“I am impressed, though.”",
+                        "-Selvin"
+                    ]
+                ]
+            },
+            {
+                "key": "digging-deeper",
+                "componentType": "billboard",
+                "header": "Digging Deeper",
+                "mainText": "After the ride, I asked Lucia to fill out this diagram that would represent how her mindset changed over the course of the experience. It revealed that witnessing the technology for herself was the main confidence-booster.",
+                "images": [
+                    [
+                        "/work/wheelie/confidence-map.png",
+                        "A diagram with two axes: confidence and time. The plot moves gradually upwards, indicating am increase in confidence over time."
+                    ]
+                ]
+            },
+            {
+                "key": "main-insight",
+                "componentType": "bigText",                
+                "mainText": "Witnessing the technology firsthand was the main confidence booster."
+            },
+            {
+                "key": "netnography",
+                "componentType": "insightsScrollSection",
+                "header": "2. Netnography",
+                "secondaryText": "In order to narrow our focus, I sought to understand what specific problems autonomous transportation can solve for the elderly. I explored internet forums, social media, and other spaces. The most useful insights came from Quora:",
+                "descriptiveList": [
+                    [
+                        "Schedule conflicts",
+                        "“If you are looked after by family and friends, you have to compromuise.”",
+                        "-Quora user"
+                    ],
+                    [
+                        "Relying on nursing homes",
+                        "Inability to drive and inability to keep up with medical appointments is a common reaon why elderly get sent to nursing homes",
+                        "How might autonomous vehicles help elderly avoid needing to live in a nursing home?"                        
+                    ],
+                    [
+                        "Burdening child caregivers",
+                        "One elderly user said,",
+                        "“I hope to never put my child through that burden.”",
+                        "How might autonomous vehicles lift the burden off of people who care for their elderly parents?"
+                    ]
+                ]
+            },
+            {
+                "key": "how-might-we",
+                "componentType": "bigText",
+                "secondaryText": "After our initial research, we asked ourselves:",
+                "mainText": "How might we use autonomous vehicles to help elderly individuals become more independent of their caregivers?"
+            },
+            {   
+                "key": "design",
+                "componentType": "chapterHeader",
+                "header": "Design"
+            },
+            {
+                "key": "ideation",
+                "componentType": "standardScrollSection",
+                "header": "Ideation",
+                "mainText": "We synthesized our research by creating an empathy map for a fictional user named Jamal.",
+                "images": [
+                    [
+                        "/work/wheelie/empathy-map.png",
+                        "A board or sticky notes displaying different attributes of Jamal, the design persona."
+                    ]
+                ]
+            },
+            {
+                "key": "collaboration",
+                "componentType": "standardScrollSection",
+                "header": "Collaboration",
+                "mainText": "We presented three concepts to BMW and collaboratively selected one to refine and develop. After discussion, we settled on Wheelie, an autonomous vehicle ride-hailing service. Our designs would focus on the mobile application.",
+                "images": [
+                    [
+                        "/work/wheelie/ideation-1.png",
+                        "Joey and a team member present their concepts in a studio.",
+                        "Gio and I present our concepts to BMW."                        
+                    ],
+                    [
+                        "/work/wheelie/ideation-2.png",
+                        "BMW stakeholders provide feedback.",
+                        "BMW stakeholders provide feedback."                        
+                    ]
+                ]
+            },
+            {
+                "key": "initial-features",
+                "componentType": "billboard",
+                "header": "Initial Features",
+                "images": [
+                    [
+                        "/work/wheelie/feature-1.png",
+                        "Three mid-fidelity mobile screens.",
+                        "Users would have the option to use an AI chatbot to book rides verbally. Not only would this make the interface easier for the elderly, but it would frontload exposure to the impressive technology and build trust early in the experience."
+                    ],
+                    [
+                        "/work/wheelie/feature-2.png",
+                        "Two low-fidelity mobile screens.",
+                        "Users would be able to book an entire itinerary for the day, which could be shared with their caregivers. This would grant independence to users by allowing the caregivers to monitor their parents without needing to be present. Fruthermore, they would be able to save and repeat the itinerary to help them keep up with things like medical appointments."
+                    ]
+                ]
+            },
+            {
+                "key": "usability-testing",
+                "componentType": "billboard",
+                "header": "Usability Testing",
+                "mainText": "Our team conducted five rounds of usability tests with BMW once per week. ",
+                "images": [
+                    [
+                        "/work/wheelie/testing-1.png",
+                        "Designers conduct a mobile usabily test with a stakeholder in a conference room."
+                    ],
+                    [
+                        "/work/wheelie/testing-2.png",
+                        "Closeup of a stakeholder participating in a usability test on a mobile device."
+                    ]
+                ]
+            },
+            {
+                "key": "testing-insights",
+                "componentType": "insightsScrollSection",
+                "header": "Usability Testing Insights",
+                "descriptiveList": [
+                    [
+                        "User control and freedom",
+                        "It's too much to ask a user to come up with an itinerary at the beginning of the day and then stick to it. How dwould we make it more flexible? How would we accommodate unexpected delays?"                        
+                    ],
+                    [
+                        "Snooze button",
+                        "Matthew Potter, Director of Interaction Design at BMW Designworks, recommended a 'snooze button' that delays pickup at any point in the itinerary. This would bring more freedom to the experience."
+                    ],
+                    [
+                        "Simplify",
+                        "“It’s getting really complicated, especially for elderly. Try to simplify the presentation and remove options. What comes intuitively to us, don’t assume it’s intuitive to an elderly person.”",
+                        "-Steve Pacheco, UI Lead Designer at BMW Designworks"
+                    ]
+                ]
+            },
+            {
+                "key": "hi-fi-design",
+                "componentType": "billboard",
+                "header": "High Fidelity Design",
+                "mainText": "I was responsible for creating the high fidelity UI. I extended Shadcn to create re-usable components that would reflect a theoretical React component tree. I also made it elderly-friendly through large type, large buttons, and high contrast.",
+                "images": [
+                    [
+                        "/work/wheelie/components.png",
+                        "UI components in a figma file"
+                    ]
+                ]
+            },
+            {   
+                "key": "final-product",
+                "componentType": "chapterHeader",
+                "header": "Final Product"
+            },
+            {
+                "key": "final-screen",
+                "componentType": "billboard",
+                "header": "High Fidelity Prototype",                
+                "images": [
+                    [
+                        "/work/wheelie/hi-fi-1.png",
+                        "A mockup of the itinerary booking screen",
+                        "The user can use voice interaction to book an itinerary."
+                    ],
+                    [
+                        "/work/wheelie/hi-fi-2.png",
+                        "A mockup of the status screen",
+                        "The user can manipulate their itinerary throughout their day. If they scheduled a specific time for one of their stops, they can hit the 'snooze button' to delay the pickup. When their next stop had no designated pickup time, they can summon the wheelie car by tapping 'Next Stop'."
+                    ],
+                    [
+                        "/work/wheelie/hi-fi-3.png",
+                        "A mockup of the sharing screen",
+                        "The user can share their itinerary with their caregiver. The caregiver is then able to monitor their parent's status without having to be present."
+                    ]
+                ]
+            },
+            {
+                "key": "presentation",
+                "componentType": "billboard",
+                "header": "Final Presentation", 
+                "mainText": "To conclude the project, we presented Wheelie to BMW Designworks at their office in Santa Monica",               
+                "images": [
+                    [
+                        "/work/wheelie/presentation.png",
+                        "A mockup of the itinerary booking screen"
+                    ]
+                ]
+            },
+            {
+                "key": "feedback",
+                "componentType": "insightsScrollSection",
+                "header": "Feedback",
+                "descriptiveList": [
+                    [
+                        "Everyone Benefits",
+                        "“Designing for older adults is so often treated as an afterthought. What this team showed is that accessibility isn’t a niche — it’s a design multiplier. When we build for inclusion, everyone benefits.”",
+                        "- Julia de Bono, CEO, Designworks"         
+                    ],
+                    [
+                        "Presentation Clarity",
+                        "“The pitch stood out not just for its clarity, but for how it used AI creatively to tell a human story. Their animated narrative brought the user journey to life in a way that felt both strategic and emotionally engaging — like something you’d expect from a seasoned design team.”",
+                        "- Designworks Team"                         
+                    ]
+                ]
+            },
+            {
+                "key": "final-quote",
+                "componentType": "bigText",
+                "mainText": "“What this team showed is that accessibility isn’t a niche — it’s a design multiplier. When we build for inclusion, everyone benefits.”",
+                "postScript": "- Julia de Bono, CEO, Designworks"
+            },
+            {
+                "key": "methods",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "bigText",
+                        "Appendix"
+                    ],
+                    [
+                        "mainText",
+                        "Press:"
+                    ],
+                    [
+                        "link",
+                        "https://www.bmwgroupdesignworks.com/articles/right-here-right-now-shaping-the-future-of-inclusive-mobility-with-santa-monica-college/",
+                        "BMW's blog publication about the project"
+                    ],
+                    [
+                        "mainText",
+                        "Team members:"
+                    ],
+                    [
+                        "link",
+                        "linkedin.com/in/erickolivares319",
+                        "Erick Olivares"
+                    ],
+                    [
+                        "link",
+                        "linkedin.com/in/giotandera",
+                        "Giorgio Tandera"
+                    ],
+                    [
+                        "link",
+                        "linkedin.com/in/ian-goldstein-design",
+                        "Ian Goldstein"
+                    ]
+                ]
+            }
+        ]
+    },
     "meander-sim": {
         "caseStudyCardProps": {
-            "name": "Alluvial Geomorphology Simulator",
+            "name": "Meander Simulator",
             "image": "/work/meander-sim/meander-sim-cover.png",
             "page": "/work/meander-sim",
             "labels": [
                 "javascript",
                 "simulation",
-                "educational tool"
+                "educationalTool"
             ]
         },       
         "sections": [
             {
                 "key": "final-product",
                 "componentType": "iFrame",
-                "header": "Alluvial Geomorphology Simulator",
+                "header": "Meander Simulator",
                 "mainText": "An academic tool used to demonstrate the science behind the meandering of rivers. Take it for a spin!",
                 "src": "https://editor.p5js.org/jsotelo/full/-_7CfZCbIR"
             },
@@ -27,7 +1017,7 @@
                 "key": "context",
                 "componentType": "standardScrollSection",
                 "header": "Context",
-                "mainText": "For some reason, I have an fascination with rivers and the variety of shapes they form - a.k.a. alluvial geomorphology. When, in a programming class, I was tasked with creating a simulation of any kind of process, I decided to simulate the meandering of a river.",
+                "mainText": "For some reason, I have an fascination with rivers and the variety of shapes they form. When, in a programming class, I was tasked with creating a simulation of any kind of process, I decided to simulate the meandering of a river.",
                 "images": [
                     [
                         "/work/meander-sim/braided-river.jpg",
@@ -76,26 +1066,25 @@
                     [
                         "mainText",
                         "The point of the flowfield was to create semi-random forces that would affect particle objects, representing the water. Furthermore, it allowed the diversity of the vector angles, and thus the intensity of the meandering, to be controlled by the one ratio value."
+                    ],
+                    [
+                        "link",
+                        "https://editor.p5js.org/jsotelo/sketches/-_7CfZCbIR",
+                        "View the rest of my code"
                     ]
                 ]
-            },
-            {
-                "key": "code-link",
-                "componentType": "bigText",
-                "secondaryText": "View the rest of my code at:",
-                "mainText": "https://editor.p5js.org/jsotelo/sketches/-_7CfZCbIR"
             }
         ]
     },
     "lfla": {
         "caseStudyCardProps": {
-            "name": "Los Angeles Library Foundation",
+            "name": "LA Library Foundation",
             "image": "/work/lfla/lfla-cover-4.png",
             "page": "/work/lfla",
             "labels": [
-                "service design",
-                "motion graphics",
-                "ux research"
+                "serviceDesign",
+                "motionGraphics",
+                "uxResearch"
             ]
         },
         "sections": [
@@ -294,7 +1283,7 @@
             },
             {
                 "key": "corey-quote",
-                "componentType": "mainText",
+                "componentType": "bigText",
                 "mainText": "“[storytelling] is about captivating people with the ‘why’ first and less about the ‘how’”",
                 "postScript": "- Corey Kachigan"
             },
@@ -478,9 +1467,9 @@
             "image": "/work/slimbox/swot.png",
             "page": "/work/slimbox",
             "labels": [
-                "S.W.O.T.",
-                "micro-interactions",
-                "precedent exploration"
+                "swot",
+                "microInteractions",
+                "precedentExploration"
             ]
         },
         "sections": [
@@ -506,7 +1495,7 @@
             },
             {
                 "key": "project-brief",
-                "componentType": "mainText",
+                "componentType": "bigText",
                 "secondaryText": "Excerpt from the project brief:",
                 "mainText": "\"... redesign the micro-interactions users have with desktop email clients ... we will focus our attention on the ability or micro-interactions to make those digital chores easier, simpler, more enjoyable - and less noticeable.\""
             },
@@ -547,7 +1536,7 @@
             },
             {
                 "key": "design-direction",
-                "componentType": "mainText",
+                "componentType": "bigText",
                 "secondaryText": "The S.W.O.T. analysis led me to adopt this design direction:",
                 "mainText": "How might I make the process of decluttering one's inbox more streamlined, easy, and delightful?"
             },
@@ -610,13 +1599,13 @@
     "voxai": {
         "caseStudyCardProps": {
             "name": "VoxAI",
-            "image": "/work/voxai/hi-fi-render.png",
+            "image": "/work/voxai/voxai-cover.png",
             "page": "/work/voxai",
             "labels": [
-                "UI for AI",
+                "uiForAI",
                 "heuristics",
-                "insight sorting",
-                "project management",
+                "insightSorting",
+                "projectManagement",
                 "accessibility"
             ]
         },
@@ -647,7 +1636,7 @@
                         "Project Manager, Lead UI Designer"
                     ]
                 ],
-                "image": "/work/voxai/hi-fi-render.png"
+                "image": "/work/voxai/voxai-cover.png"
             },
             {   
                 "key": "research",
@@ -709,7 +1698,7 @@
             },
             {
                 "key": "how-might-we",
-                "componentType": "mainText",
+                "componentType": "bigText",
                 "secondaryText": "Based on our research, we saw a clear design direction:",
                 "mainText": "How might we enhance the standard AAC model to help young adults with non-verbal autism communicate more swiftly, personally, independently, and versatilely?"
             },
@@ -1024,7 +2013,7 @@
             "labels": [
                 "processing",
                 "p5js",
-                "O.O.P."
+                "OOP."
             ]
         },
         "sections": [
@@ -1111,6 +2100,17 @@
                         "Four metrics"
                     ]
                 ]
+            },
+            {
+                "key": "code",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "link",
+                        "https://editor.p5js.org/jsotelo/sketches/seEN0FM1T",
+                        "View the rest of my code"
+                    ]
+                ]
             }
         ]
     },
@@ -1120,7 +2120,7 @@
             "image": "/work/bird-feeder/bird-feeder-cover.png",
             "page": "/work/bird-feeder",
             "labels": [
-                "data viz",
+                "dataViz",
                 "arduino",
                 "js"
             ]
@@ -1387,8 +2387,8 @@
                 "ethnography",
                 "netnography",
                 "prototyping",
-                "user testing",
-                "animated logo"
+                "userTesting",
+                "animatedLogo"
             ]
         },
         "sections": [
@@ -1497,7 +2497,7 @@
             },
             {
                 "key": "how-might-we",
-                "componentType": "mainText",
+                "componentType": "bigText",
                 "secondaryText": "After reviewing our data, a design direction emerged:",
                 "mainText": "How might we leverage Olvera's hidden museums and it's small yet loyal customer base to increase foot traffic at Olvera Street?"
             },
@@ -1687,13 +2687,388 @@
             "page": "/work/other",
             "labels": [
                 "typography",
-                "book illustration",
-                "digital art",
-                "analog art"
+                "bookIllustration",
+                "digitalArt",
+                "analogArt"
             ]
         },       
         "sections": [
         
+        ]
+    },
+    "future-archaeology": {
+        "caseStudyCardProps": {
+            "name": "Future Archaeology",
+            "image": "/work/meander-sim/meander-sim-cover.png",
+            "page": "/work/future-archaeology",
+            "labels": [
+                "javascript",
+                "simulation",
+                "educationalTool"
+            ]
+        },       
+        "sections": [
+            {
+                "key": "context",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "Context"
+                    ],
+                    [
+                        "mainText",
+                        "In my class, 'Design for the Future', I was tasked with imagining a future, and then designing an artifact from it."
+                    ]
+                ]
+            },
+            {
+                "key": "matrix",
+                "componentType": "billboard",
+                "header": "Conceptualizing the Future",
+                "mainText": "I used a two axis matrix to generate some ideas about what the future could look like. One axis defined the urban coverage of the planet, while the other axis defined the intensity of surveillance. The circle defines the future I chose to design for.",
+                "images": [
+                    [
+                        "/work/future-archaeology/matrix.png",
+                        "A two axis matrix used to generate ideas about the future"
+                    ]
+                ]
+            },
+            {
+                "key": "world description",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "mainText",
+                        "Within the circle drawn above, I defined three futures using the possible-plausible-propbable framework. The future I designed for is a future in which the conservation of natural spaces has become a high priotity for the world's governments. Their other big priority is surveillance."
+                    ],
+                    [
+                        "mainText",
+                        "They know everything about everyone ... even their thoughts. Citizens are not required to get brain chips, but they are 'incentivized' to do so. Only people with chips are allowed to buy and sell."
+                    ],
+                    [
+                        "mainText",
+                        "Because of this overwhelming level of surveillance, many people have formed hidden communities in the vast wildernesses. There you will find illegal activity, cheap services, and unregulated pursuits - only for those who have no chip."
+                    ]
+                ]
+            },
+            {
+                "key": "artifact",
+                "componentType": "billboard",
+                "header": "The Artifact",
+                "mainText": "In this future, self checkout machines scan brain chipts. Buyers use their heads like tap cards. I designed a self checkout machine that has a component where the user can place their head in order to authorize and complete a transaaction.",
+                "images": [
+                    [
+                        "/work/future-archaeology/draft-1.png",
+                        "A low-fidelity render of a self checkout machine with a projection in which the buyer can place their head.",
+                        "A rough draft."
+                    ],
+                    [
+                        "/work/future-archaeology/render-2.png",
+                        "A mid-fidelity render of the self-checkout. The scanner has now been lowered and rotated.",
+                        "I decided to move the scanner so that the could be used with a bowing motion. The earlier model wouldn't accomodate short users."
+                    ],
+                    [
+                        "/work/future-archaeology/render-1.png",
+                        "Three self checkouts are shown side-by-side in a retail environment"
+                    ]
+                ]
+            }
+        ]
+    },
+    "building-blocks": {
+        "caseStudyCardProps": {
+            "name": "Building Blocks",
+            "image": "/work/meander-sim/meander-sim-cover.png",
+            "page": "/work/building-blocks",
+            "labels": [
+                "C#",
+                "unity"
+            ]
+        },       
+        "sections": [
+            {
+                "key": "context",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "Context"
+                    ],
+                    [
+                        "mainText",
+                        "In my class, 'Design for the Future', I was tasked with creating a 3D interactive experience in Unity. I decided to create a building-block experience."
+                    ]
+                ]
+            },
+            {
+                "key": "building-video",
+                "componentType": "video",
+                "header": "Building",
+                "mainText": "For as long as humans have existed, we've been obsessed with putting things on top of other things.",
+                "sources": [
+                    "/work/building-blocks/building-A.mp4"
+                ],
+                "hostType": "local",
+                "isAutoPlay": true,
+                "showControls": false,
+                "isMuted": true
+            },
+            {
+                "key": "destroying-video",
+                "componentType": "video",
+                "header": "Destruction",
+                "mainText": "Our habit of destroying things almost outweighs our need to build. Almost.",
+                "sources": [
+                    "/work/building-blocks/destroy-A.mp4"
+                ],
+                "hostType": "local",
+                "isAutoPlay": true,
+                "showControls": false,
+                "isMuted": true
+            },
+            {
+                "key": "process",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "Process"
+                    ],
+                    [
+                        "mainText",
+                        "The building of the buiding-blocks interaction was quite challenging, despite being a simple concept. I began by setting up my scene with a plane, a light, and an imported FPS controller."
+                    ],
+                    [
+                        "mainText",
+                        "Most of the time on this project was spent trying to resolve the errors associated with this FPS controller. Then it dawned on me: 'use one of the other FPS controllers from the Unity Asset Store!' So that's what I did."
+                    ],
+                    [
+                        "mainText",
+                        "From there, all the pieces fell into place. I created a material for the ground, a prefab for the blocks, and a script to allow the user to place the block wherever they want. One new thing I learned about coding in C# is how to get the transform of a prefab:"
+                    ],
+                    [
+                        "codeFragment",
+                        "float prefabHeight = prefab.GetComponent<Collider>().bounds.size.y;"
+                    ],
+                    [
+                        "mainText",
+                        "This was used in order to make the blocks spawn with their lower face flush with the underlying surface. I simply subtracted half of the height of the block prefab from the y-position of the raycast hit. Otherwise, it would spawn half burried."
+                    ],
+                    [
+                        "mainText",
+                        "Overall, it was a rewarding learning experience, and an essential stepping stone to my dream of re-creating the Great Wall of China in Unity."
+                    ]
+                ]
+            }
+        ]
+    },
+    "chango": {
+        "caseStudyCardProps": {
+            "name": "Chango",
+            "image": "/work/meander-sim/meander-sim-cover.png",
+            "page": "/work/chango",
+            "labels": [
+                "C#",
+                "unity",
+                "VR"
+            ]
+        },       
+        "sections": [
+            {
+                "key": "context",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "Context"
+                    ],
+                    [
+                        "mainText",
+                        "In my class, 'Design for the Future', I was tasked with creating a VR interactive experience in Unity. I decided to take the opportunity to start bringing a long-time game idea to life."
+                    ]
+                ]
+            },
+            {
+                "key": "demo-video",
+                "componentType": "video",
+                "header": "Demo",
+                "mainText": "My goal for this first step was to prototype the basic mechanic of the game. Shine the flashlight at chango, and he'll vanish. If you miss him, he'll get you. I used Unity's XR Interaction toolkit to simulate inputs from a VR device.",
+                "sources": [
+                    "/work/chango/chango.mp4"
+                ],
+                "hostType": "local",
+                "isAutoPlay": true,
+                "showControls": false,
+                "isMuted": true
+            },
+            {
+                "key": "process",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "Process"
+                    ],
+                    [
+                        "mainText",
+                        "At first I just kept running in to walls. I tried using the Meta XR, thinking that I would have access to a Meta Quest Headset. When I found out I didn't have that access, I tried using the Meta XR Simulator, but my machine wouldn't support that. I ended up using the Unity XR Interaction Toolkit, which has a good simulator."
+                    ],
+                    [
+                        "link",
+                        "https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@3.1/manual/index.html",
+                        "Unity XR toolkit docs"
+                    ],
+                    [
+                        "mainText",
+                        "Next, I created Chango in blender, then imported him into my scene as a prefab."
+                    ],
+                    [
+                        "mainText",
+                        "From there, I created three scripts. The first was used to make chango move towards the center of the map,where the player is. The second was to spawn Chango anywhere along a circle. The following excerpt shows how I got a random angle and used that to determine his starting position along the circle."
+                    ],
+                    [
+                        "codeFragment",
+                        "float angle = Random.Range(0f, 360f) * Mathf.Deg2Rad;",
+                        "Vector3 spawnPos = new Vector3(Mathf.Cos(angle), 0, Mathf.Sin(angle)) * spawnRadius;"
+                    ],
+                    [
+                        "mainText",
+                        "The third script I created was used to make the flashlight mechanic. I added a light component to the right hand of the XR Origin in the scene, then i attached the flashlight script to the light. The script calls Respawn() whenever the raycast detects chango."
+                    ]
+                ]
+            },
+            {
+                "key": "next-steps",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "header",
+                        "Next Steps"
+                    ],
+                    [
+                        "mainText",
+                        "Now that I have the basic finctionality working, my next step is to set up the environment using this low poly plants asset pack by Bluewalk."
+                    ],
+                    [
+                        "link",
+                        "https://assetstore.unity.com/packages/3d/vegetation/plants/low-poly-plants-pack-3d-game-kit-262372",
+                        "Low Poly Plants Pack - 3D Game Kit"
+                    ],
+                    [
+                        "mainText",
+                        "Next, I need to spend some time playing around with the lighting until it is very spooky. I tried doing this and realized it will take some time."
+                    ],
+                    [
+                        "mainText",
+                        "Then, I want to create two mechanics. The first involved the flashlight running out of battery and needing to recharge. The second involves Chango's speed increasing everytime he respawns. Now it will be harder to survive. I'll add a timer to the screen so players can compete with eachother.l"
+                    ],
+                    [
+                        "mainText",
+                        "I could go on and on about what I want to add, but I think I'll keep things bite sized. Just like the player when Chango gets them."
+                    ]
+                ]
+            }
+        ]
+    },
+    "gen-ai-hive-five": {
+        "caseStudyCardProps": {
+            "name": "Gen AI Hive Five",
+            "image": "/work/meander-sim/meander-sim-cover.png",
+            "page": "/work/chango",
+            "labels": [
+                "C#",
+                "unity",
+                "VR"
+            ]
+        },       
+        "sections": [
+            {
+                "key": "intro",
+                "componentType": "paragraph",
+                "header": "How I use generative AI",
+                "mainText": "In Spring 2025, I created an app called HiveFive that aims to speed up large-scale beehive inspection operations. Here I outline two ways I used generative AI to help me."
+            },
+            {
+                "key": "storyboards",
+                "componentType": "billboard",
+                "header": "1. Storyboards",
+                "mainText": "I often use AI to generate storyboards of user journeys, but it was particularly essential for HiveFive. The app is very niche, catering to a small set of users who have knowledge of the pollination industry. This meant that presenting the concept to designers, professors, mentors, and the public would be challenging. How could I introduce them to the context and industry surrounding the app? How could I help them appreciate the app the way a beehive inspector would? ChatGPT helped me solve this problem by allowing me to quickly create detailed storyboard images for my presentations. Below are some examples ofthe images I created, along with their corresponding prompts.",
+                "images": [
+                    [
+                        "/work/gen-ai-hive-five/arrival.png",
+                        "A photorealistic image of two male beekeepers walking away from a pickup truck in an almond orchard. They are wearing full beekeeping suits, with brimmed hats and gloves. One of them has an ipad with a durable case. They have distinct body types.",
+                        "Prompt: 'Generate a photorealistic image of two male beekeepers walking away from a pickup truck in an almond orchard. They are wearing full beekeeping suits, with brimmed hats and gloves. One of them has an ipad with a durable case. They have distinct body types.'"
+                    ],
+                    [
+                        "/work/gen-ai-hive-five/finding-hivedrop.png",
+                        "A photorealistic image of the same two beekeepers walking up to a collection of beehive boxes.",
+                        "Prompt: 'Create an image of the same two beekeepers walking up to a collection of beehive boxes.' For this prompt, I supplied the image of the beehive boxes for ChatGPT to work with."
+                    ],
+                    [
+                        "/work/gen-ai-hive-five/inspecting-hivedrop.png",
+                        "A frontal image of the beekeepers inspecting a hive. One of them examines one of the hive's frames while the other enters data into an ipad with a case and a stylus.",
+                        "Prompt: 'Generate a new frontal image. The one on the right has removed the lid of the hive and is examining one of the frames. The other is entering data into the ipad with a stylus.'"
+                    ],
+                    [
+                        "/work/gen-ai-hive-five/farmer-on-phone.png",
+                        "A photorealistic image of a female farmer in an almond orchard, talking on the phone with a vexed expression on her face.",
+                        "Prompt: 'Generate an image of a female farmer in an almond orchard, talking on the phone with a vexed expression on her face.'"
+                    ]
+                ]
+            },
+            {
+                "key": "app-development",
+                "componentType": "insightsScrollSection",
+                "header": "2. App Development",
+                "secondaryText": "In addition to imagery, I used Claude for coding. For context, HiveFive is a Vite + React application. I used ArcGIS for the map components, and a customized version of shadcn for a lot of the other UI components. In addition to code completion, I used Claude for:",
+                "descriptiveList": [
+                    [
+                        "Minor Bug fixes",
+                        "Example prompt: 'Why are these tailwind classnames being ignored?'"
+                    ],
+                    [
+                        "Breaking up monolithic components",
+                        "Example prompt: 'Split client-details.tsx up into smaller components for better maintainability and readability. Store the components in the components/clients/client-details directory. Follow similar patterns to those of the mobile-sheet and map components.'"
+                    ],
+                    [
+                        "Refactoring",
+                        "Example prompt: 'In inspection-section.tsx, there is some logic that dynamically renders the badge component. Extract the logic so that it can be reused elsewhere.'"
+                    ],
+                    [
+                        "Grunt tasks",
+                        "Example prompt: 'Translate this tailwind css into normal css'"
+                    ]
+                ]
+            },
+            {
+                "key": "pitfalls",
+                "componentType": "insightsScrollSection",
+                "header": "Pitfalls",
+                "secondaryText": "There are many pitfalls to using AI for coding. Here are some of the things for which I did not use AI:",
+                "descriptiveList": [
+                    [
+                        "Major Bug fixes",
+                        "I found that some bugs could only be solved by MOI (My Own Intelligence)."
+                    ],
+                    [
+                        "When there was better help",
+                        "I often opted to use solutions from documentation or Stack Overflow."
+                    ],
+                    [
+                        "UX and UI",
+                        "All of my UX and UI decisions were answered by my research, not Claude."
+                    ],
+                    [
+                        "Styling",
+                        "MOI wins."
+                    ],
+                    [
+                        "Platform Architecture (usually)",
+                        "Whenever I had a specific way I wanted to setup my component tree and data flow, which was often, I didn't use AI."
+                    ]
+                ]
+            }
         ]
     }
 }

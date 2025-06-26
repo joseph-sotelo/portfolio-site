@@ -9,14 +9,15 @@ import {
   } from "@/components/ui/card"
   import Image from 'next/image';
   import { Badge } from "@/components/ui/badge"
-
+  import { Skeleton } from "@/components/ui/skeleton"
   
 export default function PieceCard({name, image, page, labels}: {name: string, image: string, page: string, labels: string[]}) {
     return(
         <Link href={page}>
-            <Card className='max-w-[500px] md:max-w-full shadow'>
-                <CardContent>
-                        <Image alt={`${name} cover image`} src={image} className='object-cover w-full h-full aspect-square rounded-t-sm' width='375' height='375'/>
+            <Card className='max-w-[500px] md:max-w-full shadow overflow-hidden'>
+                <CardContent className='relative'>                    
+                    <Image alt={`${name} cover image`} src={image} className='object-cover w-full h-full aspect-square' width='375' height='375'/>
+                    <Skeleton className="absolute"/>
                 </CardContent>
                 <CardHeader id='card-header' className='px-4 py-3'>
                     <CardTitle>{name}</CardTitle>

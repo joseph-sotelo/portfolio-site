@@ -1,5 +1,6 @@
 'use client'
 import Image from "next/image";
+import { Skeleton } from "../ui/skeleton";
 
 export type OverviewType = {
     header: string; 
@@ -31,8 +32,9 @@ export function Overview({props}: {props: OverviewType}){
                     )}
                 </ul>
              </div>
-             <div id='right' className='xl:col-span-5'>
-                <Image src={props.image} alt={`High fidelity mockups from the ${props.header} project`} width='600' height='600' className='border border-border w-full rounded-sm'/>
+             <div id='right' className='xl:col-span-5 overflow-hidden border border-border rounded-sm relative'>
+                <Skeleton className="absolute"/>
+                <Image src={props.image} alt={`High fidelity mockups from the ${props.header} project`} width='600' height='600' className='scale-[101%]'/>
             </div>
         </div>
     )

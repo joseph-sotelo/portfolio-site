@@ -12,7 +12,7 @@ export function BigText({props}: {props: BigTextType}){
             <h6>
                 {props.secondaryText}
             </h6>
-            <h3 className='mt-standard-gap'>
+            <h3 className='mt-standard-gap text-wrap'>
                 {props.mainText}
             </h3>
             <h6 className='mt-standard-gap'>

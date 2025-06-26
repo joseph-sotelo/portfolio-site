@@ -4,7 +4,7 @@
         "hideTitleAtStart": false,
         "subHeader": [
             "Joey Sotelo",
-            "Design Technologist"
+            "Product Designer"
         ]
     },
     "about": {
@@ -12,7 +12,7 @@
         "hideTitleAtStart": false,
         "subHeader": [
             "Joey Sotelo",
-            "Design Technologist"
+            "Product Designer"
         ],
         "links": [
             [
@@ -25,7 +25,7 @@
             ],
             [
                 "Resume",
-                "https://drive.google.com/file/d/1xJqjc8eAIXUvVddKYYgyuVyAO13XGfu-/view?usp=sharing"
+                "https://drive.google.com/file/d/1WJeJn9DNtQn1kyYEvFhNS3bwy8dpJdu1/view?usp=sharing"
             ]
         ]
     },
@@ -34,7 +34,7 @@
         "hideTitleAtStart": false,
         "subHeader": [
             "Joey Sotelo",
-            "Design Technologist"
+            "Product Designer"
         ],
         "mainText": "I write to help me process new information about design, but hey - maybe someone actually reads these too."
     },
@@ -110,12 +110,66 @@
         "mainText": "Using code and arduino to track and vizualize bird feeding habits." 
     },
     "meander-sim": {
-        "header": "Alluvial Geomorphology Simulator",
+        "header": "Meander Simulator",
         "hideTitleAtStart": true,
         "subHeader": [
             "Academic Exercise",
             "Fall 2024 | 1 week"
         ],
         "mainText": "An academic tool used to demonstrate the science behind the meandering of rivers." 
+    },
+    "hive-five": {
+        "header": "HiveFive",
+        "hideTitleAtStart": true,
+        "subHeader": [
+            "Senior Thesis",
+            "Spring 2025 | 16 weeks"
+        ],
+        "mainText": "A GIS app that speeds up large-scale beehive inspection operations." 
+    },
+    "future-archaeology": {
+        "header": "Future Archaeology",
+        "hideTitleAtStart": false,
+        "subHeader": [
+            "Academic Exercise",
+            "Spring 2025 | 1 week"
+        ],
+        "mainText": "A self-checkout machine that scans the user's brain-chip for quick, easy, and totally not surveilled shopping." 
+    },
+    "building-blocks": {
+        "header": "Building Blocks",
+        "hideTitleAtStart": false,
+        "subHeader": [
+            "Academic Exercise",
+            "Spring 2025 | 1 week"
+        ],
+        "mainText": "Do you ever get the urge to just build a brick wall? Or an igloo? This is for you." 
+    },
+    "chango": {
+        "header": "Chango Game",
+        "hideTitleAtStart": false,
+        "subHeader": [
+            "Academic Exercise",
+            "Spring 2025 | 1 week"
+        ],
+        "mainText": "A prototype of a VR horror game" 
+    },
+    "gen-ai-hive-five": {
+        "header": "HiveFive AI",
+        "hideTitleAtStart": true,
+        "subHeader": [
+            "Support for Senior Thesis",
+            "Spring 2025 | 16 weeks"
+        ],
+        "mainText": "Explanation of how I used generative AI to support my senior thesis." 
+    },
+    "wheelie": {
+        "header": "Wheelie",
+        "hideTitleAtStart": true,
+        "subHeader": [
+            "Academic Project",            
+            "Spring 2025 | 8 weeks"
+        ],
+        "mainText": "An autonomous ride-hailing application that brings independence to the elderly." 
     }
 }
