@@ -1,5 +1,7 @@
 'use client'
 import Image from "next/image"
+import { Skeleton } from "../ui/skeleton";
+import { Image as ImageIcon } from 'lucide-react'
 
 export type BillboardType = {
     header: string;
@@ -19,14 +21,17 @@ export function Billboard({props}: {props: BillboardType}){
             </p>
             {props.images.map((image, index) => (
                 image[0] !== undefined && (
-                    <>
-                        <Image key={index} className={`mt-standard-gap w-full ${image[2] ? 'rounded-t-sm' : 'rounded-sm'} border border-border`} width="1200" height="1200" src={image[0]} alt={image[1]}/> 
+                    <div key={index} className={`overflow-hidden mt-standard-gap w-full border border-border rounded-sm relative ${index < props.images.length && 'mb-medium-gap'}`}>
+                        <Skeleton className="absolute"/>
+                        <Image className='scale-[101%] -ml-[1px] border-b border-border' width="1200" height="1200" src={image[0]} alt={image[1]}/> 
                         {image[2] && (
-                            <p className={`border border-border mt-[-1px] p-4 rounded-b-sm ${index < props.images.length && 'mb-medium-gap'}`}>
-                                {image[2]}
-                            </p>
+                            <div className="px-4 pb-4 pt-5">
+                                <p>
+                                    {image[2]}
+                                </p>
+                            </div>
                         )}
-                    </>
+                    </div>
                 )                  
             ))}
         </div>
