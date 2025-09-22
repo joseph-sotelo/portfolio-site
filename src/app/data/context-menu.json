@@ -171,5 +171,14 @@
             "Spring 2025 | 8 weeks"
         ],
         "mainText": "An autonomous ride-hailing application that brings independence to the elderly." 
+    },
+    "template-designer": {
+        "header": "Template Designer",
+        "hideTitleAtStart": true,
+        "subHeader": [
+            "Professional Project",            
+            "iPromote"
+        ],
+        "mainText": "An drag-and-drop editor for creating and editing display advertisement templates." 
     }
 }

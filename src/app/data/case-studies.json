@@ -1,4 +1,18 @@
 {
+    "template-designer": {
+        "caseStudyCardProps": {
+            "name": "Template Designer",
+            "image": "",
+            "page": "",
+            "labels": [
+                "Figma",
+                "Builder.io",
+                "usability testing"
+            ]
+        },       
+        "sections": [
+        ]
+    },
     "hive-five": {
         "caseStudyCardProps": {
             "name": "HiveFive",
