@@ -2,15 +2,181 @@
     "template-designer": {
         "caseStudyCardProps": {
             "name": "Template Designer",
-            "image": "",
-            "page": "",
+            "image": "/work/template-designer/cover.png",
+            "page": "/work/template-designer",
             "labels": [
+                "shipped",
+                "impact",
                 "Figma",
                 "Builder.io",
                 "usability testing"
             ]
         },       
         "sections": [
+            {
+                "key": "hero",
+                "componentType": "billboard",
+                "header": "",
+                "images": [
+                    [
+                        "/work/template-designer/hero.png",
+                        "Hero image featuring the Template Designer logo and app mockups"                        
+                    ]
+                ]
+            },
+            {
+                "key": "impact",
+                "componentType": "insightsScrollSection",
+                "header": "How I used UX/UI design to enable:",
+                "descriptiveList": [
+                    [
+                        "3 day workflow ==> 3 hours"                                             
+                    ],
+                    [
+                        "Completely unblocked engineers"
+                    ],
+                    [
+                        "Reduced a 3 day workflow into 3 hours"
+                    ]
+                ]
+            },
+            {   
+                "key": "context",
+                "componentType": "chapterHeader",
+                "header": "Context"
+            },
+            {
+                "key": "company",
+                "componentType": "billboard",
+                "header": "The Company",
+                "mainText": "iPromote is a B2B Saas company that provides small businesses with display advertisement campaigns, either directly or through our partners. When creating an ad through our software, the user has a selection of templates to choose from. Here are a few:",
+                "images": [
+                    [
+                        "/work/template-designer/template-examples.png",
+                        "Hero image featuring the HiveFive logo and app mockups"                        
+                    ]
+                ]
+            },
+            {
+                "key": "problem",
+                "componentType": "billboard",
+                "header": "The Problem",
+                "mainText": "Our clients and partners often ask for new templates, or slight tweaks to existing templates to suit their needs. These requests often get turned down because it takes X developers X time to fully build and publish a new template.",
+                "images": [
+                    [
+                        "/work/template-designer/template-examples.png",
+                        "Hero image featuring the HiveFive logo and app mockups"                        
+                    ]
+                ]
+            },
+            {
+                "key": "solution",
+                "componentType": "bigText",     
+                "secondaryText": "Solution:",           
+                "mainText": "Our VP of Engineering decided that we would build a drag-and-drop editor that would allow both internal and external users to create and edit templates without needing to write code. I was tasked with designing the UI/UX of this editor."
+            },
+            {
+                "key": "solutions",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "bigText",
+                        "The Solution:"
+                    ],
+                    [
+                        "mainText",
+                        "Our VP of Engineering decided that we would build a drag-and-drop editor that would allow both internal and external users to create and edit templates without needing to write code."
+                    ],
+                    [
+                        "bigText",
+                        "My Role"
+                    ],
+                    [
+                        "mainText",
+                        "I was tasked with designing the UI/UX of this editor, collaborating closely with product, engineering, and users."
+                    ]                 
+                ]
+            },
+            {   
+                "key": "process",
+                "componentType": "chapterHeader",
+                "header": "Process"
+            },
+            {
+                "key": "process-and-methods",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "bigText",
+                        "Design Process and Methods:"
+                    ],
+                    [
+                        "mainText",
+                        "1. Designed the UI in Figma."
+                    ],
+                    [
+                        "mainText",
+                        "2. Created interactive prototypes with Builder.io."
+                    ],
+                    [
+                        "mainText",
+                        "3. Conducted usability tests and refined designs."
+                    ],
+                    [
+                        "bigText",
+                        "Design Parameters"
+                    ],
+                    [
+                        "mainText",
+                        "There were some factors that had already been determined when I started designing, including:"
+                    ],
+                    [
+                        "mainText",
+                        "1. Some of the UI had alraedy been created by developers."
+                    ],
+                    [
+                        "mainText",
+                        "2. The UI would use the Ant Design UI Library."
+                    ]  
+                ]
+            },
+            {
+                "key": "heuristic-evaluation",
+                "componentType": "billboard",
+                "header": "Heuristic Evaluation",
+                "mainText": "For the parts of the UI that had already been created, I conducted thorough heursituc evaluations and assigned changes to developers through Asana, often accompanied by Figma Mockups. I authored a total of 34 tasks that ended up being fully shipped, with changes rangin from UX copy to the information architecture of the header:",
+                "images": [
+                    [
+                        "/work/template-designer/heuristic-evaluation.png",
+                        "Hero image featuring the HiveFive logo and app mockups"                        
+                    ]
+                ]
+            },
+            {
+                "key": "design",
+                "componentType": "billboard",
+                "header": "Design",
+                "mainText": "I designed the rest of the UI from the ground up. I used a Figma Ant Design Library to ensure that the styling and component usage perfectly mirrored what was available to our devs from the Ant Design repository. I also used the UX Pilot Figma plugin to help me ideate and brainstorm with AI. Below is the animation sidebar:",
+                "images": [
+                    [
+                        "/work/template-designer/animation-sidebar.png",
+                        "Hero image featuring the HiveFive logo and app mockups"                        
+                    ]
+                ]
+            },
+            {
+                "key": "builder",
+                "componentType": "video",
+                "header": "Feature 1: Informed Sampling",  
+                "mainText": "HiveFive transfers the decision-making into the inspectors hands. As the user inputs data, greater variation causes the progress bar to ask them to inspect more hives. Less variation causes the progress bar to ask for fewer hives to be inspected. This saves time by preventing the user from inspecting more hives while still getting trustworthy sample size.",
+                "sources": [
+                    "/work/hive-five/sampling-demo.mov"
+                ],
+                "hostType": "local",
+                "isAutoPlay": true,
+                "showControls": false,
+                "isMuted": true
+            }
         ]
     },
     "hive-five": {
