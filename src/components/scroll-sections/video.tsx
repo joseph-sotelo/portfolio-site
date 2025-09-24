@@ -41,7 +41,7 @@ export function Video({props}: {props: VideoType}){
                 ))
             ):(
                 props.sources.map((src, index) => (
-                    <video key={index} loop muted={props.isMuted} controls={isMobile ? true : props.showControls} autoPlay={!isMobile && props.isAutoPlay} className='rounded-sm mt-standard-gap' width="2000" height="1000">
+                    <video key={index} loop muted={props.isMuted} controls={isMobile ? true : props.showControls} autoPlay={!isMobile && props.isAutoPlay} className='rounded-sm mt-standard-gap border border-border' width="2000" height="1000">
                         <source src={src} type='video/mp4'/>
                     </video>
                 ))
