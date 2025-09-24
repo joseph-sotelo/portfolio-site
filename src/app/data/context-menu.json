@@ -25,7 +25,7 @@
             ],
             [
                 "Resume",
-                "https://drive.google.com/file/d/1f555C3l8OPfo6I__VL6qgm5_ymA3wY_K/view?usp=sharing"
+                "https://drive.google.com/file/d/1F6QFDD8gBKlxX8Eqcm4GyZ26ED_9Bm4G/view?usp=sharing"
             ]
         ]
     },
@@ -174,10 +174,11 @@
     },
     "template-designer": {
         "header": "Template Designer",
-        "hideTitleAtStart": true,
+        "hideTitleAtStart": false,
         "subHeader": [
-            "Professional Project",            
-            "iPromote"
+            "Professional Project",
+            "at ipromote",            
+            "Feb 2023 - ongoing"
         ],
         "mainText": "An drag-and-drop editor for creating and editing display advertisement templates." 
     }

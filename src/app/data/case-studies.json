@@ -1,42 +1,42 @@
 {
     "template-designer": {
         "caseStudyCardProps": {
-            "name": "Template Designer",
+            "name": "Reducing a 3-day workflow into 3 hours",
             "image": "/work/template-designer/cover.png",
             "page": "/work/template-designer",
             "labels": [
                 "shipped",
                 "impact",
-                "Figma",
                 "Builder.io",
+                "Figma",
                 "usability testing"
             ]
         },       
         "sections": [
+                        {
+                "key": "impact",
+                "componentType": "insightsScrollSection",
+                "header": "How I used UX/UI design practices to help...",
+                "descriptiveList": [
+                    [
+                        "reduce a 3 day workflow into 3 hours."                                             
+                    ],
+                    [
+                        "unblock 3 engineers."
+                    ],
+                    [
+                        "turn a 3-phase engineering process into 2 clicks."
+                    ]
+                ]
+            },
             {
                 "key": "hero",
                 "componentType": "billboard",
                 "header": "",
                 "images": [
                     [
-                        "/work/template-designer/hero.png",
-                        "Hero image featuring the Template Designer logo and app mockups"                        
-                    ]
-                ]
-            },
-            {
-                "key": "impact",
-                "componentType": "insightsScrollSection",
-                "header": "How I used UX/UI design to enable:",
-                "descriptiveList": [
-                    [
-                        "3 day workflow ==> 3 hours"                                             
-                    ],
-                    [
-                        "Completely unblocked engineers"
-                    ],
-                    [
-                        "Reduced a 3 day workflow into 3 hours"
+                        "/work/template-designer/hero-image.png",
+                        "Hero image featuring the Template Designer on a desktop monitor."                        
                     ]
                 ]
             },
@@ -49,11 +49,11 @@
                 "key": "company",
                 "componentType": "billboard",
                 "header": "The Company",
-                "mainText": "iPromote is a B2B Saas company that provides small businesses with display advertisement campaigns, either directly or through our partners. When creating an ad through our software, the user has a selection of templates to choose from. Here are a few:",
+                "mainText": "iPromote is a B2B SaaS company that provides small businesses with display advertisement campaigns, either directly or through our partners. When creating an ad through our software, the user has a selection of templates to choose from. Here are a few:",
                 "images": [
                     [
                         "/work/template-designer/template-examples.png",
-                        "Hero image featuring the HiveFive logo and app mockups"                        
+                        "Four display advertisement templates showcasing the range of styles for a single business."                        
                     ]
                 ]
             },
@@ -61,40 +61,20 @@
                 "key": "problem",
                 "componentType": "billboard",
                 "header": "The Problem",
-                "mainText": "Our clients and partners often ask for new templates, or slight tweaks to existing templates to suit their needs. These requests often get turned down because it takes X developers X time to fully build and publish a new template.",
+                "mainText": "Our clients and partners often ask for new templates, or slight tweaks to existing templates to suit their needs. These requests often get turned down because the process can take up to 5 weeks for 3 developers.",
                 "images": [
-                    [
-                        "/work/template-designer/template-examples.png",
-                        "Hero image featuring the HiveFive logo and app mockups"                        
+                    [                      
                     ]
                 ]
             },
             {
                 "key": "solution",
-                "componentType": "bigText",     
-                "secondaryText": "Solution:",           
-                "mainText": "Our VP of Engineering decided that we would build a drag-and-drop editor that would allow both internal and external users to create and edit templates without needing to write code. I was tasked with designing the UI/UX of this editor."
-            },
-            {
-                "key": "solutions",
-                "componentType": "column",
-                "columnSections": [
-                    [
-                        "bigText",
-                        "The Solution:"
-                    ],
-                    [
-                        "mainText",
-                        "Our VP of Engineering decided that we would build a drag-and-drop editor that would allow both internal and external users to create and edit templates without needing to write code."
-                    ],
-                    [
-                        "bigText",
-                        "My Role"
-                    ],
-                    [
-                        "mainText",
-                        "I was tasked with designing the UI/UX of this editor, collaborating closely with product, engineering, and users."
-                    ]                 
+                "componentType": "billboard",
+                "header": "The Solution",
+                "mainText": "Our VP of Engineering decided that we would build a drag-and-drop editor that would allow both internal and external users to create and edit templates without needing to write code. I was tasked with designing the UI/UX of this editor, collaborating closely with product, engineering, and users. I also got to define many of the product specifications because of my strong familiarity with the code behind our existing templates.",
+                "images": [
+                    [                      
+                    ]
                 ]
             },
             {   
@@ -120,7 +100,7 @@
                     ],
                     [
                         "mainText",
-                        "3. Conducted usability tests and refined designs."
+                        "3. Conducted usability testing and interviews to refine designs."
                     ],
                     [
                         "bigText",
@@ -144,11 +124,11 @@
                 "key": "heuristic-evaluation",
                 "componentType": "billboard",
                 "header": "Heuristic Evaluation",
-                "mainText": "For the parts of the UI that had already been created, I conducted thorough heursituc evaluations and assigned changes to developers through Asana, often accompanied by Figma Mockups. I authored a total of 34 tasks that ended up being fully shipped, with changes rangin from UX copy to the information architecture of the header:",
+                "mainText": "For the parts of the UI that had already been created, I conducted thorough heuristic evaluations and assigned changes to developers through Asana, often accompanied by Figma Mockups. I authored a total of 34 tasks that ended up being fully shipped, with changes ranging from UX copy to the information architecture of the header:",
                 "images": [
                     [
                         "/work/template-designer/heuristic-evaluation.png",
-                        "Hero image featuring the HiveFive logo and app mockups"                        
+                        "Image of the template Designer header component before and after heuristic evaluations were conducted."                        
                     ]
                 ]
             },
@@ -160,22 +140,116 @@
                 "images": [
                     [
                         "/work/template-designer/animation-sidebar.png",
-                        "Hero image featuring the HiveFive logo and app mockups"                        
+                        "A mockup displaying the animation sidebar of the Template Designer."                        
                     ]
                 ]
             },
             {
                 "key": "builder",
                 "componentType": "video",
-                "header": "Feature 1: Informed Sampling",  
-                "mainText": "HiveFive transfers the decision-making into the inspectors hands. As the user inputs data, greater variation causes the progress bar to ask them to inspect more hives. Less variation causes the progress bar to ask for fewer hives to be inspected. This saves time by preventing the user from inspecting more hives while still getting trustworthy sample size.",
+                "header": "Interactive Prototypes with Builder.io",  
+                "mainText": "Instead of creating interactive prototypes in Figma like I usually do, I decided to explore emerging tech by bringing the UI to life with Builder.io. I was able to use Builder’s Figma plugin to attach and reference Figma frames in the Builder chat. The result was a prototype that had more interaction, and it took much less time to build than in Figma. One of the best parts was that it used Ant Design components and styling in the same exact way as the Figma frames.",
                 "sources": [
-                    "/work/hive-five/sampling-demo.mov"
+                    "/work/template-designer/builder-2.mov"
                 ],
                 "hostType": "local",
                 "isAutoPlay": true,
                 "showControls": false,
                 "isMuted": true
+            },
+            {
+                "key": "usability-testing",
+                "componentType": "billboard",
+                "header": "Usability Testing + Interviews",
+                "mainText": "I used the Builder prototype to conduct a usability test with a designer. I also conducted a user interview with an internal user who had been using one of the early releases. The resulting refinements ranged from significant layout changes to small copy edits.",
+                "images": [
+                    [
+                        "/work/template-designer/usability-test.png",
+                        "A screenshot from a Google Meet call showing a usability test. The screen share shows a user testing the animation features, with video feeds of the Joey and the participant."                    
+                    ]
+                ]
+            },
+            {   
+                "key": "results",
+                "componentType": "chapterHeader",
+                "header": "Results"
+            },
+            {
+                "key": "ads",
+                "componentType": "video",
+                "header": "Flow",
+                "mainText": "This is Flow, an ad template that was created using Template Designer. The tool makes it easy to create the same ad across different sizes.",
+                "sources": [
+                    "/work/template-designer/flow-2.mov"
+                ],
+                "hostType": "local",
+                "isAutoPlay": true,
+                "showControls": false,
+                "isMuted": true
+            },
+            {
+                "key": "methods",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "bigText",
+                        "User Success Story"
+                    ],
+                    [
+                        "mainText",
+                        "John, our platform architect, said,"
+                    ],      
+                    [
+                        "mainText",
+                        "“Having the finished Template Designer available for use allowed us to make rapid corrections to issues with the ad templates that were raised by the customer."
+                    ],
+                    [
+                        "mainText",
+                        "“For instance, the customer raised a high priority issue once about the cropping not working as expected. They were concerned this would hold up our go-live. While we were on the phone, I fixed the exact template he was looking at. I asked him to refresh, and it was resolved to their satisfaction. They were very impressed with the speed those changes could be made."
+                    ],
+                    [
+                        "mainText",
+                        "“I was able to handoff a task to have someone audit all 46 templates for the image cropping and they finished this in a couple short hours. Previously this would have taken three days minimum. There were both javascript and PHP components previously involved with image cropping that would have been carefully updated and tested. Likely there would have been multiple rounds of back and forth, etc. "
+                    ],
+                    [
+                        "mainText",
+                        "And there would have been no way to do it live. Doing it live instilled a lot of confidence in them. Confidence in us and our software. Because they had other unrelated concerns, and seeing that we could fix stuff quick took all the pressure off. Like in their minds, they were thinking, ‘we can defer bringing up all these other concerns, because we know when we do they can do it for us quickly’ ”"
+                    ]                
+                ]
+            },
+            {
+                "key": "quote",
+                "componentType": "bigText",                
+                "mainText": "“...they finished this in a couple short hours. Previously this would have taken three days minimum.“"
+            },
+            {
+                "key": "methods",
+                "componentType": "column",
+                "columnSections": [
+                    [
+                        "bigText",
+                        "Appendix"
+                    ],
+                    [
+                        "link",
+                        "https://www.figma.com/design/izppWpuUrJLqrKuxYHPzD2/Template-Designer?node-id=0-1&t=jNEfeooBdigDdwOT-1",
+                        "Figma file"
+                    ],
+                    [
+                        "link",
+                        "https://3363e6579ccd4515b5031dcb84e4f657-main.projects.builder.my",
+                        "Builder.io Prototype"
+                    ],
+                    [
+                        "mainText",
+                        "Bonus: I've been trying to drive the creation and adoption of a custom Figma Design Library at our company. I made this video showcasing how it would compliment the various AI workflows we have been exploring:"
+                    ],
+                    [
+                        "link",
+                        "https://www.youtube.com/watch?v=-zf0FiiYti0",
+                        "Benefits of a Figma Design Library for AI Workflows."
+                    ]
+                ]
             }
         ]
     },
@@ -1130,7 +1204,7 @@
                 "postScript": "- Julia de Bono, CEO, Designworks"
             },
             {
-                "key": "methods",
+                "key": "appendix",
                 "componentType": "column",
                 "columnSections": [
                     [
