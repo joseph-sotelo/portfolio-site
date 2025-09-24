@@ -50,7 +50,7 @@
                 "key": "company",
                 "componentType": "billboard",
                 "header": "The Company",
-                "mainText": "iPromote is a B2B SaaS company that provides small businesses with display advertisement campaigns, either directly or through our partners. When creating an ad through our software, the user has a selection of templates to choose from. Here are a few:",
+                "mainText": "iPromote is a B2B SaaS company that provides small businesses with omnichannel advertisement campaigns, either directly or through our partners. When creating a display advertisement through our software, the user has a selection of templates to choose from. Here are a few:",
                 "images": [
                     [
                         "/work/template-designer/template-examples.png",
@@ -181,7 +181,7 @@
                 "header": "Flow",
                 "mainText": "This is Flow, an ad template that was created using Template Designer. The tool makes it easy to create the same ad across different sizes.",
                 "sources": [
-                    "/work/template-designer/flow-2.mov"
+                    "/work/template-designer/flow-3.mov"
                 ],
                 "hostType": "local",
                 "isAutoPlay": true,
