@@ -103,7 +103,7 @@ export default function InfoMenu({props}: {props: InfoMenuType}) {
             <div className='p-footer text-right opacity-60 mb-5'>
                 All content &#169; 2024 Joseph Sotelo <br />
                 Site by @joseph-sotelo <br />
-                Built with React
+                Built with React before we could vibe-code
             </div>
         </div>
     )

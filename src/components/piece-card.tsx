@@ -16,8 +16,8 @@ export default function PieceCard({name, image, page, labels}: {name: string, im
         <Link href={page}>
             <Card className='max-w-[500px] md:max-w-full shadow overflow-hidden'>
                 <CardContent className='relative'>                    
-                    <Image alt={`${name} cover image`} src={image} className='object-cover w-full h-full aspect-square' width='375' height='375'/>
-                    <Skeleton className="absolute"/>
+                    <Image alt={`${name} cover image`} src={image} className='relative z-10 object-cover w-full h-full aspect-square' width='375' height='375'/>
+                    <Skeleton className="absolute inset-0 z-0"/>
                 </CardContent>
                 <CardHeader id='card-header' className='px-4 py-3'>
                     <CardTitle>{name}</CardTitle>
