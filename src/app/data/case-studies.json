@@ -1,7 +1,7 @@
 {
     "template-designer": {
         "caseStudyCardProps": {
-            "name": "Reducing a 3-day workflow into 3 hours",
+            "name": "Reducing a 3-day workflow into 2 hours",
             "image": "/work/template-designer/cover.png",
             "page": "/work/template-designer",
             "labels": [
@@ -20,7 +20,7 @@
                 "header": "How I used UX/UI design practices to help...",
                 "descriptiveList": [
                     [
-                        "reduce a 3 day workflow into 3 hours."                                             
+                        "reduce a 3 day workflow into 2 hours."                                             
                     ],
                     [
                         "unblock 3 engineers."
@@ -93,15 +93,19 @@
                     ],
                     [
                         "mainText",
-                        "1. Designed the UI in Figma."
+                        "1. Gathered requirements in collaboration with product and engineering."
                     ],
                     [
                         "mainText",
-                        "2. Created interactive prototypes with Builder.io."
+                        "2. Heuristic evaluation and design in Figma."
                     ],
                     [
                         "mainText",
-                        "3. Conducted usability testing and an interview to refine designs."
+                        "3. Created interactive prototypes with Builder.io."
+                    ],
+                    [
+                        "mainText",
+                        "4. Conducted usability testing and an interview to refine designs."
                     ],
                     [
                         "bigText",
